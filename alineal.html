@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<!--<meta http-equiv="content-security-policy|content-type|default-style|refresh" content="30"/>-->
+		<title>AdmIng | Algebra Lineal</title>
+	<link rel="shortcut icon|apple-touch-icon|apple-touch-icon-precomposed" href="icono.ico" sizes="HeightxWidth|any" type="image/x-icon"/>
+	<!-- Replace favicom.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+	<link href="estilo_adming.css" rel="stylesheet" type="text/css"/>
+	<meta name="description" content="Los meta tags de HTML codifican información para ser interpretada por el navegador y los buscadores. ¿Sabes cuáles son imprescindibles?"/><!--Resumen preciso, para usuario. Descripcion de sitio  160 caracteres-->
+	<meta name="keywords" content="algebra lineal, ejercicio, cursos, algebra"/>
+	<meta name="author" content="Nombre del autor" />
+	<meta name="copyright" content="Propietario del copyright" />
+	<style>.mamalon{max-height:333px;max-width: 666px; margin:auto;}</style>
+</head>
+	
+<body style="background:url(math2.png);background-repeat:no-repeat;background-attachment:fixed;background-size:100% 75%;">
+<div id="main-header">
+	<a class="logo" href="index.html"><img id="logo-header" src="logo.jpg"/></a>
+	<nav>
+		<ul>
+			<li><a class="activeH" href="index.html">Pricipal
+				</a></li>
+			<li><a href="https://www.youtube.com/channel/UCBOZY7qmDMyctdp1EkMOG9A">YouTube
+				</a></li>
+			<li><a id="buttonUs">Acerca de
+				</a></li>
+			<li><a id="buttonContact">Contacto
+				</a></li>
+		</ul>
+	</nav>
+</div>	<br>
+<div class="navigation">
+		<div class="toggle">
+			<span></span></div>
+		<ul>
+			<li><a href="#definicionAlgebraLineal">Que es AlgebraLineal
+				</a></li>
+			<li><a href="#definicionMatriz">Definicion de Matriz
+				</a></li>
+			<li><a href="#matrizCuadrada">Matriz Cuadrada
+				</a></li>
+			<li><a href="#operacionMatrices">Operacion de Matrices
+				</a></li>
+			<li><a href="#sumaMatrices">Suma de Matrices
+				</a></li>
+			<li><a href="#multiplicaPorEscalar">Multiplicacion por Escalar
+				</a></li>
+			<li><a href="#diferenciaDeMatrices">Diferencia de Matrices
+				</a></li>
+			<li><a href="#ProductoMatricial">Producto Matricial
+				</a></li>
+			<li><a href="#igualdadMatrices">igualdad en Matrices
+				</a></li>
+			<li><a href="#matrizTranspuesta">Matriz Transpuesta
+				</a></li>
+			<li><a href="#matrizSimetrica">Matriz Simetrica
+				</a></li>
+			<li><a href="#matrizAsimetrica">Matriz Asimetrica
+				</a></li>
+			<li><a href="#matrizConmutativa">Matriz Conmutativa
+				</a></li>
+			<li><a href="#matrizAnticonmutativa">Matriz AntiConmutativa
+				</a></li>
+			<li><a href="#matrizInversa">Matrices Inversas
+				</a></li>
+			<li><a href="#matrizElemental">Matrices Elementales
+				</a></li>
+		</ul>
+		<script type="text/javascript" src="navigationAdming.js"></script>
+	</div>
+<script>
+	const navigation = document.querySelector('.navigation');
+	document.querySelector('.toggle').onclick = function(){
+		this.classList.toggle('active');
+		navigation.classList.toggle('active');
+	}
+</script>
+<!--<div style="margin-bottom: 3%; margin-top: 3%;"><br></div>	
+<div class="aletarga textos">
+	<a href="programacion.pptx">
+		<img class ="botones_sayayin" src="pp.jpg" style="height: 6.666%; width: 66%; margin-left: 17%; margin-right: 17%; margin-bottom: 1%;"/>
+		</a>
+	<marquee width="60%" direction="left" scrollamount="12">
+		Ve los Cursos que tenemos para ti en YouTube
+		</marquee>
+	<br>
+</div>-->
+
+<div class="aletarga textos">
+	<h1 id="definicionAlgebraLineal">Algebra Lineal
+		</h1>
+	<p class="sl">Matematicas usadas para manipular arreglos o matrices(tema con relacion con las bases de datos y la programacion como tal), vectores (usados en fisica e ingenieria en general), espacios vectoriales (usado en fisica, una de las aplicaciones es para comprobar la existencia de multiversos y cosas asi) y sistemas de ecuaciones lineales (tema vinculado con matrices, relacionando coeficientes de diferentes variables)
+		</p>
+	<img class="mamalon" src="matriz_base.jpg"/>
+	<h1 id ="definicionMatriz">Matriz
+		</h1>
+	<p class="sl">Arreglo bidemensional de numeros. Conjuntos de numeros organizados en formato de tabla, con filas y colunmas.<br>Una Matriz se representa por una letra Mayuscula, y cada uno de sus elementos se representa por la misma letra pero para simbolizar que pertenece a la matriz en en minuscula.<br>Cada elemento dentro del arreglo o conjunto de numeros representa un coeficiente de un Sistema de Ecuaciones o transiciones lineales dada una base.
+		</p>
+	<img class="mamalon" src="matriz_1.jpg"/>
+	<p class="sl">Nota: si el numero de las dilas es igual al numero de columnas existentes se pueden sumar o restar las matrices.
+		</p>
+	<img class="mamalon" src="matriz_2.jpg"/>
+</div>
+	<br>
+<img class="aletarga mamalon" src="matriz_nota.jpg"/>
+	<br>
+<img class="aletarga mamalon" src="matriz_base.jpg"/>
+	<br>
+<h1 id="matrizCuadrada">Matriz Cuadrada
+	</h1>
+<img class="aletarga mamalon" src="matriz_cuadrada.jpg"/>
+	<br>
+<img class="aletarga mamalon" src="matriz_cuadrada2.jpg"/>
+
+<h1 id="operacionMatrices">Operaciones de Matrices
+	</h1>
+
+<div class="aletarga textos">
+	<h3 id="sumaMatrices">Suma
+		</h3>
+	<p class="sl">Si A = [aij]  &&  B = [bij] son del mismo tamaño, es decir estan conformados por la misma cantidad de elementos se puede obtener otra Matriz: A + B = C[ij]<br>Suma de A & B tal que Cij = aij + bij
+		</p>	
+</div>
+
+<img class="aletarga mamalon" src="matriz_suma.jpg"/>
+
+<div class="aletarga textos">
+	<h3 id="multiplicaPorEscalar">Multiplicacion por Escalar
+		</h3>
+	<p class="sl">Si A = [aij]  &&  K=Real Se define o obtiene otra Matriz KA = C; K*A[aij] = C[cij]<br>Tal que Cij = Kaij
+		</p>	
+</div>
+
+<img class="aletarga mamalon" src="matriz_multiPescalar.jpg"/>
+
+<div class="aletarga textos">
+	<h3 id="diferenciaDeMatrices">Diferencia
+		</h3>
+	<p class="sl">A - B = A + (-1)B
+		</p>	
+</div>
+
+<img class="aletarga mamalon" src="matriz_resta.jpg"/>
+
+<div class="aletarga textos">
+	<h3 id="ProductoMatricial">Producto Matricial
+		</h3>
+	<p class="sl">A B = C   como otra Matriz: C= [cij]<br>Tal que:<br>cij  =  ai1 b1j   +  ai2 b2j  +  ai3 b3j  + . . .  +  ai j b j i<br>cri  =  ar1 b1r   +  ar2 b2r  +  ar3 b3r  + . . .  +  ai r   b r i<br>. . .<br>m * r  =  numero de columnas      -     r  * n  =  numero de renglones	
+		</p>	
+</div>
+
+<img class="aletarga mamalon" src="matriz_productoMatricial.jpg"/>
+
+<img class="aletarga mamalon" src="matriz_productoMatricial_2.jpg"/>
+
+<div class="aletarga textos">
+	<h3 id="igualdadMatrices">Igualdad de Matrices
+		</h3>
+	<p class="sl">A && B son del mismo tamaño ss aij = bij V i,j<br>Traduccion, 2 matrices son iguales si tienen el mismo tamaño, y Si y solo Si el elemento es igual en valor y estan en la misma posicion
+		</p>	
+</div>
+
+<h3 id="matrizTranspuesta">Matriz Transpuesta
+	</h3>
+<img class="aletarga mamalon" src="matriz_transpuesta.jpg"/>
+
+<h3 id="matrizSimetrica">Matriz Simetrica
+	</h3>
+<img class="aletarga mamalon" src="matriz_simetrica.jpg"/>
+
+<h3 id="matrizAsimetrica">Matriz Asimetrica
+	</h3>
+<img class="aletarga mamalon" src="matriz_asimetrica.jpg"/>
+
+<h3 id="matrizConmutativa">Matriz Conmutativa
+	</h3>
+<img class="aletarga mamalon" src="matriz_conmuta.jpg"/>
+
+<h3 id="matrizAnticonmutativa">Matriz AntiConmutativa
+	</h3>
+<img class="aletarga mamalon" src="matriz_anticonmutativa.jpg"/>
+
+<div class="aletarga textos">
+	<h3>Matriz Inversa
+		</h3>
+	<p class="sl">Si Ann && Bnn tal que AB = BA = I<br>Entonces:<br>=> B es la inversa de A; denotado por A-1<br>   A es la inversa de B denotado por B-1,<br>o ser: <br>A*A-1 = A-1 * A = I  ||  B*B-1 = B-1 * B = I  ||  A*A-1 = B*B-1 = I<br>Notas: <br>A-1 E ss A es n*n<br>No toda matriz n*n tiene inversa, pero si esta existe, entonces esta es unica<br>A-1 existe si Ann, pero no por ser Ann necesariamente hay A-1<br>.: si A-1 existe es unica
+		</p>	
+</div>
+
+<h3 id="matrizInversa">Matriz Inversa
+	</h3>
+<img class="aletarga mamalon" src="matriz_inversa.jpg"/>
+
+<h2 id="matrizElemental">Matriz Elemental
+	</h2>
+<img class="aletarga mamalon" src="matriz_elemental.jpg"/>
+
+<div class="aletarga textos">
+	<h3>Propiedades de Determinantes
+		</h3>
+	<ol>
+		<li>Si   A = I    ===>      |A|   =   | I |   =   1
+			</li>
+		<li>Si Renglon o Columna de Aesta Compuesta de puros 0's   ===>   |A|   =   0
+			</li>
+		<li>Si   A       |A|   =   0   ===>   A es singular inversamente
+			</li>
+		<li>Si   A es singular   ===>   |A| = 0
+			</li>
+		<li>Si   A,B son n*n   ===>   det( A, B )   =   det( A ) * ( det B )<br>Consecuencia:<br>	Si   B = A -1   =>   det ( AA -1  ) = ( det A ) * ( det A -1 )<br>	det I   =   1   =   ( det A ) * ( det A -1 )<br>det A -1  =    1 / det   A            ;               det A  =    1 / det   A -1<br>		
+			</li>
+		<li>Si   A = B   ===>   det B = det A      = det A
+			</li>
+		<li>Si   B = KA ===>   det B = K n det A
+			</li>
+		<li>Si   B se forma intercambiando 2 renglones de A   ===>   det B = - det A
+			</li>
+		<li>Si   B se forma multiplicando un renglon de A por un numero r ===>   det B = r det A
+			</li>
+		<li>Si   B se forma sumando a un Renglon el multiplo de otro renglon de A ===> det B = det A
+			</li>
+	</ol>	
+</div>
+<img class="aletarga mamalon" src="matriz_propiedades_determinates.jpg"/>
+	<br>
+<footer>
+<a href="index.html">ADMING desarrollos</a>
+<ul class="footerMenu">
+	<li><a href="index.html">Principal
+		</a></li>
+	<li><a id="buttonUs">Nosotros
+		</a></li>
+	<li><a id="buttonContact">Contacto
+		</a></li>
+</ul>
+<ul class="footerMenu">
+	<li><a href="privacidad.html">Politica de PRIVACIDAD
+		</a></li>
+	<li><a href="Política_de_Cookies.html">Politica de COOKIES
+		</a></li>
+	<li><a href="aviso_legal.html">Aviso legal y Términos de uso
+		</a></li>
+</ul>	
+<a href="https://admingtutoriales.com"><p class="copyrightText">ADMING DESARROLLOS
+	</p></a>
+</footer>
+<div id="nosotros" class="modal">
+	<span id="cierraNosotros" class="close" title="Close">&times;</span>
+		<button class="collapsible">Nosotros</button>
+	<div class="content__">
+		<h2>Acerca de nosotros
+			</h2>					  
+		<p>Somos un grupo de profesionales del Instituto Politecnico Nacional, de Mexico. Un Informatico de UPIICSA, IPN; un Economista por la ESE, IPN; y un doble ingeniero, Energia por la UAM y electricidad por la ESIME del IPN.
+			</p>
+		<p>Los 3 nos conocimos en el Centro de Estudios Cientificos y Tecnologicos #13, CECyT 13 RFM, IPN, todos egresados de la carrera de Tecnicos en Administracion de Empresas.
+			</p>
+		<p>Hemos ejercido la carrera y tenemos experiencia en empresas de cobranza, banca, comercio electronico, experiencia en GRP con el gobierno Mexicano, desarrollo de aplicaciones y algunas inversiones.
+			</p>
+		<p>Estamos a tu servicio.
+			<br>
+			<a href="contacto.html"><button class="boton2" style="color: blue; margin-left: 2%; margin-right: 2%; margin-top: 1%; margin-bottom: 9%; width: 96%;">
+				Contactanos</button></a>	
+			</p>
+	</div>
+	<button class="collapsible">Mision
+		</button><!--Codigo 2-->
+	<div class="content__">
+		<h2>Nuestra Mision es contigo
+			</h2>
+		<p>Nuestra mision es compartir el conocimiento y experiencia obtenidos, no del modo teorico tradicional sino mas bien a modo de charla y con nuestras experiencias.
+			</p>	
+		<p>Nos unimos para colaborar en este proyecto de los cursos porque fuimos estudiantes, y ahora somos profesionales y no nos gusto ver que muchos temas academicos son obsoletos en el mundo laboral y hay mucha deficiencia en la enseñanza. Ademas que la enseñanza es deficiente y en nuestra opinion le falta practica.
+			</p>
+		<p>Estamos a tu servicio.<br>
+		<button class="boton2" style="color: blue; margin-left: 2%; margin-right: 2%; margin-top: 1%; margin-bottom: 9%; width: 96%;" onclick="">
+			Contactanos</button>
+			</p>
+	</div>
+	<button class="collapsible">Vision
+		</button>
+	<div class="content__">
+		<h2>Nuestra Vision
+			</h2>
+		<p>Nos visualizamos subiendo al menos un video a la semana diversificando temas de videos desde tutoriales hasta cosas especificas e interesantes, donde al pasar el tiempo los contenidos se enriqueceran.
+			</p>	
+		<p>Dadas las caracteristicas y experiencia de nuestros colaboradores podemos ofrecerte cursos competentes en las disciplinas de Administracion e Ingenieria, ademas de desarrolo de proyectos que involucren programacion y administracion.
+			</p>
+		<p>Estamos a tu servicio.
+			<a href="contacto.html"><button class="boton2" style="color: blue; margin-left: 2%; margin-right: 2%; margin-top: 1%; margin-bottom: 9%; width: 96%;">
+				Contactanos</button></a>	
+			</p>
+	</div>
+</div>
+<div id="contacto" class="modal">
+	<span id="cierraContacto" class="close" title="Close">&times;</span>
+	<section class="contact" id="contact">
+		<div class="title">
+			<h2>Contactanos</h2>
+			<p>Comentarios, Sugerencias del sitio, Sugerencias de contenido...</p>
+		</div>
+		<form class="contactForm">
+			<div class="row">
+				<input class="name" type="text" name="" placeholder="Nombre" required/>
+				<input class="lname" type="text" name="" placeholder="Apellido (opcional)"/>
+			</div>
+			<div class="row">
+				<input class="mail" type="text" name="" placeholder="email" required/>
+				<input class="tel" type="text" name="" placeholder="Telefono (opcional)"/>
+			</div>
+			<div class="row2">
+				<textarea class="msg" placeholder="Que nos quieres decir" required></textarea>
+			</div>
+			<div class="row2">
+				<input type="submit" value="ENVIAR" class="btn"/>
+			</div>
+		</form>
+		<!--<script src="https://smtpjs.com/v3/smtp.js"></script>
+		<script src="contactoAdming.js"></script>-->
+	</section>
+</div>
+<script type="text/javascript" src="aletarga.js"></script>
+<script type="text/javascript" src="cola.js"></script>
+<script type="text/javascript" src="emergentes.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>			
+</html>

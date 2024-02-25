@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1CS9VHD91G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1CS9VHD91G');
+</script>
+	<meta http-equiv="content-security-policy|content-type|default-style|refresh" content="30"/>
+		<title>AdmIng | Bases de Datos</title>
+		<link rel="icon" type="image/jpg" href="logo.jpg" />
+	<meta name="viewport" content="text/html; width=device-width; charset=UTF-8" initial-scale="1.0"/>
+	<meta name="description" content="poo basico, que es poo, que es programacion"/>
+	<meta name="keywords" content="que es poo, poo, definicion programacion, clases, objetos, programar poo, curso poo"/>
+	<!-- Replace favicom.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+	<link rel="shortcut icon|apple-touch-icon|apple-touch-icon-precomposed" href="icono.ico" sizes="HeightxWidth|any" type="image/x-icon"/>
+	<link href="estilo_adming.css" rel="stylesheet" type="text/css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body style="background:url(programacion.png);background-repeat:no-repeat;background-attachment:fixed;background-size:100% 75%;">
+<div id="main-header">
+	<a class="logo" href="index.html"><img id="logo-header" src="logo.jpg"/></a>
+	<nav>
+		<ul>
+			<li><a class="activeH" href="index.html">Pricipal
+				</a></li>
+			<li><a href="https://www.youtube.com/channel/UCBOZY7qmDMyctdp1EkMOG9A">YouTube
+				</a></li>
+			<li><a id="buttonUs">Acerca de
+				</a></li>
+			<li><a id="buttonContact">Contacto
+				</a></li>
+		</ul>
+	</nav>
+</div>	<br>
+<div class="navigation">
+	<div class="toggle">
+		<span></span></div>
+	<ul>
+		<li><a href="#ct1">Que es POO
+			</a></li>
+		<li><a href="#ct2">Que es Clase
+			</a></li>
+		<li><a href="#ct3">Que es un Objeto
+			</a></li>
+		<li><a href="#ct4">Metodo Constructor - Destructor
+			</a></li>
+		<li><a href="#ct5">Herencia
+			</a></li>
+	</ul>
+</div>
+<script>
+	const navigation = document.querySelector('.navigation');
+	document.querySelector('.toggle').onclick = function(){
+		this.classList.toggle('active');
+		navigation.classList.toggle('active');
+	}
+</script>
+<div class="aletarga aletargo">
+	<a href="programacion.pptx">
+		<img class ="botones_sayayin" src="pp.jpg" style="height: 6.666%; width: 66%; margin-left: 17%; margin-right: 17%; margin-bottom: 1%;"/>
+		</a>
+	<marquee width="60%" direction="left" scrollamount="12">
+		Ve los Cursos que tenemos para ti en YouTube
+		</marquee>
+	<br>
+</div>
+
+<div class="aletarga textos">
+	<h3>SISTEMA DE INFORMACION
+		</h3>
+	<p class="sl">Elementos informáticos, que hacen equipo para una tarea concreta: HARDWARE procesa datos con un SOFTWARE, ese SW es un grupo de PROGRAMAS que forman una App que interactuara con otra colección de programas para administrar la información producida en un ‘almacén de datos’ (DBMS).
+		</p>
+	<p class="sl">Por lo tanto: Sist. d Información -> HW + SW(App + DBMS ) = Información disponible en cualquier momento.
+		</p>
+	<p class="sl">Para: Información cuando se requiera, para la planeación, control y toma de decisiones.
+		</p>	
+	<img class="mamalon" src="BD_sis.jpg"/>
+</div>
+	
+<div class="aletarga textos">
+	<h3>Dato  ->  Información
+		</h3>
+	<p class="sl">Dato = Es un valor simple, que en si no significa mucho, establecido de inicio o obtenido.
+	Información = Resultado de manipular los Datos con un algoritmo o proceso definido, pensando en cumplir un objetivo.
+		</p>	
+	<img class="mamalon" src="DB_info.jpg"/>
+</div>
+
+<div class="aletarga textos">			
+	<button id="ct1" class="collapsible">Que es una Base de Datos
+		</button><!--Codigo 2-->
+	<div class="content  content__">		
+	<div class="colores_2"><h3>Bases de Datos
+		</h3></div>
+	<p class="sl">Colección - Almacén de todo dato útil de una entidad, almacenados electrónicamente. Almacenados en una estructura de tablas, compuesta por Datos de Usuario Final (predefinida en catálogos o mediante eventos) y también por Metadatos (Datos que describen un dato, Metadatos ˜ Struct). 
+		</p>	
+		<img class="mamalon" src="DB.jpg"/>
+	<h3>ABSTRACCION DE LA INFORMACION
+		</h3>
+	<p class="sl">La arquitectura de la BD, determina la capacidad para satisfacer las necesidades del usuario en forma fiable y eficiente.
+		</p>
+	<a href="https://www.youtube.com/watch?v=iq5JmnGf8Fs"><button class="botones">Ver Video
+		</button></a>
+	</div>
+
+	<button id="ct2" class="collapsible">Perspectiva general de una Base de Datos
+		</button><!--Codigo 2-->
+	<div class="content  content__">		
+	<div class="colores_2"><h3>ESQUEMA CONCEPTUAL
+		</h3></div>
+	<ul>
+		<li>Tablas</li>
+		<li>Relaciones</li>
+		<li>Restricción de uso</li>
+	</ul>
+	<h3>ESQUEMA INTERNO
+		</h3>
+	<p class="sl">Objetivo: optimizar el tiempo de ejecución, espacio de almacenamiento, caminos de acceso, manejo de buffers. 
+		</p>
+	<ul>Contenido:
+		<li>Reparto de almacenamiento para datos e índices. 
+			</li>
+		<li>Control de redundancia.
+			</li>
+	</ul>
+	<ul>Caminos de acceso:
+		<li>Llaves primarias y secundarias.
+			</li>
+		<li>Compresión de datos.
+			</li>
+		<li>Encriptación de datos.
+			</li>
+	</ul>
+	
+	<h3>ESQUEMA EXTERNO
+		</h3>
+	<ul>Subconjunto de datos del esquema conceptual, que permite:
+		<li>Redefinidir tablas, relaciones, datos.
+			</li>
+		<li>Crear las diferentes vistas de acuerdo a las entidades de la organización.
+			</li>
+		<li>Permite establecer un esquema de seguridad.
+			</li>
+	</ul>
+	<ul>Contenido del esquema externo:
+		<li>Tablas
+			</li>
+		<li>Relaciones
+			</li>
+		<li>Restricción de uso
+			</li>
+	</ul>
+	<h3>INDEPENDENCIA DE DATOS
+		</h3>
+	<ul>
+		<li>Esquema conceptual vs. Esquema interno
+			</li>
+		<li>Esquema interno vs. Esquema externo
+			</li>
+		<li>Esquema interno vs. Programa de aplicación
+			</li>
+		<li>Esquema conceptual vs. Esquema externo
+			</li>
+	</ul>
+	<h3>INDEPENDENCIA LOGICA
+		</h3>
+	<p class="sl">Las variaciones que se deben permitir entre el esquema conceptual y el externo son:
+		</p>
+	<ul>A nivel componente
+		<li>Entidades
+			</li>
+		<li>Relaciones
+			</li>
+	</ul>
+	<p class="sl">Un programa de aplicación se considera estable cuando no se requiere una nueva recopilación cuando hay cambios en las otras vistas.<br>Si los esquemas se enlazan en el momento de la compilación, se necesitara recompilar.<br>Si los esquemas se enlazan en el momento de ejecución de un comando no se necesita recompilar.
+		</p>
+		<img class="mamalon" src="Esquema_BD.png"/>
+	<h3>ABSTRACCION DE LA INFORMACION
+		</h3>
+	<p class="sl">La arquitectura de la BD, determina la capacidad para satisfacer las necesidades del usuario en forma fiable y eficiente.
+		</p>
+	<a href="https://www.youtube.com/watch?v=iq5JmnGf8Fs"><button class="botones">Ver Video
+		</button></a>
+	</div>
+	
+	
+	<button id="ct3" class="collapsible">Que es un Diagrama Entidad - Relación
+		</button><!--Codigo 2-->
+	<div class="content  content__">
+		<div class="colores_2"><h3>Diagrama Entidad - Relación
+			</h3></div>
+		<p class="sl">Representación grafica de la BD, conformado por tablas relacionados por los constrains.
+			</p>
+		<h3>MODELO ENTIDAD-RELACION
+			</h3>
+		<p class="sl">Se base en una observación del mundo real, de objetos básicos llamados entidades y relaciones.
+			</p>
+		<h3>ENTIDAD
+			</h3>
+		<p class="sl">Objeto que existe y es distinguible de otros objetos (es único), por sus atributos.
+			</p>
+		<p class="sl">ATRIBUTOS: Es una función que asocia un conjunto de entidades  a un dominio.
+			</p>
+		<p class="sl">CONJUNTO DE ENTIDADES:  Entidades del mismo tipo. existen ENTIDADES ABSTRACTAS y ENTIDADES CONCRETAS.
+			</p>
+		<p class="ejemplos">
+		Entidad  =  Conjunto de pares  (atributos, valor)  para cada atributo
+                       del conjunto de entidades.
+ 
+Alumno =     (#boleta, 80201), (nomb, ”JUAN”), (edad, 18),… 
+                        (#boleta, 80345), (nomb, ”LUIS”), (edad, 19),… 
+		</p>
+		<h3>Constrain o RELACION
+			</h3>
+		<p class="sl">Es una asociación entre varias entidades.
+			</p>
+		<p class="ejemplos">
+		R= { (e1,e2,…,en)  | e1 € E1,  e2 € E2,…, en € En  }
+           Relación                E1, E2, …, En -> Conjunto de entidades
+
+Una relación puede tener atributos  descriptivos  {a1,a2…,an}
+
+Alumno= { #boleta, nomb_alum, edad_alum, direc_alum, … }
+
+Materia= {  cve_mat, nombre_mat,  créditos,… }
+
+Cursa=     {  #boleta,  cve_mat, …         
+			</p>
+		<img class="mamalon" src="" alt="cargando..."/>
+		<h3>RESTRICCIONES DE ASIGNACION por Relacion
+			</h3>
+		<p>La base de datos se ajusta a las cardinalidades de asignación que expresan el número de entidades con las que se puede asociarse una entidad mediante un conjunto de relaciones.<br>Inventario -> Producto<br>Alumno -> Materia
+			</p>
+		<ul>Tipos de relaciones o constrain
+			<li>1 - 1   (uno a uno)
+				</li>
+			<li>1 - N  (uno a mucho)
+				</li>
+			<li>N - 1  (mucho a uno)
+				</li>
+			<li>N - N (mucho a mucho)
+				</li>
+		</ul>
+	<a href="https://www.youtube.com/watch?v=7t25QDBIs5E"><button class="botones">Ver Video
+		</button></a>
+	</div>
+	
+	<button id="ct4" class="collapsible">Que es Constrain o Relación
+		</button><!--Codigo 2-->
+	<div class="content  content__">	
+			<div class="colores_2"><h3>Constrain o Relación
+				</h3></div>
+		<p class="s1">Es un objeto de la BD que sirve para relacionar 2 tablas, usando llaves primarias (PK) y llaves Foráneas (FK)
+			</p>
+		<h3>Primary Key   PK
+			</h3>
+		<p class="s1">Atributo llave principal en una tabla para garantizar o asegurar que el registro es unico en la Tabla.
+			</p>
+		<h3>Foreign Key
+			</h3>
+		<h3>Identity
+			</h3>
+		<p class="s1">Campo autoincremental, que normalmente puede declararse así, que identifica y distingue un registro asiéndolo único aunque sean datos semejantes
+			</p>
+		<img class="mamalon" src="" alt="cargando..."/>
+		<a href="https://www.youtube.com/watch?v=ne0w_WNoYeI"><button class="botones">Ver Video
+			</button></a>
+	</div>	
+			
+	<button id="ct5" class="collapsible">Objetos básicos en BD
+		</button><!--Codigo 2-->
+	<div class="content  content__">	
+	<div class="colores_2"><h3>Objetos básicos en BD
+		</h3></div>
+		<p class="sl">
+		<ul>
+			<li>Tablas: Arreglo en un formato de filas y columnas, donde hay una relación entre ellas, las columnas representan un campo, las filas un registro.
+			<li>Constrain-Relacion</li>
+			<li>Procedimientos Almacenados(Store Procedure, SP)</li>
+			<li>Vistas(Querys, Consulta Predefinida y Almacenada de extracción de datos)</li>
+			<li>Funciones(Similar a SP, pero estas devuelven a fuerza un valor)</li>
+		</ul>
+		</p>
+	</div>	
+		
+	<button id="ct6" class="collapsible">Que es Tabla SQL
+		</button><!--Codigo 2-->
+	<div class="content  content__">	
+	<div class="colores_2"><h3>Tabla SQL
+		</h3></div>
+	<p class="sl">Tabla que contiene informacion de un aspecto general. Tabla de Inventario, Tabla de trabajadores, Tabla de clientes... etc.
+		</p>
+	<img class="mamalon" src="tabla_SQL.jpg"/>
+	<h3>Campos
+		</h3>
+	<p class="sl">Un campo es un conunto de un mismo tipo de dato que por si mismo no representa mucho. Ej: El campo PRECIO puede contener varios datos numericos (666, 30.5, 99.99,...) como podemos ver son datos que no dicen nada.
+		</p>
+	<img class="mamalon" src="tabla_SQL_cam.png"/>
+	<h3>Registro 
+		</h3>
+	<p class="sl">Conjunto de Campos vinculados que forman la identidad de alguna cosa. Ya es información con una útil pues ya hace sentido (Registro persona X: tiene en el campo ID el 040105, en el campo TEL tiene 666, campo MAIL es pX@algo.com y en campo DOMICILIO es lugar ABC).
+		</p>
+	<img class="mamalon" src="tabla_SQL_reg.png"/>
+	<a href="https://www.youtube.com/watch?v=ne0w_WNoYeI"><button class="botones">Ver Video
+		</button></a>
+	</div>
+	
+	<button id="ct7" class="collapsible">Que es Store Procedure – Procedimiento Almacenado SP
+		</button><!--Codigo 2-->
+	<div class="content  content__">		
+	<div class="colores_2"><h3>Store Procedure – Procedimiento Almacenado (SP)
+		</h3></div>
+	<p class="sl">Conjunto de instrucciones SQL de propósito especifico de una tarea repetitiva. Consulta o manipulación de la BD.
+		</p>
+	<!--<p class="ejemplos">
+	En HTML:
+	Desde una forma se envia data con el nombre del campo-> input type=number name=precio, input type=text name=descripcion
+	Se captara 2 valores desde la forma, precio y descripcion.
+	SP 
+	INSERT INTO unaTabla(campoprecio, campoDesc) VALUES (@)
+	
+		</p>-->
+	</div>
+	
+	<button id="ct8" class="collapsible">Que es DATA BASE MANAGER SYSTEM (DBMS)
+		</button><!--Codigo 2-->
+	<div class="content  content__">		
+	<div class="colores_2"><h3>DATA BASE MANAGER SYSTEM (DBMS)
+		</h3></div>
+	<p class="sl">Es SW, con un IDE para manejar y mantener datos de múltiples aplicaciones al mismo tiempo. Este es de empresas grandes, ej SQL SERVER. 
+		</p>	
+	<p class="sl">Organiza los datos en estructura predefinidas,<br>Realiza referencias  cruzadas sobre relacionamientos definidos en el Diccionario de Datos.
+		</p>
+	<h3>FUNCIONES DE DBMS
+		</h3>
+	<ul>
+		<li>Interfaz a los datos,
+			</li>
+		<li>Regular el acceso,
+			</li>
+		<li>Mantener la consistencia,
+			</li>
+		<li>Resolver problemas de concurrencia.
+			</li>
+	</ul>
+		<img class="mamalon" src="dbms.png" alt="cargando..."/>
+	<h3>FUNCIONES DE DATA BASE ADMINISTRATOR (DBA)
+		</h3>
+	<ul>
+		<li>Definir estructuras de la base de datos.
+			</li>
+		<li>Enlace con los usuarios.
+			</li>
+		<li>Definir seguridad e integridad.
+			</li>
+		<li>Estrategias de respaldo y recuperación.
+			</li>
+		<li>Monitoreo del rendimiento.
+			</li>
+		<li>Uso de rutinas de LOAD y UNLOAD.
+			</li>
+		<li>Manejo de diccionario de datos.
+			</li>
+	</ul>
+		<img class="mamalon" src="dba.png"/>
+	</div>
+	
+	<button id="ct9" class="collapsible">Que es un DICCIONARIO DE DATOS
+		</button><!--Codigo 2-->
+	<div class="content  content__">		
+	<div class="colores_2"><h3> DICCIONARIO DE DATOS
+		</h3></div>
+	<p class="sl">Es una Base de Datos sobre los Metadatos, que sirve como herramienta de documentación, una librería central donde se definen las características y datos relevantes de los <a href="#dataItem">data ítems</a>.
+		</p>	
+	<p class="sl">Al introducir nuevos datos a las aplicaciones, nos permite determinar el impacto de los cambios. 
+		</p>	
+	<p class="sl">Provee lenguaje fuente para el DBMS y las aplicaciones.
+		</p>
+	<h3>TIPOS DE DICCIONARIO DE DATOS
+		</h3>
+	<ul>Desarrollado y distribuido por el vendedor del DBMS:
+		<li>Mayor control sobre los Datos y reforzamiento de los estándares.
+			</li>
+		<li>Los cambios a la base se reflejan automáticamente en el Diccionario de Datos.
+			</li>
+	</ul>
+	<ul>Externo (stand alone):
+		<li>No obliga al uso de un DBMS en particular.
+			</li>
+		<li>Permite una documentación Gradual.
+			</li>
+		<li>Requiere de un proceso para su Actualización.
+			</li>
+	</ul>
+	
+	<h3 id="dataItem">DATA ÍTEMS
+		</h3>
+	<ul>
+		<li>Campos
+			</li>
+		<li>Entidades
+			</li>
+		<li>Sinónimos
+			</li>
+		<li>Referencias Cruzadas
+			</li>
+		<li>Tipo
+			</li>
+		<li>Índices	
+			</li>
+		<li>Procedimientos
+			</li>
+		<li>Usuarios
+			</li>
+		<li>Permisos
+			</li>
+		<li>Cardinalidad
+			</li>
+	</ul>
+	</div>
+	
+	<button id="ct10" class="collapsible">Que es DDL Definition Data Lenguage
+		</button><!--Codigo 2-->
+	<div class="content  content__">		
+	<div class="colores_2"><h3>DDL Definition Data Lenguage
+		</h3></div>
+	<p class="sl">Instrucciones SQL para crear tablas o bases de datos, para definir. Tecnicamente dicho Es el utilizado para crear el esquemas (conceptual, interno y externo) de la base de datos. 
+		</p>	
+	<p class="ejemplos"><span>CREATE TABLE</span> TablaNombreQqueramos (IDUNICO </span>INT</span>, NOMBREdCampoQqueramos <span>VARCHAR(255)</span>,... mas campos)
+		</p>
+	</div>
+	
+	<button id="ct1" class="collapsible">Que es Data Manipulation Lenguage DML
+		</button><!--Codigo 2-->
+	<div class="content  content__">		
+	<div class="colores_2"><h3>Data Manipulation Lenguage DML
+		</h3></div>
+	<p class="sl">Instrucciones SQL para manipular la base de datos, insertar registro en tabla INSERT, modificar registro en tabla UPDATE, borrar un registro de una tabla o una tabla DELETE (en el caso del delete es de utilidad comprender las <a href="#transacciones">TRANSACCIONES</a>)
+		</p>	
+	<p class="ejemplos">
+	<span>Insert</span> (DML) Comando de SQL para agregar un registro a una tabla<br>
+    <span>INSERT INTO</span> nombTabla <span>VALUES</span> (valores, ...)     //(Campos, ...)<br>
+	<span>INSERT INTO</span> ESTADO (DESCRIPCION,CLAVE) <span>VALUES</span>('ESTADOX','XXX')<br>
+
+	<span>UPDATE</span> ESTADO SET CLAVE = 'ZZZ' <span>WHERE</span> IDESTADO <b>=</b> 5<br>
+
+	<span>DELETE</span> ESTADO <span>WHERE</span> IdEstado <b>=</b> 10<br>
+		</p>
+		<ul>DML Procedimental:
+			<li>Comandos de bajo nivel,
+				</li>
+			<li>Comando navegacionales:
+			<ul>
+				<li>Seleccionan, presentan y actualizan  un Registro.
+					</li>
+				</ul>
+				</li>
+		</ul>
+		<ul>DML No Procedimental:
+			<li>Operan sobre un grupo de registro.
+				</li>
+			<li>Transparencia de acceso.
+				</li>
+			<li>Programa de aplicación independiente del esquema interno.
+				</li>
+		</ul>	
+	</div>
+	
+	<button id="ct11" class="collapsible">Que es DQL Data Query Lenguage
+		</button><!--Codigo 2-->
+	<div class="content  content__">		
+	<div class="colores_2"><h3>DQL Data Query Lenguage
+		</h3></div>
+	<p class="sl">Instrucciones SQL para extraer y consultar datos, solo para consulta sin ninguna alteracion a la base, peticiones a la base. 
+		</p>	
+	<p class="ejemplos"><span>SELECT</span> camposQqueramos IDUNICO <span>FROM</span> NOMBREdTablaQqueramos <span>WHERE</span> filtros<br>
+		Consulta toda la tabla-><span>SELECT</span> * <span>FROM</span> NOMBREdTablaQqueramos<br>
+		Busca en toda la tabla registro con valor especificado en el campo especificado-><span>SELECT</span> * <span>FROM</span> NOMBREdTablaQqueramos </span>WHERE</span> campo <span>=</span> val<br>
+		Busca en toda la tabla registro donde aparezcan los caracteres entre %% -><span>SELECT</span> * <span>FROM</span> NOMBREdTablaQqueramos </span>WHERE</span> campo <span>LIKE</span> %val%<br>
+		Busca en toda la tabla los registros que estan entre el valor 1 y el valor 2 -><span>SELECT</span> * <span>FROM</span> NOMBREdTablaQqueramos </span>WHERE</span> campo <span>BETWEEN</span> val_1 <b>AND</b> val_2<br>
+		</p>
+	</div>
+	
+	<button id="ct12" class="collapsible">Finalidad de una BD
+		</button><!--Codigo 2-->
+	<div class="content  content__">	
+	<div class="colores_2"><h3>Para que usar una Base de Datos
+		</h3></div>
+	<p class="sl">Para que el software sea util en verdad, un programa sin una BD no sirve, es una practica escolar.
+	<ul>
+		<li>facilitar recuperación de datos,
+			</li>
+		<li>NO redundancia de los datos,
+			</li>
+		<li>facilitar acceso a los datos,
+			</li>
+		<li>reducir costos, 
+			</li>
+		<li>facilitar mantenimiento del sistema en general.
+			</li>
+	</ul>
+		</p>
+	</div>
+	
+	<button id="ct13" class="collapsible">Que es una Transaccion
+		</button><!--Codigo 2-->
+	<div class="content  content__">	
+	<div class="colores_2"><h3 id="transacciones">Para que usar Transacciones
+		</h3></div>
+	<p class="sl">Asegura la integridad de la base de datos, pues cuida que la ejecucion de instrucciones pueda ser como se desea, pudiendo revertir errores. Con una transaccion las instrucciones SQL se ejecutan ordenadamente, todas bien o ninguna, permite la recuperacion ante errores.
+		</p>
+	<p class="sl">Se usa para la ejecucion de sentencias para alterar la base de datos, principalmente de manipuacion de varios datos o tablas, si un query o comando SQL esta mal no altera los registros y con un comando ROLLBACK se deshacen los efectos.
+		</p>
+	<p class="ejemplos">
+	<span>BEGIN TRAN</span><br>
+		<span>SELECT</span> * <span>FROM</span> tablaA <span>WHERE</span> status <b>=</b> devolucion<br>
+		<span>DELETE</span> tablaA <span>WHERE</span> status <b>=</b> devolucion<br>
+		<span>SELECT</span> * <span>FROM</span> tablaA  <b>//mostraria en consola la tablaA actualizada</b><br>
+		<span>UPDATE</span> tablaB <span>SET</span> precio <b>=</b> precio/1.3 <span>WHERE</span> fechaCompra <span>LIKE</span> %2019%  <b>//Mercancia estancada del 2019  se descuenta 30%</b><br>
+		<span>SELECT</span> * <span>FROM</span> tablaB  <b>//mostraria la tablaB actualizada</b><br>
+		<b>...</b><br>
+		<b>Comando N</b><br>
+		
+		<span>COMMIT</span>   <b>//Ejecutamos la palabra COMMIT si se actualizo bien para cerrar la transaccion y guardar</b><br>
+		
+		<span>ROLLBACK</span> <b>// Si afectamos mal los campos o borramos algo indebido ejecutamos ROLLBACK para restaurar la base</b><br>
+		
+		<b>//Luego de usar una transaccion es bueno comentarizarla si se usa mucho una transaccion semejante o borrar</b>
+		</p>
+	<p class="sl">Es una herramienta super poderosa que nos puede ahorrar demandas y que nos corran en el mejor de los casos por borrar info sensible para la organizacion, pero debe se rusada rapido con poca concurrencia pues mientras esta en ejecucion BEGIN TRAN toda la base esta 'tomada de reen', no se puede usar, no se pude consultar ni alterar.
+		</p>
+	</div>
+	
+	<button id="ct14" class="collapsible">CONCEPTOS GENERALES de BD
+		</button><!--Codigo 2-->
+	<div class="content  content__">	
+	<div class="colores_2"><h3>Para que usar una Base de Datos
+		</h3></div>
+	<p class="sl">Para que el software sea util en verdad, un programa sin una BD no sirve, es una practica escolar.
+	<ul>
+		<li>Redundancia,
+			</li>
+		<li>Inconsistencia,	
+			</li>
+		<li>Consistencia,
+			</li>
+		<li>Integridad, 
+			</li>
+		<li>Recuperación, 
+			</li>
+		<li>Seguridad,
+			</li>
+		<li>Concurrencia -> Consultas a la base, cuantos usuarios usan la base a la vez; Cuando hay menos concurrencia (menos usuarios) se hace el mantenimiento a las BD para no entorpecer en horario productivo, generalmente en fines de semana o madrugadas, 
+			</li>
+		<li>Encapsulamiento.
+			</li>
+	</ul>
+		</p>
+	</div>
+</div>
+<footer>
+<a href="index.html">ADMING desarrollos</a>
+<ul class="footerMenu">
+	<li><a href="index.html">Principal
+		</a></li>
+	<li><a id="buttonUs">Nosotros
+		</a></li>
+	<li><a id="buttonContact">Contacto
+		</a></li>
+</ul>
+<ul class="footerMenu">
+	<li><a href="privacidad.html">Politica de PRIVACIDAD
+		</a></li>
+	<li><a href="Política_de_Cookies.html">Politica de COOKIES
+		</a></li>
+	<li><a href="aviso_legal.html">Aviso legal y Términos de uso
+		</a></li>
+</ul>	
+<a href="https://admingtutoriales.com"><p class="copyrightText">ADMING DESARROLLOS
+	</p></a>
+</footer>
+<div id="nosotros" class="modal">
+	<span id="cierraNosotros" class="close" title="Close">&times;</span>
+		<button class="collapsible">Nosotros</button>
+	<div class="content__">
+		<h2>Acerca de nosotros
+			</h2>					  
+		<p>Somos un grupo de profesionales del Instituto Politecnico Nacional, de Mexico. Un Informatico de UPIICSA, IPN; un Economista por la ESE, IPN; y un doble ingeniero, Energia por la UAM y electricidad por la ESIME del IPN.
+			</p>
+		<p>Los 3 nos conocimos en el Centro de Estudios Cientificos y Tecnologicos #13, CECyT 13 RFM, IPN, todos egresados de la carrera de Tecnicos en Administracion de Empresas.
+			</p>
+		<p>Hemos ejercido la carrera y tenemos experiencia en empresas de cobranza, banca, comercio electronico, experiencia en GRP con el gobierno Mexicano, desarrollo de aplicaciones y algunas inversiones.
+			</p>
+		<p>Estamos a tu servicio.
+			<br>
+			<a href="contacto.html"><button class="boton2" style="color: blue; margin-left: 2%; margin-right: 2%; margin-top: 1%; margin-bottom: 9%; width: 96%;">
+				Contactanos</button></a>	
+			</p>
+	</div>
+	<button class="collapsible">Mision
+		</button><!--Codigo 2-->
+	<div class="content__">
+		<h2>Nuestra Mision es contigo
+			</h2>
+		<p>Nuestra mision es compartir el conocimiento y experiencia obtenidos, no del modo teorico tradicional sino mas bien a modo de charla y con nuestras experiencias.
+			</p>	
+		<p>Nos unimos para colaborar en este proyecto de los cursos porque fuimos estudiantes, y ahora somos profesionales y no nos gusto ver que muchos temas academicos son obsoletos en el mundo laboral y hay mucha deficiencia en la enseñanza. Ademas que la enseñanza es deficiente y en nuestra opinion le falta practica.
+			</p>
+		<p>Estamos a tu servicio.<br>
+		<button class="boton2" style="color: blue; margin-left: 2%; margin-right: 2%; margin-top: 1%; margin-bottom: 9%; width: 96%;" onclick="">
+			Contactanos</button>
+			</p>
+	</div>
+	<button class="collapsible">Vision
+		</button>
+	<div class="content__">
+		<h2>Nuestra Vision
+			</h2>
+		<p>Nos visualizamos subiendo al menos un video a la semana diversificando temas de videos desde tutoriales hasta cosas especificas e interesantes, donde al pasar el tiempo los contenidos se enriqueceran.
+			</p>	
+		<p>Dadas las caracteristicas y experiencia de nuestros colaboradores podemos ofrecerte cursos competentes en las disciplinas de Administracion e Ingenieria, ademas de desarrolo de proyectos que involucren programacion y administracion.
+			</p>
+		<p>Estamos a tu servicio.
+			<a href="contacto.html"><button class="boton2" style="color: blue; margin-left: 2%; margin-right: 2%; margin-top: 1%; margin-bottom: 9%; width: 96%;">
+				Contactanos</button></a>	
+			</p>
+	</div>
+</div>
+<div id="contacto" class="modal">
+	<span id="cierraContacto" class="close" title="Close">&times;</span>
+	<section class="contact" id="contact">
+		<div class="title">
+			<h2>Contactanos</h2>
+			<p>Comentarios, Sugerencias del sitio, Sugerencias de contenido...</p>
+		</div>
+		<form class="contactForm">
+			<div class="row">
+				<input class="name" type="text" name="" placeholder="Nombre" required/>
+				<input class="lname" type="text" name="" placeholder="Apellido (opcional)"/>
+			</div>
+			<div class="row">
+				<input class="mail" type="text" name="" placeholder="email" required/>
+				<input class="tel" type="text" name="" placeholder="Telefono (opcional)"/>
+			</div>
+			<div class="row2">
+				<textarea class="msg" placeholder="Que nos quieres decir" required></textarea>
+			</div>
+			<div class="row2">
+				<input type="submit" value="ENVIAR" class="btn"/>
+			</div>
+		</form>
+		<!--<script src="https://smtpjs.com/v3/smtp.js"></script>
+		<script src="contactoAdming.js"></script>-->
+	</section>
+</div>
+<script type="text/javascript" src="aletarga.js"></script>
+<script type="text/javascript" src="cola.js"></script>
+<script type="text/javascript" src="emergentes.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>									
+</html>

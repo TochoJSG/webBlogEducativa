@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-1CS9VHD91G"></script><!-- Global site tag (gtag.js) - Google Analytics -->
+	<script>
+	  window.dataLayer=window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js',new Date());
+	  gtag('config','G-1CS9VHD91G');
+	</script>
+	<meta http-equiv="content-security-policy|content-type|default-style|refresh" content="30"/>
+		<title>AdmIng | Programacion</title>
+		<link rel="icon" type="image/jpg" href="logo.jpg"/>
+	<meta name="description" content="poo basico, que es poo, que es programacion"/>
+	<meta name="keywords" content="que es poo, poo, definicion programacion, clases, objetos, programar poo, curso poo"/>
+	<!-- Replace favicom.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+	<link rel="shortcut icon|apple-touch-icon|apple-touch-icon-precomposed" href="icono.ico" sizes="HeightxWidth|any" type="image/x-icon"/>
+	<link href="estilo_adming.css" type="text/css" rel="stylesheet"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body style="background:url(programacion.png);background-repeat:no-repeat;background-attachment:fixed;background-size:100% 75%;">
+<div id="main-header">
+	<a class="logo" href="index.html"><img id="logo-header" src="logo.jpg"/></a>
+	<nav>
+		<ul>
+			<li><a class="activeH" href="index.html">Pricipal
+				</a></li>
+			<li><a href="https://www.youtube.com/channel/UCBOZY7qmDMyctdp1EkMOG9A">YouTube
+				</a></li>
+			<li><a id="buttonUs">Acerca de
+				</a></li>
+			<li><a id="buttonContact">Contacto
+				</a></li>
+		</ul>
+	</nav>
+</div>	
+	<div class="navigation">
+	<div class="toggle">
+		<span></span></div>
+	<ul>
+		<li><a href="#ct1">Que es POO
+			</a></li>
+		<li><a href="#ct2">Que es Clase
+			</a></li>
+		<li><a href="#ct3">Que es un Objeto
+			</a></li>
+		<li><a href="#ct4">Metodo Constructor - Destructor
+			</a></li>
+		<li><a href="#ct5">Herencia
+			</a></li>
+	</ul>
+	<script type="text/javascript" src="navigationAdming.js"></script>
+</div>
+	<br>
+	<br>
+	<div class="btnAnimaLuz" style="width:90%;margin:0 5%;"><a href="https://www.youtube.com/channel/UCBOZY7qmDMyctdp1EkMOG9A"><span>Obten el <b>PowerPoint</b> usado en los Videos 
+		</span></a>
+		<br>
+	</div>
+
+<div class="aletarga textos">
+	<h2>Algoritmo</h2>
+<p class="sl">Cualquier procedimiento que detalle paso a paso como resolver o hacer una actividad especifica, con logica en sus procedimiento pues debe hacerse 
+exactamente como dice el algoritmo, con el menor numero de pasos posibles y de la mejor manera para ahorrar tiempo y recursos. Ejemplos Clasicos de algoritmo: una receta de un
+platillo especifico (Logica en sus Pasos: No puedo asar la carne sin antes comprarla), hacer una operacion matematica(Eficiencia: antes de operar ver si se pueden 
+simplificar valores) o realizar un proceso administrativo.
+<img title="poo" class="mamalon" src="POO_1.jpg"/>
+	</p>
+<h2>Programacion</h2>
+<p class="sl">Escribir en un lenguaje de programacion (C/C++,Java,..) un algoritmo, cualquier algoritmo, para que una maquina realice el proceso exacto. 
+	</p>
+<h2>Programa</h2>
+<p><b>Definicion base:</b> Instrucciones, ordenadas y bien pensadas, (esto tambien define a un algoritmo) enfocadas en un problema especifico y escritas en un lenguaje de 
+programacion, apegados a la estructura y reglas que dicta este. Por lo anterior podemos resumir que un programa es un Algoritmo escrito o codificado ya en un Lenguaje de Programacion. A un programa se le conoce tambien como ejecutable.
+	</p>
+<p><b>Definicion mas Prof:</b> Conjunto de Archivos, cada uno con un algoritmo o procedimiento especifico, donde cada uno contribuye a resuelver un mismo trabajo global, 
+almacenados en una misma carpeta y con relacion entre archivos, donde, no necesariamente todo debe estar en un mismo lenguaje.
+	</p>
+<p>Ejemplo de Trabajo Global: Administrar un Negocio, Vender, dar un Servicio, etc.
+	</p>
+<img title="programa" class="mamalon" src="programa.jpg" alt="cargando">
+<p>Por definicion un programa asi es un <b>sistema informatico</b>, donde cada elemento debe ser util y aportar algo para cumplir su proposito general: Administarivo, 
+Operativo, Entretenimiento, cualquiera que este sea.
+	</p>
+<h4>Platiquemos como funciona</h4>
+<p>Un programa es un burocrata super eficiente, o debe serlo, pues es completamente inflexible, te pide ingrear una fecha y una fecha debes ingresar, no tu nombre o 
+un numero sin sentido. Esta dividido en 3 capas o niveles, ese es el modelo optimo; <b>el primero es la capa de diseño, interfaz de Usuario o Frontend</b>, 
+idealmente intuitivo y agradable a la vista para los usuarios, compuesto por ventanas y botones o campos para obtener datos y ejecutar acciones, en esta capa "el 
+codigo esta atento" a cualquier instruccion, con Event Listener o Escuchador de Eventos, los botones tienen instrucciones especificas a realizar al recibir un 'clic', 
+un clic es un Evento. Esas acciones genealmente son recibir algun dato o al clic crear un <b>objeto</b>, de una <b>clase</b> definida, con el cual se podran realizar 
+acciones con los <b>metodos</b> o funciones que contiene esa clase; <b>Segundo nivel o capa, Operacion, clases o backend</b> En este nivel estan definidas las clases 
+con sus metodos, aqui se reciben y procesan los datos recibidos de la capa de diseño, donde una vez procesados (sumados, contados o lo que sea), son enviados a la 
+<b>Base de Datos</b>, como, pues creando un Objeto de la Clase Base de Datos, al cual se pasaran como parametro los valores recibidos o procesados. La Base de datos 
+es una Clase mas declarada en esta capa, donde se contienen instrucciones para acceso al Servidor y tareas especificas; <b>Nivel 3 o capa 3, capa de Datos</b> esta 
+capa es muy sensible y valiosa pues su contenido es lo que le da sentido a todo el programa, se manipula por medio de comandos SQL, agregar, buscar, actualizar o 
+borrar. Cabe mencionar que un programa sin una Base de Datos u otro medio de almacenamiento o reposicion de datos, como pueden ser <b>ficheros</b> no tiene gran 
+utilidad y es casi un trabajo escolar, pues los valores se conservaran solo durante la ejecucion, al cerrar el ejecutable de perderan los datos.
+<img title="programacion" class="mamalon" src="programacion.jpg" alt="cargando">
+	</p>
+<p>El modelo de POO (Programacion Orientada a Objetos) es un modelo que brinda mas seguridad, pues el acceso a la Base de Datos es por medio de objetos que luego de crearse y
+"entrar a la bobeda" a "ver el Tesoro" (la data es Oro), ejecuta un destructor que cierra esa conexion. Existen malas practicas, en las cuales por 
+ahorrarse pasos y tiempo, los desarrolladores meten codigo SQL directo en los botones, es decir, omiten la capa 2 y comunican directo de la interfaz a la BD, lo que
+vulnera mucho el sistema. TODOS ESTOS CONCEPTOS LOS DETALLARE ABAJO
+	</p>
+<h3>Formas de Programacion</h3>
+<p>
+Con formas de programar hago referencia a paradigmas o maneras de programar, Lineal o Secuancialmente, modularmente u Orientado a Objetos.
+<img title="proceso" class="mamalon" src="proceso.png"/>
+<ul>
+<li><b>Programacion Estructurada, Lineal o Secuencial:</b> Su nombre describe el modelo, se ejecuta cada instruccion en orden, de arriba hacia abajo. Compuesta por <b>variables</b> (campos que pueden contener diferentes valores, del mismo tipo, a lo largo del uso o ejecucion del Programa), 
+<b>constantes</b> (valores predefinidos, que no podran ser modificados y facilitaran la codificacion, ej PI, para usarlo basta con poner: pi*valor_de_usuario, mejor a 
+3.14159*valor_de_usuario), <b>funciones</b> (procedimientos, ej, sumar, restar, sustituir...etc), librerias (archivos que contienen sus propias variables, constantes y
+funciones). Esta programacion tiene un incio y un fin, son para una tarea muy especifica; se ejecuta en el orden en que se escribe, por lo que debe haber logica (ej,
+para hacer una sumatoria de promedios primero hay que tener los promedios). Esta programacion en si no es aplicable ya a procesos grandes, pues la POO lo hace mejor, 
+pero su logica aplica a la misma POO.</li>
+<li><b>Programacion Modular:</b> Se refiere a la segunda fase de la programacion estructurada, busca resolver problemas mas comlejos, es una coleecion de archivos, 
+integrados en una misma carpeta, todos relacionados, donde cada uno tiene un algoritmo especifico definido y los archivos "cooperan" entre si para resolver la tarea.
+A cada Archivo o funcion se le llama modulo, cuando surge un nuevo requerimiento (necesidad) en una organizacion se dice que se debe implementar un nuevo modulo.
+	</li>
+<li><b>Programacion Orientada a Objetos:</b> Paradigma o forma de programar donde se busca eficiencia al escribir menos, por una mejor abstraccion de la realidad. 
+En el mundo los objetos pertenecen a una clase de objeto o a un tipo que engloba los objetos similares; ej, podriamos encacillar
+a <b>los objetos</b> que se mueven, transportan gente, utilizan ruedas, un motor y una fuente de energia en una misma <b>Clase de objetos</b>; A las motos, autos y 
+camiones nos podemos referir en general como vehiculos, pues realizan en general la misma actividad y para ella utilizan componentes similares aunque con sus 
+diferencias entre si. Pensando en otro ejemplo, mas abstracto y metaforico, un panadero que hace galletas tiene su masa que es como un lienzo, tiene hombrecillos, 
+chispas, y con forma de dinosaurio, para obtenerlas tiene los 3 moldes. Abstrayendolo tenemos que el Problema o Actividad General es hacer Galletas, y ofrece 3 
+clases de galleta que hace con sus moldes, no tiene que darle forma a cada una, usa el molde y obtiene los objetos necesarios, todos iguales. Por lo que 
+podriamos considerar a la clase como un molde, que producira los objetos que se necesiten crear, todos iguales a los que se insertaran sus variantes, puede haber 
+dinosaurios con chispas de colores, o con chispas de chocolate.
+	</li>
+</ul>
+Cabe mencionar que la POO conserva relacion con la programacion estructurada en sus metodos y declaracion de clases. 
+<br>Si todo el programa esta en un mismo archivo 
+pues no es muy grande, al intentar usar una clase B desde una clase A habria problema pues el compilador dira que no se ha declarado la clase B, pero no habra problema al intentar usar la clase A 
+desde B pues esta declarada primero y ya la reconoce.
+<br>
+<b>Clase A</b> Clase A "aun no conoce" a la clase B, pues se definio despues.<br>
+<b>Clase B</b> La clase B si puede hechar mano de la A pues llego primero y la conoce.<br>
+Declarar cada clase en diferente archivo elimina ese problema de orden o secuencia.<br>
+Esa misma logica aplica a los metodos o funciones de las clases.<br>
+<img title="metodos" class="mamalon" src="estructural.jpg" alt="cargando"/>
+</p>
+<p>Por favor ten en cuenta esto. Lo mas importante de la programacion no es aprender un lenguaje, es comprender el paradigma en general, tener los conceptos claros 
+y desarrollar buena logica de programacion, pues de esta dependera que se puedan abstraer bien los procesos ¿Como le dirias a alguien la manera de resolver una 
+ecuacion si no la sabes resolver tu?, eso mismo aplica aqui, para decirle a la computadora que hacer debes tener claro el proceso. La programacion, sea el lenguaje 
+que sea es la misma, utiliza condicionales para decidir, bucles para tareas y son los mismos en todos lenguajes, ademas profesionalmente se usan platillas, frameworks 
+e IDEsque vulven todo mucho mas facil de lo que parece. A veces se copia, se pega y se adapta el cogigo de otros lados, pero para estas adpataciones debes tener claro
+que onda con las bases.
+<br>
+Este contenido no esta enfocado a un lenguaje, de hecho usare varios para probar lo que estoy afirmando. Este contenido esta enfocado en comprender la programacion, con los conceptos y la logica que implica, contemplando dudas puntuales que tenia cuando empece a programar ejecutables en consola.
+
+<div class="btnAnimaLuz">
+	<a target="_blank" href="https://www.youtube.com/watch?v=s8oBcGROkbc"><span>Ver Video</span></a>
+</div>
+	</p>
+
+</div>
+	
+
+<div class="aletarga aletargo">			
+	<button id="ct1" class="collapsible">Conceptos Base de Programacion
+		</button><!--Codigo 2-->
+	<div class="content__">		
+		<div class="colores_2"><h3>Lo Basico de la Programacion
+			</h3></div>
+		<p class="sl"><b>Lenguaje de Programacion</b> Lenguaje que usa expresiones aritmaticas y logicas para expresar instrucciones de un proceso, tiene sus propias reglas y estructura preestablecidos y requeridos rigidamente para poder <b>compilar</b>. En el presente curso referiremos solo a <b>lenguajes de alto nivel</b>, que no son como escribir un recetario o instrucciones normales, pero tampoco son textos comprendibles directamente por el procesador de una computadora. Fueron desarrollados para facilitar la programacion pues instrucciones de bajo nivel volvian complicada la programacion.
+		<img title="lenguaje de programacion" class="mamalon" src="lenguaje-programacion.jpg" alt="cargando"/>
+		
+		</p>
+		<p class="sl"><b>Compilador</b> Programa, que traduce lo escrito en un lenguaje de programacion a lenguaje de computadora (1s y 0s) y produce un ejecutable de tus instrucciones. Al proceso de traducir tu codigo a Ceros y Unos se le llama compilar o Compilacion y se realiza generalmente desde el editor de codigo o IDE.
+			</p>
+		<p class="sl"><b>IDE</b> Programa donde escribes tu codigo en un lenguaje de programacion, como un Word de Office pero enfocado en programacion, ese enfoque potencializa el desempeño y ahorra tiempo, pues detecta errores de escritura, identifica <b>palabras reservadas</b>, ayuda a cerrar llaves, diseñar Interfaces Graficas mucho mas facilmente por medio de plantillas, etc.
+			</p>
+		<p class="sl"><b>Palabras Reservadas</b> Palabras con un significado para el compilador e IDE, ya identifica un uso especifico y el IDEntorno lo marcara de otro color. No las puedes usar para nombrar tus datos, los usaras para su fin establecido. 
+		Ej   if  for, for each switch, while, do while, const, var, define, main, return, su escritura debe ser tal cual, e minuscula.
+			</p>
+		<p class="sl"><b>Identificador</b> Son Caracteres(letras) o Conjunto de letras(palabras) que representan o nombran algo especifico. Nosotros los humanos tenemos Identificadores, nuestros nombres y apellidos. Ej: suma, resultado, variable1, x, y, z, x1, resultado_, campo_1....etc. En programacion hay reglas y normas de buenas practicas para nombrar identificadores.
+		<ul>
+		<li>Que sea un nombre representativo: Ej, al calculo de un promedio nombrarlo 'promedio' o 'resultado', para pedir la edad que sea 'edad_persona'.
+		</li>
+		<li>Debe empezar por una letra o el caracter ' _ ' guion bajo, no numeros al inicio, luego si.</li>
+		<li>Minuscula para variables, constantes, funciones; las Clases suelen empezar por Mayuscula.</li>
+		<li>No puede tener caracteres especiales, pues en programacion suelen tener un uso funcional: Ej   ; : , * ^ ? ¿ $  & ! + { [ ] } todos estos tienen un uso especifico.</li>
+		</ol>
+			</p>
+		
+		<p class="sl"><b>Variables</b>Caracter o Identificador que representa un dato o valor que cambiara,  no sera el mismo. Como en matematicas, tendra variaciones sujetas a eventos. Ej:     int x,y,z;   float resultado;  char nombre_usuario;
+		Notese que no tienen una asignacion de valor alguno, la asignacion es por medio del simbolo igual, lo de la derecha se asocia a lo de la izquiera.
+		resultado = x;//Resultado tendra el valor de x, y x ira variando su contenido. y=0;  .... y=100; ..... y=17;  ....
+			</p>
+		<p class="sl"><b>Constante</b> Caracter o Identificador que representa un unico valor o dato, no se puede modificar durante la ejecucion del programa, lo que facilita la codificacion. Ej:    const double pi=3.14159;  const float iva=1.17; 
+		double area_es_una_variable = pi * variable_radio;
+			</p>
+		<p class="sl"><b>Tipos de datos</b> Como suena, cada dato debe tener pertenecer a un tipo, ya sea numerico entero, numerico con decimales. numero grande, caracteres, palabras. Salvo casos como Python o Javascript, que no requieren  'avisar' al compilador de que tipo sera la variable o constante, debes declarar a que grupo perteneceran, y su tipo debera tener logica, estrictamente no existen fracciones de edad, tienes 17, 23 o 55; si los precios de un establecimiento son todos enteros $100, $500, $333, no habria porque usar un tipo de datos que maneje decimales, como si tendria sentido si los precios fueran $16.60 , $99.99, $8.17 : Ej int edad; float precio; string nombre; char genero; long codigo_de_barras;
+		</p>
+		<p class="sl"><b>Comentarios</b> Son tal cual su nombre los describe, comentarios o anotaciones sobre algun detalle del programa, que sirvan para identificar procesos y a otros desarrolladores a poder entender mejo el codigo. Deben ser simples, no abusar de su uso ni su contenido. Varian de un lenguaje a otro, pero en la mayoria son igual:  <b>// Comentario Breve </b>, las 2 diagonales juntas para comentrarios de un renglon o linea, el compilador ignorara todo le que se escriba despues; <b>/* Comentario largo */</b>, El compilador ignorara todo lo que este entre asteriscos, es para anotaciones mas largas.
+		</p>
+		<p class="sl"><b>Operadores Aritmeticos</b> No tiene mucho sentido profundizar aqui pues son las reglas aritmeticas universales, suma + , resta -, jerarquia de operaciones, corchetes y parentesis priorizando operaciones, etc.
+		</p>
+		<p class="sl"><b>Operadores Logicos</b> Se usan en condicionales y ciclos logicos, combinados con palabras reservadas. Ej:  Si edad es mayor a 100 Y menor o igual a 0, rechaza solicitud, por el contrario, pidele su nombre (Logica, rara la persona que llega a los 101 años y no hay gente con -2 años, de 0 es recien nacido)
+		if(edad>100 && edad<0) notifica("Edad invalida"); else pide("nombre")
+			</p>
+		<img title="lenguaje de programacion" class="mamalon" src="conceptos-programacion.jpg" alt="cargando"/>
+	<div class="btnAnimaLuz">
+		<a target="_blank" href="POO_misil.txt"><span>Codigo</span></a>
+	</div>
+	
+	<div class="btnAnimaLuz">
+		<a target="_blank" href="https://www.youtube.com/watch?v=iq5JmnGf8Fs"><span>Ver Video</span></a>
+	</div>
+		<br>
+	</div>
+	
+	<button id="ct1" class="collapsible">Que es POO
+		</button><!--Codigo 2-->
+	<div class="content__">		
+		<div class="colores_2"><h3>Programacion Orientada a Objetos
+			</h3></div>
+		<p class="sl">Modo de programar donde se busca representar aspectos de la vida real, con las complejidades que implica, sus comportamientos y atributos encasillados en una clase general.
+			</p>
+		<p class="sl">La situacion o Objeto en particular son la Clase, la clase encapsula todo lo que sea refernte a ella, tendra 'Metodos' que son las funciones o metodos para conseguir sus objetivos y para llevar a cabo sus funciones. Tendra caracteristicas, esas caracteristicas deben de estar basadas en los metodos. Se requiere atributos(Motor, ruedas,...) para Avanzar, avanzamos con el Metodo Mover(Motor(enciende), ruedas(griran)), etc.
+			</p>
+		<p class="sl">Con ella se eficientan los algoritmos, se hace mas simple y menos trabajoso, pues permite entre muchas cosas el reciclaje de codigo: Todo vehiculo terrestre usa Motor, llantas, frenos, esos atributos deben encasularse y restringirse solo para vehiculos terrestres, privados de vehiculos de tierra pues un barco o helicoptero no los deben conocer... Ese codigo se usa con todos los vehiculos terrestres, para crear una moto y un camion solo hay que detallar los rasgos generales.
+			</p>	
+		<img class="mamalon" src="calculo_1.jpg"/>
+	<div class="btnAnimaLuz">
+		<a target="_blank" href="POO_misil.txt"><span>Codigo</span></a>
+	</div>
+	<div class="btnAnimaLuz">
+		<a target="_blank" href="https://www.youtube.com/watch?v=iq5JmnGf8Fs"><span>Ver Video</span></a>
+	</div>
+		<br>
+	</div>
+
+	<button id="ct2" class="collapsible">Que es Clase
+		</button><!--Codigo 2-->
+	<div class="content__">
+		<div class="colores_2"><h3>Clase
+			</h3></div>
+		<p class="sl">Nombre de una situcion o Objeto cualquiera, que engloba caracteristicas y funcionalidades. Clase personas (cerebro, ojos, extremidades), piensa, ve, camina. Clase Venta (Costos, precios, existencia, id_producto), calcular_utilidad, calcular_costos.
+			</p>
+		<img class="mamalon" src="clase.png"/>
+	<div class="btnAnimaLuz">
+		<a target="_blank" href="Intervalo.txt"><span>Codigo</span></a>
+	</div>
+	<div class="btnAnimaLuz">
+		<a target="_blank" href="https://www.youtube.com/watch?v=7t25QDBIs5E"><span>Ver Video</span></a>
+	</div>
+		<br>
+	</div>
+	
+	<button id="ct3" class="collapsible">Que es un Objeto
+		</button><!--Codigo 2-->
+	<div class="content__">	
+			<div class="colores_2"><h3>Objeto
+				</h3></div>
+		<p class="s1">Miembro de la clase que tendra acceso a los elementos de la clase. Se obtiene al instanciar la clase, usando el metodo constructor.
+				</p>
+		<p class="s1">Codigo para consola en C donde se crean 2 clases, su metodo constructor, se instancia y se mueve, jugando con los pixeles en la consola, similar a como funcionan los juegos.
+			</p>
+		<img class="mamalon" src="objeto.png"/>
+		<div class="btnAnimaLuz">
+			<a target="_blank" href="desigualdad.txt"><span>Codigo</span></a>
+		</div>
+		<div class="btnAnimaLuz">
+			<a target="_blank" href="https://www.youtube.com/watch?v=ne0w_WNoYeI"><span>Ver Video</span></a>
+		</div>
+			<br>
+	</div>	
+			
+	<button id="ct4" class="collapsible">Metodo Constructor - Destructor
+		</button><!--Codigo 2-->
+	<div class="content__">	
+	<div class="colores_2"><h3>Constructor
+		</h3></div>
+		<p class="sl">Método especial, que se ejecuta al instanciar un objeto.​
+			</p>
+		<p class="sl">Los argumentos o parámetros que se usan en el constructor son los parámetros que necesita el objeto para ser creado un objeto(instanciarlo).
+			</p>
+	<div class="colores_2"><h3>Destructor
+			</h3></div>
+		<p class="sl">Método especial que al dejar de usar un objeto creado(dejar de hacer referencia al objeto) ‘destruye’ o termina el uso de ese objeto.No se necesita declarar algo en el cuerpo.
+			</p>
+	<img class="mamalon" src="constructor.png"/>
+	<div class="btnAnimaLuz">
+		<a target="_blank" href="codigo_funcionLineal.txt"><span>Codigo</span></a>
+	</div>
+	<div class="btnAnimaLuz">
+		<a target="_blank" href="https://www.youtube.com/watch?v=dQpD-KFQ9p4"><span>Ver Video</span></a>
+	</div>
+		<br>
+	</div>	
+	
+	<button id="ct5" class="collapsible">Herencia
+		</button><!--Codigo 2-->
+	<div class="content__">	
+	<div class="colores_2"><h3>Que es Herencia
+		</h3></div>
+	<p class="sl">Posibilidad de una Clase para Heredar (Compartir) sus atributos(Variables) y Capacidades(Métodos-Funciones) con otras clases relacionadas, que son sus hijas, que además de lo que les comparte su padre tienen atributos y métodos propios, ESPECIFICOS.
+		</p>
+	<img class="img_cont" src="movimiento.jpg" style="margin-left: 15%; margin-right: 15%; height: 70%; width: 70%; "/>
+	
+	<div class="btnAnimaLuz">
+		<a target="_blank" href="POO_misil.txt"><span>Codigo</span></a>
+	</div>
+	<div class="btnAnimaLuz">
+		<a target="_blank" href="https://www.youtube.com/watch?v=ne0w_WNoYeI"><span>Ver Video</span></a>
+	</div>
+		<br>
+	</div>	
+</div>
+<footer>
+<a href="index.html">ADMING desarrollos</a>
+<ul class="footerMenu">
+	<li><a href="index.html">Principal
+		</a></li>
+	<li><a id="buttonUs">Nosotros
+		</a></li>
+	<li><a id="buttonContact">Contacto
+		</a></li>
+</ul>
+<ul class="footerMenu">
+	<li><a href="privacidad.html">Politica de PRIVACIDAD
+		</a></li>
+	<li><a href="Política_de_Cookies.html">Politica de COOKIES
+		</a></li>
+	<li><a href="aviso_legal.html">Aviso legal y Términos de uso
+		</a></li>
+</ul>	
+<a href="https://admingtutoriales.com"><p class="copyrightText">ADMING DESARROLLOS
+	</p></a>
+</footer>
+<div id="nosotros" class="modal">
+	<span id="cierraNosotros" class="close" title="Close">&times;</span>
+		<button class="collapsible">Nosotros</button>
+	<div class="content__">
+		<h2>Acerca de nosotros
+			</h2>					  
+		<p>Somos un grupo de profesionales del Instituto Politecnico Nacional, de Mexico. Un Informatico de UPIICSA, IPN; un Economista por la ESE, IPN; y un doble ingeniero, Energia por la UAM y electricidad por la ESIME del IPN.
+			</p>
+		<p>Los 3 nos conocimos en el Centro de Estudios Cientificos y Tecnologicos #13, CECyT 13 RFM, IPN, todos egresados de la carrera de Tecnicos en Administracion de Empresas.
+			</p>
+		<p>Hemos ejercido la carrera y tenemos experiencia en empresas de cobranza, banca, comercio electronico, experiencia en GRP con el gobierno Mexicano, desarrollo de aplicaciones y algunas inversiones.
+			</p>
+		<p>Estamos a tu servicio.
+			<br>
+			<a href="contacto.html"><button class="boton2" style="color: blue; margin-left: 2%; margin-right: 2%; margin-top: 1%; margin-bottom: 9%; width: 96%;">
+				Contactanos</button></a>	
+			</p>
+	</div>
+	<button class="collapsible">Mision
+		</button><!--Codigo 2-->
+	<div class="content__">
+		<h2>Nuestra Mision es contigo
+			</h2>
+		<p>Nuestra mision es compartir el conocimiento y experiencia obtenidos, no del modo teorico tradicional sino mas bien a modo de charla y con nuestras experiencias.
+			</p>	
+		<p>Nos unimos para colaborar en este proyecto de los cursos porque fuimos estudiantes, y ahora somos profesionales y no nos gusto ver que muchos temas academicos son obsoletos en el mundo laboral y hay mucha deficiencia en la enseñanza. Ademas que la enseñanza es deficiente y en nuestra opinion le falta practica.
+			</p>
+		<p>Estamos a tu servicio.<br>
+		<button class="boton2" style="color: blue; margin-left: 2%; margin-right: 2%; margin-top: 1%; margin-bottom: 9%; width: 96%;" onclick="">
+			Contactanos</button>
+			</p>
+	</div>
+	<button class="collapsible">Vision
+		</button>
+	<div class="content__">
+		<h2>Nuestra Vision
+			</h2>
+		<p>Nos visualizamos subiendo al menos un video a la semana diversificando temas de videos desde tutoriales hasta cosas especificas e interesantes, donde al pasar el tiempo los contenidos se enriqueceran.
+			</p>	
+		<p>Dadas las caracteristicas y experiencia de nuestros colaboradores podemos ofrecerte cursos competentes en las disciplinas de Administracion e Ingenieria, ademas de desarrolo de proyectos que involucren programacion y administracion.
+			</p>
+		<p>Estamos a tu servicio.
+			<a href="contacto.html"><button class="boton2" style="color: blue; margin-left: 2%; margin-right: 2%; margin-top: 1%; margin-bottom: 9%; width: 96%;">
+				Contactanos</button></a>	
+			</p>
+	</div>
+</div>
+<div id="contacto" class="modal">
+	<span id="cierraContacto" class="close" title="Close">&times;</span>
+	<section class="contact" id="contact">
+		<div class="title">
+			<h2>Contactanos</h2>
+			<p>Comentarios, Sugerencias del sitio, Sugerencias de contenido...</p>
+		</div>
+		<form class="contactForm">
+			<div class="row">
+				<input class="name" type="text" name="" placeholder="Nombre" required/>
+				<input class="lname" type="text" name="" placeholder="Apellido (opcional)"/>
+			</div>
+			<div class="row">
+				<input class="mail" type="text" name="" placeholder="email" required/>
+				<input class="tel" type="text" name="" placeholder="Telefono (opcional)"/>
+			</div>
+			<div class="row2">
+				<textarea class="msg" placeholder="Que nos quieres decir" required></textarea>
+			</div>
+			<div class="row2">
+				<input type="submit" value="ENVIAR" class="btn"/>
+			</div>
+		</form>
+		<!--<script src="https://smtpjs.com/v3/smtp.js"></script>
+		<script src="contactoAdming.js"></script>-->
+	</section>
+</div>
+<script type="text/javascript" src="emergentes.js"></script>
+<script type="text/javascript" src="aletarga.js"></script>
+<script type="text/javascript" src="cola.js"></script>
+<script type="text/javascript" type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>									
+</html>

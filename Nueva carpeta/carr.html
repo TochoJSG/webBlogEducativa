@@ -1,0 +1,111 @@
+<html>
+<head>
+<script>
+	var carouselTemplate = '<div class="block"><a class="arr-left">LT</a> <a class="arr-right">RT</a> <div class="owl-carousel"><div><img src="http://i.imgur.com/Ud2JynQ.jpg" width:="100" height="50"/></div><div><img src="http://i.imgur.com/Ud2JynQ.jpg" width:="70" height="50"/></div><div><img src="http://i.imgur.com/Ud2JynQ.jpg" width:="100" height="50"/></div></div></div>';
+
+function createAndBindCarousel($element) {
+    // Carousel template
+    var $owlCarousel = $(carouselTemplate);
+
+    // Insert carousel into element
+    $element.append($owlCarousel);
+
+    // Bind carousel
+    $owlCarousel.owlCarousel({
+        items : 4,
+        lazyLoad : true,
+        navigation : false
+    });
+
+    // Left arrow
+    $owlCarousel.find(".arr-left").click(function(){
+      $owlCarousel.trigger('owl.prev');
+    });
+
+    // Right arrow
+    $owlCarousel.find(".arr-right").click(function(){
+      $owlCarousel.trigger('owl.next');
+    });
+}
+
+// Add a new carousel to #carousels
+createAndBindCarousel($("#carousels"));
+
+</script>
+</head>
+<body>
+
+<div class="search-carousel owl-carousel carousel-home">
+	<div class="Item"><img class="lazyOwl" src="img_conta_1.jpg"><!-- data-src="assets/img/sample/01.jpg">-->
+		</div>
+	<div class="Item"><img class="lazyOwl" src="img_conta_1.jpg"><!--data-src="assets/img/sample/01.jpg">-->
+		</div>
+</div>
+
+<!--
+<div class="search-carousel owl-carousel carousel-home">
+   <div class="item"><img class="lazyOwl" src="img_conta_1.jpg"></div><!--data-src="assets/img/sample/img_conta_1.jpg"></div>--
+   <div class="item"><img class="lazyOwl" src="img_conta_2.jpg"></div><!--data-src="assets/img/sample/img_conta_2.jpg"></div>--
+</div>-->
+
+
+<script>
+
+/* OWL CAROUSEL */
+    var owlhome = $(".search-carousel");
+    owlhome.owlCarousel({
+        items : 4,
+        lazyLoad : true,
+        navigation : false
+    });
+    $(".arr-left").click(function(){
+        owlhome.trigger('owl.prev');
+    });
+    $(".arr-right").click(function(){
+        owlhome.trigger('owl.next');
+    });
+/*
+var owlhome = $(".search-carousel");
+owlhome.owlCarousel({
+	items: 4,
+	lazyload:  true,
+	navigation: false
+	});
+	$(".arr-left")-click(function(){
+		owlhome.trigger('owl.prev');
+	});
+	$(".arr-right")-click(function(){
+		owlhome.trigger('owl.next');
+	});*/
+</script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
