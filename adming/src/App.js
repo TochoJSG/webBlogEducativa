@@ -1,22 +1,21 @@
-import logo from './logo.svg';
 import React from 'react';
+//import {BrowserRouter as Router,Route,Routes,Link} from 'react-router-dom';
 import './App.css';
-import Bienvenida from './componentes/Bienvenida.jsx';
-import Posts from './componentes/Posts.jsx';
-import Carrusel from './componentes/Carrusel.jsx';
-import Nosotros from './componentes/Nosotros.jsx';
-import Contacto from './componentes/Contacto.jsx';
-import Footer from './componentes/Footer.jsx';
+import Index from './componentes/Index.jsx';
+import PaginaContenido from './componentes/PaginaContenido.jsx';
 function App(){
   return (
-    <>
-      <Bienvenida />
-      <Posts/>
-      <Carrusel/>
-      <Nosotros/>
-      <Contacto />
-      <Footer/>
-    </>
+    <PaginaContenido/>
   );
 }
 export default App;
+
+/*
+
+<Router>
+  <Routes>
+    <Route path="/" element={<Index />}>
+  </Routes>
+</Router>
+
+*/

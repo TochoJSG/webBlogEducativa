@@ -7,10 +7,10 @@
 							   0 0 40px #0f0,
 							   0 0 60px #0f0,
 							   0 0 80px #0f0,
-							   0 0 160px #0f0;}
-.contBtnLuz a:nth-child(2){filter:hue-rotate(80deg);}
+							   0 0 160px rgb(21, 255, 21);}
+.contBtnLuz a:nth-child(1){filter:hue-rotate(80deg);}
 .contBtnLuz a::before{content:'';position:absolute;left:-20px;top:50%;transform:translateY(-50%);width:20px;height:3px;background:#0f0;
-	box-shadow:5px -8px 0 #0f0
+	box-shadow:5px -8px 0 rgb(11, 255, 11)
 			   5px  8px 0 #0f0;
 	transition:width 0.6s, left 0.5s,height 0.5s,box-shadow 0.6s;transition-delay:1s,0.5s,0s,0s;}
 .contBtnLuz a:hover::before{width:60%;height:100%;left:-2px;

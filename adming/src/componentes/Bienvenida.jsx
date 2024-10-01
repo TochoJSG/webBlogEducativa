@@ -1,16 +1,28 @@
 import React from 'react';
+import { useRef } from 'react';
 import '../estilos/Bienvenida.css';
 import '../estilos/botones.css';
 const logo = require('../imagenes/icono.png');
 const fb = require('../imagenes/fb.png');
 const yt = require('../imagenes/yt.png');
+
 function Bienvenida(props){
+    const secRef = useRef(null);
+    const navRef = useRef(null);
+    const toggleMenu=()=>{
+        if(secRef.current && navRef.current){
+            secRef.current.classList.toggle('active');
+            navRef.current.classList.toggle('active');
+        }
+    };
+    /*const[activo,setActivo] = useState(false);
+    const toggleMenu =() => setActivo(!activo)*/
     return(
     <div>
-        <div className="banner parallax" id="sec">
+        <div className="banner parallax" id="sec" ref={secRef}>
             <header>
                 <a href="https://www.youtube.com/channel/UCBOZY7qmDMyctdp1EkMOG9A"><img className="logo" src={logo}/></a>
-                <div id="toggle" onClick="toggle()"></div>
+                <div id="toggle" onClick={toggleMenu}></div>
             </header>
             <div className="content">
             <h2>Bienvenidos,<br/>Al sitio de <span>Adming</span>
@@ -27,7 +39,7 @@ function Bienvenida(props){
                 <li><a href="https://www.youtube.com/channel/UCBOZY7qmDMyctdp1EkMOG9A"><img src={yt}/></a></li>
             </ul>
         </div>
-        <div id="navigation">
+        <div id="navigation" ref={navRef}>
             <ul>
                 <li><a href="desarrollo.html">Desarrollo
                     </a></li>

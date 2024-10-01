@@ -202,6 +202,8 @@ footer .social_icon,
 footer .social_icon li,
 footer .social_icon li a{background:none;font-size:.6em;font-weight:100;letter-spacing:1px;color:#fff;margin:auto 10px 0;transition:0.6s;opacity:0.75;text-decoration:none;flex-wrap:wrap;flex-direction:row;flex-flow:row;}
 footer .social_icon li a:hover{transform:translateY(-10px);opacity:1;text-decoration:none;}
+footer .corp{width:90%;margin:auto 5%;display:flex;flex-direction:row;justify-content:space-between;}
+footer .corp img{width:66px;height:66px;border-radius:16px;}
 .main{width:100%;display:block;height:height;margin:3px 0 0;position:relative;background:#040105;}
 .main .texto_car{text-align:center;color:#554;height:110px;overflow:hidden;padding:17px 0;}
 .texto_car h1,

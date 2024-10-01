@@ -1,4 +1,6 @@
 import '../estilos/sitio.css';
+const logoAdming = require('../imagenes/icono.png');
+const logoTocha = require('../imagenes/coorp.jpg');
 function Footer(props){
     return(
         <footer>
@@ -20,9 +22,13 @@ function Footer(props){
                     </a></li>
                 <li><a href="aviso_legal.html">Aviso legal y Términos de uso
                     </a></li>
-            </ul>	
+            </ul>
+            <div className="corp">
+            <img src={logoAdming} alt="Grupo Tocha..."/>
             <a href="https://admingtutoriales.com"><p className="copyrightText">ADMING DESARROLLOS
                 </p></a>
+            <img src={logoTocha} alt="Grupo Tocha..."/>
+                </div>
         </footer>
     );
 }
