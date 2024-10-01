@@ -3,7 +3,7 @@ import '../estilos/headerGral.css';
 function HeaderGral(props){
     return(
         <>
-            <header>
+            <header className="headerGral">
                 <a href="index.html" class="logo">Electronica Inteligente</a>
                 <div class="menuToggle"></div>
             </header>
