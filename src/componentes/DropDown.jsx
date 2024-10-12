@@ -1,4 +1,6 @@
 import '../estilos/DropDown.css';
+import {Link} from 'react-router-dom';
+import { useState } from 'react';
 function DropDown(props){
     const [isActive, setIsActive] = useState(false);// Estado para manejar el menú activo
     const toggleMenu = () => {// Función para alternar la clase de menú activo
@@ -9,18 +11,18 @@ function DropDown(props){
             <div className={`toggle ${isActive ? 'active' : ''}`} onClick={toggleMenu}>
                 <span></span></div>
             <ul id="mn"> 
-                <Link to="/base-de-datos-relacional">Aviso de cookies</Link>
-                <Link to="/base-de-datos-nosql">Aviso de cookies</Link>
-                <Link to="/programacion">Programacion</Link>
-                <Link to="/aplicaciones">Aplicaciones Moviles</Link>
-                <Link to="/programacion-web">Programacion Web</Link>
-                <Link to="/contabilidad">Contabilidad</Link>
-                <Link to="/finanzas">Finanzas</Link>
-                <Link to="/investigacion-de-operaciones">Investigacion de Operaciones</Link>
-                <Link to="/redes">Redes</Link>
-                <Link to="/simulacion-de-redes">Simulacion de Redes</Link>
-                <Link to="/calculo">Calculo</Link>
-                <Link to="/probabilidad">Probabilidad</Link>
+                <li><Link to="/base-de-datos-relacional" className="alink">Aviso de cookies</Link></li>
+                <li><Link to="/base-de-datos-nosql" className="alink">Aviso de cookies</Link></li>
+                <li><Link to="/programacion" className="alink">Programacion</Link></li>
+                <li><Link to="/aplicaciones" className="alink">Aplicaciones Moviles</Link></li>
+                <li><Link to="/programacion-web" className="alink">Programacion Web</Link></li>
+                <li><Link to="/contabilidad" className="alink">Contabilidad</Link></li>
+                <li><Link to="/finanzas" className="alink">Finanzas</Link></li>
+                <li><Link to="/investigacion-de-operaciones" className="alink">Investigacion de Operaciones</Link></li>
+                <li><Link to="/redes" className="alink">Redes</Link></li>
+                <li><Link to="/simulacion-de-redes" className="alink">Simulacion de Redes</Link></li>
+                <li><Link to="/calculo" className="alink">Calculo</Link></li>
+                <li><Link to="/probabilidad" className="alink">Probabilidad</Link></li>
             </ul>
         </div>
     );

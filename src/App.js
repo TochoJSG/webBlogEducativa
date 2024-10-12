@@ -11,6 +11,7 @@ import AvisoLegal from './componentes/AvisoLegal.jsx';
 import BasesDeDatos from './componentes/BasesDeDatos.jsx';
 import BasesNoSQL from './componentes/BasesNoSQL.jsx';
 import Programacion from './componentes/Programacion.jsx';
+import ProgramacionWeb from './componentes/ProgramacionWeb.jsx';
 import Aplicaciones from './componentes/Aplicaciones.jsx';
 import Contabilidad from './componentes/Contabilidad.jsx';
 import Finanzas from './componentes/Finanzas.jsx';
@@ -31,7 +32,7 @@ function App(){
         <Route path="/base-de-datos-nosql" element={<BasesNoSQL />} />
         <Route path="/programacion" element={<Programacion />} />
         <Route path="/aplicaciones" element={<Aplicaciones />} />
-        <Route path="/programacion-web" element={<Programacion-Web />} />
+        <Route path="/programacion-web" element={<ProgramacionWeb />} />
         <Route path="/contabilidad" element={<Contabilidad />} />
         <Route path="/finanzas" element={<Finanzas />} />
         <Route path="/investigacion-de-operaciones" element={<InvOperaciones />} />

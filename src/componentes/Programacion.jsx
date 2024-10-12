@@ -4,9 +4,11 @@ import Carrusel from './Carrusel.jsx';
 import DropDown from './DropDown.jsx';
 import Footer from './Footer.jsx';
 import Smartphone from './Smartphone.jsx';
+import HeaderGral from './HeaderGral.jsx';
 function Programacion(props){
     return(
         <>
+            <HeaderGral/>
             <Articulo
                     title=""
                     parraph1=""

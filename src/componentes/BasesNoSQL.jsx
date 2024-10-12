@@ -3,9 +3,11 @@ import Posts from './Posts.jsx';
 import Carrusel from './Carrusel.jsx';
 import DropDown from './DropDown.jsx';
 import Footer from './Footer.jsx';
+import HeaderGral from './HeaderGral.jsx';
 function BasesNoSQL(props){
     return(
         <>
+            <HeaderGral/>
             <Articulo
                     title=""
                     parraph1=""

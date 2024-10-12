@@ -21,3 +21,34 @@ function HeaderGral(props){
     );
 }
 export default HeaderGral;
+
+/*
+import React from 'react';
+import {Link} from 'react-router-dom';
+import '../estilos/headerGral.css';
+function HeaderGral(){
+    const menuToggle=document.querySelector('.menuToggle');
+    const navigation=document.querySelector('.navigation');
+    menuToggle.onclick=function(){menuToggle.classList.toggle('active');navigation.classList.toggle('active');}
+    function toggleMenu(){menuToggle.classList.remove('active');navigation.classList.remove('active');}
+    return(
+        <>
+            <header className="headerGral">
+                <Link to="/" className="logo">Electronica Inteligente</Link>
+                <div className="menuToggle"></div>
+            </header>
+            <ul className="navigation">
+                <li><Link to="/" data-text="Portada" onClick={toggleMenu()}>Principal
+                    </Link></li>
+                <li><Link to="/ #about" data-text="Quien escribe esto" onClick={toggleMenu()}>Nosotros
+                    </Link></li>
+                <li><Link to="/ #post" data-text="Publicaciones" onClick={toggleMenu()}>poster
+                    </Link></li>
+                <li><Link to="/ #contact" data-text="Contacto" onClick={toggleMenu()}>Contact
+                    </Link></li>
+            </ul>
+        </>
+    );
+}
+export default HeaderGral;
+*/

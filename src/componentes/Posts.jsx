@@ -1,6 +1,8 @@
 import React from 'react';
-import React, { useState } from 'react';
+import {Link} from 'react-router-dom';
+import { useState } from 'react';
 import '../estilos/sitio.css';
+const db = require('../imagenes/icono.png');
 const useToggle = () => {
     const [isVisible, setIsVisible] = useState(false);
 
@@ -123,7 +125,7 @@ function Posts(props){
                         </div>
                         <div className="txtBx">
                             <h3>Redes y Simulacion</h3>
-                            <Link to="/simulacion-redes" className="btn">Ver Contenido</a>
+                            <Link to="/simulacion-redes" className="btn">Ver Contenido</Link>
                         </div>
                     </div>
                     <div className="postBox">

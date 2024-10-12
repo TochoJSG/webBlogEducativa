@@ -1,5 +1,11 @@
+h3{
+    font-size: 1.6em;
+    font-weight: 300;
+    text-align: center;
+}
 .sp{
     position:relative;
+    margin:17px auto;
     width:245px;/*295px*/
     height:550px;/*650px*/
     background:#121212;
