@@ -1,14 +1,12 @@
-import '../estilos/sitio.css';
+import '../estilos/DropDown.css';
 function DropDown(props){
-    /*function DropDown(){
-        document.querySelector('.toggleMenu').onclick=function(){
-            this.classList.toggle('activeMenu');
-            dropdownMenu.classList.toggle('activeMenu');
-            insertaMenu();
-            }*/
+    const [isActive, setIsActive] = useState(false);// Estado para manejar el menú activo
+    const toggleMenu = () => {// Función para alternar la clase de menú activo
+        setIsActive(!isActive);
+    };
     return(
-        <div className="dropdownMenu">
-            <div className="toggleMenu">
+        <div className={`dropdown ${isActive ? 'active' : ''}`}>
+            <div className={`toggle ${isActive ? 'active' : ''}`} onClick={toggleMenu}>
                 <span></span></div>
             <ul id="mn"> 
                 <Link to="/base-de-datos-relacional">Aviso de cookies</Link>

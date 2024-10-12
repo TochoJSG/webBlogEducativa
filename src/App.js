@@ -19,6 +19,7 @@ import Redes from './componentes/Redes.jsx';
 import SimulacionRedes from './componentes/SimulacionRedes.jsx';
 import Calculo from './componentes/Calculo.jsx';
 import Probabilidad from './componentes/Probabilidad.jsx';
+import Metodologias from './componentes/Metodologias.jsx';
 
 function App(){
   return (
@@ -38,6 +39,8 @@ function App(){
         <Route path="/simulacion-de-redes" element={<SimulacionRedes />} />
         <Route path="/calculo" element={<Calculo />} />
         <Route path="/probabilidad" element={<Probabilidad />} />
+        <Route path="/metodologias" element={<Metodologias />} />
+
         <Route path="/privacidad" element={<AvisoPrivacidad />} />
         <Route path="/cookies" element={<PoliticaCookies />} />
         <Route path="/avisoLegal" element={<AvisoLegal />} />

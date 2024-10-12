@@ -1,0 +1,94 @@
+.dropdown{
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    height: 50px;
+    width: 250px;
+    background: #2196f3;
+    transition: 0.5s;
+    z-index: 100000;
+    overflow: hidden;
+}
+.dropdown.active{
+    height: auto;
+}
+.dropdown .toggle{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: #2196f3;
+    color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 20px;
+    font-size: 19px;
+    cursor: pointer;
+}
+.dropdown .toggle:before{
+    content: 'Menu';
+    margin-right: 10px;
+}
+.dropdown .toggle.active:before{
+    content: 'Close';
+    margin-right: 10px;
+}
+.dropdown .toggle span{
+    position: relative;
+    width: 20px;
+    height: 50px;
+}
+.dropdown .toggle span:before{
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    transition: 0.5s;
+}
+.dropdown .toggle span::after{
+    content: '';
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    transition: 0.5s;
+}
+.dropdown .toggle.active span::before{
+    transform: rotate(225deg);
+    top: 24px;
+}
+.dropdown .toggle.active span::after{
+    transform: rotate(135deg);
+    bottom: 24px;
+}
+.dropdown ul{
+    position: relative;
+    background: #111;
+    height: auto;
+    width: 250px;
+}
+.dropdown ul li{
+    list-style: none;
+}
+.dropdown ul li a{
+    position: relative;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    height: 50px;
+    color: #fff;
+    font-size: 17px;
+    transition: 1s;
+}
+.dropdown ul li a:hover{
+    left: 0;
+    transition: 0s;
+    background: #2196f3;
+}
