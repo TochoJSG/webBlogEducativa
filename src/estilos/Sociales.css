@@ -1,0 +1,3 @@
+.btn-wsp{align-items:center;text-align:center;align-content:center;position:fixed;width:60px;height:60px;line-height:55px;bottom:16px;right:25px;background:#040105;color:#fff;border-radius:50px;text-align:center;font-size:30px;box-shadow:0px 1px 10px rgba(0,0,0,0.3);z-index:100;text-decoration:none;}
+.btn-wsp img{height:60px;width:60px;margin:auto;padding:8px;position:relative;}
+.btn-wsp:hover{text-decoration:none;color:#040105;background:#ddaaff;}
