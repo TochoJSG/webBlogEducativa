@@ -18,10 +18,12 @@ function DropDown(props){
                 <li><Link to="/programacion-web" className="alink">Programacion Web</Link></li>
                 <li><Link to="/contabilidad" className="alink">Contabilidad</Link></li>
                 <li><Link to="/finanzas" className="alink">Finanzas</Link></li>
-                <li><Link to="/investigacion-de-operaciones" className="alink">Investigacion de Operaciones</Link></li>
+                <li><Link to="/investigacion-de-operaciones" className="alink">Inv de Operaciones</Link></li>
                 <li><Link to="/redes" className="alink">Redes</Link></li>
-                <li><Link to="/simulacion-de-redes" className="alink">Simulacion de Redes</Link></li>
                 <li><Link to="/calculo" className="alink">Calculo</Link></li>
+                <li><Link to="/marketing-digital" className="alink">Marketing</Link></li>
+                <li><Link to="/simulacion-de-redes" className="alink">Simulacion de Redes</Link></li>
+                <li><Link to="/posicionamiento-SEO" className="alink">Posicionamiento SEO</Link></li>
                 <li><Link to="/probabilidad" className="alink">Probabilidad</Link></li>
             </ul>
         </div>
