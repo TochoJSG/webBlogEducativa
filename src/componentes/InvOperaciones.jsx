@@ -10,7 +10,7 @@ function InvOperaciones(props){
         <>
             <HeaderGral/>
             <Articulo
-                    title=""
+                    title="Modelos para la Investigacion de Operaciones"
                     parraph1=""
                     parraph2=""
                     parraph3=""

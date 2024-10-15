@@ -9,7 +9,7 @@ function BasesNoSQL(props){
         <>
             <HeaderGral/>
             <Articulo
-                    title=""
+                    title="Bases de Datos NoSQL"
                     parraph1=""
                     parraph2=""
                     parraph3=""

@@ -9,7 +9,7 @@ function Probabilidad(props){
         <>
             <HeaderGral/>
             <Articulo
-                    title=""
+                    title="Probabilidad"
                     parraph1=""
                     parraph2=""
                     parraph3=""

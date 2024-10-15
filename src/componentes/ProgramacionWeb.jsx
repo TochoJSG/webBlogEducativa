@@ -9,7 +9,7 @@ function ProgramacionWeb(props){
         <>
             <HeaderGral/>
             <Articulo
-                    title=""
+                    title="programacion Web"
                     parraph1=""
                     parraph2=""
                     parraph3=""

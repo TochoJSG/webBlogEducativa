@@ -9,7 +9,7 @@ function BasesDeDatos(props){
         <>
             <HeaderGral/>
             <Articulo
-                    title=""
+                    title="Bases de Datos"
                     parraph1=""
                     parraph2=""
                     parraph3=""

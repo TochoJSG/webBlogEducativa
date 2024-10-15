@@ -11,8 +11,8 @@ function DropDown(props){
             <div className={`toggle ${isActive ? 'active' : ''}`} onClick={toggleMenu}>
                 <span></span></div>
             <ul id="mn"> 
-                <li><Link to="/base-de-datos-relacional" className="alink">Aviso de cookies</Link></li>
-                <li><Link to="/base-de-datos-nosql" className="alink">Aviso de cookies</Link></li>
+                <li><Link to="/base-de-datos-relacional" className="alink">BD SQL</Link></li>
+                <li><Link to="/base-de-datos-nosql" className="alink">BD NoSQL</Link></li>
                 <li><Link to="/programacion" className="alink">Programacion</Link></li>
                 <li><Link to="/aplicaciones" className="alink">Aplicaciones Moviles</Link></li>
                 <li><Link to="/programacion-web" className="alink">Programacion Web</Link></li>

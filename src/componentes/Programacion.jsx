@@ -10,7 +10,7 @@ function Programacion(props){
         <>
             <HeaderGral/>
             <Articulo
-                    title=""
+                    title="Programacion"
                     parraph1=""
                     parraph2=""
                     parraph3=""

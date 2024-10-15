@@ -9,7 +9,7 @@ function Redes(props){
         <>
             <HeaderGral/>
             <Articulo
-                    title=""
+                    title="Redes Telematica"
                     parraph1=""
                     parraph2=""
                     parraph3=""

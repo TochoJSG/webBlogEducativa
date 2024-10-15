@@ -158,6 +158,27 @@ function Posts(props){
                         </div>
                     </div>
                 </div>
+                <div className="postColumn">
+                    <div className="postBox">
+                        <div className="imgBx">
+                            <img title="seo" src="post_raton.png"/>
+                        </div>
+                        <div className="txtBx">
+                            <h3>Probabidad</h3>
+                            <Link to="/posicionamiento-SEO" className="btn">Ver Contenido</Link>
+                        </div>
+                    </div>
+                    <div className="postBox">
+                        <div className="imgBx">
+                            <img title="mktdigital" src="post_teclado.png"/>
+                        </div>
+                        <div className="txtBx">
+                            <h3>Metodologias y Protocolos</h3>
+                            <Link to="/marketing-digital" className="btn">Ver Contenido</Link>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
         )}

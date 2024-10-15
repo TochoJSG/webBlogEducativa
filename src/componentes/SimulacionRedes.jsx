@@ -10,7 +10,7 @@ function SimulacionRedes(props){
         <>
             <HeaderGral/>
             <Articulo
-                    title=""
+                    title="Redes & Simulacion"
                     parraph1=""
                     parraph2=""
                     parraph3=""

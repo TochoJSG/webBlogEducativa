@@ -10,7 +10,7 @@ function Aplicaciones(props){
         <>
             <HeaderGral/>
             <Articulo
-                    title=""
+                    title="Aplicaciones Mobiles"
                     parraph1=""
                     parraph2=""
                     parraph3=""

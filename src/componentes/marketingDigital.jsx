@@ -3,14 +3,13 @@ import Posts from './Posts.jsx';
 import Carrusel from './Carrusel.jsx';
 import DropDown from './DropDown.jsx';
 import Footer from './Footer.jsx';
-import Smartphone from './Smartphone.jsx';
 import HeaderGral from './HeaderGral.jsx';
-function Finanzas(props){
+function MarketingDigital(props){
     return(
         <>
             <HeaderGral/>
             <Articulo
-                    title="Matematicas Financieras"
+                    title="Marketing Digital"
                     parraph1=""
                     parraph2=""
                     parraph3=""
@@ -18,12 +17,11 @@ function Finanzas(props){
                     ap1="" ap2="" ap3="" ap4="" ap5=""
                     caracteristicas=""
                     carac1="" carac2="" carac3="" carac4="" carac5=""/>
-            <Smartphone title=""/>
-            <DropDown/>
+            <DropDown />
             <Carrusel/>
             <Posts/>
             <Footer/>
         </>
     );
 }
-export default Finanzas;
+export default MarketingDigital;

@@ -10,7 +10,7 @@ function Contabilidad(props){
         <>  
             <HeaderGral/>
             <Articulo
-                    title=""
+                    title="Contabilidad"
                     parraph1=""
                     parraph2=""
                     parraph3=""
