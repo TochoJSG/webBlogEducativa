@@ -4,17 +4,17 @@ function HeaderGral(props){
     return(
         <>
             <header className="headerGral">
-                <a href="index.html" class="logo">Electronica Inteligente</a>
-                <div class="menuToggle"></div>
+                <a href="index.html" className="logo">Electronica Inteligente</a>
+                <div className="menuToggle"></div>
             </header>
-            <ul class="navigation">
-                <li><a data-text="Portada" href="index.html" onclick="toggleMenu();">Principal
+            <ul className="navigation">
+                <li><a data-text="Portada" href="index.html" onClick="toggleMenu();">Principal
                     </a></li>
-                <li><a data-text="Quien escribe esto" href="index.html#about" onclick="toggleMenu();">Nosotros
+                <li><a data-text="Quien escribe esto" href="index.html#about" onClick="toggleMenu();">Nosotros
                     </a></li>
-                <li><a data-text="Publicaciones" href="#post" onclick="toggleMenu();">poster
+                <li><a data-text="Publicaciones" href="#post" onClick="toggleMenu();">poster
                     </a></li>
-                <li><a data-text="Contacto" href="index.html#contact" onclick="toggleMenu();">Contact
+                <li><a data-text="Contacto" href="index.html#contact" onClick="toggleMenu();">Contact
                     </a></li>
             </ul>
         </>
