@@ -4,6 +4,7 @@
     background:url('../imagenes/espacio.png');
     align-items: center;
     justify-content: center;
+    background-attachment: fixed;
 }
 .center{
     position:absolute;
