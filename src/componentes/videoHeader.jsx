@@ -1,28 +1,21 @@
+import { useRef } from 'react';
+import useScrollOpacity from "./useScrollOpacity";
 import '../estilos/videoHeader.css';
+import CircleStyle from './CircleStyle';
 const videoPromo = require('../imagenes/admingProyectCorto.mp4');
 function Vh(){
+    const videoRef = useRef(null);
+
+    // Usa el hook personalizado para aplicar la opacidad basada en el scroll
+    useScrollOpacity(videoRef);
     return(
         <div className="cuerpoVH">
             <section className="videoHeader">
-                <video src={videoPromo} autoplay="" muted="false" loop="">
+                <video ref={videoRef} src={videoPromo} autoplay="" muted="false" loop="">
                     </video>
+                    <h1><span>ADM</span>ING</h1>
             </section>
-            <section>
-                <div className="content">
-                    <h2>Somos Adming</h2>
-                    <p>Somos los futuros amos de Youtube bla bla bla bla bla bla
-                    bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-                    bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-                    bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-                    bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-                    bla bla bla bla bla bla bla bla bla bla bla bla bla bla 
-                    bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-                    bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-                    bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-                    bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-                        </p>
-                </div>
-            </section>
+            <CircleStyle />
         </div>
     );
 }

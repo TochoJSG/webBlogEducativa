@@ -47,7 +47,7 @@ function Bienvenida(props){
             <div id="navigation" ref={navRef}>
                 <ul>
                     {/* Enlaces internos utilizan Link */}
-                    <li><Link to="/articulo">Desarrollo</Link></li>
+                    <li><Link to="/desarrollo">Desarrollo</Link></li>
                     <li><a target="_blank" href="https://www.youtube.com/channel/UCBOZY7qmDMyctdp1EkMOG9A" rel="noopener noreferrer">Cursos en YouTube</a></li>
                     <li><Link to="/privacidad">Aviso de Privacidad</Link></li>
                     <li><Link to="/cookies">Aviso de cookies</Link></li>

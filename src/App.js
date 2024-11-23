@@ -23,6 +23,7 @@ import Probabilidad from './componentes/Probabilidad.jsx';
 import Metodologias from './componentes/Metodologias.jsx';
 import PosicionamientoSEO from './componentes/PosicionamientoSEO.jsx';
 import MarketingDigital from './componentes/PosicionamientoSEO.jsx';
+import Desarrollo from './componentes/Desarrollo.jsx';
 
 function App(){
   return (
@@ -46,7 +47,7 @@ function App(){
         <Route path="/posicionamiento-SEO" element={<PosicionamientoSEO />} />
         <Route path="/marketing-digital" element={<MarketingDigital />} />
 
-        
+        <Route path="/desarrollo" element={<Desarrollo />}/>
 
         <Route path="/privacidad" element={<AvisoPrivacidad />} />
         <Route path="/cookies" element={<PoliticaCookies />} />
