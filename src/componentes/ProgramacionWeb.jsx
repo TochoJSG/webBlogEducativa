@@ -4,6 +4,7 @@ import Carrusel from './Carrusel.jsx';
 import DropDown from './DropDown.jsx';
 import Footer from './Footer.jsx';
 import HeaderGral from './HeaderGral.jsx';
+import Pc from './Pc.jsx';
 function ProgramacionWeb(props){
     return(
         <>
@@ -18,6 +19,7 @@ function ProgramacionWeb(props){
                     caracteristicas=""
                     carac1="" carac2="" carac3="" carac4="" carac5=""/>
             <DropDown />
+            <Pc/>
             <Carrusel/>
             <Posts/>
             <Footer/>

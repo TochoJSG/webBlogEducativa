@@ -46,6 +46,8 @@ function App(){
         <Route path="/posicionamiento-SEO" element={<PosicionamientoSEO />} />
         <Route path="/marketing-digital" element={<MarketingDigital />} />
 
+        
+
         <Route path="/privacidad" element={<AvisoPrivacidad />} />
         <Route path="/cookies" element={<PoliticaCookies />} />
         <Route path="/avisoLegal" element={<AvisoLegal />} />
