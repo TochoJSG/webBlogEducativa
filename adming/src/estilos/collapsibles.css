@@ -1,0 +1,6 @@
+.collapsible{display:block;background:#fff;position:abolute;color:#415;cursor:pointer;padding:17px 8px;width:100%;border:none;text-align:center;outline:none;font-size:1em;font-weight:300;height:auto;}
+.active,.collapsible:hover{background:#040105;color:#daff;}
+.collapsible:after{content:'\002B';color:#66ff;font-weight:600;float:right;margin-left:5px;}
+.active:after{content:'\2212';}
+.contentCola{padding:0 18px;max-height:0;overflow:hidden;transition:max-height 0.2s ease-out;background:#ffad;margin:0;opacity:1;}
+.contentCola p{font-size:1em;font-weight:100;padding:3px;margin:3px;color:var(--black);letter-spacing:1px;}

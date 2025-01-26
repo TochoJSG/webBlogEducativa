@@ -18,12 +18,12 @@ section .imgCont{width:66%;height:auto;max-height:666px;margin:8px 17%;padding:1
 .title{width:100%;display:flex;justify-content:center;align-items:center;flex-direction:column;}
 .title h2,.title h1{position:relative;font-weight:500;letter-spacing:3px;font-size:1.3em;text-transform:uppercase;color:var(--black);}
 .title h2:before,.title h1:before{content:'';position:absolute;bottom:-9px;left:50%;transform:translateX(-50%);width:40px;height:6px;background:var(--black);}
-.title p{margin-top:33px;max-width:700px;text-align:center;}
+.title p{font-size:1.1em;font-weight:300;margin-top:33px;max-width:700px;text-align:center;}
 p{font-size:1em;letter-spacing:1px;color:var(--black);font-weight:100;text-align:justify;padding:16px;margin:8px;}
 p span{font-size:1.1em;letter-spacing:3px;color:var(--black);font-weight:600;}
-.about .contentBx{position:relative;margin-top:40px;display:grid;grid-template-columns:1fr 1fr;grid-gap:23px;}
+.about .contentBx{position:relative;margin-top:40px;display:grid;grid-template-columns:2fr 1.3fr;grid-gap:3px;}
 .about .contentBx .content{position:relative;}
-.about .contentBx .content p{font-size:1em;font-weight:100;padding:8px 17px;letter-spacing:1px;margin:8px;}
+.about .contentBx .content p{font-size:1em;font-weight:300;padding:8px;letter-spacing:1px;margin:8px 0;}
 /**/.about .contentBx .content .imgBx{min-height:415px;}
 br{content:'';display:block;height:1em;}
 .post{position:relative;}
@@ -38,11 +38,14 @@ br{content:'';display:block;height:1em;}
 .post .contentBx .postColumn .postBox .txtBx h3{font-weight:600;margin:auto;text-align:center;font-size:1.1em;letter-spacing:3px;color:var(--black);}
 .post .contentBx .postColumn .postBox .txtBx .btn{padding:6px 9px;background:var(--black);color:var(--white);font-weight:300;font-size:1em;}
 .post .contentBx .postColumn .postBox .txtBx .btn:hover{background:#040105;color:#daff;opacity:1;}
+.post .title{padding:6px 0; margin:0;}
+.post .title p span,
+.post .title p{font-size:1.1em;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;letter-spacing: 3px;}
 .mgt60{margin-top:60px;}.mgt60:hover{opacity:1;}
 .contact{display:flex;justify-content:center;align-items:center;flex-direction:column;}
 .contact .contactForm{position:relative;width:100%;max-width:700px;margin-top:23px;}
 .contact .contactForm .row{width:100%;display:grid;grid-template-columns:repeat(2,1fr);grid-gap:23px;margin-top:16px;}
-.contact .contactForm .row input,.contact .contactForm .row2 textarea{width:100%;padding:8px;border:1px solid var(--black);outline:none;background:var(--white);color:var(--black);font-size:1.1em;font-weight:500;text-transform:uppercase;letter-spacing:3px;}
+.contact .contactForm .row input,.contact .contactForm .row2 textarea{width:100%;padding:17px 33px;border:1px solid var(--black);outline:none;background:var(--white);color:var(--black);font-size:1.1em;font-weight:500;text-transform:uppercase;letter-spacing:3px;text-align:center;}
 .contact .contactForm .row2{width:100%;display:flex;margin-top:16px;justify-content:center;align-items:center;}
 .contact .contactForm .row2 textarea{resize:none;height:415px;}
 ::placeholder{color:var(--black);}
@@ -70,12 +73,12 @@ br{content:'';display:block;height:1em;}
 .articulo ul,.articulo ol{font-size:1em;font-weight:100;padding:17px 8px;}
 .articulo li{padding:17px 17px 0;}
 /*.articulo p,*/
-.articulo .contenido p{font-size:1em;letter-spacing:1px;font-weight:100;padding:17px;color:--var(black);text-align:justify;justify-content:center;margin:8px 17px;}
+.articulo .contenido p{user-select:text;font-size:1em;letter-spacing:1px;font-weight:100;padding:17px;color:--var(black);text-align:justify;justify-content:center;margin:8px 17px;}
 .articulo .contenido img{width:66%;min-width:333px;min-height:145px;height:auto;border-radius:50%;margin:3px 17%;}
 .articulo .contenido ul{display:flex;padding:8px;flex-direction:column;position:relative;font-size:1.2em;font-weight:300;letter-spacing:2px;text-align:center;}
 .articulo .contenido ul,
 .articulo .contenido ol{padding-left:17px;text-align:justify;}
-.articulo .contenido ul li{font-size:.8em;letter-spacing:1px;font-weight:100;padding:8px;margin-top:1px;color:--var(black);text-align:justify;}
+.articulo .contenido ul li{user-select:text;font-size:.8em;letter-spacing:1px;font-weight:100;padding:8px;margin-top:1px;color:--var(black);text-align:justify;}
 .articulo .especial{display:grid;grid-template-columns:33% 33% 33%;grid-gap:auto;margin:auto;padding:8px;}
 .articulo .infoExtra{width:90%;margin:3px 5%;padding:17px;}
 .articulo .infoExtra p,.articulo .infoExtra ol,.articulo .infoExtra ul{margin:3px;padding:8px;text-align:justify;}

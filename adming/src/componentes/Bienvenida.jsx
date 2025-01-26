@@ -22,16 +22,16 @@ function Bienvenida(props){
         <div>
             <div className="banner parallax" id="sec" ref={secRef}>
                 <header>
-                    <a href="https://www.youtube.com/channel/UCBOZY7qmDMyctdp1EkMOG9A" target="_blank" rel="noopener noreferrer">
+                    <Link to="/desarrollo">
                         <img className="logo" src={logo} alt="Logo" />
-                    </a>
-                    <div id="toggle" onClick={toggleMenu}></div>
+                    </Link>
+                    <div id="toggle" onClick={ toggleMenu }></div>
                 </header>
                 <div className="content">
-                    <h2>Bienvenidos,<br />Al sitio de <span>Adming</span></h2>
+                    <h2>Bienvenidos,<br />A la Consultoria <span>Adming</span></h2>
                     <p>
-                        Somos Adming, profesionales de TI con una oferta en soluciones Tecnologicas y comerciales
-                        completas, de desarrollo y asesoria para impulsar negocios.
+                        Profesionales de TI con una oferta en soluciones Tecnologicas y comerciales en General
+                        completas. Desarrollo y Asesoria para impulsar negocios
                     </p>
                     <div className="contBtnLuz">
                         <a id="buttonUs" target="_blank" href="https://www.youtube.com/channel/UCBOZY7qmDMyctdp1EkMOG9A" rel="noopener noreferrer">
@@ -47,7 +47,7 @@ function Bienvenida(props){
             <div id="navigation" ref={navRef}>
                 <ul>
                     {/* Enlaces internos utilizan Link */}
-                    <li><Link to="/articulo">Desarrollo</Link></li>
+                    <li><Link to="/desarrollo">Desarrollo</Link></li>
                     <li><a target="_blank" href="https://www.youtube.com/channel/UCBOZY7qmDMyctdp1EkMOG9A" rel="noopener noreferrer">Cursos en YouTube</a></li>
                     <li><Link to="/privacidad">Aviso de Privacidad</Link></li>
                     <li><Link to="/cookies">Aviso de cookies</Link></li>
