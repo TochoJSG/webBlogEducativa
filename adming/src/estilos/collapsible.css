@@ -1,0 +1,9 @@
+.collapsible{display:block;background:#000;position:relative;color:#fff;cursor:pointer;padding:17px 8px;width:100%;
+    border:1px solid rgb(170, 255, 241);text-align:center;outline:none;font-size:1em;font-weight:100;height:auto;letter-spacing:3px;}
+.collapsible:hover{background:#040105;color:#daff;}
+.collapsible:after{content:'\002B';color:#66ff;font-weight:600;float:right;margin-left:5px;}    
+.active,
+.active:after{content:'\2212';color:#fff;}/*  cambia mas (+) por menos*/
+.contentCola{padding:0px;height:0;overflow:hidden;transition:max-height 0.2s ease-out;background:rgba(253, 238, 238, 0.867);margin:0;}
+.contentCola p{font-size:1em;font-weight:300;color:#000;letter-spacing:0.1em;text-align:justify;}
+.contentCola.active{display:block;height:auto;}

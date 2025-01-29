@@ -70,6 +70,7 @@ function App(){
         <Route path="/desarrollo-de-sistemas" element={<DesarrolloDeSistemas />}/>
         <Route path="/requerimientos" element={<IngenieriaRequerimientos />}/>
         <Route path="/infraestructuras" element={<Infraestructura />}/>
+        
         <Route path="/privacidad" element={<AvisoPrivacidad />} />
         <Route path="/cookies" element={<PoliticaCookies />} />
         <Route path="/avisoLegal" element={<AvisoLegal />} />

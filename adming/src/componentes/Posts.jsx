@@ -1,19 +1,32 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import '../estilos/sitio.css';
 import * as imagenes from '../imagenes/contenidos/index';
+
 const useToggle = () => {
     const [isVisible, setIsVisible] = useState(false);
-
-    const toggleVisibility = () => {
+    
+    const toggleVisibility = (contentRef) => {
         setIsVisible(prev => !prev);
+        //contentRef.style.display = 'block';
+        //console.log(contentRef);
+        extenderPost(contentRef);
     };
-
     return { isVisible, toggleVisibility };
 };
-function Posts(props){
+const extenderPost = (miElemento) => {
+    console.log(miElemento);
+    if(miElemento.current.style ) {
+        miElemento.current.style.display = 'block';
+     }
+ };
+
+function Posts(){
     const { isVisible, toggleVisibility } = useToggle();
+    
+    const contentRef = useRef(null); //SImilar a getElementById ->let desplieMas = document.getElementById('desplegarMas');
+
     return(
     <section className="post" id="post">
         <div className="title">
@@ -111,12 +124,14 @@ function Posts(props){
             </div>
         </div>
         <div className="title">
-            <button id="dM" className="btn mgt60" onClick={toggleVisibility}>
+            <button id="dM" className="btn mgt60" onClick={() => toggleVisibility(contentRef)}>
                 {isVisible ? 'Ocultar Contenido' : 'Cargar Más'}
             </button>
         </div>
+        {/*
         {isVisible && (
-        <div id="desplegarMas">
+        */}
+        <div id="desplegarMas" ref={contentRef} style={{ display: isVisible ? 'block' : 'none' }}>
             <div className="contentBx">
                 <div className="postColumn">
                     <div className="postBox extraHeight">
@@ -148,7 +163,7 @@ function Posts(props){
                             <Link to="/infraestructuras" className="btn">Ver Contenido</Link>
                         </div>
                     </div>
-                    <div className="postBox">
+                    <div className="postBox extraHeight">
                         <div className="imgBx">
                             <img title="investigacion de operaciones" src={imagenes.InvestigacionDeOperaciones}/>
                         </div>
@@ -168,9 +183,9 @@ function Posts(props){
                             <Link to="/informatica" className="btn">Ver Contenido</Link>
                         </div>
                     </div>
-                    <div className="postBox">
+                    <div className="postBox extraHeight">
                         <div className="imgBx">
-                            <img title="big data" src={imagenes.BigData}/>
+                            <img title="big data" src={imagenes.BigData} className="cover"/>
                         </div>
                         <div className="txtBx">
                             <h3>Big Data</h3>
@@ -189,7 +204,7 @@ function Posts(props){
                             <Link to="/requerimientos" className="btn">Ver Contenido</Link>
                         </div>
                     </div>
-                    <div className="postBox">
+                    <div className="postBox extraHeight">
                         <div className="imgBx">
                             <img title="desarrollo de sistemas" src={imagenes.DesarrolloDeSistemas}/>
                         </div>
@@ -201,9 +216,9 @@ function Posts(props){
                 </div>
 
                 <div className="postColumn">
-                    <div className="postBox">
+                    <div className="postBox extraHeight">
                         <div className="imgBx">
-                            <img title="aplicaciones moviles" src={imagenes.Aplicaciones}/>
+                            <img title="aplicaciones moviles" src={imagenes.Aplicaciones} className="cover"/>
                         </div>
                         <div className="txtBx">
                             <h3>Aplicaciones moviles</h3>
@@ -230,7 +245,7 @@ function Posts(props){
                             <Link to="/calculo" className="btn">Ver Contenido</Link>
                         </div>
                     </div>
-                    <div className="postBox">
+                    <div className="postBox extraHeight">
                         <div className="imgBx">
                             <img title="Metodologias de desarrollo" src={imagenes.Metodologias}/>
                         </div>
@@ -283,7 +298,9 @@ function Posts(props){
 
             </div>
         </div>
+        {/*
         )}
+        */}
     </section>
     );
 }

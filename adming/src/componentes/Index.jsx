@@ -7,6 +7,7 @@ import Contacto from './Contacto.jsx';
 import Footer from './Footer.jsx';
 import Watsapp from './Watsapp.jsx';
 import Pc from './Pc.jsx';
+import Libro from './Libro.jsx'
 
 const Index = (props)=>{
     return(
@@ -17,6 +18,7 @@ const Index = (props)=>{
             <Posts/>
             <Carrusel/>
             <Contacto />
+            <Libro />
             <Watsapp/>
             <Footer/>
         </>

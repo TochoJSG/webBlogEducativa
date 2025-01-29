@@ -1,4 +1,6 @@
 import '../estilos/sitio.css';
+import Conceptos from './Conceptos';
+
 function Articulo(props){
     return(
         <section>
@@ -11,7 +13,8 @@ function Articulo(props){
                     </p>
                 <p>{props.parraph3}
                     </p>
-                <img className="mamalon" src="portatil.png" alt="cargando..."/>
+                <img className="mamalon" src={`url(${props.image1})`} name={props.title} alt='cargando imagen...' />
+
                 <div className="contenido">
                 <div>
                     <h2>{props.aplicaciones}
@@ -30,12 +33,29 @@ function Articulo(props){
                         <li>{props.carac4}</li>
                         <li>{props.carac5}</li>
                     </ul>
-                    <img className="mamalon" src="laptop.png" alt="cargando..."/>		
+                    <img className="mamalon" src={`url(${props.image2})`} alt="cargando..."/>		
                 </div>
-                <div className="collapsibles"></div>
+                <Conceptos 
+                    titulo1={props.conceptosT1}
+                    concepto1={props.conceptosC1}
+
+                    titulo2={props.conceptosT2}
+                    concepto2={props.conceptosC2}
+
+                    titulo3={props.conceptosT3}
+                    concepto3={props.conceptosC3}
+
+                    titulo4={props.conceptosT4}
+                    concepto4={props.conceptosC4}
+
+                    titulo5={props.conceptosT5}
+                    concepto5={props.conceptosC5}
+                />
                 </div>
+
             </div>
-            </section>
+        </section>
     );
 }
+
 export default Articulo;

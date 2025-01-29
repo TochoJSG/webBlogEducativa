@@ -34,9 +34,9 @@ function Bienvenida(props){
                         completas. Desarrollo y Asesoria para impulsar negocios
                     </p>
                     <div className="contBtnLuz">
-                        <a id="buttonUs" target="_blank" href="https://www.youtube.com/channel/UCBOZY7qmDMyctdp1EkMOG9A" rel="noopener noreferrer">
-                            <span>Ver Cursos</span>
-                        </a>
+                        <Link to="/desarrollo">
+                            <span>Desarrollos</span>
+                        </Link>
                     </div>
                 </div>
                 <ul className="sci">
