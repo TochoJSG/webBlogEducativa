@@ -4,7 +4,7 @@ import Carrusel from '../Carrusel.jsx';
 import DropDown from '../DropDown.jsx';
 import Footer from '../Footer.jsx';
 import HeaderGral from '../HeaderGral.jsx';
-import Space from '../Space.jsx';
+//import Space from '../Space.jsx';
 import data from '../../contenido/contenido.json';
 
 function Informatica(props){
@@ -38,7 +38,6 @@ function Informatica(props){
                 conceptosT5={data.Informatica.conceptos.titulo5}
                 conceptosC5={data.Informatica.conceptos.concepto5}
             />
-            <Space/>
             <DropDown/>
             <Carrusel/>
             <Posts/>

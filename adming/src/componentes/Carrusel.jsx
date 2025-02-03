@@ -1,7 +1,7 @@
 import '../estilos/sitio.css';
 function Carrusel(props){
     return(
-        <div className="main">
+        <div id="carrusel" className="main">
             <div className="texto_car">
                 <h2>Sugerencias Selectas, solo lo mejor de <span>Amazon</span></h2>
             </div>

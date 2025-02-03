@@ -1,6 +1,10 @@
-.container{
+.displayCup{
+    display: block;
     touch-action: none;
-    left:-20%;
+    margin: 9px auto 0;
+}
+.displayCup.containerCup{
+    margin:0;
     top:16px;
     bottom: 17px;
     background: none;
@@ -10,24 +14,27 @@
     align-items: center;
     justify-content: center;
 }
-.container .textoPromocion{
+.containerCup .textoPromocion{
     position: relative;
     display: block;
     top:66px;
     bottom:0;
     font-size: 1.3em;
     font-weight: 300;
+    text-align: center;
+    letter-spacing: 3px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.cup{
+.containerCup .cup{
     position:relative;
     width:280px;
     height:300px;
+    left:27%;
     background:linear-gradient(to right, #f9f9f9, #d9d9d9);
     border-bottom-left-radius:45%;
     border-bottom-right-radius:45%;
 }
-.cup .top{
+.containerCup .cup .top{
     position:absolute;
     top:-30px;
     left:0;
@@ -36,7 +43,7 @@
     background:linear-gradient(to right, #f9f9f9, #d9d9d9);
     border-radius:50%;
 }
-.cup .top .circle{
+.containerCup .cup .top .circle{
     position:absolute;
     top:5px;
     left:10px;
@@ -47,7 +54,7 @@
     box-sizing:border-box;
     overflow:hidden;
 }
-.cup .top .circle .tea{
+.containerCup .cup .top .circle .tea{
     position:absolute;
     top:20px;
     left:0;
@@ -56,7 +63,7 @@
     background:linear-gradient(#c57e65, #e28462);
     border-radius:50%;
 }
-.cup .handle{
+.containerCup .cup .handle{
     position:absolute;
     right:-70px;
     top:40px;
@@ -68,10 +75,10 @@
     border-radius:50%;
     transform:rotate(42deg);
 }
-.plate{
+.containerCup .plate{
     position:absolute;
-    bottom:275px;
-    left:50%;
+    bottom:166px;
+    left:45%;
     transform:translateX(-50%);
     width:500px;
     height:200px;
@@ -79,7 +86,7 @@
     border-radius:50%;
     box-shadow:0 35px 35px rgba(0,0,0,0.2);
 }
-.plate:before{
+.containerCup .plate:before{
     content:'';
     position:absolute;
     top:10px;
@@ -89,7 +96,7 @@
     border-radius:50%;
     background:linear-gradient(to left, #f9f9f9, #e7e7e7);
 }
-.plate:after{
+.containerCup .plate:after{
     content:'';
     position:absolute;
     top:30px;
@@ -100,13 +107,13 @@
     background:radial-gradient(rgba(0,0,0,0.2) 25%, transparent,transparent );
     border-radius:50%;
 }
-.vapour{
+.containerCup .vapour{
     position:relative;
     display:flex;
     z-index:1;
     padding:0 20px;
 }
-.vapour span{
+.containerCup .vapour span{
     position:relative;
     bottom:50px;
     display:block;
@@ -138,4 +145,7 @@
     100%{
         transform:translateY(-300px) scaleX(10);
     }
+}
+@media(max-width:990px){
+    .containerCup .plate{display:none;}
 }

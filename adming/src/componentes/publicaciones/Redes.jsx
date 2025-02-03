@@ -16,8 +16,10 @@ function Redes(props){
                 parraph1={data.Redes.parrafo1}
                 parraph2={data.Redes.parrafo2}
                 parraph3={data.Redes.parrafo3}
+
                 image1={data.Redes.imagen1}
                 image2={data.Redes.imagen2}
+                
                 aplicaciones={data.Redes.tituloBloqueA}
                 ap1={data.Redes.bloque1.contenido1} ap2={data.Redes.bloque1.contenido2} ap3={data.Redes.bloque1.contenido3} ap4={data.Redes.bloque1.contenido4} ap5={data.Redes.bloque1.contenido5}
                 caracteristicas={data.Redes.tituloBloqueB}

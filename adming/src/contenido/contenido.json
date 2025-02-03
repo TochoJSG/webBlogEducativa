@@ -19,8 +19,8 @@
             "contenido4":"",
             "contenido5":""
         },
-        "imagen1":"",
-        "imagen2":"",
+        "imagen1":"bd-1",
+        "imagen2":"bd-2",
         "conceptos":{
             "titulo1":"",
             "concepto1":"",
@@ -55,8 +55,8 @@
             "contenido4":"",
             "contenido5":""
         },
-        "imagen1":"",
-        "imagen2":"",
+        "imagen1":"backend-1",
+        "imagen2":"backend-2",
         "conceptos":{
             "titulo1":"",
             "concepto1":"",
@@ -70,6 +70,7 @@
             "concepto5":""
         }
     },
+
     "DisenioFrontend":{
         "parrafo1":"",
         "parrafo2":"",
@@ -90,8 +91,8 @@
             "contenido4":"",
             "contenido5":""
         },
-        "imagen1":"",
-        "imagen2":"",
+        "imagen1":"frontend-1",
+        "imagen2":"frontend-2",
         "conceptos":{
             "titulo1":"",
             "concepto1":"",
@@ -105,6 +106,7 @@
             "concepto5":""
         }
     },
+
     "Programacion":{
         "parrafo1":"",
         "parrafo2":"",
@@ -125,8 +127,8 @@
             "contenido4":"",
             "contenido5":""
         },
-        "imagen1":"",
-        "imagen2":"",
+        "imagen1":"programacion-1",
+        "imagen2":"programacion-2",
         "conceptos":{
             "titulo1":"",
             "concepto1":"",
@@ -140,6 +142,7 @@
             "concepto5":""
         }
     },
+
     "ProgramacionWeb":{
         "parrafo1":"",
         "parrafo2":"",
@@ -160,8 +163,8 @@
             "contenido4":"",
             "contenido5":""
         },
-        "imagen1":"",
-        "imagen2":"",
+        "imagen1":"programacionWeb-1",
+        "imagen2":"programacionWeb-2",
         "conceptos":{
             "titulo1":"",
             "concepto1":"",
@@ -175,6 +178,7 @@
             "concepto5":""
         }
     },
+
     "POO":{
         "parrafo1":"",
         "parrafo2":"",
@@ -195,8 +199,8 @@
             "contenido4":"",
             "contenido5":""
         },
-        "imagen1":"",
-        "imagen2":"",
+        "imagen1":"poo-1",
+        "imagen2":"poo-2",
         "conceptos":{
             "titulo1":"",
             "concepto1":"",
@@ -210,6 +214,7 @@
             "concepto5":""
         }
     },
+
     "MarketingDigital":{
         "parrafo1":"",
         "parrafo2":"",
@@ -230,8 +235,8 @@
             "contenido4":"",
             "contenido5":""
         },
-        "imagen1":"",
-        "imagen2":"",
+        "imagen1":"marketing-1",
+        "imagen2":"marketing-2",
         "conceptos":{
             "titulo1":"",
             "concepto1":"",
@@ -245,6 +250,7 @@
             "concepto5":""
         }
     },
+
     "Finanzas":{
         "parrafo1":"",
         "parrafo2":"",
@@ -265,8 +271,8 @@
             "contenido4":"",
             "contenido5":""
         },
-        "imagen1":"",
-        "imagen2":"",
+        "imagen1":"finanzas-1",
+        "imagen2":"finanzas-2",
         "conceptos":{
             "titulo1":"",
             "concepto1":"",
@@ -280,6 +286,7 @@
             "concepto5":""
         }
     },
+
     "Contabilidad":{
         "parrafo1":"",
         "parrafo2":"",
@@ -300,8 +307,8 @@
             "contenido4":"",
             "contenido5":""
         },
-        "imagen1":"",
-        "imagen2":"",
+        "imagen1":"contabilidad-1",
+        "imagen2":"contabilidad-2",
         "conceptos":{
             "titulo1":"",
             "concepto1":"",
@@ -315,6 +322,7 @@
             "concepto5":""
         }
     },
+
     "TecnicasSeo":{
         "parrafo1":"",
         "parrafo2":"",
@@ -335,8 +343,8 @@
             "contenido4":"",
             "contenido5":""
         },
-        "imagen1":"",
-        "imagen2":"",
+        "imagen1":"seo-1",
+        "imagen2":"seo-2",
         "conceptos":{
             "titulo1":"",
             "concepto1":"",
@@ -350,6 +358,7 @@
             "concepto5":""
         }
     },
+
     "Redes":{
         "parrafo1":"",
         "parrafo2":"",
@@ -370,8 +379,8 @@
             "contenido4":"",
             "contenido5":""
         },
-        "imagen1":"",
-        "imagen2":"",
+        "imagen1":"redes-1",
+        "imagen2":"redes-2",
         "conceptos":{
             "titulo1":"",
             "concepto1":"",
@@ -385,6 +394,7 @@
             "concepto5":""
         }
     },
+
     "Infraestructura":{
         "parrafo1":"",
         "parrafo2":"",
@@ -405,8 +415,8 @@
             "contenido4":"",
             "contenido5":""
         },
-        "imagen1":"",
-        "imagen2":"",
+        "imagen1":"infraestructura-1",
+        "imagen2":"infraestructura-2",
         "conceptos":{
             "titulo1":"",
             "concepto1":"",
@@ -420,6 +430,7 @@
             "concepto5":""
         }
     },
+
     "InvestigacionDeOperaciones":{
         "parrafo1":"",
         "parrafo2":"",
@@ -440,8 +451,8 @@
             "contenido4":"",
             "contenido5":""
         },
-        "imagen1":"",
-        "imagen2":"",
+        "imagen1":"operaciones-1",
+        "imagen2":"operaciones-2",
         "conceptos":{
             "titulo1":"",
             "concepto1":"",
@@ -455,6 +466,7 @@
             "concepto5":""
         }
     },
+
     "Informatica":{
         "parrafo1":"",
         "parrafo2":"",
@@ -475,8 +487,8 @@
             "contenido4":"",
             "contenido5":""
         },
-        "imagen1":"",
-        "imagen2":"",
+        "imagen1":"informatica-1",
+        "imagen2":"informatica-2",
         "conceptos":{
             "titulo1":"",
             "concepto1":"",
@@ -490,6 +502,7 @@
             "concepto5":""
         }
     },
+
     "BigData":{
         "parrafo1":"",
         "parrafo2":"",
@@ -510,8 +523,8 @@
             "contenido4":"",
             "contenido5":""
         },
-        "imagen1":"",
-        "imagen2":"",
+        "imagen1":"bigData-1",
+        "imagen2":"bigData-2",
         "conceptos":{
             "titulo1":"",
             "concepto1":"",
@@ -525,6 +538,7 @@
             "concepto5":""
         }
     },
+
     "IngenieriaRequerimientos":{
         "parrafo1":"",
         "parrafo2":"",
@@ -545,8 +559,8 @@
             "contenido4":"",
             "contenido5":""
         },
-        "imagen1":"",
-        "imagen2":"",
+        "imagen1":"requerimientos-1",
+        "imagen2":"requerimientos-2",
         "conceptos":{
             "titulo1":"",
             "concepto1":"",
@@ -560,6 +574,7 @@
             "concepto5":""
         }
     },
+
     "DesarrolloDeSistemas":{
         "parrafo1":"",
         "parrafo2":"",
@@ -580,8 +595,8 @@
             "contenido4":"",
             "contenido5":""
         },
-        "imagen1":"",
-        "imagen2":"",
+        "imagen1":"desarrollo-sis-1",
+        "imagen2":"desarrollo-sis-2",
         "conceptos":{
             "titulo1":"",
             "concepto1":"",
@@ -595,6 +610,7 @@
             "concepto5":""
         }
     },
+
     "Aplicaciones":{
         "parrafo1":"",
         "parrafo2":"",
@@ -615,8 +631,8 @@
             "contenido4":"",
             "contenido5":""
         },
-        "imagen1":"",
-        "imagen2":"",
+        "imagen1":"aplicaciones-1",
+        "imagen2":"aplicaciones-2",
         "conceptos":{
             "titulo1":"",
             "concepto1":"",
@@ -630,6 +646,7 @@
             "concepto5":""
         }
     },
+
     "BasesNoSQL":{
         "parrafo1":"",
         "parrafo2":"",
@@ -650,8 +667,8 @@
             "contenido4":"",
             "contenido5":""
         },
-        "imagen1":"",
-        "imagen2":"",
+        "imagen1":"nosql-1",
+        "imagen2":"nosql-2",
         "conceptos":{
             "titulo1":"",
             "concepto1":"",
@@ -665,6 +682,7 @@
             "concepto5":""
         }
     },
+
     "Calculo":{
         "parrafo1":"",
         "parrafo2":"",
@@ -685,8 +703,8 @@
             "contenido4":"",
             "contenido5":""
         },
-        "imagen1":"",
-        "imagen2":"",
+        "imagen1":"calculo-1",
+        "imagen2":"calculo-2",
         "conceptos":{
             "titulo1":"",
             "concepto1":"",
@@ -700,6 +718,7 @@
             "concepto5":""
         }
     },
+
     "Metodologias":{
         "parrafo1":"",
         "parrafo2":"",
@@ -720,8 +739,8 @@
             "contenido4":"",
             "contenido5":""
         },
-        "imagen1":"",
-        "imagen2":"",
+        "imagen1":"metodologias-1",
+        "imagen2":"metodologias-2",
         "conceptos":{
             "titulo1":"",
             "concepto1":"",
@@ -735,6 +754,7 @@
             "concepto5":""
         }
     },
+
     "Probabilidad":{
         "parrafo1":"",
         "parrafo2":"",
@@ -755,8 +775,8 @@
             "contenido4":"",
             "contenido5":""
         },
-        "imagen1":"",
-        "imagen2":"",
+        "imagen1":"probabilidad-1",
+        "imagen2":"probabilidad-2",
         "conceptos":{
             "titulo1":"",
             "concepto1":"",
@@ -770,6 +790,7 @@
             "concepto5":""
         }
     },
+
     "SimulacionRedes":{
         "parrafo1":"",
         "parrafo2":"",
@@ -790,8 +811,8 @@
             "contenido4":"",
             "contenido5":""
         },
-        "imagen1":"",
-        "imagen2":"",
+        "imagen1":"redes-sim-1",
+        "imagen2":"redes-sim-2",
         "conceptos":{
             "titulo1":"",
             "concepto1":"",
@@ -805,6 +826,7 @@
             "concepto5":""
         }
     },
+
     "ModelosPruebas":{
         "parrafo1":"",
         "parrafo2":"",
@@ -825,8 +847,8 @@
             "contenido4":"",
             "contenido5":""
         },
-        "imagen1":"",
-        "imagen2":"",
+        "imagen1":"pruebas-1",
+        "imagen2":"pruebas-2",
         "conceptos":{
             "titulo1":"",
             "concepto1":"",
@@ -840,6 +862,7 @@
             "concepto5":""
         }
     },
+
     "Algebra":{
         "parrafo1":"",
         "parrafo2":"",
@@ -860,8 +883,8 @@
             "contenido4":"",
             "contenido5":""
         },
-        "imagen1":"",
-        "imagen2":"",
+        "imagen1":"algebra-1",
+        "imagen2":"algebra-2",
         "conceptos":{
             "titulo1":"",
             "concepto1":"",
@@ -875,6 +898,7 @@
             "concepto5":""
         }
     },
+
     "titulo26":{
         "parrafo1":"",
         "parrafo2":"",

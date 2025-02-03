@@ -1,11 +1,21 @@
-import React,{ useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
+import React,{ useEffect, useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import classNames from 'classnames';
 import '../estilos/headerGral.css';
 
 function HeaderGral(props){
     const [ isVisible, setIsVisible ] = useState(false);
     const [ isActive, setIsActive ] = useState(false);
+    const { hash } = useLocation();
+
+    useEffect(() => {
+        if (hash) {
+            const element = document.getElementById(hash.replace('#', ''));
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    }, [hash]);
 
     const toggleMenu =()=>{
         setIsVisible(!isVisible);
@@ -15,7 +25,9 @@ function HeaderGral(props){
     return(
         <>
             <header className="headerGral">
-                <a href="index.html" className="logo">Electronica Inteligente</a>
+                <Link to="/">
+                    <img className="logo" src={require('../imagenes/icono.png')} />
+                </Link>
                 <div className={classNames('menuToggle', { active: isActive })} onClick={toggleMenu}></div>
             </header>
             <ul className={`navigation ${isActive ? 'active' : ''}`}>
@@ -23,9 +35,9 @@ function HeaderGral(props){
                     </li>
                 <li><Link to="/desarrollo">Desarrollos</Link>
                     </li>
-                <li><Link to="/#about">Nosotros</Link>
+                <li><Link to="/home#about">Nosotros</Link>
                     </li>
-                <li><Link to="/#contact">Contact</Link>
+                <li><Link to="/home#contact">Contact</Link>
                     </li>
             </ul>
         </>

@@ -1,6 +1,6 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
-import { useState, useRef } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import { useState, useRef, useEffect } from 'react';
 import '../estilos/sitio.css';
 import * as imagenes from '../imagenes/contenidos/index';
 
@@ -15,8 +15,9 @@ const useToggle = () => {
     };
     return { isVisible, toggleVisibility };
 };
+
 const extenderPost = (miElemento) => {
-    console.log(miElemento);
+    //console.log(miElemento);
     if(miElemento.current.style ) {
         miElemento.current.style.display = 'block';
      }
@@ -24,8 +25,19 @@ const extenderPost = (miElemento) => {
 
 function Posts(){
     const { isVisible, toggleVisibility } = useToggle();
-    
+    const { hash } = useLocation();
+
+    useEffect(() => {
+        if (hash) {
+            const element = document.getElementById(hash.replace('#', ''));
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    }, [hash]);
+
     const contentRef = useRef(null); //SImilar a getElementById ->let desplieMas = document.getElementById('desplegarMas');
+
 
     return(
     <section className="post" id="post">
@@ -42,7 +54,7 @@ function Posts(){
                     </div>
                     <div className="txtBx">
                         <h3>Bases de Datos</h3>
-                        <Link to="/base-de-datos-relacional" className="btn">Ver Contenido</Link>
+                        <Link to="/base-de-datos-relacional#publicacion" className="btn">Ver Contenido</Link>
                     </div>
                 </div>
                 <div className="postBox extraHeight">
@@ -51,7 +63,7 @@ function Posts(){
                     </div>
                     <div className="txtBx">
                         <h3>BACKEND_</h3>
-                        <Link to="/base-de-datos-nosql" className="btn">Ver Contenido</Link>
+                        <Link to="/base-de-datos-nosql#publicacion" className="btn">Ver Contenido</Link>
                     </div>
                 </div>
                 <div className="postBox">
@@ -60,7 +72,7 @@ function Posts(){
                     </div>
                     <div className="txtBx">
                         <h3>Diseño Frontend</h3>
-                        <Link to="/diseño-frontend" className="btn">Ver Contenido</Link>
+                        <Link to="/diseño-frontend#publicacion" className="btn">Ver Contenido</Link>
                     </div>
                 </div>
             </div>
@@ -71,7 +83,7 @@ function Posts(){
                     </div>
                     <div className="txtBx">
                         <h3>Programacion</h3>
-                        <Link to="/programacion" className="btn">Ver Contenido</Link>
+                        <Link to="/programacion#publicacion" className="btn">Ver Contenido</Link>
                     </div>
                 </div> 
                 <div className="postBox">
@@ -80,7 +92,7 @@ function Posts(){
                     </div>
                     <div className="txtBx">
                         <h3>Programacion Web</h3>
-                        <Link to="/programacion-web" className="btn">Ver Contenido</Link>
+                        <Link to="/programacion-web#publicacion" className="btn">Ver Contenido</Link>
                     </div>
                 </div>
                 <div className="postBox">
@@ -89,7 +101,7 @@ function Posts(){
                     </div>
                     <div className="txtBx">
                         <h3>Programacion Orientada a Objetos</h3>
-                        <Link to="/poo" className="btn">Ver Contenido</Link>
+                        <Link to="/poo#publicacion" className="btn">Ver Contenido</Link>
                     </div>
                 </div>
             </div>
@@ -100,7 +112,7 @@ function Posts(){
                     </div>
                     <div className="txtBx">
                         <h3>Marketing Digital</h3>
-                        <Link to="/marketing-digital" className="btn">Ver Contenido</Link>
+                        <Link to="/marketing-digital#publicacion" className="btn">Ver Contenido</Link>
                     </div>
                 </div>
                 <div className="postBox">
@@ -109,7 +121,7 @@ function Posts(){
                     </div>
                     <div className="txtBx">
                         <h3>Finanzas</h3>
-                        <Link to="/finanzas" className="btn">Ver Contenido</Link>
+                        <Link to="/finanzas#publicacion" className="btn">Ver Contenido</Link>
                     </div>
                 </div>
                 <div className="postBox extraHeight">
@@ -118,13 +130,14 @@ function Posts(){
                     </div>
                     <div className="txtBx">
                         <h3>Contabilidad</h3>
-                        <Link to="/contabilidad" className="btn">Ver Contenido</Link>
+                        <Link to="/contabilidad#publicacion" className="btn">Ver Contenido</Link>
                     </div>
                 </div>
             </div>
         </div>
         <div className="title">
-            <button id="dM" className="btn mgt60" onClick={() => toggleVisibility(contentRef)}>
+            <button id="dM" className="btn mgt60" onClick={() => toggleVisibility(contentRef)}
+                style={{border:'3px  solid #000'}} >
                 {isVisible ? 'Ocultar Contenido' : 'Cargar Más'}
             </button>
         </div>
@@ -134,42 +147,42 @@ function Posts(){
         <div id="desplegarMas" ref={contentRef} style={{ display: isVisible ? 'block' : 'none' }}>
             <div className="contentBx">
                 <div className="postColumn">
-                    <div className="postBox extraHeight">
+                    <div className="postBox">
                         <div className="imgBx">
                             <img title="tecnicas SEO" src={imagenes.SEO} className="cover"/>
                         </div>
                         <div className="txtBx">
                             <h3>Tecnicas SEO</h3>
-                            <Link to="/tecnicas-seo" className="btn">Ver Contenido</Link>
+                            <Link to="/tecnicas-seo#publicacion" className="btn">Ver Contenido</Link>
                         </div>
                     </div>
-                    <div className="postBox">
+                    <div className="postBox extraHeight">
                         <div className="imgBx">
                             <img title="redes" src={imagenes.Redes}/>
                         </div>
                         <div className="txtBx">
                             <h3>Redes</h3>
-                            <Link to="/redes" className="btn">Ver Contenido</Link>
+                            <Link to="/redes#publicacion" className="btn">Ver Contenido</Link>
                         </div>
                     </div>
                 </div>
                 <div className="postColumn">
-                    <div className="postBox">
+                    <div className="postBox extraHeight">
                         <div className="imgBx">
                             <img title="infraestructuras" src={imagenes.Infraestructuras}/>
                         </div>
                         <div className="txtBx">
                             <h3>Infraestructuras</h3>
-                            <Link to="/infraestructuras" className="btn">Ver Contenido</Link>
+                            <Link to="/infraestructuras#publicacion" className="btn">Ver Contenido</Link>
                         </div>
                     </div>
-                    <div className="postBox extraHeight">
+                    <div className="postBox">
                         <div className="imgBx">
                             <img title="investigacion de operaciones" src={imagenes.InvestigacionDeOperaciones}/>
                         </div>
                         <div className="txtBx">
                             <h3>Investigacion para las Operaciones</h3>
-                            <Link to="/investigacion-operaciones" className="btn">Ver Contenido</Link>
+                            <Link to="/investigacion-operaciones#publicacion" className="btn">Ver Contenido</Link>
                         </div>
                     </div>
                 </div>
@@ -180,7 +193,7 @@ function Posts(){
                         </div>
                         <div className="txtBx">
                             <h3>Informatica</h3>
-                            <Link to="/informatica" className="btn">Ver Contenido</Link>
+                            <Link to="/informatica#publicacion" className="btn">Ver Contenido</Link>
                         </div>
                     </div>
                     <div className="postBox extraHeight">
@@ -189,7 +202,7 @@ function Posts(){
                         </div>
                         <div className="txtBx">
                             <h3>Big Data</h3>
-                            <Link to="/big-data" className="btn">Ver Contenido</Link>
+                            <Link to="/big-data#publicacion" className="btn">Ver Contenido</Link>
                         </div>
                     </div>
                 </div>
@@ -201,28 +214,28 @@ function Posts(){
                         </div>
                         <div className="txtBx">
                             <h3>Requerimientos</h3>
-                            <Link to="/requerimientos" className="btn">Ver Contenido</Link>
+                            <Link to="/requerimientos#publicacion" className="btn">Ver Contenido</Link>
                         </div>
                     </div>
-                    <div className="postBox extraHeight">
+                    <div className="postBox">
                         <div className="imgBx">
                             <img title="desarrollo de sistemas" src={imagenes.DesarrolloDeSistemas}/>
                         </div>
                         <div className="txtBx">
                             <h3>Desarrollo de Sistemas</h3>
-                            <Link to="/desarrollo-de-sistemas" className="btn">Ver Contenido</Link>
+                            <Link to="/desarrollo-de-sistemas#publicacion" className="btn">Ver Contenido</Link>
                         </div>
                     </div>
                 </div>
 
                 <div className="postColumn">
-                    <div className="postBox extraHeight">
+                    <div className="postBox">
                         <div className="imgBx">
                             <img title="aplicaciones moviles" src={imagenes.Aplicaciones} className="cover"/>
                         </div>
                         <div className="txtBx">
                             <h3>Aplicaciones moviles</h3>
-                            <Link to="/aplicaciones" className="btn">Ver Contenido</Link>
+                            <Link to="/aplicaciones#publicacion" className="btn">Ver Contenido</Link>
                         </div>
                     </div>
                     <div className="postBox">
@@ -231,7 +244,7 @@ function Posts(){
                         </div>
                         <div className="txtBx">
                             <h3>Bases de Datos NoSQL</h3>
-                            <Link to="/base-de-datos-nosql" className="btn">Ver Contenido</Link>
+                            <Link to="/base-de-datos-nosql#publicacion" className="btn">Ver Contenido</Link>
                         </div>
                     </div>
                 </div>
@@ -242,16 +255,16 @@ function Posts(){
                         </div>
                         <div className="txtBx">
                             <h3>Calculo</h3>
-                            <Link to="/calculo" className="btn">Ver Contenido</Link>
+                            <Link to="/calculo#publicacion" className="btn">Ver Contenido</Link>
                         </div>
                     </div>
-                    <div className="postBox extraHeight">
+                    <div className="postBox">
                         <div className="imgBx">
                             <img title="Metodologias de desarrollo" src={imagenes.Metodologias}/>
                         </div>
                         <div className="txtBx">
                             <h3>Metodologias de desarrollo</h3>
-                            <Link to="/metodologias-de-desarrollo" className="btn">Ver Contenido</Link>
+                            <Link to="/metodologias-de-desarrollo#publicacion" className="btn">Ver Contenido</Link>
                         </div>
                     </div>
                 </div>
@@ -262,27 +275,27 @@ function Posts(){
                         </div>
                         <div className="txtBx">
                             <h3>Probabidad</h3>
-                            <Link to="/probabilidad" className="btn">Ver Contenido</Link>
+                            <Link to="/probabilidad#publicacion" className="btn">Ver Contenido</Link>
                         </div>
                     </div>
-                    <div className="postBox">
+                    <div className="postBox extraHeight">
                         <div className="imgBx">
                             <img title="redes y simulaciones" src={imagenes.RSimulacion}/>
                         </div>
                         <div className="txtBx">
                             <h3>Redes y Simulaciones</h3>
-                            <Link to="/redes-simulacion" className="btn">Ver Contenido</Link>
+                            <Link to="/redes-simulacion#publicacion" className="btn">Ver Contenido</Link>
                         </div>
                     </div>
                 </div>
                 <div className="postColumn">
-                    <div className="postBox">
+                    <div className="postBox extraHeight">
                         <div className="imgBx">
                             <img title="modelos de pruebas" src={imagenes.Pruebas}/>
                         </div>
                         <div className="txtBx">
                             <h3>Modelos de pruebas</h3>
-                            <Link to="/modelos-de-pruebas" className="btn">Ver Contenido</Link>
+                            <Link to="/modelos-de-pruebas#publicacion" className="btn">Ver Contenido</Link>
                         </div>
                     </div>
                     <div className="postBox">
@@ -291,7 +304,7 @@ function Posts(){
                         </div>
                         <div className="txtBx">
                             <h3>Algebra</h3>
-                            <Link to="/algebra" className="btn">Ver Contenido</Link>
+                            <Link to="/algebra#publicacion" className="btn">Ver Contenido</Link>
                         </div>
                     </div>
                 </div>

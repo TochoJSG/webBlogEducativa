@@ -1,5 +1,6 @@
 .centerPc{
     position:relative;
+    touch-action: manipulation;
     height:250px;
     top:50%;
     left:50%;

@@ -119,8 +119,8 @@
         },
         "tituloBloqueA":"Caracteristicas",
         "tituloBloqueB":"Consideraciones",
-        "imagen1":"../imagenes/contenidos/Programacion.png",
-        "imagen2":"../imagenes/contenidos/POO.png",
+        "imagen1":"Programacion",
+        "imagen2":"POO",
         "conceptos":{
             "titulo1":"Danna Tamara Reyes Cardenas 1",
             "concepto1":"Danna Tamara Reyes Cardenas contenido",

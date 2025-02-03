@@ -3,7 +3,7 @@ import Conceptos from './Conceptos';
 
 function Articulo(props){
     return(
-        <section>
+        <section id="publicacion">
             <div className="articulo">
                 <div className="title"><h1>{props.title}
                     </h1></div>
@@ -13,7 +13,7 @@ function Articulo(props){
                     </p>
                 <p>{props.parraph3}
                     </p>
-                <img className="mamalon" src={`url(${props.image1})`} name={props.title} alt='cargando imagen...' />
+                <img className="mamalon" src={require(`../imagenes/contenidos/${props.image1}.png`)} name={props.title} alt='cargando imagen...' />
 
                 <div className="contenido">
                 <div>
@@ -33,9 +33,9 @@ function Articulo(props){
                         <li>{props.carac4}</li>
                         <li>{props.carac5}</li>
                     </ul>
-                    <img className="mamalon" src={`url(${props.image2})`} alt="cargando..."/>		
+                    <img className="mamalon" src={ require(`../imagenes/contenidos/${props.image2}.png`) } alt="cargando..."/>	
                 </div>
-                <Conceptos 
+                <Conceptos
                     titulo1={props.conceptosT1}
                     concepto1={props.conceptosC1}
 

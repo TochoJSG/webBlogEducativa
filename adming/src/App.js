@@ -34,6 +34,8 @@ import Infraestructura from './componentes/publicaciones/Infraestructura.jsx';
 import DesarrolloDeSistemas from './componentes/publicaciones/DesarrolloDeSistemas.jsx';
 import ModelosPruebas from './componentes/publicaciones/ModelosPruebas.jsx';
 import IngenieriaRequerimientos from './componentes/publicaciones/IngenieriaRequerimientos.jsx';
+import Home from './componentes/Home';
+import Curriculum from './componentes/Curriculum.jsx';
 
 function App(){
   return (
@@ -41,6 +43,10 @@ function App(){
       <Routes>
         <Route path="/" element={<Index />} />
 
+        <Route path="/home" element={<Home />} />
+
+        <Route path="/jorge-salgado-fullstack" element={<Curriculum />} />
+        
         <Route path="/base-de-datos-relacional" element={<BasesDeDatos />} />
         <Route path="/backend" element={<Backend />} />
         <Route path="/diseño-frontend" element={<DisenioFrontend />} />
@@ -74,6 +80,8 @@ function App(){
         <Route path="/privacidad" element={<AvisoPrivacidad />} />
         <Route path="/cookies" element={<PoliticaCookies />} />
         <Route path="/avisoLegal" element={<AvisoLegal />} />
+
+        <Route path="*" element={<Desarrollo />} />
       </Routes>
     </Router>
   );

@@ -1,5 +1,5 @@
 .container{
-    touch-action: none;
+    touch-action: manipulation;
     display:flex;
     position: relative;
     justify-content:center;
