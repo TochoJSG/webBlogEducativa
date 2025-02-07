@@ -8,6 +8,7 @@
     transition:0.6s;
     align-items: center;
     justify-content:center;
+    touch-action: manipulation;
 }
 .container img{
     position:absolute;

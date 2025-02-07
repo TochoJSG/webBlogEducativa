@@ -1,10 +1,11 @@
-*{
+/* *{
     font-family:'Poppins',sans-serif;
     margin:0;
     padding:0;
     box-sizing:border-box;
     background:none;
-}
+    touch-action:manipulation;
+}*/
 .cuerpoVH{
     background-color:#000;
 }
@@ -28,18 +29,21 @@
     pointer-events:none;
 }
 .cuerpoVH section h2{
+    user-select: none;
     position:relative;
     color:#fff;
     font-size:3em;
 }
 .cuerpoVH section p{
     position:relative;
+    user-select: none;
     color:#fff;
     font-size:1.3em;
     font-weight:300;
 }
 .cuerpoVH h1{
     position:absolute;
+    user-select: none;
     font-family:sans-serif;
     background:linear-gradient(rgba(49, 3, 102, 0.9) 20%, transparent 80%);
 	-webkit-background-clip:text;
@@ -70,4 +74,27 @@
     display: block;
     width:333px;
     height:66px;
+}
+
+@media(max-width:991px){
+    .cuerpoVH section h2{
+        font-size:2em;
+    }
+    .cuerpoVH section p{
+        font-size:1.1em;
+        font-weight:100;
+    }
+    .cuerpoVH h1{
+        top:50%;
+        left:50%;
+        margin:0;
+        padding:0;
+        transition:.6s;
+        margin:17px 0;
+        font-size:6em;
+        font-weight:600;
+    }
+    .cuerpoVH h1:hover{
+        letter-spacing:9px;
+    }
 }

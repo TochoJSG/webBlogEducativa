@@ -1,25 +1,53 @@
-import React from 'react';
+import React,{ useEffect, useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import classNames from 'classnames';
 import '../estilos/headerGral.css';
+
 function HeaderGral(props){
+    const [ isVisible, setIsVisible ] = useState(false);
+    const [ isActive, setIsActive ] = useState(false);
+    const { hash } = useLocation();
+
+    useEffect(() => {
+        if (hash) {
+            const element = document.getElementById(hash.replace('#', ''));
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    }, [hash]);
+
+    const toggleMenu =()=>{
+        setIsVisible(!isVisible);
+        setIsActive(!isActive);
+    };
+
     return(
         <>
             <header className="headerGral">
-                <a href="index.html" className="logo">Electronica Inteligente</a>
-                <div className="menuToggle"></div>
+                <Link to="/">
+                    <img className="logo" src={require('../imagenes/icono.png')} />
+                </Link>
+                <div className={classNames('menuToggle', { active: isActive })} onClick={toggleMenu}></div>
             </header>
-            <ul className="navigation">
-                <li><a data-text="Portada" href="index.html" onClick="toggleMenu();">Principal
-                    </a></li>
-                <li><a data-text="Quien escribe esto" href="index.html#about" onClick="toggleMenu();">Nosotros
-                    </a></li>
-                <li><a data-text="Publicaciones" href="#post" onClick="toggleMenu();">poster
-                    </a></li>
-                <li><a data-text="Contacto" href="index.html#contact" onClick="toggleMenu();">Contact
-                    </a></li>
+            <ul className={`navigation ${isActive ? 'active' : ''}`}>
+                <li><Link to="/">Principal</Link>
+                    </li>
+                <li><Link to="/desarrollo">Desarrollos</Link>
+                    </li>
+                <li><Link to="/home#about">Nosotros</Link>
+                    </li>
+                <li><Link to="/home#contact">Contact</Link>
+                    </li>
+                <li><Link to="/privacidad">Aviso de Privacidad</Link>
+                    </li>
+                <li><Link to="/cookies">Aviso de cookies</Link>
+                    </li>
             </ul>
         </>
     );
 }
+
 export default HeaderGral;
 
 /*
@@ -51,4 +79,49 @@ function HeaderGral(){
     );
 }
 export default HeaderGral;
+
+
+
+import React, { useState } from 'react';
+
+function HeaderGral() {
+    const [isActive, setIsActive] = useState(false);
+
+    const toggleMenu = () => {
+        setIsActive(!isActive);
+    };
+    return (
+        <header>
+            <div className={`menuToggle ${isActive ? 'active' : ''}`} onClick={toggleMenu}>
+                Toggle Menu
+            </div>
+            <nav className={`navigation ${isActive ? 'active' : ''}`}>
+                {/ * Aquí van los elementos de navegación * /}
+                </nav>
+                </header>
+            );
+        }
+
+
+
+import React, { useState } from 'react';
+import classNames from 'classnames';
+
+function HeaderGral() {
+    const [isActive, setIsActive] = useState(false);
+
+    const toggleMenu = () => {
+        setIsActive(!isActive);
+    };
+    return (
+        <header>
+            <div className={classNames('menuToggle', { active: isActive })} onClick={toggleMenu}>
+                Toggle Menu
+            </div>
+            <nav className={classNames('navigation', { active: isActive })}>
+                {/ * Aquí van los elementos de navegación * /}
+                </nav>
+                </header>
+            );
+        }
 */

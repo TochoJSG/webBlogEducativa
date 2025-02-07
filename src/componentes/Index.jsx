@@ -6,15 +6,20 @@ import Nosotros from './Nosotros.jsx';
 import Contacto from './Contacto.jsx';
 import Footer from './Footer.jsx';
 import Watsapp from './Watsapp.jsx';
+import Pc from './Pc.jsx';
+import Libro from './Libro.jsx'
+
 const Index = (props)=>{
     return(
         <>
             <Bienvenida />
+            <Nosotros/> 
+            <Pc />
             <Posts/>
-            <Watsapp/>
             <Carrusel/>
-            <Nosotros/>
             <Contacto />
+            <Libro />
+            <Watsapp/>
             <Footer/>
         </>
     );

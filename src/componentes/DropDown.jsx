@@ -6,8 +6,9 @@ function DropDown(props){
     const toggleMenu = () => {// Función para alternar la clase de menú activo
         setIsActive(!isActive);
     };
+    
     return(
-        <div className={`dropdown ${isActive ? 'active' : ''}`}>
+        <div className={`dropdownCont ${isActive ? 'active' : ''}`}>
             <div className={`toggle ${isActive ? 'active' : ''}`} onClick={toggleMenu}>
                 <span></span></div>
             <ul id="mn"> 

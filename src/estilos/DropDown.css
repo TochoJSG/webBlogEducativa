@@ -1,18 +1,26 @@
-.dropdown{
-    position: fixed;
+.dropdownCont, .dropdownCont-center, .dropend, .dropstart, .dropup, .dropup-center {
+    position: absolute;
+}
+.dropdownCont{
+    touch-action:manipulation;
+    position: absolute;
     top: 49px;
-    right: 3px;
+    right: 0px;
     height: 50px;
-    width: 250px;
+    width: 200px;
     background: #fff;
     transition: 0.5s;
-    z-index: 100000;
+    z-index: 100;
     overflow: hidden;
+    align-items: center;
+    justify-content: center;
 }
-.dropdown.active{
-    height: auto;
+.dropdownCont.active{
+    touch-action:manipulation;
+    height: 100%;
+    /*height: auto;*/
 }
-.dropdown .toggle{
+.dropdownCont .toggle{
     position: relative;
     top: 0;
     left: 0;
@@ -24,73 +32,79 @@
     align-items: center;
     justify-content: flex-end;
     padding: 0 20px;
-    font-size: 19px;
+    font-size:1.1em;
     cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-weight: 600;
+    text-align: center;
 }
-.dropdown .toggle:before{
+.dropdownCont .toggle:before{
     content: 'Menu';
     margin-right: 10px;
     color: #111;
 }
-.dropdown .toggle.active:before{
+.dropdownCont .toggle.active:before{
     content: 'Close';
     margin-right: 10px;
     color: #111;
 }
-.dropdown .toggle span{
+.dropdownCont .toggle span{
     position: relative;
     width: 20px;
     height: 50px;
     color: #111;
 }
-.dropdown .toggle span:before{
+.dropdownCont .toggle span:before{
     content: '';
     position: absolute;
     top: 20px;
     left: 0;
     width: 100%;
-    height: 2px;
+    height:3px;
     background: #111;
     transition: 0.5s;
 }
-.dropdown .toggle span::after{
+.dropdownCont .toggle span::after{
     content: '';
     position: absolute;
     bottom: 20px;
     left: 0;
     width: 100%;
-    height: 2px;
+    height:3px;
     background: #111;
     transition: 0.5s;
 }
-.dropdown .toggle.active span::before{
+.dropdownCont .toggle.active span::before{
     transform: rotate(225deg);
     top: 24px;
 }
-.dropdown .toggle.active span::after{
+.dropdownCont .toggle.active span::after{
     transform: rotate(135deg);
     bottom: 24px;
 }
-.dropdown ul{
+.dropdownCont ul{
     position: relative;
     background: #111;
-    height: auto;
-    width: 250px;
+    /*height: auto;*/
+    height: 100%;
+    width: 200px;
+    /*overflow-y:visible;*/
 }
-.dropdown ul li{
+.dropdownCont ul li{
     list-style: none;
 }
-.dropdown ul li .alink{
+.dropdownCont ul li .alink{
     position: relative;
     text-decoration: none;
     display: block;
-    padding: 9px 20px;
-    height: 50px;
+    padding: 6px 3px;
+    height: auto;
     color: #fff;
     font-size: .8em;
     transition: 1s;
 }
-.dropdown ul li .alink:hover{
+.dropdownCont ul li .alink:hover{
     left: 0;
     transition: 0s;
     background: #2196f3;

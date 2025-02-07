@@ -1,8 +1,10 @@
 import { useRef } from 'react';
+import {Link} from 'react-router-dom';
 import useScrollOpacity from "./useScrollOpacity";
 import '../estilos/videoHeader.css';
 import CircleStyle from './CircleStyle';
 const videoPromo = require('../imagenes/admingProyectCorto.mp4');
+
 function Vh(){
     const videoRef = useRef(null);
 
@@ -13,7 +15,7 @@ function Vh(){
             <section className="videoHeader">
                 <video ref={videoRef} src={videoPromo} autoplay="" muted="false" loop="">
                     </video>
-                    <h1><span>ADM</span>ING</h1>
+                    <Link to="/"><h1><span>ADM</span>ING</h1></Link>
             </section>
             <CircleStyle />
         </div>

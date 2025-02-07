@@ -1,187 +1,319 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
-import { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import { useState, useRef, useEffect } from 'react';
 import '../estilos/sitio.css';
-const db = require('../imagenes/icono.png');
+import * as imagenes from '../imagenes/contenidos/index';
+
 const useToggle = () => {
     const [isVisible, setIsVisible] = useState(false);
-
-    const toggleVisibility = () => {
+    
+    const toggleVisibility = (contentRef) => {
         setIsVisible(prev => !prev);
+        //contentRef.style.display = 'block';
+        //console.log(contentRef);
+        extenderPost(contentRef);
     };
-
     return { isVisible, toggleVisibility };
 };
-function Posts(props){
+
+const extenderPost = (miElemento) => {
+    //console.log(miElemento);
+    if(miElemento.current.style ) {
+        miElemento.current.style.display = 'block';
+     }
+ };
+
+function Posts(){
     const { isVisible, toggleVisibility } = useToggle();
+    const { hash } = useLocation();
+
+    useEffect(() => {
+        if (hash) {
+            const element = document.getElementById(hash.replace('#', ''));
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    }, [hash]);
+
+    const contentRef = useRef(null); //SImilar a getElementById ->let desplieMas = document.getElementById('desplegarMas');
+
+
     return(
     <section className="post" id="post">
         <div className="title">
             <h2>Contenidos</h2>
-            <p><span>Revisa nuestro contenido sobre diversos temas aplicables al desarrollo de soluciones informaticas para el aproovechamiento de los datos</span> Un post por cada uno.
+            <p><span>Revisa nuestro contenido relacionado a diversos temas utiles para Negocios y el desarrollo de soluciones informaticas</span> Un post por cada uno.
                 </p>
         </div>
         <div id="primeraParte" className="contentBx">
             <div className="postColumn">
                 <div className="postBox">
                     <div className="imgBx">
-                        <img title="BDRelacional" src={db} className="cover"/>
+                        <img title="Bases de Datos" src={imagenes.bd} className="cover"/>
                     </div>
                     <div className="txtBx">
                         <h3>Bases de Datos</h3>
-                        <Link to="/base-de-datos-relacional" className="btn">Ver Contenido</Link>
+                        <Link to="/base-de-datos-relacional#publicacion" className="btn">Ver Contenido</Link>
                     </div>
                 </div>
                 <div className="postBox extraHeight">
                     <div className="imgBx">
-                        <img title="BDNoSQL" src="post_laptop.png"/>
+                        <img title="backend" src={imagenes.backend}/>
                     </div>
                     <div className="txtBx">
-                        <h3>NoSQL</h3>
-                        <Link to="/base-de-datos-nosql" className="btn">Ver Contenido</Link>
+                        <h3>BACKEND_</h3>
+                        <Link to="/base-de-datos-nosql#publicacion" className="btn">Ver Contenido</Link>
                     </div>
                 </div>
                 <div className="postBox">
                     <div className="imgBx">
-                        <img title="programacion" src="post_pc.png"/>
+                        <img title="diseño frontend" src={imagenes.Frontend} />
                     </div>
                     <div className="txtBx">
-                        <h3>Programacion</h3>
-                        <Link to="/programacion" className="btn">Ver Contenido</Link>
+                        <h3>Diseño Frontend</h3>
+                        <Link to="/diseño-frontend#publicacion" className="btn">Ver Contenido</Link>
                     </div>
                 </div>
             </div>
             <div className="postColumn">
                 <div className="postBox extraHeight">
                     <div className="imgBx">
-                        <img title="aplicaciones" src="post_kit.png"/>
+                        <img title="Programacion" src={imagenes.Programacion}/>
                     </div>
                     <div className="txtBx">
-                        <h3>Aplicaciones Moviles</h3>
-                        <Link to="/aplicaciones" className="btn">Ver Contenido</Link>
+                        <h3>Programacion</h3>
+                        <Link to="/programacion#publicacion" className="btn">Ver Contenido</Link>
                     </div>
                 </div> 
                 <div className="postBox">
                     <div className="imgBx">
-                        <img title="web" src="post_casco.png" className="cover"/>
+                        <img title="programacion web" src={imagenes.ProgramacionWeb} className="cover"/>
                     </div>
                     <div className="txtBx">
                         <h3>Programacion Web</h3>
-                        <Link to="/programacion-web" className="btn">Ver Contenido</Link>
+                        <Link to="/programacion-web#publicacion" className="btn">Ver Contenido</Link>
                     </div>
                 </div>
                 <div className="postBox">
                     <div className="imgBx">
-                        <img title="contabilidad" src="post_auriculares.png"/>
+                        <img title="programacion orientada a objetos" src={imagenes.POO}/>
                     </div>
                     <div className="txtBx">
-                        <h3>Contabilidad</h3>
-                        <Link to="/contabilidad" className="btn">Ver Contenido</Link>
+                        <h3>Programacion Orientada a Objetos</h3>
+                        <Link to="/poo#publicacion" className="btn">Ver Contenido</Link>
                     </div>
                 </div>
             </div>
             <div className="postColumn">
                 <div className="postBox">
                     <div className="imgBx">
-                        <img title="finanzas" src="post_smartwatches.png"/>
+                        <img title="Marketing digital" src={imagenes.Marketing} />
                     </div>
                     <div className="txtBx">
-                        <h3>Finanzas</h3>
-                        <Link to="/finanzas" className="btn">Ver Contenido</Link>
+                        <h3>Marketing Digital</h3>
+                        <Link to="/marketing-digital#publicacion" className="btn">Ver Contenido</Link>
                     </div>
                 </div>
                 <div className="postBox">
                     <div className="imgBx">
-                        <img title="investiigacionOperaciones" src="post_celulares.png"/>
+                        <img title="finanzas" src={imagenes.Finanzas}/>
                     </div>
                     <div className="txtBx">
-                        <h3>Investigacion Operaciones</h3>
-                        <Link to="/investigacion-de-operaciones" className="btn">Ver Contenido</Link>
+                        <h3>Finanzas</h3>
+                        <Link to="/finanzas#publicacion" className="btn">Ver Contenido</Link>
                     </div>
                 </div>
                 <div className="postBox extraHeight">
                     <div className="imgBx">
-                        <img title="redes" src="post_usb.png"/>
+                        <img title="Contabilidad" src={imagenes.Contabilidad}/>
                     </div>
                     <div className="txtBx">
-                        <h3>Redes</h3>
-                        <Link to="/redes" className="btn">Ver Contenido</Link>
+                        <h3>Contabilidad</h3>
+                        <Link to="/contabilidad#publicacion" className="btn">Ver Contenido</Link>
                     </div>
                 </div>
             </div>
         </div>
         <div className="title">
-            <button id="dM" className="btn mgt60" onClick={toggleVisibility}>
+            <button id="dM" className="btn mgt60" onClick={() => toggleVisibility(contentRef)}
+                style={{border:'3px  solid #000'}} >
                 {isVisible ? 'Ocultar Contenido' : 'Cargar Más'}
             </button>
         </div>
+        {/*
         {isVisible && (
-        <div id="desplegarMas">
+        */}
+        <div id="desplegarMas" ref={contentRef} style={{ display: isVisible ? 'block' : 'none' }}>
             <div className="contentBx">
+                <div className="postColumn">
+                    <div className="postBox">
+                        <div className="imgBx">
+                            <img title="tecnicas SEO" src={imagenes.SEO} className="cover"/>
+                        </div>
+                        <div className="txtBx">
+                            <h3>Tecnicas SEO</h3>
+                            <Link to="/tecnicas-seo#publicacion" className="btn">Ver Contenido</Link>
+                        </div>
+                    </div>
+                    <div className="postBox extraHeight">
+                        <div className="imgBx">
+                            <img title="redes" src={imagenes.Redes}/>
+                        </div>
+                        <div className="txtBx">
+                            <h3>Redes</h3>
+                            <Link to="/redes#publicacion" className="btn">Ver Contenido</Link>
+                        </div>
+                    </div>
+                </div>
                 <div className="postColumn">
                     <div className="postBox extraHeight">
                         <div className="imgBx">
-                            <img title="simulacioRedes" src="post_audifono.png" className="cover"/>
+                            <img title="infraestructuras" src={imagenes.Infraestructuras}/>
                         </div>
                         <div className="txtBx">
-                            <h3>Redes y Simulacion</h3>
-                            <Link to="/simulacion-redes" className="btn">Ver Contenido</Link>
+                            <h3>Infraestructuras</h3>
+                            <Link to="/infraestructuras#publicacion" className="btn">Ver Contenido</Link>
                         </div>
                     </div>
                     <div className="postBox">
                         <div className="imgBx">
-                            <img title="calculo" src="post_bocina.png"/>
+                            <img title="investigacion de operaciones" src={imagenes.InvestigacionDeOperaciones}/>
+                        </div>
+                        <div className="txtBx">
+                            <h3>Investigacion para las Operaciones</h3>
+                            <Link to="/investigacion-operaciones#publicacion" className="btn">Ver Contenido</Link>
+                        </div>
+                    </div>
+                </div>
+                <div className="postColumn">
+                    <div className="postBox">
+                        <div className="imgBx">
+                            <img title="informatica" src={imagenes.Informatica}/>
+                        </div>
+                        <div className="txtBx">
+                            <h3>Informatica</h3>
+                            <Link to="/informatica#publicacion" className="btn">Ver Contenido</Link>
+                        </div>
+                    </div>
+                    <div className="postBox extraHeight">
+                        <div className="imgBx">
+                            <img title="big data" src={imagenes.BigData} className="cover"/>
+                        </div>
+                        <div className="txtBx">
+                            <h3>Big Data</h3>
+                            <Link to="/big-data#publicacion" className="btn">Ver Contenido</Link>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="postColumn">
+                    <div className="postBox">
+                        <div className="imgBx">
+                            <img title="ingenieria de requerimientos" src={imagenes.Requerimientos}/>
+                        </div>
+                        <div className="txtBx">
+                            <h3>Requerimientos</h3>
+                            <Link to="/requerimientos#publicacion" className="btn">Ver Contenido</Link>
+                        </div>
+                    </div>
+                    <div className="postBox">
+                        <div className="imgBx">
+                            <img title="desarrollo de sistemas" src={imagenes.DesarrolloDeSistemas}/>
+                        </div>
+                        <div className="txtBx">
+                            <h3>Desarrollo de Sistemas</h3>
+                            <Link to="/desarrollo-de-sistemas#publicacion" className="btn">Ver Contenido</Link>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="postColumn">
+                    <div className="postBox">
+                        <div className="imgBx">
+                            <img title="aplicaciones moviles" src={imagenes.Aplicaciones} className="cover"/>
+                        </div>
+                        <div className="txtBx">
+                            <h3>Aplicaciones moviles</h3>
+                            <Link to="/aplicaciones#publicacion" className="btn">Ver Contenido</Link>
+                        </div>
+                    </div>
+                    <div className="postBox">
+                        <div className="imgBx">
+                            <img title="bases de datos nosql" src={imagenes.NoSQL}/>
+                        </div>
+                        <div className="txtBx">
+                            <h3>Bases de Datos NoSQL</h3>
+                            <Link to="/base-de-datos-nosql#publicacion" className="btn">Ver Contenido</Link>
+                        </div>
+                    </div>
+                </div>
+                <div className="postColumn">
+                    <div className="postBox">
+                        <div className="imgBx">
+                            <img title="Calculo" src={imagenes.Calculo}/>
                         </div>
                         <div className="txtBx">
                             <h3>Calculo</h3>
-                            <Link to="bocinas-bluetooth.html" className="btn">Ver Contenido</Link>
+                            <Link to="/calculo#publicacion" className="btn">Ver Contenido</Link>
+                        </div>
+                    </div>
+                    <div className="postBox">
+                        <div className="imgBx">
+                            <img title="Metodologias de desarrollo" src={imagenes.Metodologias}/>
+                        </div>
+                        <div className="txtBx">
+                            <h3>Metodologias de desarrollo</h3>
+                            <Link to="/metodologias-de-desarrollo#publicacion" className="btn">Ver Contenido</Link>
                         </div>
                     </div>
                 </div>
                 <div className="postColumn">
                     <div className="postBox">
                         <div className="imgBx">
-                            <img title="probabilidad" src="post_raton.png"/>
+                            <img title="probabilidad" src={imagenes.Probabilidad}/>
                         </div>
                         <div className="txtBx">
                             <h3>Probabidad</h3>
-                            <Link to="/probabilidad" className="btn">Ver Contenido</Link>
+                            <Link to="/probabilidad#publicacion" className="btn">Ver Contenido</Link>
                         </div>
                     </div>
-                    <div className="postBox">
+                    <div className="postBox extraHeight">
                         <div className="imgBx">
-                            <img title="teclados" src="post_teclado.png"/>
+                            <img title="redes y simulaciones" src={imagenes.RSimulacion}/>
                         </div>
                         <div className="txtBx">
-                            <h3>Metodologias y Protocolos</h3>
-                            <Link to="/metodologias" className="btn">Ver Contenido</Link>
+                            <h3>Redes y Simulaciones</h3>
+                            <Link to="/redes-simulacion#publicacion" className="btn">Ver Contenido</Link>
                         </div>
                     </div>
                 </div>
                 <div className="postColumn">
-                    <div className="postBox">
+                    <div className="postBox extraHeight">
                         <div className="imgBx">
-                            <img title="seo" src="post_raton.png"/>
+                            <img title="modelos de pruebas" src={imagenes.Pruebas}/>
                         </div>
                         <div className="txtBx">
-                            <h3>Probabidad</h3>
-                            <Link to="/posicionamiento-SEO" className="btn">Ver Contenido</Link>
+                            <h3>Modelos de pruebas</h3>
+                            <Link to="/modelos-de-pruebas#publicacion" className="btn">Ver Contenido</Link>
                         </div>
                     </div>
                     <div className="postBox">
                         <div className="imgBx">
-                            <img title="mktdigital" src="post_teclado.png"/>
+                            <img title="algebra" src={imagenes.Algebra}/>
                         </div>
                         <div className="txtBx">
-                            <h3>Metodologias y Protocolos</h3>
-                            <Link to="/marketing-digital" className="btn">Ver Contenido</Link>
+                            <h3>Algebra</h3>
+                            <Link to="/algebra#publicacion" className="btn">Ver Contenido</Link>
                         </div>
                     </div>
                 </div>
 
             </div>
         </div>
+        {/*
         )}
+        */}
     </section>
     );
 }
