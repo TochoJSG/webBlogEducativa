@@ -1,4 +1,5 @@
 import '../estilos/Space.css';
+
 function Space(){
     return(
         <div className="space">
@@ -12,4 +13,5 @@ function Space(){
         </div>
     );
 }
+
 export default Space;

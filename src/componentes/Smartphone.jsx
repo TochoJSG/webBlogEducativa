@@ -1,5 +1,6 @@
 import '../estilos/Smartphone.css';
 const ui = require('../imagenes/ui.png');
+
 function Smartphone(props){
     return(
 		<>
@@ -12,4 +13,5 @@ function Smartphone(props){
 		</>
     );
 }
+
 export default Smartphone;
