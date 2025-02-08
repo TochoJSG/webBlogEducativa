@@ -19,6 +19,7 @@ const Curriculum = () =>{
             <Grafica />
 
             <Watsapp />
+            
         </div>
     );
 };

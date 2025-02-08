@@ -6,7 +6,7 @@ function Smartphone(props){
 		<h3>Descarga gratis nuestra App para {props.title} de la Playstore</h3>
         <div className="sp">
 			<div className="screen">
-				<img src={ui}/>
+				<img src={ui} alt="apagado"/>
 			</div>
 		</div>
 		</>
