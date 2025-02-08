@@ -1,6 +1,6 @@
 //import {  } from '../estilos/estiloCurriculum.css';
 //import Contacto from './Contacto';
-import CardComp from './CardComp';
+import Watsapp from './Watsapp';
 import Grafica from './Grafica';
 import HeaderCv from './HeaderCv';
 import Skills from './Skills';
@@ -18,6 +18,7 @@ const Curriculum = () =>{
 
             <Grafica />
 
+            <Watsapp />
         </div>
     );
 };

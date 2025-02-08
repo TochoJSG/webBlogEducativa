@@ -43,7 +43,7 @@ const HeaderCv = () =>{
 
                 
                 <div className="contBtnLuz">
-                    <Link to="/desarrollo#contact"><span>contactar</span></Link>
+                    <a href="../imagenes/Jorge-Salgado.pdf" target="_blank" rel="noopener noreferrer" download ><span>Descargar CV</span></a>
                 </div>
                 
                 </div>
