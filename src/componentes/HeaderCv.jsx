@@ -10,10 +10,10 @@ const HeaderCv = () =>{
     const navRefCv = useRef(null);
     const { hash } = useLocation();
 
-    useEffect(() => {
+    useEffect( () =>{
         if (hash) {
             const element = document.getElementById(hash.replace('#', ''));
-            if (element) {
+            if(element){
                 element.scrollIntoView({ behavior: 'smooth' });
             }
         }
@@ -31,7 +31,7 @@ const HeaderCv = () =>{
             <section className="banner parallax" id="sec" ref={secRefCv}>{/* class = cover */}
                 <header>
                     <Link to="/desarrollo">
-                        <img className="logo" src={ require('../imagenes/jorge_1.jpeg') } />
+                        <img className="logo" src={ require('../imagenes/jorge_1.jpeg') } alt="cargando..." />
                     </Link>
 
                     <div id="toggle" onClick={ toggleMenu }></div>
@@ -48,9 +48,9 @@ const HeaderCv = () =>{
                 
                 </div>
                 <ul className="sci">
-                    <li><a href="https://github.com/TochoJSG?tab=repositories"><img src={ require('../imagenes/github.png') } /></a></li>
-                    <li><a href="https://www.facebook.com/jorge.salgadogarcia.334/"><img src={ require('../imagenes/fb.png') } /></a></li>
-                    <li><a href="https://www.youtube.com/channel/UCBOZY7qmDMyctdp1EkMOG9A"><img src={ require('../imagenes/youtube.png') } /></a></li>
+                    <li><a href="https://github.com/TochoJSG?tab=repositories"><img src={ require('../imagenes/github.png') } alt="cargando..." /></a></li>
+                    <li><a href="https://www.facebook.com/jorge.salgadogarcia.334/"><img src={ require('../imagenes/fb.png') } alt="cargando..." /></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCBOZY7qmDMyctdp1EkMOG9A"><img src={ require('../imagenes/youtube.png') } alt="cargando..." /></a></li>
                 </ul>
             </section>
             <div id="navigation" ref={navRefCv}>

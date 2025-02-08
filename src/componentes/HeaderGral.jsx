@@ -26,7 +26,7 @@ function HeaderGral(props){
         <>
             <header className="headerGral">
                 <Link to="/">
-                    <img className="logo" src={require('../imagenes/icono.png')} />
+                    <img className="logo" src={require('../imagenes/icono.png')} alt="cargando..." />
                 </Link>
                 <div className={classNames('menuToggle', { active: isActive })} onClick={toggleMenu}></div>
             </header>

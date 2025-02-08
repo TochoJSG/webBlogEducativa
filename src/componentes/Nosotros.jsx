@@ -1,6 +1,7 @@
 import React from 'react';
 import '../estilos/sitio.css';
 import { Link } from 'react-router-dom';
+
 function Nosotros(){
     return(
         <section class="about">
@@ -39,11 +40,12 @@ function Nosotros(){
                 </div>
                 <div class="content">
                     <div class="imgBx">
-                        <img src={require('../imagenes/a-1.jpg')} class="cover"/>
+                        <img src={require('../imagenes/a-1.jpg')} class="cover" alt="cargando..."/>
                     </div>
                 </div>
             </div>
         </section>
     );
 };
+
 export default Nosotros;

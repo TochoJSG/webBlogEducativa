@@ -50,7 +50,7 @@ function Posts(){
             <div className="postColumn">
                 <div className="postBox">
                     <div className="imgBx">
-                        <img title="Bases de Datos" src={imagenes.bd} className="cover"/>
+                        <img title="Bases de Datos" src={imagenes.bd} className="cover" alt="cargando imagen..."/>
                     </div>
                     <div className="txtBx">
                         <h3>Bases de Datos</h3>
@@ -59,7 +59,7 @@ function Posts(){
                 </div>
                 <div className="postBox extraHeight">
                     <div className="imgBx">
-                        <img title="backend" src={imagenes.backend}/>
+                        <img title="backend" src={imagenes.backend} alt="cargando imagen..."/>
                     </div>
                     <div className="txtBx">
                         <h3>BACKEND_</h3>
@@ -68,7 +68,7 @@ function Posts(){
                 </div>
                 <div className="postBox">
                     <div className="imgBx">
-                        <img title="diseño frontend" src={imagenes.Frontend} />
+                        <img title="diseño frontend" src={imagenes.Frontend} alt="cargando imagen..." />
                     </div>
                     <div className="txtBx">
                         <h3>Diseño Frontend</h3>
@@ -79,7 +79,7 @@ function Posts(){
             <div className="postColumn">
                 <div className="postBox extraHeight">
                     <div className="imgBx">
-                        <img title="Programacion" src={imagenes.Programacion}/>
+                        <img title="Programacion" src={imagenes.Programacion} alt="cargando imagen..."/>
                     </div>
                     <div className="txtBx">
                         <h3>Programacion</h3>
@@ -88,7 +88,7 @@ function Posts(){
                 </div> 
                 <div className="postBox">
                     <div className="imgBx">
-                        <img title="programacion web" src={imagenes.ProgramacionWeb} className="cover"/>
+                        <img title="programacion web" src={imagenes.ProgramacionWeb} className="cover" alt="cargando imagen..."/>
                     </div>
                     <div className="txtBx">
                         <h3>Programacion Web</h3>
@@ -97,7 +97,7 @@ function Posts(){
                 </div>
                 <div className="postBox">
                     <div className="imgBx">
-                        <img title="programacion orientada a objetos" src={imagenes.POO}/>
+                        <img title="programacion orientada a objetos" src={imagenes.POO} alt="cargando imagen..."/>
                     </div>
                     <div className="txtBx">
                         <h3>Programacion Orientada a Objetos</h3>
@@ -108,7 +108,7 @@ function Posts(){
             <div className="postColumn">
                 <div className="postBox">
                     <div className="imgBx">
-                        <img title="Marketing digital" src={imagenes.Marketing} />
+                        <img title="Marketing digital" src={imagenes.Marketing}  alt="cargando imagen..."/>
                     </div>
                     <div className="txtBx">
                         <h3>Marketing Digital</h3>
@@ -117,7 +117,7 @@ function Posts(){
                 </div>
                 <div className="postBox">
                     <div className="imgBx">
-                        <img title="finanzas" src={imagenes.Finanzas}/>
+                        <img title="finanzas" src={imagenes.Finanzas} alt="cargando imagen..."/>
                     </div>
                     <div className="txtBx">
                         <h3>Finanzas</h3>
@@ -126,7 +126,7 @@ function Posts(){
                 </div>
                 <div className="postBox extraHeight">
                     <div className="imgBx">
-                        <img title="Contabilidad" src={imagenes.Contabilidad}/>
+                        <img title="Contabilidad" src={imagenes.Contabilidad} alt="cargando imagen..."/>
                     </div>
                     <div className="txtBx">
                         <h3>Contabilidad</h3>
@@ -149,7 +149,7 @@ function Posts(){
                 <div className="postColumn">
                     <div className="postBox">
                         <div className="imgBx">
-                            <img title="tecnicas SEO" src={imagenes.SEO} className="cover"/>
+                            <img title="tecnicas SEO" src={imagenes.SEO} className="cover" alt="cargando imagen..."/>
                         </div>
                         <div className="txtBx">
                             <h3>Tecnicas SEO</h3>
@@ -158,7 +158,7 @@ function Posts(){
                     </div>
                     <div className="postBox extraHeight">
                         <div className="imgBx">
-                            <img title="redes" src={imagenes.Redes}/>
+                            <img title="redes" src={imagenes.Redes} alt="cargando imagen..."/>
                         </div>
                         <div className="txtBx">
                             <h3>Redes</h3>
@@ -169,7 +169,7 @@ function Posts(){
                 <div className="postColumn">
                     <div className="postBox extraHeight">
                         <div className="imgBx">
-                            <img title="infraestructuras" src={imagenes.Infraestructuras}/>
+                            <img title="infraestructuras" src={imagenes.Infraestructuras} alt="cargando imagen..."/>
                         </div>
                         <div className="txtBx">
                             <h3>Infraestructuras</h3>
@@ -178,7 +178,7 @@ function Posts(){
                     </div>
                     <div className="postBox">
                         <div className="imgBx">
-                            <img title="investigacion de operaciones" src={imagenes.InvestigacionDeOperaciones}/>
+                            <img title="investigacion de operaciones" src={imagenes.InvestigacionDeOperaciones} alt="cargando imagen..."/>
                         </div>
                         <div className="txtBx">
                             <h3>Investigacion para las Operaciones</h3>
@@ -189,7 +189,7 @@ function Posts(){
                 <div className="postColumn">
                     <div className="postBox">
                         <div className="imgBx">
-                            <img title="informatica" src={imagenes.Informatica}/>
+                            <img title="informatica" src={imagenes.Informatica} alt="cargando imagen..."/>
                         </div>
                         <div className="txtBx">
                             <h3>Informatica</h3>
@@ -198,7 +198,7 @@ function Posts(){
                     </div>
                     <div className="postBox extraHeight">
                         <div className="imgBx">
-                            <img title="big data" src={imagenes.BigData} className="cover"/>
+                            <img title="big data" src={imagenes.BigData} className="cover" alt="cargando imagen..."/>
                         </div>
                         <div className="txtBx">
                             <h3>Big Data</h3>
@@ -210,7 +210,7 @@ function Posts(){
                 <div className="postColumn">
                     <div className="postBox">
                         <div className="imgBx">
-                            <img title="ingenieria de requerimientos" src={imagenes.Requerimientos}/>
+                            <img title="ingenieria de requerimientos" src={imagenes.Requerimientos} alt="cargando imagen..."/>
                         </div>
                         <div className="txtBx">
                             <h3>Requerimientos</h3>
@@ -219,7 +219,7 @@ function Posts(){
                     </div>
                     <div className="postBox">
                         <div className="imgBx">
-                            <img title="desarrollo de sistemas" src={imagenes.DesarrolloDeSistemas}/>
+                            <img title="desarrollo de sistemas" src={imagenes.DesarrolloDeSistemas} alt="cargando imagen..."/>
                         </div>
                         <div className="txtBx">
                             <h3>Desarrollo de Sistemas</h3>
@@ -231,7 +231,7 @@ function Posts(){
                 <div className="postColumn">
                     <div className="postBox">
                         <div className="imgBx">
-                            <img title="aplicaciones moviles" src={imagenes.Aplicaciones} className="cover"/>
+                            <img title="aplicaciones moviles" src={imagenes.Aplicaciones} className="cover" alt="cargando imagen..."/>
                         </div>
                         <div className="txtBx">
                             <h3>Aplicaciones moviles</h3>
@@ -240,7 +240,7 @@ function Posts(){
                     </div>
                     <div className="postBox">
                         <div className="imgBx">
-                            <img title="bases de datos nosql" src={imagenes.NoSQL}/>
+                            <img title="bases de datos nosql" src={imagenes.NoSQL} alt="cargando imagen..."/>
                         </div>
                         <div className="txtBx">
                             <h3>Bases de Datos NoSQL</h3>
@@ -251,7 +251,7 @@ function Posts(){
                 <div className="postColumn">
                     <div className="postBox">
                         <div className="imgBx">
-                            <img title="Calculo" src={imagenes.Calculo}/>
+                            <img title="Calculo" src={imagenes.Calculo} alt="cargando imagen..."/>
                         </div>
                         <div className="txtBx">
                             <h3>Calculo</h3>
@@ -260,7 +260,7 @@ function Posts(){
                     </div>
                     <div className="postBox">
                         <div className="imgBx">
-                            <img title="Metodologias de desarrollo" src={imagenes.Metodologias}/>
+                            <img title="Metodologias de desarrollo" src={imagenes.Metodologias} alt="cargando imagen..."/>
                         </div>
                         <div className="txtBx">
                             <h3>Metodologias de desarrollo</h3>
@@ -271,7 +271,7 @@ function Posts(){
                 <div className="postColumn">
                     <div className="postBox">
                         <div className="imgBx">
-                            <img title="probabilidad" src={imagenes.Probabilidad}/>
+                            <img title="probabilidad" src={imagenes.Probabilidad} alt="cargando imagen..."/>
                         </div>
                         <div className="txtBx">
                             <h3>Probabidad</h3>
@@ -280,7 +280,7 @@ function Posts(){
                     </div>
                     <div className="postBox extraHeight">
                         <div className="imgBx">
-                            <img title="redes y simulaciones" src={imagenes.RSimulacion}/>
+                            <img title="redes y simulaciones" src={imagenes.RSimulacion} alt="cargando imagen..."/>
                         </div>
                         <div className="txtBx">
                             <h3>Redes y Simulaciones</h3>
@@ -291,7 +291,7 @@ function Posts(){
                 <div className="postColumn">
                     <div className="postBox extraHeight">
                         <div className="imgBx">
-                            <img title="modelos de pruebas" src={imagenes.Pruebas}/>
+                            <img title="modelos de pruebas" src={imagenes.Pruebas} alt="cargando imagen..."/>
                         </div>
                         <div className="txtBx">
                             <h3>Modelos de pruebas</h3>
@@ -300,7 +300,7 @@ function Posts(){
                     </div>
                     <div className="postBox">
                         <div className="imgBx">
-                            <img title="algebra" src={imagenes.Algebra}/>
+                            <img title="algebra" src={imagenes.Algebra} alt="cargando imagen..."/>
                         </div>
                         <div className="txtBx">
                             <h3>Algebra</h3>

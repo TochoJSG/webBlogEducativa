@@ -1,5 +1,6 @@
-import { handleMouseEnter, handleMouseLeave } from "react";
+import React from "react";
 import '../estilos/pc.css';
+
 const Logo = require('../imagenes/icono.png');
 const video = require('../imagenes/short.mp4');
 function Pc(){

@@ -1,5 +1,6 @@
 import '../estilos/sitio.css';
-function Carrusel(props){
+
+function Carrusel(){
     return(
         <div id="carrusel" className="main">
             <div className="texto_car">
@@ -13,12 +14,11 @@ function Carrusel(props){
                         </button></span>
                 </p>
             </div>
-            {/*
-            <section className="seccionCarr" id="carrusel-gral"></section>
-            */}
+            {/*<section className="seccionCarr" id="carrusel-gral"></section>*/}
         </div>
     );
 }
+
 export default Carrusel;
 /**
  * onClick="right_mover()"

@@ -7,7 +7,7 @@ import Pc from '../Pc.jsx';
 import HeaderGral from '../HeaderGral.jsx';
 import data from '../../contenido/pruebas.json';
 
-import Loader from '../Loader.jsx';
+//import Loader from '../Loader.jsx';
 
 const Programacion = ()=>{
     /*const url = '../../contenido/pruebas.json';
