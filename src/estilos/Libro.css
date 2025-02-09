@@ -1,6 +1,7 @@
-.container{
+.containerBook{
     touch-action: manipulation;
     display:flex;
+    flex-direction:column;
     position: relative;
     justify-content:center;
     align-items:center;
@@ -8,38 +9,40 @@
     background:url(../imagenes/a-v7.png);
     background-attachment:fixed;
     background-size:cover;
+    overflow-y: hidden;
 }
-.book{
+.containerBook .book{
     position:relative;
     top:0;
-    left:40%;
+    left:5%;
     width:300px;
     height:500px;
     background:#888DA8;
     transform:rotate(-37.5deg) skewX(10deg);
     box-shadow:-35px 35px 50px rgba(0,0,0,1);
     transition:0.5s;
+    overflow-y: hidden;
 }
-.book:hover{
+.containerBook .book:hover{
     transform:rotate(-37.5deg) skewX(10deg) translate(20px,-20px);
     box-shadow:-50px 100px 50px rgba(0,0,0,1);
 }
-.book:before{
-    top:0;
-    left:0;
+.containerBook .book:before{
     content:'AI';
     width:30px;
     height:100%;
-    background:#9CA1B9 url(../imagenes/a-v5.png);
     background:#C0C3D5;
     background-size:auto;
     background-position:center;
     position:absolute;
+    top:0;
+    left:0;
     transform:skewY(-45deg) translate(-30px,-15px);
     /*transform:translate(-50%,-50%) rotate(90deg);*/
     box-shadow:inset -10px 0 20px rgba(0,0,0,0.2);
+    background:#9CA1B9 url(../imagenes/a-v5.png);
 }
-.book:after{
+.containerBook .book:after{
     content:'';
     width:100%;
     height:30px;
@@ -49,20 +52,21 @@
     left:0;
     transform:skewX(-45deg) translate(15px,30px);
 }
-.book h2{
+.containerBook .book h2{
     position:absolute;
     bottom:100px;
     left:20px;
     font-size:3em;
     line-height:1em;
+    overflow-y: hidden;
 }
-.book h2 span{
+.containerBook .book h2 span{
     background:url(../imagenes/a-v5.png);
     background-attachment:fixed;
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
 }
-.book .text{
+.containerBook .book .text{
     position:absolute;
     top:20px;/*bottom 20px*/
     right:20px;
@@ -71,10 +75,10 @@
     padding-top:5px;
     border-top-left-radius:1px solid #262626;
 }
-.book .text i{
+.containerBook .book .text i{
     font-weight:700;
 }
-.book .cover{
+.containerBook .book .coverBook{
     position:absolute;
     background:url(../imagenes/a-v5.png);
     background-size:cover;
@@ -83,4 +87,63 @@
     width:100%;
     height:70%;
     
+}
+@media(max-width:991px){
+    .containerBook{
+        display: block;
+        height:500px;
+        max-width: 100vw;
+        overflow-y:hidden;
+    }
+    .containerBook .book{
+        position:relative;
+        overflow-y:hidden;
+        left:25%;
+        width:200px;
+        height:350px;
+        transform:rotate(-37.5deg) skewX(10deg);
+    }
+    .containerBook .book:hover{
+        transform:rotate(-37.5deg) skewX(10deg) translate(20px,-20px);
+        box-shadow:-50px 100px 50px rgba(0,0,0,1);
+        overflow-y: hidden;
+    }
+    .containerBook .book:before{
+        top:0;
+        left:0;
+        content:'AI';
+        width:30px;
+        height:100%;
+
+        transform:skewY(-45deg) translate(-30px,-15px);
+        /*transform:translate(-50%,-50%) rotate(90deg);*/
+        box-shadow:inset -10px 0 20px rgba(0,0,0,0.2);
+    }
+
+    .containerBook .book h2{
+        position:absolute;
+        bottom:100px;
+        left:20px;
+        font-size:1.5em;
+        line-height:1em;
+    }
+
+    .containerBook .book .text{
+        position:absolute;
+        top:20px;/*bottom 20px*/
+        right:20px;
+        color:#262626;
+        font-size:0.6em;
+        padding-top:5px;
+        border-top-left-radius:1px solid #262626;
+    }
+    .containerBook .book .text i{
+        font-weight:500;
+    }
+    .containerBook .book .coverBook{
+        top:0;
+        left:0;
+        width:100%;
+        height:70%;
+    }
 }

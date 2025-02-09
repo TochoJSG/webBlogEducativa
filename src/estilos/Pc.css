@@ -77,3 +77,43 @@
     background:rgba(255,255,255,.3);
     transform:skewX(-6deg);
 }
+@media(max-width:980px){
+    .centerPc{
+        height:250px;
+        top:50%;
+        left:50%;
+        overflow-y:hidden;
+    }
+    .centerPc .monitor{
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        width:349px;
+        height:219px;
+        border-radius:10px;
+        z-index: 1;
+        overflow-y:hidden;
+    }
+    .centerPc .monitor:before{
+        content:'';
+        width:70px;
+        height:60px;
+        position:absolute;
+        bottom:-55px;
+        transform:perspective(100px) translateX(-50%) rotateX(25deg) skewX(7deg);
+        z-index:10;
+        transform-origin:bottom;
+    }
+    .centerPc .monitor:after{
+        content:'';
+        width:155px;
+        height:17px;
+        position:absolute;
+        left:50%;
+        bottom:-155px;
+        transform:translateX(-50%);
+        z-index:-1;
+        transform-origin:bottom;
+    }
+}

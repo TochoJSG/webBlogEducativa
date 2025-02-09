@@ -5,6 +5,8 @@ import { Link, useLocation } from 'react-router-dom';
 import DarkVariantExample from './CarrucelCv';
 import '../estilos/estiloCurriculum.css';
 
+//const cv = require('../imagenes/Jorge-Salgado.pdf');
+
 const HeaderCv = () =>{
     const secRefCv = useRef(null);
     const navRefCv = useRef(null);
@@ -43,7 +45,9 @@ const HeaderCv = () =>{
 
                 
                 <div className="contBtnLuz">
-                    <a href="../imagenes/Jorge-Salgado.pdf" target="_blank" rel="noopener noreferrer" download ><span>Descargar CV</span></a>
+                    <a href='../imagenes/Jorge-Salgado.pdf' rel="noopener noreferrer" type="application/pdf" download>
+                        <span>Descargar CV</span>
+                    </a>
                 </div>
                 
                 </div>
