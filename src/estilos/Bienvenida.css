@@ -34,8 +34,6 @@ background-position:center;background-size: contain;
 	color:#fff;font-size:6em;font-weight:700;pointer-events:none;opacity:0;letter-spacing:20px;transition:0.666s;white-space:nowrap;}
 #navigation ul li:hover:before{opacity:0.0666;letter-spacing:0px;}
 
-
-
 #navigation ul li a{
 	position:relative;display:inline-block;padding:6px 17px;text-decoration:none;text-align:center;
 	background:#05034e;color:#fff;text-transform:uppercase;font-weight:500;font-size:1em;
