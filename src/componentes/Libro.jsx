@@ -1,14 +1,14 @@
-import '../estilos/Libro.css';
+import React from 'react';
+import styles from '../estilos/Libro.module.css';
 
 const Libro = ()=>{
     return(
-        <div className="containerBook"> 
-            <div className="book">
-                <div className="coverBook"></div>
+            <div className={styles.book}>{/*<div className="containerBook">*/}
+                <div className={styles.coverBook}></div>
                 <h2><span>FullStack</span> Book</h2>
-                <span className="text">Develop By<i>AdmIng</i></span>
+                <span className={styles.text}>Develop By<i>AdmIng</i></span>
+                {/*</div>*/}
             </div>
-        </div>
     )
 };
 

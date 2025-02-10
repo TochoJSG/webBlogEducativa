@@ -52,8 +52,18 @@ background-position:center;background-size: contain;
 #navigation ul li a:hover:before{
 	left:calc(100% +100px);transition:0.666s;transition-delay:0.2s;
 }
+@media(max-width:350px){
+    .banner{padding:100px 17px;display:flex;margin:0;}
+    .content{width:100%;margin:15px 0%;padding:6px 3px;overflow-y:hidden;overflow-x:hidden;}
+    .content h2{font-size:1.1em;overflow:hidden;height:auto;font-weight:600;letter-spacing:2px;}
+    .content h2 span{font-size:1.3em;font-weight:700;}
+    .content p{font-size:.7em;font-weight:300;}
+}
 @media(max-width:768px){
     header #toggle{position:relative;margin:6px;}
+
+    .banner{padding:100px 17px;display:flex;margin:0;}
+    .content{width:100%;margin:15px 0%;padding:6px 3px;overflow-y:hidden;overflow-x:hidden;}
 
     .sci{position:absolute;top:255px;flex-direction:column;left:80%;}
     .sci li{list-style:none;  }
@@ -67,6 +77,9 @@ background-position:center;background-size: contain;
 }
 @media(max-width:991px){
     header #toggle{position:relative;margin:6px;}
+
+    .banner{padding:100px 17px;display:flex;margin:0;}
+    .content{width:80%;margin:15px 15% 0 5%;padding:6px 3px;overflow-y:hidden;overflow-x:hidden;}
 
     .sci{position:absolute;top:255px;flex-direction:column;left:80%;}
     .sci li{list-style:none;  }
