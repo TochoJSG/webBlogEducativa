@@ -302,8 +302,16 @@ p .star{margin:6px auto;width:66%;font-size:23px;color:#808080;}
 	.post .contentBx .postColumn .postBox .imgBx{height:415px;}
 	.post .contentBx .postColumn .postBox .imgBx img{width:100%;position:absolute;max-height:250px;max-width:250px;}
 	#desplegarMas .contentBx{position:relative;display:grid;width:100%;grid-template-columns:repeat(1,1fr);grid-gap:8px;margin:0;}
-	/*#desplegarMas .contentBx .postColumn .postBox imgBx{height:415px;max-width:30%;align-content:center;align-items:center;}
-	#desplegarMas .contentBx .postColumn .postBox .imgBx img{width:100%;position:relative;height:100%;}*/
+
+	.contact .contactForm{margin-top:9px;}
+	.contact .contactForm .row{width:100%;grid-gap:19px;margin-top:15px;}
+	.contact .contactForm .row input,
+	.contact .contactForm .row2 textarea{width:100%;padding:16px;outline:none;font-size:.7em;font-weight:600;letter-spacing:3px;}
+	.contact .contactForm .row2{margin-top:17px;}
+	.contact .contactForm .row2 textarea{resize:none;height:333px;}
+	::placeholder{color:var(--black);}
+	.contact .contactForm .row2 input[type="submit"]{border:3px solid #000;}
+
 	.contact .contactForm .row{grid-template-columns:repeat(1,1fr);}
 	.alerta{font-weight:100;font-size:.8em;}
 	.alerta h1{font-weight:500;}
@@ -356,6 +364,14 @@ p .star{margin:6px auto;width:66%;font-size:23px;color:#808080;}
 	.about .contentBx .content .filiales .negocios .negocio p{font-size:.7em;font-weight:600;padding:0 auto;}
 	.about .contentBx .content .filiales .negocios .negocio img{width:33px;height:33px;border-radius:50%;margin:0 50%;}
 	
+	.contact .contactForm{margin-top:16px;}
+	.contact .contactForm .row{grid-gap:21px;margin-top:17px;}
+	.contact .contactForm .row input,
+	.contact .contactForm .row2 textarea{padding:16px;font-size:.9em;font-weight:500;}
+	.contact .contactForm .row2{margin-top:15px;}
+	.contact .contactForm .row2 textarea{height:350px;}
+	.contact .contactForm .row2 input[type="submit"]{border:3px solid #000;}
+
 	.cover{overflow-y:hidden;}
 
 	h1,h2,h3,h4{overflow-y: hidden;}
@@ -383,6 +399,7 @@ p .star{margin:6px auto;width:66%;font-size:23px;color:#808080;}
 	.post .contentBx .postColumn .postBox .imgBx{height:415px;}
 	.post .contentBx .postColumn .postBox .imgBx img{width:100%;position:absolute;max-height:250px;max-width:250px;}
 	#desplegarMas .contentBx{position:relative;display:grid;width:100%;grid-template-columns:repeat(1,1fr);grid-gap:8px;margin:0;}
+
 	/*#desplegarMas .contentBx .postColumn .postBox imgBx{height:415px;max-width:30%;align-content:center;align-items:center;}
 	#desplegarMas .contentBx .postColumn .postBox .imgBx img{width:100%;position:relative;height:100%;}*/
 	.contact .contactForm .row{grid-template-columns:repeat(1,1fr);}
