@@ -2,7 +2,7 @@ import React from "react";
 import '../estilos/pc.css';
 
 const Logo = require('../imagenes/icono.png');
-const video = require('../imagenes/short.mp4');
+const video = require('../static_src/short.mp4');
 function Pc(){
     const handleMouseEnter = (e) => {
         e.target.play(); // Reproduce el video

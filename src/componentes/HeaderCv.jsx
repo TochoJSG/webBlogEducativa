@@ -39,13 +39,11 @@ const HeaderCv = () =>{
                     <div id="toggle" onClick={ toggleMenu }></div>
                 </header>
                 <div className="content">
-                
 
                     <DarkVariantExample />
 
-                
                 <div className="contBtnLuz">
-                    <a href='../imagenes/Jorge-Salgado.pdf' rel="noopener noreferrer" type="application/pdf" download>
+                    <a href="../../public/static_src/Jorge-Salgado-Garcia.pdf" rel="noopener noreferrer" type="application/pdf" download>
                         <span>Descargar CV</span>
                     </a>
                 </div>

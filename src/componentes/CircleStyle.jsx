@@ -1,6 +1,6 @@
 import '../estilos/CircleStyle.css';
-const short = require('../imagenes/short2.mp4');
-const short2 = require('../imagenes/short.mp4');
+const short = require('../static_src/short2.mp4');
+const short2 = require('../static_src/short.mp4');
 function CircleStyle(){
     return(
         <div className="circleContent">
