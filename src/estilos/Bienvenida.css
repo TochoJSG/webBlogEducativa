@@ -25,7 +25,7 @@ header a .logo{position:fixed;padding:0;margin:0;width:66px;top:17px;left:17px;b
 background-position:center;background-size: contain;
 }
 #navigation.active{right:0;opacity:1;}
-#navigation ul{position:relative;display:flex;flex-direction:column;}
+#navigation ul{position:relative;display:flex;flex-direction:column;right:17px;align-items: center;justify-content: center;}
 #navigation ul li{list-style:none;padding:17px 0;align-items:center;}
 /*#navigation ul li a{color:#415;text-decoration:none;display:inline-block;font-size:1.3em;font-weight:600;text-transform:uppercase;opacity:0.6;padding:17px;letter-spacing:3px;}*/
 /*#navigation ul li a:hover{transform:translateY(-9px);opacity:1;}*/

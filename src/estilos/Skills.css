@@ -114,6 +114,7 @@
         font-size:1em;
         font-weight: 900;
         letter-spacing:3px;
+        overflow-x: hidden;
     }
     .skillsBox{
         box-sizing:border-box;
