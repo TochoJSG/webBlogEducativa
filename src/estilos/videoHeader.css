@@ -6,9 +6,7 @@
     background:none;
     touch-action:manipulation;
 }*/
-.cuerpoVH{
-    background-color:#000;
-}
+.cuerpoVH{background-color:#000;}
 .cuerpoVH section{
     position:relative;
     width:100%;
