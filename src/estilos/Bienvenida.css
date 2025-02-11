@@ -80,7 +80,7 @@ background-position:center;background-size:contain;}
     .sci li{list-style:none;  }
     .sci li a{width:33px;height:33px;border:1px solid #00010c;margin:6px 0 0;right:0px;}
     .sci li a img{width:25px;height:25px;filter:invert(1);mix-blend-mode:difference;}
-
+    /*babkabak*/
     #navigation{width:90%;padding:17px 0px 0px 0px;}
     #navigation ul{right:-30%;}
     #navigation ul li a{font-size:1.1em;font-weight:500;opacity:0.6;padding:17px 6px;letter-spacing:2px;}
