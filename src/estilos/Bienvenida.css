@@ -68,8 +68,7 @@ background-position:center;background-size:contain;}
     #navigation{width:90%;padding:17px 0px 0px 0px;}
     #navigation ul{right:-25%;}
     #navigation ul li a{font-size:1.1em;font-weight:500;opacity:0.6;padding:17px 6px;letter-spacing:2px;}
-    #navigation ul li a:hover{
-        transform:scale(1);z-index:10000;opacity:1;}
+    #navigation ul li a:hover{transform:scale(1);z-index:10000;opacity:1;}
 }
 @media(max-width:991px){
     header #toggle{position:relative;margin:6px;}
