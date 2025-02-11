@@ -28,6 +28,7 @@ background-position:center;background-size:contain;}
 #navigation ul li{list-style:none;padding:16px 6px;align-items:center;justify-content:right;}
 /*#navigation ul li a{color:#415;text-decoration:none;display:inline-block;font-size:1.3em;font-weight:600;text-transform:uppercase;opacity:0.6;padding:17px;letter-spacing:3px;}*/
 /*#navigation ul li a:hover{transform:translateY(-9px);opacity:1;}*/
+
 #navigation ul li:before{
 	content:attr(data-text);position:absolute;top:50%;left:66%;transform:translate(-50%,-50%);
 	color:#fff;font-size:6em;font-weight:700;pointer-events:none;opacity:0;letter-spacing:20px;transition:0.666s;white-space:nowrap;}
