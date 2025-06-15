@@ -3,13 +3,15 @@ import Posts from '../Posts.jsx';
 import Carrusel from '../Carrusel.jsx';
 import DropDown from '../DropDown.jsx';
 import Footer from '../Footer.jsx';
-import Smartphone from '../Smartphone.jsx';
+import Caja from '../Caja.jsx';
 import HeaderGral from '../HeaderGral.jsx';
 import data from '../../contenido/contenido.json';
+import GoogleAnalytics from '../GoogleAnalytics.jsx';
 
 function InvOperaciones(props){
     return(
         <>
+            <GoogleAnalytics/>
             <HeaderGral/>
             <Articulo
                 title="Investigacion para las Operaciones"
@@ -38,7 +40,7 @@ function InvOperaciones(props){
                 conceptosT5={data.InvestigacionDeOperaciones.conceptos.titulo5}
                 conceptosC5={data.InvestigacionDeOperaciones.conceptos.concepto5}
             />
-            <Smartphone title=""/>
+            <Caja texto="Este conjunto de Tecnicas es ampliamente usada en logistica y procesos Industriales"/>
             <DropDown/>
             <Carrusel/>
             <Posts/>

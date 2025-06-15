@@ -1,0 +1,90 @@
+.cont_cara{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    width:100vw;
+
+    display: flex;
+    flex-direction: column;
+}
+p{
+    padding:0 17px;
+    margin:0;
+    font-size: 1.3em;
+    font-weight: 300;
+}
+.cont_cara .cara{
+    position:absolute;
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    background:#ffcd00;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:0 25px;
+}
+.cont_cara .cara:hover{
+    background:linear-gradient(180deg,#f44336,#f44336,#ffcd00);
+    cursor:url('../imagenes/coorp.jpg'),pointer;
+}
+.cont_cara .cara:before{
+    content:'';
+    position:absolute;
+    top:180px;
+    width:150px;
+    height:70px;
+    border-bottom-left-radius:70px;
+    border-bottom-right-radius:70px;
+    background:#b57700;
+    transition:0.5s;
+}
+.cont_cara .cara:hover:before{
+    top:210px;
+    width:150px;
+    height:20px;
+    border-bottom-left-radius:0px;
+    border-bottom-right-radius:0px;
+    background:#9d0b00;
+}
+.cont_cara .cara .eyeS{
+    position:relative;
+    top:-40px;
+    display:flex;
+    flex-wrap:wrap;
+}
+.cont_cara .cara .eyeS .eyes{
+    position:relative;
+    width:80px;
+    height:80px;
+    display:block;
+    margin:0 15px;
+    background:#fff;
+    border-radius:50%;
+}
+.cont_cara .cara .eyeS .eyes:before{
+    content:'';
+    position:absolute;
+    top:50%;
+    left:25px;
+    transform:translate(-50%,-50%);
+    width:40px;
+    height:40px;
+    background:#040105;
+    border-radius:50%;
+}
+.cont_cara h2{
+    position:absolute;
+    top:75px;
+    font-size:3em;
+    color:#daff;
+}
+.cont_cara h2:last-child{
+    position:absolute;
+    top:initial;
+    bottom:75px;
+    font-size:3em;
+    color:#fff;
+}

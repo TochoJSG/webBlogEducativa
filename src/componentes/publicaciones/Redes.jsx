@@ -5,11 +5,13 @@ import DropDown from '../DropDown.jsx';
 import Footer from '../Footer.jsx';
 import HeaderGral from '../HeaderGral.jsx';
 import data from '../../contenido/contenido.json';
-//import RedesComp from '../redes/RedesComp.jsx';
+import ParticlesBackground from '../ParticlesBackground.jsx';
+import GoogleAnalytics from '../GoogleAnalytics.jsx';
 
 function Redes(props){
     return(
         <>
+            <GoogleAnalytics/>
             <HeaderGral />
             <Articulo
                 title="Redes y Conectividad"
@@ -40,6 +42,7 @@ function Redes(props){
                 conceptosT5={data.Redes.conceptos.titulo5}
                 conceptosC5={data.Redes.conceptos.concepto5}
             />
+            <ParticlesBackground />
             <DropDown />
             <Carrusel />
             <Posts />

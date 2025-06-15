@@ -8,7 +8,7 @@ function Articulo(props){
                 <div className="title"><h1>{props.title}
                     </h1></div>
                 <p>{props.parraph1}
-                    </p> 
+                    </p>
                 <p>{props.parraph2}
                     </p>
                 <p>{props.parraph3}

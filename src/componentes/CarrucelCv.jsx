@@ -7,24 +7,11 @@ function DarkVariantExample() {
   return (
     <Carousel className="carousel-cv" data-bs-theme="dark"  controls={true} indicators={true}>
         
-      <Carousel.Item className="carousel-item" interval={600} >
-        <span>
-        <img
-          className="d-block w-100"
-          src={ require('../imagenes/jorge_1.jpeg') }
-          alt="First slide"
-        />
-        </span>
-        <Carousel.Caption className="carousel-caption">
-          <h5>Salgado Garcia Jorge Arturo, <span>Fullstack Developer</span></h5>
-        </Carousel.Caption>
-      </Carousel.Item>
-
       <Carousel.Item className="carousel-item" interval={600}>
         <span>
         <img
           className="d-block w-100"
-          src={ require('../imagenes/jorge_2.jpeg') }
+          src={ require('../imagenes/jorge-1.png') }
           alt="Second slide"
         />
         </span>
@@ -37,12 +24,38 @@ function DarkVariantExample() {
         <span>
         <img
           className="d-block w-100"
-          src={ require('../imagenes/jorge_3.jpg') }
+          src={ require('../imagenes/jorge_1.jpeg') }
           alt="Third slide"
         />
         </span>
         <Carousel.Caption>
           <h5>.:JAVA::C++/C#::JavaScript con Node.js, Express, React,CSS,Boostrap::PHP::SQL:.</h5>
+        </Carousel.Caption>
+      </Carousel.Item>
+
+      <Carousel.Item className="carousel-item" interval={600}>
+        <span>
+        <img
+          className="d-block w-100"
+          src={ require('../imagenes/jorge-2.png') }
+          alt="Second slide"
+        />
+        </span>
+        <Carousel.Caption>
+          <h5>Licenciatura en Ciencias de la Informatica UPIICSA, <span>IPN</span></h5>
+        </Carousel.Caption>
+      </Carousel.Item>
+
+      <Carousel.Item className="carousel-item" interval={600}>
+        <span>
+        <img
+          className="d-block w-100"
+          src={ require('../imagenes/jorge-3.png') }
+          alt="Second slide"
+        />
+        </span>
+        <Carousel.Caption>
+          <h5>Licenciatura en Ciencias de la Informatica UPIICSA, <span>IPN</span></h5>
         </Carousel.Caption>
       </Carousel.Item>
 

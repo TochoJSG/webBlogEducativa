@@ -38,17 +38,19 @@ const HeaderCv = () =>{
 
                     <div id="toggle" onClick={ toggleMenu }></div>
                 </header>
+                
                 <div className="content">
 
                     <DarkVariantExample />
 
-                <div className="contBtnLuz">
-                    <a href="../static_src/Jorge-Salgado-Garcia.pdf" rel="noopener noreferrer" type="application/pdf" download>
-                        <span>Descargar CV</span>
-                    </a>
-                </div>
+                    <div className="contBtnLuz">
+                        <a href="../static_src/Jorge-Salgado-Garcia.pdf" rel="noopener noreferrer" type="application/pdf" download>
+                            <span>Descargar CV</span>
+                        </a>
+                    </div>
                 
                 </div>
+
                 <ul className="sci">
                     <li><a href="https://github.com/TochoJSG?tab=repositories"><img src={ require('../imagenes/github.png') } alt="cargando..." /></a></li>
                     <li><a href="https://www.facebook.com/jorge.salgadogarcia.334/"><img src={ require('../imagenes/fb.png') } alt="cargando..." /></a></li>

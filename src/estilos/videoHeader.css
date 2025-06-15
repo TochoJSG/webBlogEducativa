@@ -8,6 +8,7 @@
 }*/
 .cuerpoVH{background-color:#000;}
 .cuerpoVH section{
+    background: url(../imagenes/short.mp4);
     position:relative;
     width:100%;
     min-height:100vh;

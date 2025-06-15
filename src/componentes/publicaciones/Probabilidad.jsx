@@ -5,10 +5,13 @@ import DropDown from '../DropDown.jsx';
 import Footer from '../Footer.jsx';
 import HeaderGral from '../HeaderGral.jsx';
 import data from '../../contenido/contenido.json';
+import GoogleAnalytics from '../GoogleAnalytics.jsx';
+import Pokar from '../Pokar.jsx';
 
 function Probabilidad(props){
     return(
         <>
+            <GoogleAnalytics/>
             <HeaderGral/>
             <Articulo
                 title="Probabilidad"
@@ -37,6 +40,7 @@ function Probabilidad(props){
                 conceptosT5={data.Probabilidad.conceptos.titulo5}
                 conceptosC5={data.Probabilidad.conceptos.concepto5}
             />
+            <Pokar/>
             <DropDown />
             <Carrusel/>
             <Posts/>

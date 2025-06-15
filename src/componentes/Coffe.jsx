@@ -20,7 +20,7 @@ const Coffe =()=>{
                     <div className="handle"></div>
                 </div>
 
-            <p className='textoPromocion'>La promocion de la correcta imagen cierra ventas y cada venta nos acerca a un Negocio exitoso</p>
+            <p className='textoPromocion'>Ser programador es diferente a Desarrollador de sistemas, un Desarrollador de Sistemas usualmente sabe programar, pero un a un programador puede complicarsele desarrollar todo un sistema </p>
             
             </div>
         </section>

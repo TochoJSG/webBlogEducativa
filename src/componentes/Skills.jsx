@@ -4,7 +4,7 @@ const Skills = () =>{
     return(
         <section className="sectionFS">
         <div className="center">
-            <h1>Habilidades de Software</h1>
+            <h1>Habilidades Web</h1>
             <div className="skillsBox">
                 <p>HTML</p>
                 <p>90%</p>
@@ -15,7 +15,7 @@ const Skills = () =>{
             
             <div className="skillsBox">
                 <p>CSS</p>
-                <p>66%</p>
+                <p>75%</p>
                 <div className="skill">
                     <div className="skill_level" style={{ width: '66%' }}></div>
                 </div>
@@ -38,7 +38,7 @@ const Skills = () =>{
             </div>
             
             <div className="skillsBox">
-                <p>jQuery</p>
+                <p>NoSQL</p>
                 <p>66%</p>
                 <div className="skill">
                     <div className="skill_level" style={{ width: '66%' }}></div>

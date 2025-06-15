@@ -23,6 +23,7 @@ const Probabilidad = require('./Probabilidad.png');
 const RSimulacion = require('./Redes&Simulacion.png');
 const Pruebas = require('./Pruebas.png');
 const Algebra = require('./Calculo.jpg');
+const Seguridad = require('./seguridad.png');
 
 module.exports = {
     bd,
@@ -50,4 +51,5 @@ module.exports = {
     RSimulacion,
     Pruebas,
     Algebra,
+    Seguridad
 }

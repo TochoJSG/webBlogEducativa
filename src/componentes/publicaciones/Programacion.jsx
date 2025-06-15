@@ -5,7 +5,8 @@ import DropDown from '../DropDown.jsx';
 import Footer from '../Footer.jsx';
 import Pc from '../Pc.jsx';
 import HeaderGral from '../HeaderGral.jsx';
-import data from '../../contenido/pruebas.json';
+import data from '../../contenido/contenido.json';
+import GoogleAnalytics from '../GoogleAnalytics.jsx';
 
 //import Loader from '../Loader.jsx';
 
@@ -18,6 +19,7 @@ const Programacion = ()=>{
 
     return(
         <>
+            <GoogleAnalytics/>
             <HeaderGral/>
             <Articulo
                 title="Programacion"

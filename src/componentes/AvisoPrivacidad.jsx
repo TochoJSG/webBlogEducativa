@@ -14,10 +14,10 @@ const PrivacyPolicy = () => {
         <p>
           <b>Identidad:</b> Comercializadora Tocha,<br />
           <b>Domicilio social:</b> CDMX, Iztapalapa, 09960, Mercado Cananea,<br />
-          <b>Teléfono:</b> 56 10 93 61 70,<br />
+          <b>Teléfono:</b> 55 17 97 17 06,<br />
           <b>Correo Electrónico:</b> <a href="mailto:matprimas.tocha.loc33@gmail.com">matprimas.tocha.loc33@gmail.com</a>,<br />
           <b>Contacto:</b> información en contacto,<br />
-          <b>Nombre del dominio:</b> <a href="https://electronica-inteligente.com">electronica-inteligente.com</a>,<br />
+          <b>Nombre del dominio:</b> <a href="https://comercializadora-tocha.com">Grupo-Tocha.com</a>,<br />
         </p>
       </div>
       <div className="requisitos">
@@ -26,7 +26,7 @@ const PrivacyPolicy = () => {
           En cumplimiento de lo dispuesto en el Reglamento General de Protección de Datos aplicable a México y Latinoamérica, te informamos de que trataremos los datos que nos facilitas para:<br />
           <ul>
             <li>Gestionar la contratación de servicios que realices a través de la Plataforma, así como la facturación y entrega correspondiente.</li>
-            <li>Remitir periódicamente comunicaciones sobre servicios, eventos y noticias relacionadas con las actividades desarrolladas por <a href="https://tochamateriasprimas.com/contacto_tocha.html">Comercializadora Tocha</a>, salvo que indiques lo contrario o revoques tu consentimiento.</li>
+            <li>Remitir periódicamente comunicaciones sobre servicios, eventos y noticias relacionadas con las actividades desarrolladas por <a href="https://comercializadora-tocha.com/contacto_tocha.html">Comercializadora Tocha</a>, salvo que indiques lo contrario o revoques tu consentimiento.</li>
             <li>Remitir información comercial y/o promocional relacionada con el sector de servicios contratados, salvo que indiques lo contrario o revoques tu consentimiento.</li>
             <li>Dar cumplimiento a las obligaciones legalmente establecidas, así como verificar el cumplimiento de obligaciones contractuales.</li>
             <li>Cesión de datos a organismos y autoridades, conforme a las disposiciones legales.</li>
@@ -34,7 +34,7 @@ const PrivacyPolicy = () => {
         </p>
         <h2><b>Categorías de datos</b> – ¿Qué datos tratamos?</h2>
         <p>
-          En <a href="https://tochamateriasprimas.com/contacto_tocha.html">Comercializadora Tocha</a> tratamos las siguientes categorías de datos:<br />
+          En <a href="https://comercializadora-tocha.com/contacto_tocha.html">Comercializadora Tocha</a> tratamos las siguientes categorías de datos:<br />
           <ul>
             <li>Datos identificativos,</li>
             <li>Metadatos de comunicaciones electrónicas,</li>
@@ -48,7 +48,7 @@ const PrivacyPolicy = () => {
         </p>
         <h2><b>Plazo de Conservación de los Datos</b> – ¿Por cuánto tiempo conservaremos tus datos?</h2><br />
         <p>
-          <a href="https://tochamateriasprimas.com/contacto_tocha.html">Comercializadora Tocha</a> conservará los datos personales únicamente durante el tiempo necesario para las finalidades recogidas, y los mantendrá bloqueados conforme a los plazos legales.
+          <a href="https://comercializadora-tocha.com/contacto_tocha.html">Comercializadora Tocha</a> conservará los datos personales únicamente durante el tiempo necesario para las finalidades recogidas, y los mantendrá bloqueados conforme a los plazos legales.
         </p>
         <h2><b>Seguridad de la Información</b> – ¿Qué medidas de seguridad implantamos?</h2><br />
         <p>

@@ -3,13 +3,15 @@ import Posts from '../Posts.jsx';
 import Carrusel from '../Carrusel.jsx';
 import DropDown from '../DropDown.jsx';
 import Footer from '../Footer.jsx';
-import Pc from '../Pc.jsx';
+import Coffe from '../Coffe.jsx';
 import HeaderGral from '../HeaderGral.jsx';
 import data from '../../contenido/contenido.json';
+import GoogleAnalytics from '../GoogleAnalytics.jsx';
 
 function DesarrolloDeSistemas(props){
     return(
         <>
+            <GoogleAnalytics/>
             <HeaderGral/>
             <Articulo
                 title="Desarrollo de Sistemas"
@@ -38,7 +40,7 @@ function DesarrolloDeSistemas(props){
                 conceptosT5={data.DesarrolloDeSistemas.conceptos.titulo5}
                 conceptosC5={data.DesarrolloDeSistemas.conceptos.concepto5}
             />
-            <Pc/>
+            <Coffe/>
             <DropDown/>
             <Carrusel/>
             <Posts/>

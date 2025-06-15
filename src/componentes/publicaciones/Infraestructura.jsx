@@ -6,10 +6,12 @@ import Footer from '../Footer.jsx';
 import Pc from '../Pc.jsx';
 import HeaderGral from '../HeaderGral.jsx';
 import data from '../../contenido/contenido.json';
+import GoogleAnalytics from '../GoogleAnalytics.jsx';
 
 function Infraestructura(props){
     return(
         <>
+            <GoogleAnalytics/>
             <HeaderGral/>
             <Articulo
                 title="Infraestructura"

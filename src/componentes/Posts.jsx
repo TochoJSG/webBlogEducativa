@@ -62,7 +62,7 @@ function Posts(){
                     </div>
                     <div className="txtBx">
                         <h3>BACKEND_</h3>
-                        <Link to="/base-de-datos-nosql#publicacion" className="btn">Ver Contenido</Link>
+                        <Link to="/backend#publicacion" className="btn">Ver Contenido</Link>
                     </div>
                 </div>
                 <div className="postBox">
@@ -71,7 +71,7 @@ function Posts(){
                     </div>
                     <div className="txtBx">
                         <h3>Diseño Frontend</h3>
-                        <Link to="/diseño-frontend#publicacion" className="btn">Ver Contenido</Link>
+                        <Link to="/frontend#publicacion" className="btn">Ver Contenido</Link>
                     </div>
                 </div>
             </div>
@@ -197,11 +197,11 @@ function Posts(){
                     </div>
                     <div className="postBox extraHeight">
                         <div className="imgBx">
-                            <img title="big data" src={imagenes.BigData} className="cover" alt="cargando imagen..."/>
+                            <img title="ciberseguridad" src={imagenes.Seguridad} className="cover" alt="cargando imagen..."/>
                         </div>
                         <div className="txtBx">
-                            <h3>Big Data</h3>
-                            <Link to="/big-data#publicacion" className="btn">Ver Contenido</Link>
+                            <h3>Ciberseguridad</h3>
+                            <Link to="/ciberseguridad#publicacion" className="btn">Ver Contenido</Link>
                         </div>
                     </div>
                 </div>
@@ -257,53 +257,14 @@ function Posts(){
                             <Link to="/calculo#publicacion" className="btn">Ver Contenido</Link>
                         </div>
                     </div>
-                    <div className="postBox">
-                        <div className="imgBx">
-                            <img title="Metodologias de desarrollo" src={imagenes.Metodologias} alt="cargando imagen..."/>
-                        </div>
-                        <div className="txtBx">
-                            <h3>Metodologias de desarrollo</h3>
-                            <Link to="/metodologias-de-desarrollo#publicacion" className="btn">Ver Contenido</Link>
-                        </div>
-                    </div>
-                </div>
-                <div className="postColumn">
-                    <div className="postBox">
-                        <div className="imgBx">
-                            <img title="probabilidad" src={imagenes.Probabilidad} alt="cargando imagen..."/>
-                        </div>
-                        <div className="txtBx">
-                            <h3>Probabidad</h3>
-                            <Link to="/probabilidad#publicacion" className="btn">Ver Contenido</Link>
-                        </div>
-                    </div>
+                    
                     <div className="postBox extraHeight">
                         <div className="imgBx">
-                            <img title="redes y simulaciones" src={imagenes.RSimulacion} alt="cargando imagen..."/>
+                            <img title="investigacion de operaciones" src={imagenes.RSimulacion} alt="cargando imagen..."/>
                         </div>
                         <div className="txtBx">
-                            <h3>Redes y Simulaciones</h3>
-                            <Link to="/redes-simulacion#publicacion" className="btn">Ver Contenido</Link>
-                        </div>
-                    </div>
-                </div>
-                <div className="postColumn">
-                    <div className="postBox extraHeight">
-                        <div className="imgBx">
-                            <img title="modelos de pruebas" src={imagenes.Pruebas} alt="cargando imagen..."/>
-                        </div>
-                        <div className="txtBx">
-                            <h3>Modelos de pruebas</h3>
-                            <Link to="/modelos-de-pruebas#publicacion" className="btn">Ver Contenido</Link>
-                        </div>
-                    </div>
-                    <div className="postBox">
-                        <div className="imgBx">
-                            <img title="algebra" src={imagenes.Algebra} alt="cargando imagen..."/>
-                        </div>
-                        <div className="txtBx">
-                            <h3>Algebra</h3>
-                            <Link to="/algebra#publicacion" className="btn">Ver Contenido</Link>
+                            <h3>Investigacion para las Operaciones</h3>
+                            <Link to="/investigacion-de-operaciones#publicacion" className="btn">Ver Contenido</Link>
                         </div>
                     </div>
                 </div>

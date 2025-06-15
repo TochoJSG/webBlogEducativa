@@ -6,10 +6,12 @@ import Footer from '../Footer.jsx';
 import Smartphone from '../Smartphone.jsx';
 import HeaderGral from '../HeaderGral.jsx';
 import data from '../../contenido/contenido.json';
+import GoogleAnalytics from '../GoogleAnalytics.jsx';
 
 function Aplicaciones(props){
     return(
         <>
+            <GoogleAnalytics/>
             <HeaderGral/>
             <Articulo
                 title="Aplicaciones Moviles"

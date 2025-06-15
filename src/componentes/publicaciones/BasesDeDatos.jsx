@@ -6,10 +6,12 @@ import Footer from '../Footer.jsx';
 import HeaderGral from '../HeaderGral.jsx';
 import Pc from '../Pc.jsx';
 import data from '../../contenido/contenido.json';
+import GoogleAnalytics from '../GoogleAnalytics.jsx';
 
 function BasesDeDatos(props){
     return(
         <>
+            <GoogleAnalytics/>
             <HeaderGral/>
             <Articulo
                 title="Bases de Datos Relacionales"

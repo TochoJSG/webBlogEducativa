@@ -25,6 +25,7 @@
     object-fit:cover;
 }
 .circleContent .circle.circle1{
+    background: url(../imagenes/short.mp4);
     width:500px;
     height:500px;
     float:left;
@@ -33,6 +34,7 @@
     shape-outside:circle();
 }
 .circleContent .circle.circle2{
+    background: url(../imagenes/short2.mp4);
     width:300px;
     height:300px;
     float:right;

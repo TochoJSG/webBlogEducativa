@@ -2,7 +2,7 @@ import '../estilos/Display.css';
 const ui = require('../imagenes/ui.png');
 function Display(){
     return(
-        <div className="container">
+        <div className="containerDisplay">
             <img src={ui}/>
             <img src={ui}/>
             <img src={ui}/>

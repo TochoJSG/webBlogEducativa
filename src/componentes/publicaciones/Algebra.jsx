@@ -6,11 +6,13 @@ import Footer from '../Footer.jsx';
 import Pc from '../Pc.jsx';
 import HeaderGral from '../HeaderGral.jsx';
 import data from '../../contenido/contenido.json';
+import GoogleAnalytics from '../GoogleAnalytics.jsx';
 
 function Algebra(props){
     //const data = fetch('../contenido/contenido.json').then( res=> res.json() ).then( data=> console.log(data) )
     return(
         <>
+            <GoogleAnalytics/>
             <HeaderGral/>
             <Articulo
                 title="Algebra"

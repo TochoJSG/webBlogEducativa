@@ -6,10 +6,12 @@ import Footer from '../Footer.jsx';
 import Pc from '../Pc.jsx';
 import HeaderGral from '../HeaderGral.jsx';
 import data from '../../contenido/contenido.json';
+import GoogleAnalytics from '../GoogleAnalytics.jsx';
 
 function POO(props){
     return(
         <>
+            <GoogleAnalytics/>
             <HeaderGral/>
             <Articulo
                 title="POO Orientada a Objetos"

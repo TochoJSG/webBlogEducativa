@@ -3,13 +3,15 @@ import Posts from '../Posts.jsx';
 import Carrusel from '../Carrusel.jsx';
 import DropDown from '../DropDown.jsx';
 import Footer from '../Footer.jsx';
-import Smartphone from '../Smartphone.jsx';
+import Caja from '../Caja.jsx';
 import HeaderGral from '../HeaderGral.jsx';
 import data from '../../contenido/contenido.json';
+import GoogleAnalytics from '../GoogleAnalytics.jsx';
 
 function SimulacionRedes(props){
     return(
         <>
+            <GoogleAnalytics/>
             <HeaderGral/>
             <Articulo
                 title="Redes & Simulaciones"
@@ -38,7 +40,7 @@ function SimulacionRedes(props){
                 conceptosT5={data.SimulacionRedes.conceptos.titulo5}
                 conceptosC5={data.SimulacionRedes.conceptos.concepto5}
             />
-            <Smartphone title=""/>
+            <Caja />
             <DropDown/>
             <Carrusel/>
             <Posts/>

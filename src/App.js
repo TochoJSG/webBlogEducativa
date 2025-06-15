@@ -37,6 +37,7 @@ import IngenieriaRequerimientos from './componentes/publicaciones/IngenieriaRequ
 import Home from './componentes/Home';
 import Curriculum from './componentes/Curriculum.jsx';
 import Proximamente from './componentes/Proximamente';
+import Ciberseguridad from './componentes/publicaciones/Ciberseguridad.jsx';
 
 function App(){
   return (
@@ -52,7 +53,7 @@ function App(){
 
         <Route path="/base-de-datos-relacional" element={<BasesDeDatos />} />
         <Route path="/backend" element={<Backend />} />
-        <Route path="/diseño-frontend" element={<DisenioFrontend />} />
+        <Route path="/frontend" element={<DisenioFrontend />} />
         <Route path="/base-de-datos-nosql" element={<BasesNoSQL />} />
         <Route path="/programacion" element={<Programacion />} />
         <Route path="/aplicaciones" element={<Aplicaciones />} />
@@ -79,6 +80,7 @@ function App(){
         <Route path="/desarrollo-de-sistemas" element={<DesarrolloDeSistemas />}/>
         <Route path="/requerimientos" element={<IngenieriaRequerimientos />}/>
         <Route path="/infraestructuras" element={<Infraestructura />}/>
+        <Route path="/ciberseguridad" element={<Ciberseguridad />} />
         
         <Route path="/privacidad" element={<AvisoPrivacidad />} />
         <Route path="/cookies" element={<PoliticaCookies />} />

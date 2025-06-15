@@ -7,7 +7,7 @@ const logo = require('../imagenes/icono.png');
 const fb = require('../imagenes/fb.png');
 const yt = require('../imagenes/yt.png');
 
-function Bienvenida(props){
+function Bienvenida(){
     const secRef = useRef(null);
     const navRef = useRef(null);
     const toggleMenu=()=>{
@@ -19,14 +19,22 @@ function Bienvenida(props){
     /*const[activo,setActivo] = useState(false);
     const toggleMenu =() => setActivo(!activo)*/
     return (
-        <div>
-            <div className="banner parallax" id="sec" ref={secRef}>
+        <section style={{
+            overflowX: 'hidden',
+            overflowY: 'hidden',
+            position: 'relative',
+            width: '100%',
+            height: '100vh',
+            padding: 0
+        }}>
+            <section className="banner parallax" id="sec" ref={secRef}>
                 <header>
                     <Link to="/desarrollo">
                         <img className="logo" src={logo} alt="Logo" />
                     </Link>
                     <div id="toggle" onClick={ toggleMenu }></div>
                 </header>
+
                 <div className="content">
                     <h2>Bienvenidos,<br />A la Consultoria <span>Adming</span></h2>
                     <p>
@@ -38,12 +46,14 @@ function Bienvenida(props){
                             <span>Desarrollos</span>
                         </Link>
                     </div>
+
                 </div>
+
                 <ul className="sci">
                     <li><a href="https://www.facebook.com/AdmIng-166964874949103" target="_blank" rel="noopener noreferrer"><img src={fb} alt="Facebook" /></a></li>
                     <li><a href="https://www.youtube.com/channel/UCBOZY7qmDMyctdp1EkMOG9A" target="_blank" rel="noopener noreferrer"><img src={yt} alt="YouTube" /></a></li>
                 </ul>
-            </div>
+            </section>
             <div id="navigation" ref={navRef}>
                 <ul>
                     {/* Enlaces internos utilizan Link */}
@@ -54,7 +64,7 @@ function Bienvenida(props){
                     <li><Link to="/cookies">Aviso de cookies</Link></li>
                 </ul>
             </div>
-        </div>
+        </section>
     );
 }
 export default Bienvenida;

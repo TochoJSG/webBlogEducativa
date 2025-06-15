@@ -1,757 +1,721 @@
 {
     "BasesDeDatos":{
-        "parrafo1":"",
-        "parrafo2":"",
-        "parrafo3":"",
-        "tituloBloqueA":"",
-        "tituloBloqueB":"",
+        "parrafo1":"Estructura lógica que rige como se almacenaran los datos que fluiran en el sistema. Considerando que la informática es automatizar procesos que implican datos almacenados en dispositivos electrónicos y generar información a partir de esos datos, podemos afirmar que el como se almacenan esos datos es un aspecto de relevancia critica en un sistema informatico. Piensa en una tienda de autoservicio como Walmart, visualiza todos los productos que ofrece, imagina que no tenga una base de datos… buscar un precio en una lista de precios les llevaría mucho tiempo a las cajeras, podrían cobrar de más o de menos, perderían clientes y dinero, eso solo hablando del aspecto de ventas; o piensa en los archivos en tus dispositivos, cuando no los organizas buscar uno en específico es tedioso y tardado. Esa es la relevancia de una base de datos.",
+        "parrafo2":"Las bases de datos tienen 2 aspectos generales que considerar, el cómo (que es la estructura lógica que se define mediante SQL) y el dónde (almacenamiento electrónico, disco duro de PC o celular etc) y se clasifica en 2 grupos, estructurado relacional o SQL y noSQL (que se trata a profundidad en otro artículo). Es decir, definimos con un lenguaje estándar especial para bases de datos llamado SQL como se organizarán los datos, pudiendo optar por organización noSQL; cuántos datos se pueden almacenar dependerá de la capacidad del dispositivo.",
+        "parrafo3":"Es estructurada relacional porque su modelo no es flexible como si puede ser NoSQL y se organiza relacionando tablas con otras tablas si tiene sentido que se relacionen por tener que ver una con otra, como producto y categorias o estudiante y grupo. Para crear el modelo y sus relaciones existen elementos denominados objetos de bases de datos, columnas , tablas, constrains, funciones, vistas, procedimientos almacenados y triggers.",
+        "tituloBloqueA":"Aspectos destacables",
+        "tituloBloqueB":"Sintesis",
         "bloque1":{
-            "contenido1":"",
-            "contenido2":"",
-            "contenido3":"",
-            "contenido4":"",
-            "contenido5":""
+            "contenido1":"Se utiliza un diagrama Entidad Relación para modelar como se almacenaran los datos y facilitar la codificación SQL. Es una abstraccion o representación de los elementos y objetos que interactuar en el sistema, por lo que el modelo está muy apegado al diagrama de clases asociado al proceso de programación.",
+            "contenido2":"Para relacionar las tablas existen las claves o llaves primarias, que son un ID único principal al que se relaciona las llaves foraneas. Una tabla puede tener solo un primary key que la identificará pero puede tener o referenciar a varias foreign key de diferentes tablas. Un auto puede tener solo un propietario registrado, pero un propietario puede tener varios autos.",
+            "contenido3":"Para crear dbases de datos se utiliza el lenguaje estándar SQL, y este lo escribimos en una terminal o preferentemente en un entorno o editor especial llamado DBMS. Word es a texto como SQL Server es a código SQL. Con un DBMS podemos desarrollar fácil y cómodamente bases de datos pues tiene facilitadores gráficos.",
+            "contenido4":"No sé deben confundir ni mezclar aspectos, una base de datos es la estructura lógica, esta estructura logicapende de las capacidades de la memoria dónde se almacenaran los datos y esta a su vez es independiente del DBMS, que solo es una interfaz o intermediario entre el dba y el código, lo destacó porque se suele mencionar una base de datos sin distinción queriendo hablar del DBMS o el recurso hardware.",
+            "contenido5":"Existen diferentes DBMS de diferentes proveedores de software, por lo que las reglas de escritura en SQL difieren entre utilizar por ejemplo MySQL, SQL Server o mariaDB, aunque al ser al ser SQL un estándar las diferencias son pocas y las bases son las mismas."
         },
         "bloque2":{
-            "contenido1":"",
-            "contenido2":"",
-            "contenido3":"",
-            "contenido4":"",
-            "contenido5":""
+            "contenido1":"La BD relacional está formada por tablas que representan objetos o conceptos reales, a menudo denominados entidades. Cada columna de una tabla guarda un determinado tipo de datos, denominado atributo, y un campo almacena el valor real de un atributo.",
+            "contenido2":"Una BDRelacional se compone de varias tablas, al menos 2, donde las tablas se vinculan denominadas relaciones y no pueden existir dos tablas con el mismo nombre ni registro. Las filas y columnas de la tabla representan una recopilación de valores relacionados de un objeto o una entidad.",
+            "contenido3":"Cada tabla es a un conjunto de datos o campos (columnas) y que forman los registros (filas). La relación entre “tabla padre” y un “tabla hijo” se realiza con las llaves primarias y llaves foráneas (o ajenas).",
+            "contenido4":"Las llaves primarias son la clave principal de un registro dentro de una tabla y estas deben cumplir con la integridad de datos. Las llaves foraneas FK se colocan en la tabla hija, contienen el mismo valor que la llave primaria del registro padre; por medio de estas se hacen las formas relacionales.",
+            "contenido5":"SQL es el lenguaje para manipular las Bases de Datos, es muy fácil de aprender, pues sus instrucciones utilizan palabras clave comunes en inglés, además esta pensado en integrarse bien con diferentes lenguajes de programación. "
         },
         "imagen1":"bd-1",
         "imagen2":"bd-2",
         "conceptos":{
-            "titulo1":"",
-            "concepto1":"",
-            "titulo2":"",
-            "concepto2":"",
-            "titulo3":"",
-            "concepto3":"",
-            "titulo4":"",
-            "concepto4":"",
-            "titulo5":"",
-            "concepto5":""
+            "titulo1":"SQL",
+            "concepto1":"Es un especializado en Bases de Datos un lenguaje especial para crear, manipular y consultas estructuradas (SQL), este lengauje se convirtió en estándar del Instituto Nacional Estadounidense de Estándares (ANSI) en 1986. Es la interfaz principal para comunicarse con BD relacionales, todos los motores de bases de datos relacionales populares admiten el estándar SQL. Puede usarlo para actualizar, eliminar o almacenar datos, recuperar subconjuntos de datos y administrar todos los aspectos de su base de datos relacional. ",
+            "titulo2":"Objetos de Base de Datos",
+            "concepto2":"Son los elementos que estructuran la base de datos y sirven como herrramienta o medio para trabajar con ella, por ejemplo Tablas, Vistas, Triggers, las funciones (tanto las que podemos definir como las que son propias del lenguaje de BD), los Constrain o Relaciones, Store Procedures y demas.",
+            "titulo3":"ACID ",
+            "concepto3":"Las transacciones tienen propiedades específicas. Representadas por el acrónimo, ACID. Atomicidad, todos los cambios en los datos se realizan como si fueran una sola operación. Es decir, se realizan todos los cambios o no se realiza ninguno; Coherencia, los datos permanecen en un estado coherente desde el comienzo hasta el final, lo que refuerza la integridad de los datos; Aislamiento, el estado intermedio de una transacción no es visible para otras transacciones y, como resultado, las transacciones que se ejecutan de manera simultánea parecen estar serializadas; Durabilidad, después de completar una transacción correctamente, los cambios en los datos persisten y no se deshacen, incluso en caso de una falla del sistema.",
+            "titulo4":"Base de Datos y DBMS",
+            "concepto4":"La Base de Datos es simplemente la estructura logica que regra commo se almacenaran los datos, es independiente de las capacidades de memoria y estas son creadas y manipuladas utilizando las reglas estrictas de un Lenguaje como MySQL o SQL Server, todo esto se trabaja ideal pero no necesariamente utilizando un DBMS que es una herramienta grafica que failita la codificacion SQL (Se puede trabajar desde la terminal).",
+            "titulo5":"Transacciones",
+            "concepto5":"Es una o más instrucciones SQL que se ejecutan como una secuencia de operaciones como una sola unidad lógica de trabajo. Las transacciones buscan que se ejecuten todas las sentencias o ninguna, toda la transacción debe completarse como una sola unidad. Al estar seguros del exito de la transaccion, se genera un COMMIT para confirmar o un para deshacer si hubo error ROLLBACK. El sistema de administración de bases de datos trata cada transacción de manera coherente y confiable, independiente y aislada de otras transacciones."
         }
     },
 
     "Backend":{
-        "parrafo1":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suscipit, lorem vel molestie tempus, nulla tortor efficitur ipsum, quis mollis metus est quis mi. Vestibulum ultricies aliquam imperdiet. Praesent pulvinar posuere leo, quis sollicitudin elit congue vel. Cras porttitor velit ipsum, eget sodales felis interdum a. Cras quis efficitur felis. Nam dictum porta lectus, vitae luctus ante volutpat vitae. Cras aliquam elit in erat aliquam venenatis. Nulla nec nibh at dolor interdum viverra a eget arcu. Vestibulum at mi venenatis, faucibus quam ut, lacinia dolor. Aenean urna tellus, interdum sed elementum sed, convallis id nunc. Sed euismod nunc enim, vel posuere quam interdum ornare. Cras interdum eros vitae laoreet consequat. Cras vehicula erat odio, id laoreet eros vestibulum sit amet. Proin ex turpis, ultricies id tincidunt sit amet, fringilla vel massa. Nullam at sollicitudin odio, in finibus justo.",
-        "parrafo2":"Sed auctor lacus nec lacus sagittis, eget egestas nunc blandit. Sed ac justo ex. Nam nec dignissim turpis. Cras porttitor metus quis mollis semper. Pellentesque efficitur congue tortor at ornare. Nulla tristique, enim at aliquam suscipit, diam turpis blandit elit, ac finibus odio dui volutpat augue. Nulla luctus odio nibh, vel molestie urna porttitor nec. Mauris laoreet erat ac ultricies mattis. Cras ullamcorper massa quis dui gravida, ac egestas nunc dignissim. Suspendisse dictum quis lacus sit amet laoreet. Duis ligula orci, hendrerit eu ornare sed, maximus et lacus. Morbi euismod neque a est interdum, quis blandit augue commodo. Donec at fringilla nulla. Aliquam porta dignissim velit convallis bibendum. Suspendisse convallis finibus orci, a maximus eros hendrerit vitae. Aenean tincidunt purus sed diam tincidunt, et egestas neque laoreet.",
-        "parrafo3":"Ut volutpat nisl nibh, a cursus massa fermentum id. Phasellus at tempor elit. Nam orci orci, tincidunt id tempor at, ornare vel est. Duis mollis cursus volutpat. Suspendisse gravida mi eu turpis tincidunt finibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse potenti. Vestibulum eget nulla quis diam suscipit sollicitudin non in est. Vivamus eget congue lacus. Proin nec leo eget tortor suscipit scelerisque. Etiam blandit justo felis, ut laoreet lacus tempor vel.",
-        "tituloBloqueA":"Caracteristicas",
-        "tituloBloqueB":"Consideraciones",
+        "parrafo1":"Códigos de programación enfocados a los procesos del sistema, sea aplicación móvil o web, usualmente son varios archivos, cada uno con código enfocado a un aspecto. Algunos ejemplos de programas o procesos backend en una plataforma de ventas en linea son funcionalidades de agregar artículos a un carrito de compras, eliminarlos, pagar, etcétera, cualquier botón implica una acción y este llama a un proceso backend. Basado en esto podemos afirmar que la backend se basa en eventos por lo que pudimos optar por programar modularmente código secuencial o programar orientado a objetos.",
+        "parrafo2":"El código backend es intermediario entre la base de datos y las pantallas que ve el usuario o el frontend, a cada botón o elemento de la interfaz con la que interactua el usuario se asocia una funcionalidad backend y está funcionalidad procesa la petición si aplica y se comunica a la base de datos para consumir o enviar información según sea el proceso, luego el backend recibe y procesa los datos recibidos por la base de datos. Está división lógica de los códigos de programación facilita el mantenimiento y el desarrollo y brinda seguridad pues el usuario no tiene acceso directo desde la interfaz a la base de datos (query injection), como beneficio adicional se eficienta el sistema pues las tareas se dividen entre el frontend y backend dejando un mínimo de trabajo a la base de datos lo que resulta en respuestas más rapidas al usuario. Menciono que es una división lógica porque nos archivos pueden estar mezclados o mal organizados en carpetas pero aún así pueden estar bien estructurados en una arquitectura dividida en capas de Front, back y base de datos.",
+        "parrafo3":"La manera en que funciona el backend en sistemas web y en aplicaciones móviles basadas en framework es con peticiones y respuestas (request y respondes en inglés), un usuario manda con una acción desde el Front un request, el cual puede contener datos, está petición o request es procesada en el backend y hace todo lo que tiene programado hacer en cada caso, si es necesario se conecta a la base de datos para realizar una tarea de BD y devuelve una respuesta o response que puede tener datos o no devolver nada.",
+        "tituloBloqueA":"Tecnologias para el Backend",
+        "tituloBloqueB":"Lenguajes con frameworks mas comunes",
         "bloque1":{
-            "contenido1":"",
-            "contenido2":"",
-            "contenido3":"",
-            "contenido4":"",
-            "contenido5":""
+            "contenido1":"Frameworks de desarrollo: como Node.js en mancuerna con Express.js (JavaScript), Spring para (JAVA), Django (Python), Ruby on Rails (Ruby) y Laravel (PHP).",
+            "contenido2":"Bases de datos: algunas bases de datos populares para el backend son MySQL, SQL Server, PostgreSQL, o noSQL como MongoDB o Redis.",
+            "contenido3":"Servidores de Aplicacion: encargados de procesar el codigo con Apache como el mas comun, o Nginx",
+            "contenido4":"Docker o Contenedores y orquestación: Las herramientas de orquestación, como Kubernetes, han ganado popularidad en el desarrollo de procesos backend.",
+            "contenido5":"APIs: Las APIs RESTful son las mas comunes en el desarrollo backend trabajando bajo el protocolo HTTP para intercambiar información."
         },
         "bloque2":{
-            "contenido1":"",
-            "contenido2":"",
-            "contenido3":"",
-            "contenido4":"",
-            "contenido5":""
+            "contenido1":"JavaScript con el framework Node.js con Express.js: Es uno de los frameworks más utilizados para crear aplicaciones backend con JavaScript, permitiendo construir servidores rápidos y escalables.",
+            "contenido2":"PHP con el framework Laravel: Es un framework moderno y muy popular en PHP, que facilita el desarrollo de aplicaciones robustas y seguras con una estructura clara.",
+            "contenido3":"Java con el framework Spring Boot: Es uno de los frameworks más utilizados en Java para crear aplicaciones backend, ofreciendo una configuración sencilla y muchas funcionalidades integradas.",
+            "contenido4":"Python con el framework Django: Es un framework de alto nivel que promueve el desarrollo rápido y limpio, ideal para construir aplicaciones web completas y seguras.",
+            "contenido5":"Ruby con el framework Ruby on Rails: Es un framework muy conocido en Ruby, que permite desarrollar aplicaciones web de forma rápida y con una estructura bien definida."
         },
         "imagen1":"backend-1",
         "imagen2":"backend-2",
         "conceptos":{
-            "titulo1":"",
-            "concepto1":"",
-            "titulo2":"",
-            "concepto2":"",
-            "titulo3":"",
-            "concepto3":"",
-            "titulo4":"",
-            "concepto4":"",
-            "titulo5":"",
-            "concepto5":""
+            "titulo1":"Lógica",
+            "concepto1":"La lógica es la secuencia de operaciones que codifican los programadores en el backend para completar tareas. En este sentido, los sitios web contienen algoritmos y funciones que permiten que se produzca información y acciones a partir del comportamiento de los usuarios dentro de la plataforma. Los especialistas en backend se encargan de crear una lógica que se ejecuta casi exclusivamente en servidores, interpretando datos y produciendo salidas.",
+            "titulo2":"Servidores",
+            "concepto2":"Un servidor puede referirse al equipo hardware computador que almacena y que provee los recursos informaticos necesarios para desempeñar el software, obtiene los detalles de las interacciones que tienen los usuarios con las páginas web para interpretarlos y enviarlos a través de una red. Tambien estan los Servidores Software que son codigos programados para ejecutar acciones específicas según los deseos recibidos del usuario. El codigo Sirve a los requerimientos del Ciente.",
+            "titulo3":"Bases de Datos",
+            "concepto3":"Las Bases de Datos son un elemento o recurso informatico que contiene información estructurada o no esteructurada, a la que acceden los servidores para completar funciones directas del sitio web y también disponen de opciones para clasificar la información a la que acceden los usuarios. Estos datos contenidos pueden ser de cualquier tipo, numericos, caracteres, multimedia y matrices.",
+            "titulo4":"APIs",
+            "concepto4":"Las API o interfaces de programación de aplicaciones, son una solucion para acceder a recursos informaticos solo con pedirlos FETCH ahorrando tiempo pues ya no se deben realizar desde el principio, permiten que los programas de software establezcan comunicación con otros servidores y bases de datos con el objetivo de intercambiar información. Por ejemplo, se puede usar una API para que plataformas de comparacino de precios obtenga datos sobre precios de otros sitios para presentar las opciones a los usuarios.",
+            "titulo5":"Frameworks o Marcos de Trabajo",
+            "concepto5":"Son las guías que orientan el desarrollo, estructuración de código, lógica y demás aspectos relacionados con el desarrollo de la arquitectura. Son plantillas que facilitan el desarrollo pero bre todo la escritura y edición del código. Ciertos Frameworks, como Nodejs, incluyen bibliotecas de datos y herramientas que ofrecen acceso a segmentos funcionales del código."
         }
     },
 
     "DisenioFrontend":{
-        "parrafo1":"",
-        "parrafo2":"",
-        "parrafo3":"",
-        "tituloBloqueA":"",
-        "tituloBloqueB":"",
+        "parrafo1":"Frontend se refiere a las pantallas y todo lo visual que ve el usuario y con lo que interactuar, a esto también se le denomina interfaz, pero si importancia implica más que solo estética, que no es un aspecto menor pues del atractivo visual y la experiencia de usuario o UX depende en parte el exito del sistema; el frontend también tiene un rol importante en la funcionalidad y el performance pues es el primer filtro de los datos.",
+        "parrafo2":"Un medio clásico de captación de datos de una interfaz es un formulario. Usualmente piden datos como nombre, edad o algún número telefónico, imagina un formulario que permita que el usuario teclee letras donde debe ir un número telefónico o que sabiendo que los números telefónicos en México son de 10 números, permita ingresar más de eso, ese tipo de cosas puede provocar información inservible o implicar esfuerzos en el backend para procesar los  datos, o simplemente un diseño que no entienda el usuario que hacer y que datos ingresar puede provocar que simplemente dejen la aplicación y esas son perdidas.",
+        "parrafo3":"Y desde luego está el propósito evidente del frontend, un diseño atractivo que cautive a los usuarios, para esto se debe cuidar la responsividad, es decir, que textos, imágenes y demás elementos visuales adapten su tamaño o los diferentes tamaños de pantallas o display, está cualidad se relaciona con la multiplataforma, que significa que un producto software pueda estar disponible en diferentes dispositivos y tecnologías, como la aplicación de mercado libre que está disponible en Web y app móvil y en ambas tiene una misma línea de diseño. Hay que mencionar también que los tipos de letras y colores son un aspecto que se apega a estándares, se deben elegir estos aspectos visuales en función a lo que se desee transmitir: ofertas, seriedad, mercado selecto, etc.",
+        "tituloBloqueA":"El frontend comprende todo lo visible, podemos destacar:",
+        "tituloBloqueB":"Sintesis",
         "bloque1":{
-            "contenido1":"",
-            "contenido2":"",
-            "contenido3":"",
-            "contenido4":"",
-            "contenido5":""
+            "contenido1":"Que implica el diseño, esto refiere a disposiciones y colores",
+            "contenido2":"Comprende los componenentes que amenizan la interaccion con los procesos como formularios y botones, no solo estetica sino cierta logica, ej, ¿porque aceptar letras en un campo para un numero telefonico?",
+            "contenido3":"Los frontend se encargan de la disposicion de la multimedia (imagenes, videos, animaciones CSS, interaccion generalmente con JS); No la creacion de multimedia y contenido como imagenes, eso puede ser chamba de marketing.",
+            "contenido4":"Los lenguajes utilizados basicos son HTML para definir estructuras, CSS para dar estilado (diseño grafico) y JavaScript para agregar interactividad aunque con Node puede hacer procesos Backend.",
+            "contenido5":"Algunas diseños inician con Mockups que son diseños de como se vera, utilizando herramientas de diseño de mockups como Sketch, destacando otras herramientas usadas en frontend estan Visual Studio Code, Webpack o Sublime Text."
         },
         "bloque2":{
-            "contenido1":"",
-            "contenido2":"",
-            "contenido3":"",
-            "contenido4":"",
-            "contenido5":""
+            "contenido1":"Al correr en el navegador propio de cada usuario, cada usuario tiene su propia “copia de una aplicación”.",
+            "contenido2":"Un buen frontend contribuye al desempeño aprovechando aspectos como el almacenamiento cache en los navegadores, es decir, en vez de utilizar los recursos de memoria de nuestros servidores aprovechamos la memoria del computador del cliente para “recordar” ciertos datos que la aplicacion necesita.",
+            "contenido3":"La seguridad se divide, mientras la proteccion en el backend depende de los desarrolladores y nuestras medidas, la del Front son configurables y reponsabilidad de los usuarios. Lo unico que como desarrolladores front podemos hacer en cuanto a seguridad es cuidar correctos flujos de trabajo con validaciones en las entradas de usuario asi como medidas de autenticación de usuarios.",
+            "contenido4":"El objetivo de los desarrolladores Front es crear productos bien diseñados para atraer y retener al publico objetivo y contribuir asi a los objetivos de negocio, ademas de los estetico las interfaces creadas deben ser totalmente funcionales y contribuir al backend, temabien aqui se puede contribuir a la capacidad de respuesta delegando algunas cargas de memoria por ejemplo a los recursos de la maquina del usuario.",
+            "contenido5":"Los desarrolladores front conocen de tendencias de diseño y simbologia de colores, ademas de HTML, CSS y JavaScript. Deben saber de las ofertas en el mercado pues no siempre se requiere codigo, a veces es mejor utilizar marcos o plantillas para crear páginas visualmente atractivas."
         },
         "imagen1":"frontend-1",
         "imagen2":"frontend-2",
         "conceptos":{
-            "titulo1":"",
-            "concepto1":"",
-            "titulo2":"",
-            "concepto2":"",
-            "titulo3":"",
-            "concepto3":"",
-            "titulo4":"",
-            "concepto4":"",
-            "titulo5":"",
-            "concepto5":""
+            "titulo1":"Interfaz",
+            "concepto1":"Interfaz en informatica se refiere a un intermediario o conector entre elementos u etapas, en el caso del frontend, una interfaz es la parte visual (botones, formularios, inputs, ...) que intermedia entre el usuario y las funcionalidades del sistema.",
+            "titulo2":"Frameworks",
+            "concepto2":"Los frameworks para el frontend son herramientas de software y módulos de código que sirven para facilitar el añadir funcionalidades habituales en los desarrollos web. Dado que JavaScript es el lenguaje base que entienden los navegadores y es la base del desarrollo web, la mayoria de frameworks frontend se basan en el, como React y Angular. Intimamente ligado a los Fameworks estan los controles de versiones, pues las actualizaciones y versiones pueden moverse con las actualizaciones o cambios a Frameworks, estas ayudan a mantener el historial de cambios en un código y permiten desarrollar diversas funciones en paralelo para que estas sean puestas a prueba antes de añadirlas definitivamente a una página web. Además, estos sistemas permiten compartir códigos con otros desarrolladores y regresar a versiones anteriores si se detecta algún error. El sistema de control de versiones más usado es Git.",
+            "titulo3":"Test y WPO",
+            "concepto3":"Una vez diseñada la interfaz es importante asegurarse que se ve y comporta igual en diferentes plataformas, dispositivos y tamaños de display, inclusive varia el comportamiento de un navegador a otro, independientemente de la configuración o resolución, ejemplo, por los tamaños del display o la version del navegador que interpreta el codigo de una página web no se verá igual en la pantalla de un PC de escritorio que en el diplay de un celular. Para verificar el correcto comporrtamiento de las páginas/aplicaciones web, los desarrolladores realizamos test a los componentes visuales y optimización del rendimiento web o WPO para asegurar tiempos de carga aceptables.",
+            "titulo4":"El SEO",
+            "concepto4":"El SEO u optimización para motores de búsqueda es el conjunto de tácticas que se emplean para mejorar el posicionamiento de una página web en buscadores de internet. Es decir, el SEO ayuda a que una página web tenga mayor visibilidad y pueda atraer a más usuarios.",
+            "titulo5":"UX y UI",
+            "concepto5":"UX es el aspecvto que cuida la experiencia del usuario, busca que la estructura o disposiocion de los componentes, animaciones y demas elementos del desarrollo sean óptimos para nuestro publico especifico, que sea de la manera más sencilla e intuitiva posible, ejemplo, si nuestro desarrollo a orientado a un publico de la tercera edad quiza debemos cuidar que el tamaño de la letra sea grande y super basico, esta area analiza los perfiles de nuestros usuarios; Diseñar la disposicion de los contenidos; Analizar las actividades de los usuarios para implementar mejoras continuas con herramientas como google analytics por ejemplo. Por otro lado el objetivo de UI o Interfaz de Usuario es el diseño visual y estético de la aplicación/sitio web resultando la parte más artística del desarrollo, donde lo mas relevante es elegir y combinar colores para la presentación de los elementos; determinar las fuentes y estilos de los textos; Diseñar elementos como botones, fromularios o multimedia."
         }
     },
 
     "Programacion":{
-        "parrafo1":"",
-        "parrafo2":"",
-        "parrafo3":"",
-        "tituloBloqueA":"",
-        "tituloBloqueB":"",
+        "parrafo1":"Actividad que implica entender perfectamente un problema o situación, entender las actividades específicas y recursos requeridos para resolverlo, luego a partir de está abstracción escribir código de programación que ejecute cada actividad implicada en la resolución del problema. Para las soluciones existen diversos lenguajes de programación, paradigmas y herramientas, y no existen restricciones establecidas para elegir como solucionar los retos de programación pero si hay lenguajes y herramientas más apropiados o especializados para ciertas tareas que otros.",
+        "parrafo2":"La programación profesional está apegada a estándares y metodologías de desarrollo, dónde la primera etapa implica el análisis general del problema y el objetivo, la comprensión total de esto se obtiene mediante recopilación de información, reuniones, acuerdos y la definición de requerimientos. Un producto del análisis directamente relacionado a la programación puede ser el diagrama de clases UML o pseudocodigo, con los cuales es posible codificar el problema independientemente del lenguaje.",
+        "parrafo3":"Afirmó que lo principal es la capacidad de análisis para abstraer y sentetizar el problema, lo siguiente es comprender las bases de programación como bucles, condicionales, palabras reservadas, operadores, paradigmas y demás, pues los lenguajes de programación de alto nivel tienen los mismos elementos y las mismas bases, los principios son los mismos lo que difiere son reglas específicas de sintaxis.",
+        "tituloBloqueA":"Etapas Sintetizadas",
+        "tituloBloqueB":"Paradigmas de programación",
         "bloque1":{
-            "contenido1":"",
-            "contenido2":"",
-            "contenido3":"",
-            "contenido4":"",
-            "contenido5":""
+            "contenido1":"Reconocer la necesidad del realizar el esfuerzo que implica programar, ¿Que problema solucionaremos?, ¿Es viable automatizar un proceso o esta mejor manual? (Si, dependiendo el tamaño de la empresa y el presupuesto puede ser mas viable llevar los procesos no con un Sistema integral sino con algo mas accesible), con este analisis hecho podemos pensar en la siguinete etapa que es recolectar los requerimientos del programa, simpre con el enfoque claro de qué debe hacer el programa y para qué hacemos el esfuerzo.",
+            "contenido2":"Realizar el análisis de requerimientos o la Ingenieria de requerimientos, guiado por las tareas que debe realizar el programa. Cada requerimiento Funcional es un modulo o bloque de codigo, a cada función le corresponde una prueba que compruebe y justifique el programa. El proceso de analisis de requisitos deriva en el diseño la arquitectura del programa, donde todo el problema se debe descomponer en partes de complejidad manejable y facil de mantener.",
+            "contenido3":"Implementar o desarrollar el programa es lo que sigue luego de tener identiciadas las motivaciones del esfuerzo y los requisitos especificos, para desarrollar la necesidad se debe tener un diseño detallado que guia cual mapa el proceso, especificando completamente todo lo que se espera del programa, volviendo el proceso de codificacion una mera labor tecnica.",
+            "contenido4":"Probar las funcionalidades del programa, cada una de ellas para comprobar que fncionan según lo definido en el análisis de requerimientos, pudiendo hacerlo mediante simulaciones con datos Dummy o con herramientas en un ambiiente controlado como con Postman.",
+            "contenido5":"Implementar, instalar o liberar el programa consiste en poner el programa en funcionamiento, esto tambien se conoce como poner el sistema en produccion implicando todos los componentes necesarios ya probados y listos para usarse (modulos, bases de datos, recursos de redes, etc.). Lo que le sigue a esto es un ciclo donde al cambiar la empresa y su entorno surgen nuevas necesidades que deben ser atendidas, ademas del proceso de mantenimiento y actualizacion de lo ya existente."
         },
         "bloque2":{
-            "contenido1":"",
-            "contenido2":"",
-            "contenido3":"",
-            "contenido4":"",
-            "contenido5":""
+            "contenido1":"Programación imperativa/declarativa",
+            "contenido2":"Programación Estructurada/Secuencial",
+            "contenido3":"Programación Modular",
+            "contenido4":"Programación Orientada a Eventos",
+            "contenido5":"Programación Orientada a Objetos"
         },
         "imagen1":"programacion-1",
         "imagen2":"programacion-2",
         "conceptos":{
-            "titulo1":"",
-            "concepto1":"",
-            "titulo2":"",
-            "concepto2":"",
-            "titulo3":"",
-            "concepto3":"",
-            "titulo4":"",
-            "concepto4":"",
-            "titulo5":"",
-            "concepto5":""
+            "titulo1":"Algoritmo",
+            "concepto1":"Es un instructivo tan detallado como sea necesario donde se detalla el desarrollo de un proceso, este instructivo tiene que ser altamente logico en la secuencia. Se debe estar consientes que la computadora es completamente logica y obediente, las instrucciones las ejecutara impecablemente y si la accion no cumple el objetivo es porque fallamos al definir los pasos o en la instrucción, no por error de la computadora.",
+            "titulo2":"Diagramas UML",
+            "concepto2":"Son recursos graficos que ayudan a explicar el sistema, en el se detallan aspectos como la infraestructura, el flujo de trabajo en general, un proceso especifico o la interaccion entre procesos logicos y el hardware implicado, gracias a UML se estandarizan estos diagramas, esto para que sean entendibles por cualquiera gfamiliarizado con el estandar (imagina el juego de pictionary, si los dibujos fueran libres a lo que cada quien quiere no seria entendible por todos). El objetivo es facilitar el desarrollo explicando al equipo lo que se busca hacer y al haber posible rotacion del equipo se espera que los elementos que se itegren sean capaces de entender el sistema para darle mantenimiento.",
+            "titulo3":"Frameworks, Lenguajes e IDEs",
+            "concepto3":"Estos 3 conceptos tienen relacion en la programacion, pues el framework que se utilice depende del lenguaje que se conozca junto con la tecnologia objetivo (Web, escritorio, movil) y estos a su vez tienen relacion con el IDE, pues hay herramientas especializadas para ciertos lengajes y frameworks, tienen facilitadores para codificar y usar ciertos Frameworks. Donde un framework es un conjunto de codigo especializado listo para usarse, esto evita tener que escribir todo ahorrando tiempo de desarrollo, el lenguaje es el conjunto de palabras y sintaxis para escribir las instrucciones del programa, estas son en funcion al framework y la tecnologia, ejemplo, un framework para desarrollar con el lenguaje javascript es Node, si queremos realizar una aplicacion de escritorio usamos Node+Electron o para desarrollo en Web con el lenguaje Python usamos Django. El IDE es simplemente la herramienta o editor donde escribimos el codigo, destacando VS Code para multiples lenguajes, Netbeans para Java o DevC para C/C++.",
+            "titulo4":"Software",
+            "concepto4":"Son los programas o ejecutables que se obtienen del proceso de escribir en un lenguaje de programacion un algoritmo. Es el aspecto logico, un Software no se ve pero sin el una computadora es solo un monton de plastivo y cables.",
+            "titulo5":"Hardware",
+            "concepto5":"Es lo fisico, el monitor donde se visualiza la informacion, los perifericos con los que introducimos datos y acciones y el CPU con lo que se ejecutan las instrucciones y con lo que se interpreta el Software. Gracias a los recursos Hardware se pueden automatizar todo tiipo de procesos que puueden llevar tiempo e imprecisiones de manera altamente efectiva."
         }
     },
-
+    
     "ProgramacionWeb":{
-        "parrafo1":"",
-        "parrafo2":"",
-        "parrafo3":"",
-        "tituloBloqueA":"",
-        "tituloBloqueB":"",
+        "parrafo1":"Es saciar una necesidad de promoción, solución a problemática o automatizar una actividad usando programación mediante tecnologías de redes y conectividad, en concreto internet. Con estos desarrollos las organizaciones obtienen varias ventajas de competitividad, como promocionarse fuera de su entorno local y asi vender lo que sea que vendan a público lejos de su alcance local, o simplemente darse a conocer sin dar problemas a los usuarios como tener que descargar una aplicación que ocupe memoria de una organización que tal vez no conoce.",
+        "parrafo2":"Este tipo de desarrollo posibilita visualizar y ejecutar programas desde varios tipos de dispositivos como smartphones, PC, televisores, laptops o cualquier dispositivo con un navegador, siendo este crucial para la programación web pues es su “ecosistema natural”, su “hábitat”, pues los lenguajes para desarrollar los sitios web son directamente entendibles por el navegador; si en una terminal del navegador escribes código HTML, Javascript o css este código será directamente entendido por el navegador y mostrará los resultados.",
+        "parrafo3":"Dado que estos desarrollos se basan en el internet para funcionar es lógico concluir que para elaborar estos sistemas se requieren conocimientos de red al menos elementales pues se configuran puertos, protocolos e inclusive, si eso dictan los requerimientos y existe el presupuesto, puede implicar hacer conexiones de red completas entre dispositivos hardware de red como servidores, routers o switches para lograr que estos productos informáticos funcionen óptimamente.",
+        "tituloBloqueA":"Elementos clave:",
+        "tituloBloqueB":"Lenguajes de programación web:",
         "bloque1":{
-            "contenido1":"",
-            "contenido2":"",
-            "contenido3":"",
-            "contenido4":"",
-            "contenido5":""
+            "contenido1":"Infraestructura general y recursos de Red son un aspecto clave elemental, pues la programacion web depende precisamente del internet o la web, la infraestructura que utiliza la internet es la interconexión de millones de varias redes sujetas a diversas topologias y protocolos utilizando recursos hardware de conexion como Routers, Switches, Hubs, Cables, Antenas, Pc, Etc.",
+            "contenido2":"Frontend se refiere a las pantallas y todo lo visual que ayuda a los usuarios a manipular el sistema e interactúar con los procesos backend. Contempla aspectos como la interfaz de usuario y el diseño de experiencia de usuario optimizado, su “ejecucion” se realiza del laddo del clinete con los recursos del usuario, es decir, con el navegador.",
+            "contenido3":"Backend es el conjunto de proceoss o funcionalidades que se ejecutan con nuestros recursos como proveedores de un servicio, esto es en el servidor. Esta capa ejecuta la lógica de la aplicación y tiene ademas el importante rol de la gestión de datos sirviendo como interfaz o intermediario entra la Base de Datos y el Frontend. ",
+            "contenido4":"Los lenguajes de programación definen el frontend y los procesos, crean las estructuras (HTML) y las embellecen con lenguajes de estilado (CSS), y para las funcionalidades existen diversos lenguajes que pueden interactuar entre si (JavaScript, PHP, Python, etc.). ",
+            "contenido5":"Frameworks y bibliotecas son recursos de software ya listos para usar que facilitan, estandarizan y agilizan los desarrollos al ahorrar tiempo por ya estar listos para usarse, proporcionando estructuras predefinidas y funciones útiles."
         },
         "bloque2":{
-            "contenido1":"",
-            "contenido2":"",
-            "contenido3":"",
-            "contenido4":"",
-            "contenido5":""
+            "contenido1":"HTML (HyperText Markup Language)",
+            "contenido2":"CSS (Cascading Style Sheets)",
+            "contenido3":"JavaScript es un lenguaje con origen 100% para la web, por lo que es directamente entendible para los navegadores como estandar para añadir interacciones que amenicen el uso del sistema y funcionalidades dinámicas, pero, gracias a frameworks como Node su bondedes de entendibilidad humana son aprovechadas para funcionalidades Back complejas y más. ",
+            "contenido4":"PHP, Python, Ruby, Java, etc. Son lenguajes especializados para procesos de funcionalidades Backend y suelen trabajarse con Frameworks",
+            "contenido5":"SQL para trabajar con sistemas web con bases de datos estructuradas y para estructuras NoSQL el modus operandi varia mucho pudiendo parecerse a trabajar estructuras de datos con JavaScript"
         },
         "imagen1":"programacionWeb-1",
         "imagen2":"programacionWeb-2",
         "conceptos":{
-            "titulo1":"",
-            "concepto1":"",
-            "titulo2":"",
-            "concepto2":"",
-            "titulo3":"",
-            "concepto3":"",
-            "titulo4":"",
-            "concepto4":"",
-            "titulo5":"",
-            "concepto5":""
+            "titulo1":"Frontend",
+            "concepto1":"Parte del desarrollo web que se ejecuta en el navegador del usuario. Incluye HTML (estructura), CSS (estilo) y JavaScript (interactividad).",
+            "titulo2":"Backend",
+            "concepto2":"Lógica y procesamiento del lado del servidor. Usa lenguajes como Python, PHP o Node.js, y se comunica con bases de datos para enviar datos al frontend.",
+            "titulo3":"API (Interfaz de Programación de Aplicaciones)",
+            "concepto3":"Conjunto de reglas que permite que diferentes sistemas se comuniquen. En web, las APIs RESTful son comunes para intercambiar datos (ej: frontend ↔ backend).",
+            "titulo4":"Base de Datos",
+            "concepto4":"Almacena información de la aplicación (usuarios, contenidos, etc.). Puede ser relacional (SQL, como MySQL) o no relacional (NoSQL, como MongoDB).",
+            "titulo5":"Framework",
+            "concepto5":"Herramienta que simplifica el desarrollo web al ofrecer estructuras predefinidas. Ejemplos: React (frontend), Django (backend), Express (backend con Node.js)."
         }
     },
 
     "POO":{
-        "parrafo1":"",
-        "parrafo2":"",
-        "parrafo3":"",
-        "tituloBloqueA":"",
-        "tituloBloqueB":"",
+        "parrafo1":"Modo de programar donde no solo consideramos un problema o un objetivo a desarrollar y se plantea una secuencia de pasos para solucionarlo secuencialmente, es decir, paso a paso, sino que se considera el panorama general del objetivo y de ese panorama general se observan aspectos implicados que son como subcategoria o subclases, todas interactuando entre si para resolver un aspecto del objetivo general, y estos intervienen por eventos, de este modo se obtiene una abstracción más realista pues el mundo no es lineal sino que está sujeto a eventos imprevistos. Es un paradigma o modo de programar más complejo pues cada método en una clase es un programa. En resumen, la poo es programar pensando en clases de objetos en general, cada clase es un conjunto de atributos y métodos o funcionalidades relacionadas al contexto de la clase, cada método es un programa secuencial, y alas clases se relacionan entre si por herencia, con ciertas restricciones posibles.",
+        "parrafo2":"Definiendo esto ortodoxamente, programar orientado a objetos implica, a partir de un objetivo, analizar un objeto del mundo real y resaltar los aspectos relevantes de ese objeto según los objetivos, por ejemplo, podemos abstraer una persona, pero la abstracción difiere si pensamos en una persona como un empleado de una organizacion o lo vemos de un punto de vista biológico, para el primer clase nos interesa abstraer su edad, número de cédula, nombre, número telefónico, etcétera; para el segundo caso nos interesa su raza, medidas, historial médico, etcétera. Lo anterior refiere a características o atributos, y con esos atributos se espera realice actividades o funciones (métodos en POO), como recibirNomina o contarGlobulos en otra, atributos y métodos relevantes para el objetivo.",
+        "parrafo3":"Está abstracción se logra con los conceptos de clase, herencia, polimorfismo, sobrecarga, limites de alcancey subclases. Pensemos que deseamos hacer un programa para el proceso de ventas, consideremos la clase Venta como una categoria que puede tener como atributos relevantes para nuestro objetivo un ID para diferenciar la transacción, un monto del cobro y que productos se vendieron en esa transacción, con esos datos nos interesa guardarEnBD(), calcularGanancia(), etc, ahí definimos atributos y métodos, ¿Pero de dónde obtiene los precios para ejecutar sus funciones y cumplir su propósito?, de una clase que se los herede que llamaremos Producto; a partir de lo anterior podemos observar que los productos tienen atrubutos particulares que se requiere separar pero tienen relación con la clase heredera pues necesita su herencia para sus propositos y el flujo es de la clase principal a las subclases o clases herederas. Un Producto tiene un ID que diferencia un producto de otros que puedan ser parecidos, un nombre, un precio de venta y un costo, estos atributos deben ser reportados a la clase Venta para poder cumplir el objetivo. Así que ventas hereda o utiliza los atributos o propiedades de su padre Producto y nosotros no ejecutamos una venta por voluntad de ejecutar el programa en secuencia sino que responde a un evento de una persona comprandonos algo.",
+        "tituloBloqueA":"Elementos Clave",
+        "tituloBloqueB":"Porque utilizar la POO",
         "bloque1":{
-            "contenido1":"",
-            "contenido2":"",
-            "contenido3":"",
-            "contenido4":"",
-            "contenido5":""
+            "contenido1":"Las Clases que son producto de clasificar eventos, situaciones u objetos reales del mundo real, como vehiculos, operaciones matematicas, seres vivos, cuentas contables, etc, mediante un analisis denominado abstraccion. La complejidad de las situaciones y objetos reales son la base de la POO (con pura programacion tradicional secuencial es dificil simular y obtener los mismos resultados) donde las caracteristicas de la abstraccion en cuestion se denominan 'Atributos' y las acciones que se realizan con esos Atributos se denomina 'Metodos', los metodos son funciones especificas.",
+            "contenido2":"La POO utiliza otros paradigmas de programacion en conjunto, como la programcion estructurada secuencialmente (una instruccion a la vez ordenada logicamente) y la programacion modular al dividir o segmentar el codigo por clases o varios archivos, pero todos relacionados.",
+            "contenido3":"Los Objetos son el producto final, luego de abstraer y definir las clases. A partir de esas clases creadas, que pueden ser pensados como un molde, se crean los objetos todos de la misma clase con mismos atributos y metodos, esto se conoce como instanciar una clase, es decir, de usar una clase en el codigo.",
+            "contenido4":"El Alcance & Restricciones se refiere a la restriccion por seguridad o funcionalidad de clases y metodos pudiendo ser clases public (publicas) para que la clase pueda ser utilizada por cualquier otra, Protected que permite ser usada por la misma clase y sus herederas y private que es la mas restrictiva permitiendo solo el uso de sus metodos por objetos de la misma clase.",
+            "contenido5":"Los Eventos en POO son acciones lanzadas por una accion del usurario directa o indirecta que motivan la creacion de un objeto."
         },
         "bloque2":{
-            "contenido1":"",
-            "contenido2":"",
-            "contenido3":"",
-            "contenido4":"",
-            "contenido5":""
+            "contenido1":"En el desarrollo POO facilita y precisa los resultados, con las clases se pueden precisar objetivos usando la abstracción se simplifica la complejidad de un sistema al ocultar detalles innecesarios y enfocarse en lo esencial; y con la Encapsulación se ocultan los detalles de implementación de un objeto y permite que los métodos controlen la interacción con los atributos.",
+            "contenido2":"Por la Organización del código módulos reutilizables, que permiten usar el codigo en otros proyectos con leves cambios, lo que mejora la legibilidad y el soporte o mantenimiento posterior, no es lo mismo un parrafo de codigo a miles de lineas corridas.",
+            "contenido3":"Por la Reutilización de código, esencialmente por la herencia y la abstracción permiten reutilizar código entre diferentes clases, lo que reduce el tiempo de desarrollo y los errores. ",
+            "contenido4":"Por la Escalabilidad pues se posibilita la creación de sistemas grandes y complejos, pues los objetos pueden interactuar entre sí de manera independiente.",
+            "contenido5":"Por el Mantenimiento principalmente debido a la modularidad, hace que los sistemas orientados a objetos sean más fáciles de mantener y actualizar."
         },
         "imagen1":"poo-1",
         "imagen2":"poo-2",
         "conceptos":{
-            "titulo1":"",
-            "concepto1":"",
-            "titulo2":"",
-            "concepto2":"",
-            "titulo3":"",
-            "concepto3":"",
-            "titulo4":"",
-            "concepto4":"",
-            "titulo5":"",
-            "concepto5":""
+            "titulo1":"Clases",
+            "concepto1":"Son una abstraccion o sintesis analizada por una necesidad especifica, donde solo consideraremos las caracteristicas y conductas relevantes para esa necesidad, en pocas palabras es una clasificacion de objetos reales, y dicho en palabras mas simples es comoo crear un molde para galletas donde todas las galletas (objetos) creados tendran la misma forma, tamaño, densidad, etc. Ejemplo, un automovil es un objeto con atributos y funcionalidades, pero ese objeto puede ser pensado para diferentes cosas, para un videojuego se espera que corra, acelere, cambie de color facilmente, para el gobierno un auto tiene otras caracteristicas y funciones como numero de matricula, dueño, valor factura, año, etc.",
+            "titulo2":"Atributos & Metodos",
+            "concepto2":"Los atributos son caracteristicas que debemos representar con los Tipos-de-Dato que tienen los lenguajes de programacion, que varian muy poco en los lenguajes comerciales de alto nivel (Java,  JS, C#); y los Metodos son las funciones, que en general son algoritmos especificos para una accion del objeto, escritos con la logica de programacion tradicional secuencial. ",
+            "titulo3":"Objetos",
+            "concepto3":"Son el producto de una clase, al proceso de crear objetos se denomina instanciación.",
+            "titulo4":"Herencia",
+            "concepto4":"Es la transmision de cualidades o atributos y capacidades o funciones de una clase padre a una clase hija, pudiendo delimitar en la clase padre si se quiere compartir todo o una parcialidades de sus propiedades.",
+            "titulo5":"Polimorfismo",
+            "concepto5":"Permite a los objetos de diferentes clases responder de manera diferente a la misma acción o mensaje."
         }
     },
 
     "MarketingDigital":{
-        "parrafo1":"",
-        "parrafo2":"",
-        "parrafo3":"",
-        "tituloBloqueA":"",
-        "tituloBloqueB":"",
+        "parrafo1":"Conjunto de esfuerzos realizados por un ente, generalmente una empresa, para darse a conocer, pero la neta en verdad es vender sus productos o servicios, entendiendo por esfuerzos cualquier actividad o gasto realizado para difundir la imagen de la empresa o sus productos, ese concepto es en general para el marketing, hablar de marketing digital es limitar los esfuerzos a medios digitales, anuncios en sitios web y plataformas denominados ADS, sitios web, campañas en otros medios digitales como tv o radio o recurrir a promoción con personas con influencia en el público que nos interesa.",
+        "parrafo2":"No existe una estrategia de marketing general o la receta secreta para el éxito en una campaña de marketing, pues los negocios son algo complicado, cada uno tiene diferentes necesidades y es diferente por lo que las estrategias deben ser diferentes, dependiendo el giro, el tamaño, la calidad de los productos (su segmento), cada aspecto influira, lo mas relevante es el presupuesto, este es crucial, más para pequeñas y medianas empresas, imagina gastar en publicidad y que no traiga nuevos clientes, puede llevar a la quiebra un negocio. El decidir el plan de marketing es algo que debe ser llevado por gente experta, es decir una agencia especializada que garantice resultados, lo mínimo antes de emprender una campaña es reunir a gerentes y personal estratégico para trazar el camino optimo.",
+        "parrafo3":"El marketing tradicional, como puede ser un evento en una tienda con edecanes, música, regalos, espectaculares en calle o autobuses pueden ser esfuerzos complementarios a los esfuerzos de marketing digital, a fin de cuentas pueden traer ventas igualmente pero en la actualidad a lo que deben apostar las empresas es a lo digital pues promete maximizar ganancias y minimizar esfuerzos, por ejemplo, tener un local físico con productos puede implicar una renta, pago nómina a empleados, riesgo a atracos, está sujeto a la gente que anda ahí entre otros factores, sin embargo un ecommerce trabaja 24/7 automático con menos personal y las mercancías más seguras además, gracias a servicios de paqueterías las barreras territoriales se minimizan; conclusión, es buena idea que el marketing tradicional invite a clientes a nuestros recursos informáticos.",
+        "tituloBloqueA":"Aspectos Destacables",
+        "tituloBloqueB":"Medios para Hacer Marketing Digital",
         "bloque1":{
-            "contenido1":"",
-            "contenido2":"",
-            "contenido3":"",
-            "contenido4":"",
-            "contenido5":""
+            "contenido1":"Segmentación precisa: Permite dirigir mensajes a públicos específicos.",
+            "contenido2":"Medición en tiempo real: Posibilita analizar resultados y ajustar estrategias rápidamente.",
+            "contenido3":"Interactividad: Fomenta la participación directa con el público.",
+            "contenido4":"Costo-efectividad: Más accesible que el marketing tradicional.",
+            "contenido5":"Globalización: Alcance sin fronteras geográficas."
         },
         "bloque2":{
-            "contenido1":"",
-            "contenido2":"",
-            "contenido3":"",
-            "contenido4":"",
-            "contenido5":""
+            "contenido1":"Redes sociales (Facebook, Instagram, LinkedIn, etc.).",
+            "contenido2":"Email marketing (Campañas por correo electrónico).",
+            "contenido3":"SEO (Optimización para motores de búsqueda como Google).",
+            "contenido4":"Publicidad en línea (Google Ads, Meta Ads, etc.).",
+            "contenido5":"Marketing de contenidos (Blogs, videos, infografías, etc.)."
         },
         "imagen1":"marketing-1",
         "imagen2":"marketing-2",
         "conceptos":{
-            "titulo1":"",
-            "concepto1":"",
-            "titulo2":"",
-            "concepto2":"",
-            "titulo3":"",
-            "concepto3":"",
-            "titulo4":"",
-            "concepto4":"",
-            "titulo5":"",
-            "concepto5":""
+            "titulo1":"Conversión",
+            "concepto1":"Cuando un usuario realiza la acción deseada (ej. comprar, suscribirse).",
+            "titulo2":"ROI (Retorno de Inversión)",
+            "concepto2":"Beneficio económico obtenido vs. lo invertido.",
+            "titulo3":"Tráfico orgánico",
+            "concepto3":"Visitas a un sitio web sin publicidad pagada (ej. mediante SEO).",
+            "titulo4":"Engagement",
+            "concepto4":"Interacción y compromiso del público con una marca.",
+            "titulo5":"Lead",
+            "concepto5":"Usuario interesado en un producto/servicio (potencial cliente)."
         }
     },
 
     "Finanzas":{
-        "parrafo1":"",
-        "parrafo2":"",
-        "parrafo3":"",
-        "tituloBloqueA":"",
-        "tituloBloqueB":"",
+        "parrafo1":"Área administrativa que utiliza las matemáticas, en concreto formulas matemáticas específicas ya establecidas para analizar determinadas situaciones, para analizar los documentos contables. Las formulas matemáticas utilizadas a las que refiero son también conocidas como razones financieras, denominadas así por concluir con certeza mediante elementos deducibles de un problema financiero y a partir de esa conclusión cierta tomar decisiones de negocios con fundamentos.",
+        "parrafo2":"No sé deben confundir las matemáticas aplicables a problemas financieros, para creditos y situaciones personales aplica un grupo de fórmulas y procedimientos que determinan monto total a pagar en un crédito a partir de una cantidad base recibida y la tasa de interés, el tiempo que se pagará o de retorno si somos los prestamistas; por otro lado para analizar aspectos de una entidad financiera como la solvencia, el valo y otras capacidades esta otro grupo de fórmulas matemáticas llamadas razones financieras que realizan sus cálculos con datos provenientes de documentos contables.",
+        "parrafo3":"Ambos grupos tienen el objetivo de analizar situaciones financieras para poder tomar decisiones con el dinero, respondiendo: cuando, como, con quien, CUANTO. Cabe destacar que estás fórmulas y estas materias de estudio tratan de satisfacer el ansia humana que causa la incertidumbre hacia el futuro, pues en la vida real interfieren múltiples factores que pueden afectar nuestras estimaciones en papel; dicho de otra forma, las formulas de ingeniería económica y matemáticas financieras nos dan una idea de cuánto recibiremos o pagaremos, cuánto podemos, cuando debemos, pero no significa que serán los resultados como nuestras protecciones en papel pues lo unico cierto aqui es que la economía y sus factores son inciertos.",
+        "tituloBloqueA":"Aspectos Destacables",
+        "tituloBloqueB":"Prácticas o Recomendaciones",
         "bloque1":{
-            "contenido1":"",
-            "contenido2":"",
-            "contenido3":"",
-            "contenido4":"",
-            "contenido5":""
+            "contenido1":"Análisis de rentabilidad: Evalúa la capacidad de generar utilidades.",
+            "contenido2":"Gestión de liquidez: Asegura recursos para operaciones y obligaciones a corto plazo.",
+            "contenido3":"Optimización de costos: Reduce gastos innecesarios para maximizar ganancias.",
+            "contenido4":"Inversión estratégica: Asignación de capital en proyectos con retorno favorable.",
+            "contenido5":"Evaluación de riesgos: Identifica y mitiga posibles amenazas financieras."
         },
         "bloque2":{
-            "contenido1":"",
-            "contenido2":"",
-            "contenido3":"",
-            "contenido4":"",
-            "contenido5":""
+            "contenido1":"Elaborar presupuestos, esto es planificar ingresos y gastos para evitar desequilibrios.",
+            "contenido2":"Analizar estados financieros (Balance General, Estado de Resultados, Flujo de Efectivo).",
+            "contenido3":"Mantener un fondo de emergencia por liquidez para imprevistos (ej. 3-6 meses de gastos).",
+            "contenido4":"Diversificar inversiones, asi se reduce el riesgo al distribuir capital en diferentes activos.",
+            "contenido5":"Monitorear indicadores clave (Razones financieras como liquidez, endeudamiento, rentabilidad)."
         },
         "imagen1":"finanzas-1",
         "imagen2":"finanzas-2",
         "conceptos":{
-            "titulo1":"",
-            "concepto1":"",
-            "titulo2":"",
-            "concepto2":"",
-            "titulo3":"",
-            "concepto3":"",
-            "titulo4":"",
-            "concepto4":"",
-            "titulo5":"",
-            "concepto5":""
+            "titulo1":"Razón Corriente (Activo Corriente / Pasivo Corriente)",
+            "concepto1":"Mide capacidad de pagar deudas a corto plazo.",
+            "titulo2":"Flujo de Efectivo (Cash Flow)",
+            "concepto2":"Movimiento real de dinero (operaciones, inversión, financiamiento).",
+            "titulo3":"ROE (Return on Equity (Utilidad Neta / Patrimonio))",
+            "concepto3":"Rentabilidad del capital invertido.",
+            "titulo4":"Apalancamiento Financiero",
+            "concepto4":"Uso de deuda para potenciar rendimientos (aumenta riesgo).",
+            "titulo5":"Punto de Equilibrio",
+            "concepto5":"Nivel de ventas donde ingresos = costos (sin ganancias ni pérdidas)."
         }
     },
 
     "Contabilidad":{
-        "parrafo1":"",
-        "parrafo2":"",
-        "parrafo3":"",
-        "tituloBloqueA":"",
-        "tituloBloqueB":"",
+        "parrafo1":"Conjunto de métodos y procesos establecidos para el analisis de las entidades económicas, dónde se utilizan ciencias exactas como la matematica para dar certeza a los análisis. Los analisis se plasman en documentos contables estandarizados, es decir, no podemos registrar las cuentas como nos guste, pues exitenformatos o plantillas y catálogos de clasificación de cuenta.",
+        "parrafo2":"Los documentos contables son esquemas de diario que pueden ser acompañados de esquemas de mayor o esquemas T, estos registran la actividad diaria, es decir, ventas, compras, pagos, cobros, etc y de ellos derivan los siguientes documentos; El balance general es un documento que utiliza las cifras de diario y nos da un informe del valor de las cuentas, con conocimiento suficiente se pueden analizar aspectos de la organización pero nada concluyente, este es por periodos establecidos para informar, pudiendo ser anuales, semestrales, etc; El flujo de efectivo es un documento donde podemos y debemos observar cualidades y capacidades de la empresa, este es elaborado con cifras del balance y nos indica como fluye el efectivo por periodos de operación, porque el hecho que haya ingresos no significa que ganemos dinero, se considera el tiempo y las obligaciones, pudiendo apreciar si estamos ganando o perdemos y apreciar las causas en general; y finalmente las razones financieras, que son fórmulas concretas y establecidas, una por aspecto a evaluar como solvencia, deuda, capacidad de pago, etc que toman datos de los documentos anteriores, las variables consideradas para las formulas varían pero consideran tiempo, ingresos, costos, deudas, gastos, etc.",
+        "parrafo3":"La elaboración de estos documentos es una obligación para las personas morales (empresa y sociedades en general) pues es de interés para hacienda por la recaudación de impuestos y en sus casos reportar a los socios como va el negocio. La elaboración es realizada por requisito por un contador con licencia y conocimiento de todos los procesos y la normativa, su compromiso y nivel de implicacion es gigantesco, ellos responder por las cifras ahí plasmadas.",
+        "tituloBloqueA":"Aspectos Destacables",
+        "tituloBloqueB":"Prácticas o Recomendaciones",
         "bloque1":{
-            "contenido1":"",
-            "contenido2":"",
-            "contenido3":"",
-            "contenido4":"",
-            "contenido5":""
+            "contenido1":"Registro sistemático: Documenta todas las transacciones financieras de manera ordenada.",
+            "contenido2":"Cumplimiento legal: Asegura el seguimiento de normas fiscales y comerciales.",
+            "contenido3":"Generación de estados financieros: Produce informes clave (balances, flujos de efectivo, etc.).",
+            "contenido4":"Base para decisiones financieras: Proporciona datos precisos para gestionar negocios.",
+            "contenido5":"Control interno: Previene fraudes y errores mediante procesos verificables."
         },
         "bloque2":{
-            "contenido1":"",
-            "contenido2":"",
-            "contenido3":"",
-            "contenido4":"",
-            "contenido5":""
+            "contenido1":"Registrar en libros diarios y mayores: Llevar cronológicamente todas las operaciones.",
+            "contenido2":"Conciliar cuentas bancarias mensualmente: Evitar discrepancias entre registros y movimientos reales.",
+            "contenido3":"Clasificar gastos deducibles: Optimizar impuestos según la ley (ej. facturas válidas con RFC).",
+            "contenido4":"Emitir comprobantes fiscales (CFDI): Cumplir con obligaciones ante el SAT (México) o entidades tributarias.",
+            "contenido5":"Realizar cierres contables periódicos: Mensuales/anuales para ajustar cuentas y preparar declaraciones."
         },
         "imagen1":"contabilidad-1",
         "imagen2":"contabilidad-2",
         "conceptos":{
-            "titulo1":"",
-            "concepto1":"",
-            "titulo2":"",
-            "concepto2":"",
-            "titulo3":"",
-            "concepto3":"",
-            "titulo4":"",
-            "concepto4":"",
-            "titulo5":"",
-            "concepto5":""
+            "titulo1":"Partida doble",
+            "concepto1":"Cada transacción afecta al menos dos cuentas (débito = crédito).",
+            "titulo2":"Balance General",
+            "concepto2":"Muestra activos, pasivos y capital en un momento determinado.",
+            "titulo3":"Estado de Flujo de Efectivo",
+            "concepto3":"Clasifica entradas/salidas de dinero (operación, inversión, financiamiento).",
+            "titulo4":"Devengado vs. Efectivo",
+            "concepto4":"Registro de ingresos/gastos cuando se generan (devengado) vs. cuando se pagan (efectivo).",
+            "titulo5":"ISR e IVA",
+            "concepto5":"Impuestos clave (ISR: sobre ganancias; IVA: valor agregado en ventas)."
         }
     },
 
     "TecnicasSeo":{
-        "parrafo1":"",
-        "parrafo2":"",
-        "parrafo3":"",
-        "tituloBloqueA":"",
-        "tituloBloqueB":"",
+        "parrafo1":"Conjunto de acciones realizadas sobre un sitio web para que aparezca en las primeras posiciones de las búsquedas. Cuando googleas un tema te aparece un alista de sitios con contenido relacionado a lo que pediste saber, ¿Te has preguntado cómo decide google que debe mostrar primero?, los sitios son parecidos por diferentes personas y organizaciones que están compitiendo por aparecer primero porque, por lo general, las personas entran a los primeros sitios y olvidan los demás. El SEO son técnicas para mejorar la posición de los sitios, pretenden que una página aparezca en las primeras posiciones.",
+        "parrafo2":"Las medidas pueden ser cuidar los nombres de los títulos (h1, h2, h3, …) dándole más jerarquía a lo que dirá el encabezado o título 1 (en ingles header 1), que nombre tienen las imágenes que utiliza el sitio, deben ser nombres relacionados al tema, el mata Tag description debe describir bien el sitio, de que trata, los vínculos al sitio desde otros sitios, la calidad del desarrollo y estilo propio del sitio influyen en el tráfico, Google por ejemplo también considera el contenido (debe ser único y relevante) y las estrategias de ADS para atraer más público.",
+        "parrafo3":"En síntesis, son muchas las acciones que se deben tomar como creador de contenido para impulsar los desarrollos y contenidos, pues como en todo negocio estamos en constante competencia y gana el que trabaja inteligentemente, está actualizado, estandarizado e invierte más (tiempo o dinero).",
+        "tituloBloqueA":"Aspectos Destacables",
+        "tituloBloqueB":"Prácticas o Recomendaciones",
         "bloque1":{
-            "contenido1":"",
-            "contenido2":"",
-            "contenido3":"",
-            "contenido4":"",
-            "contenido5":""
+            "contenido1":"Visibilidad orgánica: Aumenta la aparición en resultados de búsqueda sin publicidad paga.",
+            "contenido2":"Experiencia de usuario (UX): Mejora la navegación y reduce la tasa de rebote.",
+            "contenido3":"Autoridad de dominio: Refleja la confianza que los motores de búsqueda tienen en tu sitio.",
+            "contenido4":"Optimización técnica: Velocidad, estructura y compatibilidad con dispositivos móviles.",
+            "contenido5":"Estrategia de contenidos: Uso de palabras clave y material relevante para el público objetivo."
         },
         "bloque2":{
-            "contenido1":"",
-            "contenido2":"",
-            "contenido3":"",
-            "contenido4":"",
-            "contenido5":""
+            "contenido1":"Investiga palabras clave: Usa herramientas como Google Keyword Planner o SEMrush.",
+            "contenido2":"Optimiza etiquetas (title, meta, headers): Incluye palabras clave principales y secundarias.",
+            "contenido3":"Genera backlinks de calidad: Enlaces desde sitios con alta autoridad mejoran el ranking.",
+            "contenido4":"Mejora la velocidad de carga: Compresión de imágenes y uso de caché.",
+            "contenido5":"Crea contenido útil y actualizado: Responde a las intenciones de búsqueda del usuario."
         },
         "imagen1":"seo-1",
         "imagen2":"seo-2",
         "conceptos":{
-            "titulo1":"",
-            "concepto1":"",
-            "titulo2":"",
-            "concepto2":"",
-            "titulo3":"",
-            "concepto3":"",
-            "titulo4":"",
-            "concepto4":"",
-            "titulo5":"",
-            "concepto5":""
+            "titulo1":"Keywords (Palabras clave)",
+            "concepto1":"Términos que los usuarios buscan y que deben estar en tu contenido.",
+            "titulo2":"Backlinks",
+            "concepto2":"Enlaces externos que apuntan a tu sitio, indicadores de autoridad.",
+            "titulo3":"SERP (Search Engine Results Page)",
+            "concepto3":"Página de resultados donde aparece tu sitio al buscar.",
+            "titulo4":"Algoritmo de Google",
+            "concepto4":"Sistema que determina el ranking de los sitios web.",
+            "titulo5":"CTR (Click-Through Rate)",
+            "concepto5":"Porcentaje de usuarios que hacen clic en tu enlace de los resultados."
         }
     },
 
     "Redes":{
-        "parrafo1":"",
-        "parrafo2":"",
-        "parrafo3":"",
-        "tituloBloqueA":"",
-        "tituloBloqueB":"",
+        "parrafo1":"Simplificado como telemática, refiere al conjunto de dispositivos Host especializados y de informática en general, conectados entre si usando protocolos y estandares que aprovechan propiedades físicas como las propiedades de las ondas electromagnéticas para las comunicaciones inalámbricas y las propiedades de conducción de algunos materiales, todo apegado a alguna topología, establecida para satusfacer un enfoque o requerimiento específico, eso para una red, que luego puede conectarse a otras redes, esa interconeccion de redes es básicamente el Internet. Todo este esfuerzo es para compartir información y recursos digitales.",
+        "parrafo2":"Podemos entender por host especializados en red dispositivos que sirven para la conexión de los host informáticos en general, los primeros pueden ser Hubs que son elementos muy básicos de difusión de paquetes en la red, switches que desempeñan funciones de direccionamiento más avanzadas que un hub, routers que fungen de conectores entre redes y los servidores que son computadores dedicadas a atende tareas ; los segundos son computadoras, tablets o celulares (que por sus características también pueden ser clasificados como computadoras), también se les puede denominar nodos finales por ser los destinos tipicos la información enviada.",
+        "parrafo3":"Una red bien diseñada no solo posibilita la comunicación de dispositivos sino que debe brindar seguridad a los paquetes de información enviados y tomar medidas que garanticen la disponibilidad del servicio todo el tiempo mediante tomando medidas como la segmentación de red, implementación de firewalls y considerar al aspecto humano como la amenaza más grande a la seguridad de la red, técnicas de ingeniería social pueden comprometer la seguridad pues mediante engaños el personal puede dar acceso a ataques o con intenciones negativas intencionales comprometer el sistema. Medidas físicas de seguridad como camaras de vigilancia, biométricos, guardias y demás limitan el acceso a los equipos que almacenan los recursos informáticos, además de contratos estrictos de confidencialidad y cursos o capacitaciones de seguridad.",
+        "tituloBloqueA":"Aspectos Destacables",
+        "tituloBloqueB":"Prácticas para Implementar",
         "bloque1":{
-            "contenido1":"",
-            "contenido2":"",
-            "contenido3":"",
-            "contenido4":"",
-            "contenido5":""
+            "contenido1":"Comunicación eficiente: Permite intercambio de datos entre dispositivos de forma rápida y confiable.",
+            "contenido2":"Escalabilidad: Capacidad de crecer y adaptarse a más usuarios o dispositivos sin perder rendimiento.",
+            "contenido3":"Seguridad básica: Protección contra accesos no autorizados (ej. firewalls, cifrado).",
+            "contenido4":"Tipos de redes: LAN (local), WAN (amplia), inalámbricas (Wi-Fi) y cableadas (Ethernet).",
+            "contenido5":"Protocolos estandarizados: Reglas como TCP/IP que garantizan compatibilidad entre dispositivos."
         },
         "bloque2":{
-            "contenido1":"",
-            "contenido2":"",
-            "contenido3":"",
-            "contenido4":"",
-            "contenido5":""
+            "contenido1":"Elegir la topología adecuada: Estrella, anillo o malla según necesidades (ej. estrella para oficinas).",
+            "contenido2":"Usar hardware apropiado: Routers, switches y cables de calidad (ej. categoría 6 para Ethernet).",
+            "contenido3":"Configurar direcciones IP estáticas o DHCP: Asignar IPs fijas a servidores y dinámicas a dispositivos comunes.",
+            "contenido4":"Proteger la red: Contraseñas fuertes en Wi-Fi, firewalls y actualizaciones de firmware.",
+            "contenido5":"Monitorear el tráfico: Herramientas como Wireshark para detectar fallas o cuellos de botella."
         },
         "imagen1":"redes-1",
         "imagen2":"redes-2",
         "conceptos":{
-            "titulo1":"",
-            "concepto1":"",
-            "titulo2":"",
-            "concepto2":"",
-            "titulo3":"",
-            "concepto3":"",
-            "titulo4":"",
-            "concepto4":"",
-            "titulo5":"",
-            "concepto5":""
+            "titulo1":"Protocolo TCP/IP",
+            "concepto1":"Estándar para enviar/recepcionar datos en internet (ej. IP = dirección, TCP = entrega ordenada).",
+            "titulo2":"Ancho de banda",
+            "concepto2":"Capacidad de transmisión de datos (ej. Mbps o Gbps).",
+            "titulo3":"Latencia",
+            "concepto3":"Tiempo que tarda un dato en llegar desde el origen al destino (ej. bajo = mejor).",
+            "titulo4":"DNS (Sistema de Nombres de Dominio)",
+            "concepto4":"Traduce nombres de dominio (ej. google.com) a direcciones IP.",
+            "titulo5":"Firewall",
+            "concepto5":"Barrera de seguridad que filtra tráfico malicioso entrante/saliente."
         }
     },
 
     "Infraestructura":{
-        "parrafo1":"",
-        "parrafo2":"",
-        "parrafo3":"",
-        "tituloBloqueA":"",
-        "tituloBloqueB":"",
+        "parrafo1":"Un sistema informático es una combinación de hardware y software, pues el segundo (software) son instrucciones lógicas que le dicen que hacer a un dispositivo hardware, que justo es la infraestructura tecnológica que almacena los datos, archivos y programas y así mismo los ejecuta implicando desde luego aspectos como la memoria y capacidades de procesamiento. Podemos resumirlas a SaaS, PaaS, IaaS y OnPremise.",
+        "parrafo2":"Es comun que cuando nos iniciamos en el mundo de la informática, en concreto en la programación, no se dimensionen o de plano se desconozca la complejidad y la relevancia de la infraestructura tecnológica en el funcionamiento de un sistema pues se requieren características superiores a las de un computador donde ejecutamos en local nuestros códigos como desarrolladores. Por ejemplo, para montar una aplicación web se requieren servidores y otros equipos de redes y conectividad que son costosos y pueden ser complejos de configurar correctamente por lo que existen diversas soluciones para mitigar complejidad de ciertos procesos y bajar los costos, como servicios IaaS, PaaS, y SaaS como alternativa a OnPremise, dónde IaaS es una solución más compleja para desarrolladores con conocimientos técnicos avanzados pues se requieren configuraciones; PaaS es una plataforma como servicio implicando desde luego menos conocimiento técnico; SaaS es un software como servicio, es decir que ya no se requieren conocimientos técnicos pues una empresa proveedora/desarrolladora de software alquila una solución concreta de software genérica; y OnPremise que es la solución más compleja y costosa porque implica invertir en equipo de cómputo especializado como servidores y equipo de conectividad como routers y switches además quizá ade licencias, con la ventaja de tener completo control sobre la red y el sistema pudiendo tener mayor seguridad y confidencialidad (digo pudiendo porque está posible ventaja depende de una correcta configuración).",
+        "parrafo3":"La elección entre una y otra infraestructura depende de las necesidades de software y el presupuesto, además de los conocimientos técnicos del equipo. Cabe mencionar que el software puede comportarse diferente en determinadas infraestructuras, es decir, podemos ejecutar en nuestro computador el código del sistema y comportarse bien, pero al cargarse en la infraestructura seleccionada ya para sacar a producción puede no funcionar o funcionar diferente, ¿Porque? Puede deberse a varias razones, el sistema operativo, configuraciones de la red y de elementos de seguridad como firewalls que bloquean o restringen operaciones, versiones de framework o servidor logico de aplicacion, etc, por lo que la infraestructura no es un aspecto menor.",
+        "tituloBloqueA":"Aspectos Destacables",
+        "tituloBloqueB":"Elementos Clave",
         "bloque1":{
-            "contenido1":"",
-            "contenido2":"",
-            "contenido3":"",
-            "contenido4":"",
-            "contenido5":""
+            "contenido1":"Escalabilidad bajo demanda: Capacidad de ajustar recursos (almacenamiento, procesamiento) según necesidades.",
+            "contenido2":"Modelos de servicio en la nube: SaaS (Software), PaaS (Plataforma), IaaS (Infraestructura) como base operativa.",
+            "contenido3":"Reducción de costos operativos: Elimina inversión en hardware físico y mantenimiento local.",
+            "contenido4":"Acceso global y remoto: Disponibilidad 24/7 desde cualquier ubicación con conexión a internet.",
+            "contenido5":"Seguridad y cumplimiento: Protección de datos con estándares internacionales (ej. ISO 27001, GDPR)."
         },
         "bloque2":{
-            "contenido1":"",
-            "contenido2":"",
-            "contenido3":"",
-            "contenido4":"",
-            "contenido5":""
+            "contenido1":"Centros de datos (Cloud/On-Premise): Bases físicas o virtuales para almacenar y procesar datos.",
+            "contenido2":"Virtualización: Creación de entornos simulados (servidores, redes) para optimizar recursos.",
+            "contenido3":"APIs y conectividad: Interfases que permiten integración entre sistemas y servicios.",
+            "contenido4":"Redes de distribución de contenido (CDN): Aceleran entrega de datos (ej. videos, páginas web) globalmente.",
+            "contenido5":"Automatización y orquestación: Herramientas como Kubernetes para gestionar cargas de trabajo."
         },
         "imagen1":"infraestructura-1",
         "imagen2":"infraestructura-2",
         "conceptos":{
-            "titulo1":"",
-            "concepto1":"",
-            "titulo2":"",
-            "concepto2":"",
-            "titulo3":"",
-            "concepto3":"",
-            "titulo4":"",
-            "concepto4":"",
-            "titulo5":"",
-            "concepto5":""
+            "titulo1":"SaaS (Software as a Service)",
+            "concepto1":"Software accesible vía web sin instalación local (ej. Google Workspace, Slack).",
+            "titulo2":"PaaS (Platform as a Service)",
+            "concepto2":"Entorno para desarrollar/apps sin gestionar infraestructura (ej. AWS Elastic Beanstalk).",
+            "titulo3":"IaaS (Infrastructure as a Service)",
+            "concepto3":"Infraestructura virtualizada (servidores, redes) bajo demanda (ej. Azure VMs).",
+            "titulo4":"Multi-nube (Multicloud)",
+            "concepto4":"Uso combinado de servicios de varios proveedores (ej. AWS + Google Cloud).",
+            "titulo5":"Tolerancia a fallos",
+            "concepto5":"Capacidad del sistema para seguir operando ante errores (ej. réplicas de servidores)."
         }
     },
 
     "InvestigacionDeOperaciones":{
-        "parrafo1":"",
-        "parrafo2":"",
-        "parrafo3":"",
-        "tituloBloqueA":"",
-        "tituloBloqueB":"",
+        "parrafo1":"Las organizaciones exitosas no toman decisiones y gastan dinero sin investigaciones y números que justifiquen la acción en cuestión. Estás investigaciones igualmente no son realizadas a la ligera, implican reuniones, con reportes e información recopilada de muestras relevantes mediante entrevistas, encuestas, recopilación de métricas y opiniones en redes sociales y otros.",
+        "parrafo2":"De toda esa información debemos rescatar datos que representen abstractamente una situación o describan el estado de una operación con números, para desde luego matemáticamente analizar y hacer simulaciones de las situaciones o procesos, en algunos casos el objetivo es más que simplemente comprender, puede buscar realizar predicciones para anticipar acciones, decidir oportunamente y justificar las acciones.",
+        "parrafo3":"Desde luego que estos modelos de simulacion son un esfuerzo de las organizaciones por disminuir sus riesgos y justificar sus acciones, no son certeros al 100% pues están sujetos, generalmente, a eventos impredecibles como factores sociales o económicos, además de que su éxito íntimamente relacionado a una apropiada planificaciony aplicación de técnicas de muestreos donde la muestra debe ser de veras relevante en el segmento y la cantidad o en general la fuente de los datos debe ser solida como con cifras oficiales del INEGI y organizaciones oficiales.",
+        "tituloBloqueA":"Aspectos Destacables",
+        "tituloBloqueB":"Elementos Clave",
         "bloque1":{
-            "contenido1":"",
-            "contenido2":"",
-            "contenido3":"",
-            "contenido4":"",
-            "contenido5":""
+            "contenido1":"Optimización de procesos: Permite encontrar soluciones óptimas (máximos o mínimos) en sistemas complejos.",
+            "contenido2":"Modelado matemático: Representación abstracta de problemas reales mediante ecuaciones y algoritmos.",
+            "contenido3":"Simulación de escenarios: Prueba de estrategias sin afectar operaciones reales.",
+            "contenido4":"Toma de decisiones basada en datos: Reduce incertidumbre con análisis cuantitativo.",
+            "contenido5":"Aplicación multidisciplinaria: Usado en logística, manufactura, finanzas y TI."
         },
         "bloque2":{
-            "contenido1":"",
-            "contenido2":"",
-            "contenido3":"",
-            "contenido4":"",
-            "contenido5":""
+            "contenido1":"Datos históricos y variables clave: Información real para alimentar modelos (ej. tiempos, costos).",
+            "contenido2":"Software especializado: Herramientas como Python (PuLP), AMPL, o AnyLogic para simulaciones.",
+            "contenido3":"Algoritmos de optimización: Método simplex, Dijkstra, PERT, etc., según el problema.",
+            "contenido4":"Restricciones y parámetros: Límites del sistema (ej. capacidad de producción, presupuesto).",
+            "contenido5":"Validación y ajuste: Comparación con resultados reales para refinar el modelo."
         },
         "imagen1":"operaciones-1",
         "imagen2":"operaciones-2",
         "conceptos":{
-            "titulo1":"",
-            "concepto1":"",
-            "titulo2":"",
-            "concepto2":"",
-            "titulo3":"",
-            "concepto3":"",
-            "titulo4":"",
-            "concepto4":"",
-            "titulo5":"",
-            "concepto5":""
+            "titulo1":"Método Simplex",
+            "concepto1":"Algoritmo para resolver problemas de programación lineal (optimización con restricciones).",
+            "titulo2":"Algoritmo de Dijkstra",
+            "concepto2":"Encuentra la ruta más corta en grafos (ej. redes logísticas o de transporte).",
+            "titulo3":"Método de la M (Penalización)",
+            "concepto3":"Técnica para convertir problemas de minimización/maximización con restricciones en formas estándar.",
+            "titulo4":"PERT (Program Evaluation and Review Technique)",
+            "concepto4":"Diagrama de redes para planificar y controlar proyectos.",
+            "titulo5":"Variables de holgura/excedente",
+            "concepto5":"Variables añadidas para convertir desigualdades en ecuaciones en programación lineal."
         }
     },
 
     "Informatica":{
-        "parrafo1":"",
-        "parrafo2":"",
-        "parrafo3":"",
-        "tituloBloqueA":"",
-        "tituloBloqueB":"",
+        "parrafo1":"Conjunto de conocimientos que se aplican para automatizar procesos que solían ser llevados a mano y llevar mucho esfuerzo y alta probabilidad de ineficiencia, esta automatización se logra gracias a la interacción entre tecnología y abstracción de procesos lógicos con algoritmos escritos con algún lenguaje de programación, dónde al hablar de tecnología nos referimos a infraestructura de red y conectividad donde incluimos los diversos tipos de computador posibles actualmente y con abstracción de procesos lógicos nos referimos al software. Para automatizar procesos empresariales con su inherente complejidad y variedad se requieren varios algoritmos por lo que adquieren la denominación de sistema informático.",
+        "parrafo2":"Un sistema informatico es un grupo de varios progrmaasespecificos que en conjunto atienden un a situación global compleja, ejemplo, un sistema contable está integrado por varios programas pequeños específicos orientados a resolver una tarea del total de tareas que deben atender los contadores, uno registra los diarios, otro almacena las facturas, otro recibe y almacena los datos, etc, al final gracias al trabajo de cada uno se logran los ejercicios contables de los clientes; estos programas se ejecutan en equipos tecnológicos con infraestructuras de red.",
+        "parrafo3":"La importancia de la informática en los negocios y organizaciones es clave, desde los comercios que abastecen a personas de víveres, los bancos, el gobienro, las redes sociales y streaming que entretienen, está en todas partes y al existir tanto valor acumulado en el aspecto informático habrá gente interesada en protefer y robar.",
+        "tituloBloqueA":"Aspectos Destacables",
+        "tituloBloqueB":"Ramas o Áreas de la Informática",
         "bloque1":{
-            "contenido1":"",
-            "contenido2":"",
-            "contenido3":"",
-            "contenido4":"",
-            "contenido5":""
+            "contenido1":"Automatización de procesos: Permite realizar tareas repetitivas o complejas con precisión y rapidez.",
+            "contenido2":"Almacenamiento y gestión de datos: Organiza, procesa y recupera información de manera eficiente.",
+            "contenido3":"Comunicación global: Facilita la conexión e intercambio de información a través de redes y sistemas.",
+            "contenido4":"Resolución de problemas: Usa algoritmos y lógica para abordar desafíos técnicos y cotidianos.",
+            "contenido5":"Innovación constante: Evoluciona con nuevas tecnologías (IA, IoT, blockchain, etc.)."
         },
         "bloque2":{
-            "contenido1":"",
-            "contenido2":"",
-            "contenido3":"",
-            "contenido4":"",
-            "contenido5":""
+            "contenido1":"Programación: Desarrollo de software mediante lenguajes como Python, Java o C++.",
+            "contenido2":"Redes y telecomunicaciones: Diseño y gestión de sistemas de comunicación (ej. Internet, redes LAN/WAN).",
+            "contenido3":"Inteligencia Artificial (IA): Creación de sistemas que imitan el aprendizaje humano (ej. chatbots, visión por computadora).",
+            "contenido4":"Bases de datos: Almacenamiento y consulta estructurada de información (ej. SQL, MongoDB).",
+            "contenido5":"Ciberseguridad: Protección de sistemas y datos contra ataques digitales."
         },
         "imagen1":"informatica-1",
         "imagen2":"informatica-2",
         "conceptos":{
-            "titulo1":"",
-            "concepto1":"",
-            "titulo2":"",
-            "concepto2":"",
-            "titulo3":"",
-            "concepto3":"",
-            "titulo4":"",
-            "concepto4":"",
-            "titulo5":"",
-            "concepto5":""
-        }
-    },
-
-    "BigData":{
-        "parrafo1":"",
-        "parrafo2":"",
-        "parrafo3":"",
-        "tituloBloqueA":"",
-        "tituloBloqueB":"",
-        "bloque1":{
-            "contenido1":"",
-            "contenido2":"",
-            "contenido3":"",
-            "contenido4":"",
-            "contenido5":""
-        },
-        "bloque2":{
-            "contenido1":"",
-            "contenido2":"",
-            "contenido3":"",
-            "contenido4":"",
-            "contenido5":""
-        },
-        "imagen1":"bigData-1",
-        "imagen2":"bigData-2",
-        "conceptos":{
-            "titulo1":"",
-            "concepto1":"",
-            "titulo2":"",
-            "concepto2":"",
-            "titulo3":"",
-            "concepto3":"",
-            "titulo4":"",
-            "concepto4":"",
-            "titulo5":"",
-            "concepto5":""
+            "titulo1":"Algoritmo",
+            "concepto1":"Secuencia de pasos lógicos para resolver un problema (ej. receta de cocina programada).",
+            "titulo2":"Hardware vs. Software",
+            "concepto2":"Componentes físicos (CPU, disco duro) vs. programas y aplicaciones (Windows, Photoshop).",
+            "titulo3":"Sistema Operativo (OS)",
+            "concepto3":"Software que gestiona recursos del hardware (ej. Windows, Linux, macOS).",
+            "titulo4":"Cloud Computing",
+            "concepto4":"Servicios en la nube (almacenamiento, procesamiento) accesibles por Internet (ej. AWS, Google Cloud).",
+            "titulo5":"Big Data",
+            "concepto5":"Análisis de grandes volúmenes de datos para extraer patrones y insights."
         }
     },
 
     "IngenieriaRequerimientos":{
-        "parrafo1":"",
-        "parrafo2":"",
-        "parrafo3":"",
-        "tituloBloqueA":"",
-        "tituloBloqueB":"",
+        "parrafo1":"Esta es una etapa o aspecto del proceso total de desarrollo de un sistema, tanto para crearlo como para mantenerlo o agregarle funcionalidades, esta etapa consiste en planificar el trabajo que deben realizar los desarrolladores de sistemas, concretamente definir que es lo que se quiere realizar y justificarlo con investigación y reuniones con los dueños del producto. Cabe mencionar que los requerimientos son necesidades o requisitos que hace el cliente/ usuario y pueden clasificarse en funcionales y no funcionales donde los primeros son tareas que debe realizar el sistema a nivel software y los segundos son requisitos independientes de las funcionalidades del software pero necesarias para el funcionamiento del sistema, como características de hardware, de memoria, de colores, de infraestructura de red,lenguaje de programación seleccionado, etc.",
+        "parrafo2":"Este es todo un proceso metódico que inclusive puede tener especialistas a cargo pues requiere amplios conocimientos técnicos para saber que es viable y que no, que tecnologías pueden satisfacer la petición del usuario, capacidad para documentar y transmitir el objetivo o los desarrolladores y la toma en general de decisiones de índole tecnica o estrategica; se deben aplicar y analizar técnicas de recopilación de información como encuestas o entrevistas, analizar la viabilidad, definir concretamente las funcionalidades en lenguaje técnico empezando con verbos en infinitivo (crear, navegar, almacenar, visualizar), y lo importante poder documentar todo, bajo alguna metodología de desarrollo preferentemente bajo estándares de documentación como UML, todo lo tecnicodeve ser entendible por el equipo de desarrollo para poder materializar las funcionalidades y poder darles mantenimiento y las partes de procesos en general deben ser entendibles para todo el personal implicado en los procesos como ventas o finanzas.",
+        "parrafo3":"La gente encargada de la ingeniería de requerimientos puede o no implicarse en la mecánica de codificar, la realidad es que para poder dar instrucciones sobre algo debes dominarlo para poder transmitirlo y el producto que deben entregar es un manual que detalle el proceso, todo esto debe ser desarrollado bajo un marco de trabajo o metodología de desarrollo que lo guíe, como scrum o xp y el no considerar esta etapa en el desarrollo puede llevar a pérdida de dinero o tiempo o ambos por falta de guía.",
+        "tituloBloqueA":"Aspectos Destacables",
+        "tituloBloqueB":"Métodos para Recopilar Información y Análisis",
         "bloque1":{
-            "contenido1":"",
-            "contenido2":"",
-            "contenido3":"",
-            "contenido4":"",
-            "contenido5":""
+            "contenido1":"Base para el desarrollo: Define qué debe hacer el sistema antes de su construcción.",
+            "contenido2":"Reduce costos y errores: Evita malentendidos y cambios tardíos en el proyecto.",
+            "contenido3":"Enfoque en necesidades reales: Alinea el sistema con las expectativas del usuario/cliente.",
+            "contenido4":"Documentación clara: Especifica funcionalidades, restricciones y criterios de aceptación.",
+            "contenido5":"Comunicación efectiva: Facilita la colaboración entre stakeholders (clientes, desarrolladores, etc.)."
         },
         "bloque2":{
-            "contenido1":"",
-            "contenido2":"",
-            "contenido3":"",
-            "contenido4":"",
-            "contenido5":""
+            "contenido1":"Entrevistas: Sesiones estructuradas o abiertas con usuarios y expertos.",
+            "contenido2":"Cuestionarios y encuestas: Recolección masiva de datos de stakeholders.",
+            "contenido3":"Observación directa: Analizar procesos actuales en su contexto real (ej. shadowing).",
+            "contenido4":"Workshops (JAD): Sesiones colaborativas con stakeholders para definir requerimientos.",
+            "contenido5":"Prototipado: Crear modelos interactivos para validar funcionalidades con usuarios."
         },
         "imagen1":"requerimientos-1",
         "imagen2":"requerimientos-2",
         "conceptos":{
-            "titulo1":"",
-            "concepto1":"",
-            "titulo2":"",
-            "concepto2":"",
-            "titulo3":"",
-            "concepto3":"",
-            "titulo4":"",
-            "concepto4":"",
-            "titulo5":"",
-            "concepto5":""
-        }
-    },
-
-    "DesarrolloDeSistemas":{
-        "parrafo1":"",
-        "parrafo2":"",
-        "parrafo3":"",
-        "tituloBloqueA":"",
-        "tituloBloqueB":"",
-        "bloque1":{
-            "contenido1":"",
-            "contenido2":"",
-            "contenido3":"",
-            "contenido4":"",
-            "contenido5":""
-        },
-        "bloque2":{
-            "contenido1":"",
-            "contenido2":"",
-            "contenido3":"",
-            "contenido4":"",
-            "contenido5":""
-        },
-        "imagen1":"desarrollo-sis-1",
-        "imagen2":"desarrollo-sis-2",
-        "conceptos":{
-            "titulo1":"",
-            "concepto1":"",
-            "titulo2":"",
-            "concepto2":"",
-            "titulo3":"",
-            "concepto3":"",
-            "titulo4":"",
-            "concepto4":"",
-            "titulo5":"",
-            "concepto5":""
+            "titulo1":"Requerimiento funcional",
+            "concepto1":"Describe qué debe hacer el sistema (ej. 'El sistema debe generar reportes mensuales').",
+            "titulo2":"Requerimiento no funcional",
+            "concepto2":"Define cómo debe funcionar (ej. rendimiento, seguridad, usabilidad).",
+            "titulo3":"Stakeholder",
+            "concepto3":"Persona/entidad con interés en el sistema (clientes, usuarios, equipo técnico).",
+            "titulo4":"Caso de uso",
+            "concepto4":"Escenario que describe la interacción entre usuario y sistema para lograr un objetivo.",
+            "titulo5":"Traza de requerimientos",
+            "concepto5":"Mapeo que vincula requerimientos con su origen y su implementación."
         }
     },
 
     "Aplicaciones":{
-        "parrafo1":"",
-        "parrafo2":"",
-        "parrafo3":"",
-        "tituloBloqueA":"",
-        "tituloBloqueB":"",
+        "parrafo1":"Son una posible tecnología para desarrollar software concreto para un contexto como cualquier software (aspecto financiero, banca, editor de texto,etc), aunque por su naturaleza móvil, es decir para un teléfono o dispositivo portátil puede tener enfocque en aspectos cotidianos que faciliten cualquier actividad como identificar una por la letra o llegar a una dirección o simplemente para fines lúdicos como un jueguito.",
+        "parrafo2":"Al ser una tecnología particular enfocada a una infraestructura específica existen sus aspectos específicos que forzan a la especializacion, en concreto hablo de que existen diferentes proveedores de hardware (creadores de tecnología Sony, Motorola, Samsung, apple, etc) y software (sistemas operativos) en competencia por lo que una app puede estar enfocada en un proveedor o en ambos (ios y android son los sistemas operativos más presentes). Una app puede no ser compatible para funcionar en un sistema y si en otro, incluso ser compatible con ciertas versiones de un mismo SO e incompatible con otras (ej funcionar en android 2.0 y no en Android 3.0), para estás problemáticas surge un repertorio de alternativas de desarrollo como frameworks y lenguajes multiplataforma (javascript con node o php con laravel).",
+        "parrafo3":"El potencial de esta teçnologia es enorme por lo presentes que están los teléfonos en la vida cotidiana y por toda la tecnología disponible, pueden aprovechar simplemente los recursos locales de los dispositivos (que actaulennte son muy competentes en memoria y procesadores) o tener tecnologías hibridas que conecten al teléfono con la nube, el objetivo de desarrollar en móvil es que luego de codificar y compilar se obtenga un ejecutable o programa específico que pueda ser compartido o cargado en plataformas como la Playstore para android o la de apple para sus dispositivos. Está tecnología está y no al alcance de todos, me refiero a que a nivel empresarial solo es viable lanzar tu app al tener cierto tamaño y reconocimiento pues para ser descargada debe haber reconocimiento, ejemplo, existiendo ecommerce reconocidos debe haber reconocimiento y necesidad de tu oferta para que se descargue tu app de ecommerce, además de que por la amplia competencia comercial de apps con casi todo aspecto cubierto debes desarrollar una aplicación de alta calidad para competir y rivalizar en descargas con las otras apps ofrecidas.",
+        "tituloBloqueA":"Aspectos Destacables",
+        "tituloBloqueB":"Lenguajes/Tecnologías ",
         "bloque1":{
-            "contenido1":"",
-            "contenido2":"",
-            "contenido3":"",
-            "contenido4":"",
-            "contenido5":""
+            "contenido1":"Multiplataforma: Desarrollo de apps para iOS y Android con un solo código base (ej. React Native, Flutter).",
+            "contenido2":"Experiencia de usuario (UX): Diseño intuitivo y adaptado a pantallas táctiles.",
+            "contenido3":"Rendimiento optimizado: Uso eficiente de recursos (CPU, memoria, batería).",
+            "contenido4":"Acceso a hardware del dispositivo: Cámara, GPS, sensores y notificaciones push.",
+            "contenido5":"Actualizaciones en tiempo real: Capacidad de desplegar actualizaciones sin pasar por tiendas de apps (ej. CodePush)."
         },
         "bloque2":{
-            "contenido1":"",
-            "contenido2":"",
-            "contenido3":"",
-            "contenido4":"",
-            "contenido5":""
+            "contenido1":"Kotlin : Lenguaje moderno para Android (oficialmente soportado por Google).",
+            "contenido2":"Swift : Lenguaje de Apple para desarrollo nativo en iOS/macOS.",
+            "contenido3":"React Native : Framework de JavaScript para apps multiplataforma (Meta).",
+            "contenido4":"Flutter : SDK de Google con lenguaje Dart, permite UI altamente personalizable.",
+            "contenido5":"Java : Tradicional para Android, aunque ahora reemplazado por Kotlin."
         },
         "imagen1":"aplicaciones-1",
         "imagen2":"aplicaciones-2",
         "conceptos":{
-            "titulo1":"",
-            "concepto1":"",
-            "titulo2":"",
-            "concepto2":"",
-            "titulo3":"",
-            "concepto3":"",
-            "titulo4":"",
-            "concepto4":"",
-            "titulo5":"",
-            "concepto5":""
+            "titulo1":"API REST",
+            "concepto1":"Interfaz para comunicar la app con servidores backend (ej. fetch de datos).",
+            "titulo2":"Widget",
+            "concepto2":"Componente reutilizable de UI (ej. botones, listas en Flutter o React Native).",
+            "titulo3":"State Management",
+            "concepto3":"Gestión del estado de la app (ej. Redux, Provider, Bloc).",
+            "titulo4":"Native vs. Hybrid",
+            "concepto4":"Donde Nativo son apps específicas para cada SO (mayor rendimiento); minetras que híbrido son de código único para varias plataformas (menor costo).",
+            "titulo5":"Store Approval",
+            "concepto5":"Proceso de revisión para publicar en Google Play o App Store."
         }
     },
 
     "BasesNoSQL":{
-        "parrafo1":"",
-        "parrafo2":"",
-        "parrafo3":"",
-        "tituloBloqueA":"",
-        "tituloBloqueB":"",
+        "parrafo1":"Es una alternativa de como podemos almacenar y disponer de los datos, más dinámica e “informal” al tradicional modelado de datos estructurado relacional . Está alternativa o manera de gestionar los datos consiste en utilizar modelos de esquema flexible que permiten una amplia variedad de datos no estructurados, como documentos, pares clave-valor, columnas amplias y gráficos.",
+        "parrafo2":"Estos tipos de bases de datos surgieron en los años 2000 por las necesidades de gestionar grandes volúmenes de datos de diferentes tipos que surgieron con las nuevas tecnologías y el crecimiento del internet, en concreto estas tecnologías buscan: Procesar grandes volúmenes de datos; Escalar horizontalmente para satisfacer la demanda sin tiempo de inactividad; Manejar datos diversos y dinámicos; Almacenar datos de catálogos de productos; y Gestionar grandes volúmenes de datos en sistemas como chat en vivo, juegos en línea, y servicios financieros.",
+        "parrafo3":"Este tipo de base de datos no necesariamente es un modelo que sustituya al confiable modelo de estructurado de datos relacional basado en tablas, pueden coexistir ambos tipos de modelos en un mismo sistema uno para un aspecto y otro para otros pues existen actividades para las que un modelado noSQL sea mejor opción por la rapidez y practicidad.",
+        "tituloBloqueA":"Aspectos Destacables",
+        "tituloBloqueB":"Manejadores NoSQL Destacados",
         "bloque1":{
-            "contenido1":"",
-            "contenido2":"",
-            "contenido3":"",
-            "contenido4":"",
-            "contenido5":""
+            "contenido1":"Escalabilidad horizontal: Distribuye datos en múltiples servidores para manejar grandes volúmenes.",
+            "contenido2":"Flexibilidad en esquemas: No requieren estructura fija (ej. documentos JSON, grafos).",
+            "contenido3":"Alto rendimiento: Optimizadas para operaciones rápidas en entornos distribuidos.",
+            "contenido4":"Variedad de modelos: Documentos, clave-valor, columnas o grafos según necesidades.",
+            "contenido5":"Tolerancia a fallos: Replicación automática para evitar pérdida de datos."
         },
         "bloque2":{
-            "contenido1":"",
-            "contenido2":"",
-            "contenido3":"",
-            "contenido4":"",
-            "contenido5":""
+            "contenido1":"MongoDB : Base de datos de documentos (JSON-like) para alta flexibilidad.",
+            "contenido2":"Redis : Almacén clave-valor en memoria, ideal para caché y velocidad.",
+            "contenido3":"Cassandra : Base de datos columnar para escalabilidad masiva.",
+            "contenido4":"Neo4j : Base de datos de grafos para relaciones complejas.",
+            "contenido5":"Elasticsearch : Motor de búsqueda y análisis de datos en tiempo real."
         },
         "imagen1":"nosql-1",
         "imagen2":"nosql-2",
         "conceptos":{
-            "titulo1":"",
-            "concepto1":"",
-            "titulo2":"",
-            "concepto2":"",
-            "titulo3":"",
-            "concepto3":"",
-            "titulo4":"",
-            "concepto4":"",
-            "titulo5":"",
-            "concepto5":""
+            "titulo1":"Consistencia eventual",
+            "concepto1":"Los datos se sincronizan en todos los nodos con cierto retraso.",
+            "titulo2":"Sharding",
+            "concepto2":"Partición de datos en fragmentos distribuidos para mejorar rendimiento.",
+            "titulo3":"ACID vs. BASE",
+            "concepto3":"ACID (Atomicidad, Consistencia, Aislamiento, Durabilidad) propiedades de modelo tradicional en SQL vs BASE (Basic Availability, Soft state, Eventual consistency) cualidades típicas en NoSQL.",
+            "titulo4":"Colección",
+            "concepto4":"Grupo de documentos en MongoDB (similar a tablas en SQL).",
+            "titulo5":"Índice invertido",
+            "concepto5":"Estructura usada en motores como Elasticsearch para búsquedas rápidas."
+        }
+    },
+
+    "DesarrolloDeSistemas":{
+        "parrafo1":"Son guías que por etapas y protocolos dirigen como se desarrollan los proyectos no solo informáticos, las metodologías de desarrollo guían los proyectos empresariales en general. Con las metodologías todo el proceso de desarrollo de un proyecto es llevado paso a paso metódicamente por etapas y en equipo, es una manera de llevar profesionalmente el trabajo y en general diremos que se pueden clasificar en desarrollos agiles y tradicionales.",
+        "parrafo2":"Cómo todo en los negocios, no se puede dejar que los proyectos se desarrollen con incertidumbre y posibilidad de perder tiempo y los recursos invertidos, estás metodologías buecan minimizar riesgos y garantizar el cumplimiento de los objetivos, con esto en mente se tienen 2 opciones de metodologías posibles a elegir por las organizaciones dependiendo de la complejidad del proyecto, el tiempo, el presupuesto, las capacidades del equipo de trabajo e inclusive la normativa necesaria para ciertos negocios sensibles como pueden ser los asociados a procesos financieros con altos requisitos de seguridad.",
+        "parrafo3":"Cada metodología tiene particularidades en sus etapas y en sus requisitos, destacando como metodologías agiles Kanban, Extreme Programming (XP), Design Sprint, Agile Inception y SCRUM (que para algunos puede parecer más tradicional por sus requisitos de documentación y sus etapas) mencionado de estás que su agilidad es apropiada para proyectos rápidos, no muy complejos o extensos y sobre todo con equipos de trabajo capaces y experimentados que no tengan conflictos con el trabajo para no retrasar la agilidad; por el lado están las metodologías tradicionales con ejemplos como el modelo en cascada, RUP (Rational Unified Process) que se basan en las buenas prácticas de ingeniería para alcanzar un software más eficiente y clnun proceso más controlado, con más garantía de éxito.",
+        "tituloBloqueA":"Aspectos Destacables",
+        "tituloBloqueB":"Modelos o Metodologías de Desarrollo",
+        "bloque1":{
+            "contenido1":"Enfoque estructurado : Proporciona un marco de trabajo claro para gestionar proyectos.",
+            "contenido2":"Flexibilidad vs. Predictibilidad : Agile se adapta a cambios, mientras las tradicionales (como Cascada) siguen un plan fijo.",
+            "contenido3":"Colaboración continua : Involucra al cliente y equipo en iteraciones rápidas (ej. Scrum).",
+            "contenido4":"Entrega incremental : Productos funcionales en ciclos cortos (ej. sprints en Agile).",
+            "contenido5":"Gestión de riesgos : Identifica y mitiga problemas temprano (ej. retrospectivas en Scrum)."
+        },
+        "bloque2":{
+            "contenido1":"Scrum : Marco Agile con sprints (iteraciones de 2-4 semanas), roles (Scrum Master, Product Owner) y artefactos (Product Backlog).",
+            "contenido2":"XP (eXtreme Programming) : Agile con énfasis en calidad: programación en parejas, integración continua y pruebas automatizadas.",
+            "contenido3":"Cascada (Waterfall) : Modelo lineal con fases secuenciales (requisitos, diseño, implementación, pruebas, mantenimiento).",
+            "contenido4":"Kanban : Visualización del flujo de trabajo (tablero con columnas: 'Por hacer', 'En progreso', 'Hecho').",
+            "contenido5":"DevOps : Combina desarrollo y operaciones para entrega continua (CI/CD) y automatización."
+        },
+        "imagen1":"desarrollo-sis-1",
+        "imagen2":"desarrollo-sis-2",
+        "conceptos":{
+            "titulo1":"Sprint",
+            "concepto1":"Iteración corta en Scrum (ej. 2 semanas) para entregar funcionalidades.",
+            "titulo2":"User Story",
+            "concepto2":"Descripción sencilla de una necesidad del usuario (ej. 'Como usuario, quiero iniciar sesión con Google').",
+            "titulo3":"MVP (Minimum Viable Product)",
+            "concepto3":"Versión mínima del producto para validar ideas con usuarios.",
+            "titulo4":"Daily Stand-up",
+            "concepto4":"Reunión diaria de 15 minutos (Scrum/XP) para sincronizar al equipo.",
+            "titulo5":"Retrospectiva",
+            "concepto5":"Reunión post-sprint para mejorar procesos (qué salió bien/mal)."
+        }
+    },
+
+    "Seguridad":{
+        "parrafo1":"Es el concepto de seguridad orientado a proteger cuestiones de tecnología, infraestructuras de red y sistemas, es un aspecto crucial que todo sistema informático o de red debe conocer y aplicar, toda medida orientada a dar seguridad ayuda pues los ataques de seguridad son un tema complejo y no tan romántico como las películas no han hecho creer dónde una persona escribe códigos y roba millones. La implementación de la seguridad puede provenir de personal mismo de la organización o ser proveído por consultorías especializadas, a si mismo la evaluación de estas medidas pueden ser internas (menos rígidas) o por requisito o incidente (auditorías externas).",
+        "parrafo2":"En la actualidad los sistemas informáticos y los datos que estos generan son de alto valor para las empresas, porque estos datos pueden ser sobre clientes o proveedores, tener información sobre las finanzas de la empresa y otros aspectos que ayudarian a la competencia a ganarles; otra razón es que en un acto de competencia desleal se pueden ejecutar ataques de DdoS por ejemplo, para que una empresa se quede sin sistema durante una temporada de ventas, se cae el sistema y la empresa deja de producir, pierde ventas y afecta su reputación.",
+        "parrafo3":"La seguridad es importante y complicada por implicar no solo aspectos técnicos, también requiere consideraciones sociales; por el lado del aspecto técnico las medidas van desde segmentación de redes y procesos en el servidor, configuración de firewalls, encriptación en ciertos códigos, creación de usuarios con roles y contraseñas, trabajar con VPN, entre otros; las consideraciones sociales son más complejas y el punto más débil, por algún disgusto un trabajador puede comprometer la seguridad o por un descuido descargar o proporcionar información sensible, las medidas son capacitaciones en las formas que puede comprometerse la seguridad, obligarles a firmar contratos de confidencialidad y medidas físicas restrictivas como biometricos y credenciales para restringir accesos, camaras de seguridad, equipos de cómputo adaptados con bloqueos de puerto USB por ejemplo, guardias, entre otras. Las medidas de seguridad deben dirigirse a todos los aspectos del sistema, incluido y sobre todo a controlar al personal que controla el sistema.",
+        "tituloBloqueA":"Medidas",
+        "tituloBloqueB":"Riesgos o Ataques",
+        "bloque1":{
+            "contenido1":"Autenticación multifactor (MFA) : Requiere múltiples verificaciones (contraseña + SMS/biometría) para acceder a sistemas.",
+            "contenido2":"Encriptación de datos : Protege información sensible (ej. AES-256 para archivos, SSL/TLS en redes).",
+            "contenido3":"Copias de seguridad (Backups) : Respaldo periódico de datos en ubicaciones seguras (ej. 3-2-1 rule: 3 copias, 2 medios, 1 externa).",
+            "contenido4":"Parches de seguridad : Actualizaciones urgentes para corregir vulnerabilidades en software/hardware.",
+            "contenido5":"Firewalls y segmentación de red : Filtra tráfico malicioso y aísla sistemas críticos."
+        },
+        "bloque2":{
+            "contenido1":"Phishing : Engaño para robar credenciales (ej. correos falsos de bancos).",
+            "contenido2":"Ransomware : Malware que cifra datos y exige rescate (ej. WannaCry).",
+            "contenido3":"Ataques DDoS : Sobrecarga servidores con tráfico falso para inhabilitar servicios.",
+            "contenido4":"Inyección SQL : Explota vulnerabilidades en bases de datos para robar/modificar información.",
+            "contenido5":"Man-in-the-Middle (MitM) : Intercepta comunicación entre dos partes (ej. en redes Wi-Fi públicas)."
+        },
+        "imagen1":"seguridad-1",
+        "imagen2":"seguridad-2",
+        "conceptos":{
+            "titulo1":"Zero Trust",
+            "concepto1":"Modelo que asume que ninguna entidad (interna o externa) es confiable por defecto.",
+            "titulo2":"Vulnerabilidad",
+            "concepto2":"Debilidad en un sistema que puede ser explotada (ej. software sin actualizar).",
+            "titulo3":"Penetration Testing (Pentesting)",
+            "concepto3":"Simulación de ataques para identificar fallos de seguridad.",
+            "titulo4":"IAM (Identity and Access Management)",
+            "concepto4":"Gestión de identidades y permisos de usuarios (ej. roles RBAC).",
+            "titulo5":"SOC (Security Operations Center)",
+            "concepto5":"Equipo/monitoreo 24/7 para detectar y responder a amenazas."
         }
     },
 
     "Calculo":{
-        "parrafo1":"",
-        "parrafo2":"",
-        "parrafo3":"",
-        "tituloBloqueA":"",
-        "tituloBloqueB":"",
+        "parrafo1":"Cálculo es el estudio de movimiento, y el movimiento está íntimamente vinculado a límites. Continuidad, derivada e integral son un límite y para trabajar con límites es necesario dominar “las reglas” para que los despejes de incógnitas tengan sentido en el mundo real. El cálculo surge por la necesidad de dar certeza a eventos que implican cambios (movimiento). Por ejemplo, durante las travesías comerciales, sabiendo la hora de partida y las estrellas del cielo se podía determinar la ubicación actual.  Al desarrollar maquinaria con engranajes, poleas, palancas y pistones se necesitaba saber ciertas cosas como: ¿Cuántos kilómetros recorrerá la locomotora en función al combustible que quema?, ¿Cuánto varia el desempeño conforme (función) al consumo del vapor?, ¿Qué fuerza aplicar a objeto para levantarlo?, ¿En qué punto se hallará un objeto en un momento determinado considerando su trayectoria? Asi que podemos afirmar que es la parte de la matematica enfocada en estudiar conceptos complejos, que involucran cambios constantes y variables. Estudia el movimiento, haciendo una relacion de las variables naturales que intervienen en esa situacion completa, como en un trayecto la relacion tiempo-distancia, al cotejar un momento con el recorrido es una funcion que describe la velocidad. Por esto se desarrolló el concepto de función, que describe la relación de una variable o evento con otro.",
+        "parrafo2":"Una funcion implica 2  Conjuntos de números. El primer Conjunto/Grupo de números es   X, o Dominio, donde los miembros de ese Conjunto X  tomaran los valores comprendidos en el Intervalo Solución (No Puede Tomar un Valor que no este en ese intervalo); El segundo Conjunto/Grupo de números es Y, o CoDominio  o  F(x),  donde los miembros de ese Conjunto Y  tomaran los valores del primer Conjunto X y los procesara con una expresión dada que representa una situación real. Por lo tanto, entre esos 2 conjuntos se establece una relación dada por la Función F(X). Existen conceptos relacionados a una funcion neesarios para trabajar, el primero es  la Expresión, que es el planteamiento algebraico de una situación; otro es el Dominio, que es un conjunto de números, valores variables, comprendidos en el Intervalo Solución; otro es el Co-dominio, que es un Conjunto de números, resultado de sustituir Valores de dominio en la expresión dada; finalmente esta la Imagen, que es el conjunto Subconjunto de Y. Es decir, los números que lo conforman están también en  Y, son iguales, pero la imagen forma una coordenada donde la función se evalúa en algún X contra el dominio   ->  [  Xn   ,   F( Xn )  ]",
+        "parrafo3":"¿Cual es la relevancia del calculo?, gigantesca, parece salirse de contexto con lo que tarta el contenido de estos blogs pero la realidad es que no. El calculo es una rama de la matematica presente en diversas disciplinas cietificas, como medicina, fisica, quimica e inclusive puede servir para ramas mas sociales como la economia donde por medio de graficas se deben analizar panoramas.",
+        "tituloBloqueA":"Aspectos Destacables",
+        "tituloBloqueB":"Consideraciones para Aprender Cálculo",
         "bloque1":{
-            "contenido1":"",
-            "contenido2":"",
-            "contenido3":"",
-            "contenido4":"",
-            "contenido5":""
+            "contenido1":"Herramienta para modelar cambios : Analiza variaciones (velocidad, crecimiento) mediante funciones.",
+            "contenido2":"Bases de la física e ingeniería : Fundamental en mecánica, electricidad y optimización.",
+            "contenido3":"Dos ramas principales : Cálculo diferencial (tasas de cambio) y integral (acumulación de cantidades).",
+            "contenido4":"Aplicaciones multidisciplinarias : Usado en economía (costos marginales), biología (crecimiento poblacional) y más.",
+            "contenido5":"Lenguaje matemático universal : Notación estandarizada (límites, derivadas, integrales) para problemas complejos."
         },
         "bloque2":{
-            "contenido1":"",
-            "contenido2":"",
-            "contenido3":"",
-            "contenido4":"",
-            "contenido5":""
+            "contenido1":"Domina álgebra y trigonometría : Son la base para entender límites y derivadas.",
+            "contenido2":"Visualiza conceptos : Gráficas de funciones ayudan a comprender derivadas e integrales.",
+            "contenido3":"Practica problemas aplicados : Relaciona ejercicios con situaciones reales (ej. movimiento, optimización).",
+            "contenido4":"Usa tecnología : Herramientas como Desmos (gráficas) o Wolfram Alpha (resolución paso a paso).",
+            "contenido5":"Enfócate en la lógica, no solo en fórmulas : Entender el 'por qué' detrás de cada concepto es clave."
         },
         "imagen1":"calculo-1",
         "imagen2":"calculo-2",
         "conceptos":{
-            "titulo1":"",
-            "concepto1":"",
-            "titulo2":"",
-            "concepto2":"",
-            "titulo3":"",
-            "concepto3":"",
-            "titulo4":"",
-            "concepto4":"",
-            "titulo5":"",
-            "concepto5":""
-        }
-    },
-
-    "Metodologias":{
-        "parrafo1":"",
-        "parrafo2":"",
-        "parrafo3":"",
-        "tituloBloqueA":"",
-        "tituloBloqueB":"",
-        "bloque1":{
-            "contenido1":"",
-            "contenido2":"",
-            "contenido3":"",
-            "contenido4":"",
-            "contenido5":""
-        },
-        "bloque2":{
-            "contenido1":"",
-            "contenido2":"",
-            "contenido3":"",
-            "contenido4":"",
-            "contenido5":""
-        },
-        "imagen1":"metodologias-1",
-        "imagen2":"metodologias-2",
-        "conceptos":{
-            "titulo1":"",
-            "concepto1":"",
-            "titulo2":"",
-            "concepto2":"",
-            "titulo3":"",
-            "concepto3":"",
-            "titulo4":"",
-            "concepto4":"",
-            "titulo5":"",
-            "concepto5":""
+            "titulo1":"Límite",
+            "concepto1":"Valor al que se acerca una función cuando su entrada tiende a un punto (ej.: lim (x→0) sin(x)/x = 1).",
+            "titulo2":"Derivada",
+            "concepto2":"Razón de cambio instantánea de una función (ej.: velocidad es la derivada de la posición).",
+            "titulo3":"Integral",
+            "concepto3":"Acumulación de cantidades (ej.: área bajo una curva o distancia total recorrida).",
+            "titulo4":"Teorema Fundamental del Cálculo",
+            "concepto4":"Relaciona derivadas e integrales: ∫[a, b] f'(x) dx = f(b) - f(a).",
+            "titulo5":"Regla de la Cadena",
+            "concepto5":"Fórmula para derivar funciones compuestas: (f(g(x)))' = f'(g(x)) · g'(x)."
         }
     },
 
@@ -775,80 +739,8 @@
             "contenido4":"",
             "contenido5":""
         },
-        "imagen1":"probabilidad-1",
-        "imagen2":"probabilidad-2",
-        "conceptos":{
-            "titulo1":"",
-            "concepto1":"",
-            "titulo2":"",
-            "concepto2":"",
-            "titulo3":"",
-            "concepto3":"",
-            "titulo4":"",
-            "concepto4":"",
-            "titulo5":"",
-            "concepto5":""
-        }
-    },
-
-    "SimulacionRedes":{
-        "parrafo1":"",
-        "parrafo2":"",
-        "parrafo3":"",
-        "tituloBloqueA":"",
-        "tituloBloqueB":"",
-        "bloque1":{
-            "contenido1":"",
-            "contenido2":"",
-            "contenido3":"",
-            "contenido4":"",
-            "contenido5":""
-        },
-        "bloque2":{
-            "contenido1":"",
-            "contenido2":"",
-            "contenido3":"",
-            "contenido4":"",
-            "contenido5":""
-        },
-        "imagen1":"redes-sim-1",
-        "imagen2":"redes-sim-2",
-        "conceptos":{
-            "titulo1":"",
-            "concepto1":"",
-            "titulo2":"",
-            "concepto2":"",
-            "titulo3":"",
-            "concepto3":"",
-            "titulo4":"",
-            "concepto4":"",
-            "titulo5":"",
-            "concepto5":""
-        }
-    },
-
-    "ModelosPruebas":{
-        "parrafo1":"",
-        "parrafo2":"",
-        "parrafo3":"",
-        "tituloBloqueA":"",
-        "tituloBloqueB":"",
-        "bloque1":{
-            "contenido1":"",
-            "contenido2":"",
-            "contenido3":"",
-            "contenido4":"",
-            "contenido5":""
-        },
-        "bloque2":{
-            "contenido1":"",
-            "contenido2":"",
-            "contenido3":"",
-            "contenido4":"",
-            "contenido5":""
-        },
-        "imagen1":"pruebas-1",
-        "imagen2":"pruebas-2",
+        "imagen1":"algebra-1",
+        "imagen2":"algebra-2",
         "conceptos":{
             "titulo1":"",
             "concepto1":"",
@@ -885,42 +777,6 @@
         },
         "imagen1":"algebra-1",
         "imagen2":"algebra-2",
-        "conceptos":{
-            "titulo1":"",
-            "concepto1":"",
-            "titulo2":"",
-            "concepto2":"",
-            "titulo3":"",
-            "concepto3":"",
-            "titulo4":"",
-            "concepto4":"",
-            "titulo5":"",
-            "concepto5":""
-        }
-    },
-
-    "titulo26":{
-        "parrafo1":"",
-        "parrafo2":"",
-        "parrafo3":"",
-        "tituloBloqueA":"",
-        "tituloBloqueB":"",
-        "bloque1":{
-            "contenido1":"",
-            "contenido2":"",
-            "contenido3":"",
-            "contenido4":"",
-            "contenido5":""
-        },
-        "bloque2":{
-            "contenido1":"",
-            "contenido2":"",
-            "contenido3":"",
-            "contenido4":"",
-            "contenido5":""
-        },
-        "imagen1":"",
-        "imagen2":"",
         "conceptos":{
             "titulo1":"",
             "concepto1":"",

@@ -4,12 +4,14 @@ import Carrusel from '../Carrusel.jsx';
 import DropDown from '../DropDown.jsx';
 import Footer from '../Footer.jsx';
 import HeaderGral from '../HeaderGral.jsx';
-import Coffe from '../Coffe.jsx';
+import Emoji from '../Emoji.jsx';
 import data from '../../contenido/contenido.json';
+import GoogleAnalytics from '../GoogleAnalytics.jsx';
 
 function MarketingDigital(props){
     return(
         <>
+            <GoogleAnalytics/>
             <HeaderGral/>
             <Articulo
                 title="Marketing Digital"
@@ -38,7 +40,7 @@ function MarketingDigital(props){
                 conceptosT5={data.MarketingDigital.conceptos.titulo5}
                 conceptosC5={data.MarketingDigital.conceptos.concepto5}
             />
-            <Coffe />
+            <Emoji texto="La promocion de la correcta imagen cierra ventas y cada venta nos acerca a un Negocio exitoso" />
             <DropDown />
             <Carrusel/>
             <Posts/>

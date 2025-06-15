@@ -5,10 +5,12 @@ import DropDown from '../DropDown.jsx';
 import Footer from '../Footer.jsx';
 import HeaderGral from '../HeaderGral.jsx';
 import data from '../../contenido/contenido.json';
+import GoogleAnalytics from '../GoogleAnalytics.jsx';
 
 function ModelosPruebas(props){
     return(
         <>
+            <GoogleAnalytics/>
             <HeaderGral/>
             <Articulo
                 title="Modelos de Pruebas de Software"

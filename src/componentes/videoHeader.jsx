@@ -13,8 +13,9 @@ function Vh(){
     return(
         <div className="cuerpoVH">
             <section className="videoHeader">
-                <video ref={videoRef} src={videoPromo} autoplay="" muted="false" loop="">
-                    </video>
+            <video ref={videoRef} src={videoPromo} autoPlay muted loop>
+                {/* */}
+                </video>
                     <Link to="/"><h1><span>ADM</span>ING</h1></Link>
             </section>
             <CircleStyle />

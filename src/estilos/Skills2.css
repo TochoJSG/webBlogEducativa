@@ -1,0 +1,119 @@
+.containerSkill2{
+    width:90%;
+    margin: auto 5%;
+    position:absolute;
+    top:17px;
+    left:0;
+    /*transform:translate(-50%,-50%);*/
+    padding:6px;
+    background:#072858;
+    box-sizing:border-box;
+    box-shadow:0 19px 50px rgba(0,0,0,.5);
+}
+.containerSkill2 h1{
+    margin:0;
+    padding:0;
+    text-transform:uppercase;
+    text-align: center;
+    color:#fff;
+    letter-spacing:9px;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.containerSkill2 p{
+    color:#fff;
+    font-size: .7em;
+    font-weight: 500;
+}
+
+.containerSkill2 .skill{
+    position:relative;
+    padding:6px;
+    background:rgba(0,0,0,.1);
+    margin:10px 0;
+    border:1px solid rgba(255,255,255,0.1);
+    box-shadow:inset 0 0 25px rgba(0,0,0,.25);
+}
+.containerSkill2 .skill h3{
+    margin:0;
+    padding:0;
+    color:#fff;
+    float:left;
+    font-size: 1em;
+    letter-spacing: 6px;
+    font-weight: 200;
+}
+.containerSkill2 .skill .percent{
+    float:right;
+    color:#fff;
+}
+.containerSkill2 .skill .bar{
+    position:relative;
+    width:100%;
+    height:3px;
+    background:#041c40;
+    margin:15px 0 10px;
+}
+.containerSkill2 .skill .bar .progress{
+    position:absolute;
+    /*text-outline:0;*/
+    left:0;
+    top:0;
+    width:87%;
+    height:100%;
+    background:linear-gradient(to right, #0037,#2b80ff);
+}
+.containerSkill2 .skill .bar .progress:before{
+    content:'';
+    position:absolute;
+    top:-5px;
+    right:0;
+    width:12px;
+    height:12px;
+    border-radius:50%;
+    background:#fff;
+    box-shadow:0 0 25px rgba(41,123,247,1);
+}
+@media(max-width:990px){
+    .containerSkill2 h1{
+        text-transform:capitalize;
+        letter-spacing:6px;
+        font-size: 1em;
+        font-weight: 300;
+    }
+    .containerSkill2 p{
+        font-size: .6em;
+        font-weight: 300;
+    }
+    .containerSkill2 .skill h3{
+        font-size: .7em;
+        letter-spacing: 3px;
+        font-weight: 100;
+    }
+}
+/*	.skill p{
+    color:#fff;
+    text-transform:uppercase;
+    margin:0 0 9px;
+    padding:0;
+    font-weight:bold;
+    letter-spacing:3px;
+}
+
+.skills p:nth-child(2){
+    float:right;
+    position:relative;
+    top:-25px;
+}
+.skill{
+    background:#262626;
+    padding:4px;
+    box-sizing:border-box;
+    border:1px solid #0fffb7;
+    border-radius:3px;
+}
+.skill_level{
+    background:#0fffb7;
+    width:100%;
+    height:9px;
+}*/

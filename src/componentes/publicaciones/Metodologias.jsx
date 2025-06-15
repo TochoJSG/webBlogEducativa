@@ -6,10 +6,12 @@ import Footer from '../Footer.jsx';
 import HeaderGral from '../HeaderGral.jsx';
 import Display from '../Display.jsx';
 import data from '../../contenido/contenido.json';
+import GoogleAnalytics from '../GoogleAnalytics.jsx';
 
 function Metodologias(props){
     return(
         <>
+            <GoogleAnalytics/>
             <HeaderGral/>
             <Articulo
                 title="Metodologias de Desarrollo"

@@ -6,10 +6,12 @@ import Footer from '../Footer.jsx';
 import HeaderGral from '../HeaderGral.jsx';
 //import Space from '../Space.jsx';
 import data from '../../contenido/contenido.json';
+import GoogleAnalytics from '../GoogleAnalytics.jsx';
 
 function Informatica(props){
     return(
         <>
+            <GoogleAnalytics/>
             <HeaderGral/>
             <Articulo
                 title="Informatica"

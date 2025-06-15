@@ -31,8 +31,11 @@
     padding:0;
     font-weight:bold;
     letter-spacing:6px;
-    font-size: 1.1em;
+    font-size: 1.3em;
     font-weight: 900;
+    background: #3e01af50;
+    color: #e6feff;
+    border-radius: 3px;
 }
 .skillsBox p:nth-child(2){
     float:right;

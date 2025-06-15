@@ -328,6 +328,15 @@ header #toggle:after{content:'';position:absolute;bottom:6px;width:100%;height:5
 	background-attachment:fixed;
 	background-blend-mode:revert;
 }
+.containerFS .sectionFS:nth-child(4){
+	display: block;
+	scroll-snap-align: center;	
+	height: 100vh;	
+	background:rgb(187, 161, 196) url('../imagenes/bg_1.png');
+	background-size:cover;
+	background-attachment:fixed;
+	background-blend-mode:darken;
+}
 .contenedor{
 	width: 80%;
 	margin: 100px 10% 90px; 

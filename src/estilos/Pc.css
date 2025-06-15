@@ -61,6 +61,7 @@
 }
 .centerPc .monitor:hover video{
     display:block;
+    background: url(../static_src/short.mp4);
 }
 .centerPc .overlay{
     position:absolute;
