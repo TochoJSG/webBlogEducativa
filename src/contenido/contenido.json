@@ -720,38 +720,38 @@
     },
 
     "Probabilidad":{
-        "parrafo1":"",
-        "parrafo2":"",
-        "parrafo3":"",
-        "tituloBloqueA":"",
-        "tituloBloqueB":"",
+        "parrafo1":"La probabilidad es una rama de la matematica o una aplicacion de la matematica para una necesidad especifica a ciertos sectores donde lo que se busca es predecir o enfrentar la incertidumbre a eventos a traves de diversas formulas y modelos matematicos trabajando con porcentajes siendo el 100% la certeza total de ocurrencia de un evento, es decir que la suma de todos los eventos o resultados posibles a un problema especifico no debe exceder el 100% de probabilidad.",
+        "parrafo2":"La probabilidad constituye un importante parametro en la determinacion de diversas casualidades obtenidas tras la observaccion de una serie de eventosesperados dentro de un rango estadistico. En terminos practicos no se trabaja con el 100% sino con 1 como certeza todal de ocurencia de un Evento el cual se denota con la letra P y se expresa en terminos de fracción y no en porcentaje,por lo que P cae entre 0 y 1 habiendo en este intervalo muchas posibilidades. Por otra parte, la probabilidad de que un Evento No ocurra equivale a 1 menos el valor de P y se denota con la letra ‘q’.",
+        "parrafo3":"Loas calculos de probabilidad son apoyados por teoremas, modelos y formulas matematicas y los datos surgen de la observacion, experimentos o mediante tecnicas de recopilacion de informacion, esta rama matematica esta relacionada y apoyada por la estadistica y entre mas datos se tengan mas certero puede ser el resultado del calculo probabilistico. Gracias a herramientas como las tecnicas de conteo se pueede determinar el nuemro total de resultados pues permiten saber cuantas combinaciones u opciones distintas se tienen de los elementos dentro de un mismo grupo de objetos; este tipo de tecnicas se utilizan cuando es practicamente imposible o demasiado pesado hacer de forma manual combinaciones de diferentes elementos y saber cuantas de ellas son posibles.",
+        "tituloBloqueA":"Técnicas de Conteo",
+        "tituloBloqueB":"Aspectos Relevantes para Comprender la Probabilidad",
         "bloque1":{
-            "contenido1":"",
-            "contenido2":"",
-            "contenido3":"",
-            "contenido4":"",
-            "contenido5":""
+            "contenido1":"Regla de la Multiplicación: Si un evento A puede ocurrir de *m* formas y un evento B de *n* formas, entonces ambos eventos pueden ocurrir de m × n formas.",
+            "contenido2":"Regla de la Suma: Si un evento A puede ocurrir de *m* formas y otro evento B de *n* formas (mutuamente excluyentes), entonces A o B pueden ocurrir de m + n formas.",
+            "contenido3":"Permutaciones: Arreglos ordenados de *r* elementos tomados de un conjunto de *n* elementos. Fórmula: P(n, r) = n! / (n - r)!.",
+            "contenido4":"Combinaciones: Selecciones no ordenadas de *r* elementos de un conjunto de *n*. Fórmula: C(n, r) = n! / [r!(n - r)!].",
+            "contenido5":"Diagrama de Árbol: Representación gráfica para visualizar todas las posibles secuencias de eventos."
         },
         "bloque2":{
-            "contenido1":"",
-            "contenido2":"",
-            "contenido3":"",
-            "contenido4":"",
-            "contenido5":""
+            "contenido1":"Espacio Muestral (S): Conjunto de todos los resultados posibles de un experimento aleatorio.",
+            "contenido2":"Evento: Subconjunto del espacio muestral (ejemplo: 'sacar un número par' en un dado).",
+            "contenido3":"Probabilidad Clásica: P(A) = Número de casos favorables / Número de casos totales (para espacios equiprobables).",
+            "contenido4":"Probabilidad Frecuentista: P(A) = Límite de frecuencias relativas cuando el experimento se repite infinitamente.",
+            "contenido5":"Independencia Estadística: Dos eventos son independientes si la ocurrencia de uno no afecta la probabilidad del otro (P(A ∩ B) = P(A) * P(B))."
         },
         "imagen1":"algebra-1",
         "imagen2":"algebra-2",
         "conceptos":{
-            "titulo1":"",
-            "concepto1":"",
-            "titulo2":"",
-            "concepto2":"",
-            "titulo3":"",
-            "concepto3":"",
-            "titulo4":"",
-            "concepto4":"",
-            "titulo5":"",
-            "concepto5":""
+            "titulo1":"Variable Aleatoria",
+            "concepto1":"Función que asigna valores numéricos a los resultados de un experimento aleatorio (ejemplo: 'número de caras en 3 lanzamientos de moneda').",
+            "titulo2":"Distribución de Probabilidad",
+            "concepto2":"Describe cómo se distribuyen las probabilidades entre los valores de una variable aleatoria (ejemplo: distribución binomial o normal).",
+            "titulo3":"Valor Esperado (Esperanza Matemática)",
+            "concepto3":"Media teórica de una variable aleatoria en el largo plazo. Para una variable discreta: E(X) = Σ [x_i * P(x_i)].",
+            "titulo4":"Ley de los Grandes Números",
+            "concepto4":"A medida que un experimento se repite muchas veces, la frecuencia relativa de un evento converge a su probabilidad teórica.",
+            "titulo5":"Teorema de Bayes",
+            "concepto5":"Permite actualizar la probabilidad de un evento basándose en información nueva: P(A ∣ B) = P(B)P(B ∣ A)⋅P(A) /P(B) /"
         }
     },
 

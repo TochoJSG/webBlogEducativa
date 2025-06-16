@@ -40,7 +40,7 @@ function Nosotros(){
                 </div>
                 <div className="content">
                     <div className="imgBx">
-                        <img src={require('../imagenes/a-1.jpg')} class="cover" alt="cargando..."/>
+                        <img src={require('../imagenes/a-1.jpg')} className="cover" alt="cargando..."/>
                     </div>
                 </div>
             </div>

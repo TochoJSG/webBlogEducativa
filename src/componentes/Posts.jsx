@@ -237,6 +237,7 @@ function Posts(){
                             <Link to="/aplicaciones#publicacion" className="btn">Ver Contenido</Link>
                         </div>
                     </div>
+
                     <div className="postBox">
                         <div className="imgBx">
                             <img title="bases de datos nosql" src={imagenes.NoSQL} alt="cargando imagen..."/>
@@ -247,6 +248,7 @@ function Posts(){
                         </div>
                     </div>
                 </div>
+
                 <div className="postColumn">
                     <div className="postBox">
                         <div className="imgBx">
@@ -267,6 +269,19 @@ function Posts(){
                             <Link to="/investigacion-de-operaciones#publicacion" className="btn">Ver Contenido</Link>
                         </div>
                     </div>
+                </div>
+
+                <div className="postColumn">
+                    <div className="postBox">
+                        <div className="imgBx">
+                            <img title="Calculo" src={imagenes.Probabilidad} alt="cargando imagen..."/>
+                        </div>
+                        <div className="txtBx">
+                            <h3>Porbabilidad</h3>
+                            <Link to="/probabilidad#publicacion" className="btn">Ver Contenido</Link>
+                        </div>
+                    </div>
+                    
                 </div>
 
             </div>

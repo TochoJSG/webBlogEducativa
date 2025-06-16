@@ -5,7 +5,8 @@ import DropDown from '../DropDown.jsx';
 import Footer from '../Footer.jsx';
 import HeaderGral from '../HeaderGral.jsx';
 import data from '../../contenido/contenido.json';
-import ParticlesBackground from '../ParticlesBackground.jsx';
+import Pc from '../Pc.jsx';
+//import ParticlesBackground from '../ParticlesBackground.jsx';
 import GoogleAnalytics from '../GoogleAnalytics.jsx';
 
 function Redes(props){
@@ -42,7 +43,7 @@ function Redes(props){
                 conceptosT5={data.Redes.conceptos.titulo5}
                 conceptosC5={data.Redes.conceptos.concepto5}
             />
-            <ParticlesBackground />
+            <Pc />
             <DropDown />
             <Carrusel />
             <Posts />

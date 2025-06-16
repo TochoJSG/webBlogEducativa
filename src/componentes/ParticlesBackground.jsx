@@ -2,13 +2,13 @@
 import { useMemo } from "react";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
-import { Engine } from "tsparticles-engine";
+//import { Engine } from "tsparticles-engine";
 
 export default function ParticlesBackground() {
   const options = useMemo(() => ({
     background: {
       color: {
-        value: "#111",
+        value: "#000",
       },
     },
     particles: {
@@ -79,7 +79,7 @@ export default function ParticlesBackground() {
       id="tsparticles"
       init={particlesInit}
       options={options}
-      style={{ position: "relative", width: "100vw", height: "100vh", zIndex: -1 }}
+      style={{ position: "relative", width: "100vw", height: "100vh", zIndex: 100 }}
     />
   );
 }
