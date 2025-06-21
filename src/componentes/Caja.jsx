@@ -1,28 +1,22 @@
-import '../../src/estilos/Caja.css';
+import caja from '../../src/estilos/Caja.module.css';
 
-function Caja(props){
+function Caja(){
     return(
-        <>
-        <div>
-            <p>{props.texto}</p>
-        </div>
-        <div className="cont_caja">
-            <div id="box">
-                <div className="top"></div>
+        <div className={caja.cont_caja}>
+            <div id={caja.box}>
+                <div className={caja.top}></div>
                 <div>
                     <span></span>
                     <span>
-                        <i className="tape"></i>
+                        <i className={caja.tape}></i>
                     </span>
                     <span></span>
                     <span>
-                        <i className="tape"></i>
+                        <i className={caja.tape}></i>
                     </span>
                 </div>
             </div>
-            <br/>
 		</div>
-        </>
     );
 }
 

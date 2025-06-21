@@ -78,17 +78,20 @@
     .containerSkill2 h1{
         text-transform:capitalize;
         letter-spacing:6px;
-        font-size: 1em;
+        font-size: .9em;
         font-weight: 300;
+        padding: 0 3px 1px;
     }
     .containerSkill2 p{
         font-size: .6em;
         font-weight: 300;
+        padding:1px;
     }
     .containerSkill2 .skill h3{
         font-size: .7em;
         letter-spacing: 3px;
         font-weight: 100;
+        padding: 0 3px 1px;
     }
 }
 /*	.skill p{

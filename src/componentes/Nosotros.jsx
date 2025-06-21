@@ -12,14 +12,14 @@ function Nosotros(){
                 <div className="content">
                     <p>
                         <b>AdmIng</b> proviene de los fragmentos iniciales de ADMinistracion e INGenieria. Es una empresa miembro de <b>Grupo Tocha</b>, comercializamos y ofrecemos otros servicios.
-                        <br/>Somos un grupo de profesionales de diversas instituciones parte del Instituto Politecnico Nacional (UPIICSA, ESIME, ESE y ESCA), asociados con el objetivo desarrollar diversos tipos de soluciones empresariales a la medida, principalmente mediante soluciones Tecnologicas Integrales, pudiendo desarrollar un sistema completamente personalizado.
+                        <br/>Somos un grupo de profesionales de diversas instituciones parte del Instituto Politecnico Nacional (UPIICSA, ESIME, ESE y ESCA), asociados con el objetivo desarrollar diversos tipos de soluciones empresariales a la medida, principalmente mediante soluciones Tecnologicas Integrales, pudiendo desarrollar un sistema completamente personalizado. El equipo esta encabezado por el desarrollador de sistemas <Link to="/jorge-salgado-fullstack">Jorge Salgado</Link>
                         </p>
                     <div className="filiales">
                         <h4>Otras negocios relacionados a nosotros</h4>
                         <div className='negocios'>
                             <div className='negocio'>
                                 <p>Comercializadora</p>
-                                <a href="https://tochamateriasprimas.com/">
+                                <a href="https://comercializadora-tocha.com/">
                                     <img src={require('../imagenes/tocha.jpg')} alt="cargando..."/>
                                 </a>
                             </div>
@@ -31,7 +31,7 @@ function Nosotros(){
                             </div>
                             <div className='negocio'>
                                 <p>Consultoria</p>
-                                <Link to="/jorge-salgado-fullstack">
+                                <Link to="/desarrollo#videoHeader">
                                     <img src={require('../imagenes/icono.png')} alt="cargando..."/>
                                 </Link>
                             </div>    

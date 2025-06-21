@@ -37,7 +37,8 @@ function Footer(){
                 <img src={logoAdming} alt="Grupo Tocha..."/>
                 <Link to="/"><p className="copyrightText">ADMING DESARROLLOS
                     </p></Link>
-                <img src={logoTocha} alt="Grupo Tocha..."/>
+                <a target="_blank" rel="noreferrer" href="https://comercializadora-tocha.com/">
+                <img src={logoTocha} alt="Grupo Tocha..."/></a>
             </div>
         </footer>
     );

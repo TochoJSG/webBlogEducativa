@@ -5,5 +5,9 @@
 .active,
 .active:after{content:'\2212';color:#fff;}/*  cambia mas (+) por menos*/
 .contentCola{padding:0px;height:0;overflow:hidden;transition:max-height 0.2s ease-out;background:rgba(253, 238, 238, 0.867);margin:0;}
-.contentCola p{font-size:1em;font-weight:300;color:#000;letter-spacing:0.1em;text-align:justify;}
+.contentCola p{font-size:1em;font-weight:300;color:#000;letter-spacing:0.1em;text-align:justify;padding:3px;}
 .contentCola.active{display:block;height:auto;}
+@media(max-width:991px){    
+    .collapsible{font-size:.8em;font-weight:300;letter-spacing:1px;}
+    .contentCola p{font-size:.6em;font-weight:300;text-align:justify;}
+}

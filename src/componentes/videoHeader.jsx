@@ -2,8 +2,9 @@ import { useRef } from 'react';
 import {Link} from 'react-router-dom';
 import useScrollOpacity from "./useScrollOpacity";
 import '../estilos/videoHeader.css';
+import videoPromo from '../imagenes/admingProyectCorto.mp4';
 import CircleStyle from './CircleStyle';
-const videoPromo = require('../static_src/admingProyectCorto.mp4');
+//const videoPromo = require('../static_src/admingProyectCorto.mp4');
 
 function Vh(){
     const videoRef = useRef(null);
@@ -11,7 +12,7 @@ function Vh(){
     // Usa el hook personalizado para aplicar la opacidad basada en el scroll
     useScrollOpacity(videoRef);
     return(
-        <div className="cuerpoVH">
+        <div id="videoHeader" className="cuerpoVH">
             <section className="videoHeader">
             <video ref={videoRef} src={videoPromo} autoPlay muted loop>
                 {/* */}

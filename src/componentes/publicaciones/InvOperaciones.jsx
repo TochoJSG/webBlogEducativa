@@ -40,7 +40,7 @@ function InvOperaciones(props){
                 conceptosT5={data.InvestigacionDeOperaciones.conceptos.titulo5}
                 conceptosC5={data.InvestigacionDeOperaciones.conceptos.concepto5}
             />
-            <Caja texto="Este conjunto de Tecnicas es ampliamente usada en logistica y procesos Industriales"/>
+            <Caja />
             <DropDown/>
             <Carrusel/>
             <Posts/>
