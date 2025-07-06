@@ -5,8 +5,8 @@ const Programacion = require('./Programacion.png');
 const ProgramacionWeb = require('./ProgramacionWeb.png');
 const POO = require('./POO.png');
 const Marketing = require('./Marketing.png');
-const Finanzas = require('./Finanzas.jpg');
-const Contabilidad = require('./Contabilidad.png');
+const Finanzas = require('./finanzas.png');
+const Contabilidad = require('./inversionista.png');
 const SEO = require('./SEO.png');
 const Redes = require('./Redes.png');
 const Infraestructuras = require('./Infraestructuras.png');
@@ -17,13 +17,14 @@ const Requerimientos = require('./Requerimientos.png');
 const DesarrolloDeSistemas = require('./DesarrolloDeSistemas.png');
 const Aplicaciones = require('./Aplicaciones.png');
 const NoSQL = require('./NoSQL.jpg');
-const Calculo = require('./Calculo.jpg');
+const Calculo = require('./funcion.png');
 const Metodologias = require('./Metodologias.png');
 const Probabilidad = require('./Probabilidad.png');
 const RSimulacion = require('./Redes&Simulacion.png');
 const Pruebas = require('./Pruebas.png');
 const Algebra = require('./Calculo.jpg');
 const Seguridad = require('./seguridad.png');
+const Administracion = require('./administracion.png');
 
 module.exports = {
     bd,
@@ -51,5 +52,6 @@ module.exports = {
     RSimulacion,
     Pruebas,
     Algebra,
-    Seguridad
+    Seguridad,
+    Administracion
 }

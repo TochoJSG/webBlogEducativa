@@ -1,0 +1,221 @@
+.contWalker{
+    display:flex;
+    position:relative;
+    justify-content:center;
+    align-items:center;
+    width:100vw;
+    height:200px;
+    background-image: url(../imagenes/bg_4.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin:333px 0 0;
+}
+.way h3{
+    top:80%;
+    display:block;
+    position:relative;
+    color:#fff;
+    z-index:2;
+    letter-spacing:6px;
+    font-weight:600;
+    margin:0 auto;
+    text-transform:capitalize;
+    user-select:none;
+}
+.way{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:250px;
+    background:gray;
+    z-index:1;
+}
+.way::before{
+    content:'';
+    position:absolute;
+    top:50%;
+    left:0;
+    width:100%;
+    height:20px;
+    transform-origin:bottom;
+    transform:perspective(300px) translateY(-50%) rotateX(45deg);
+    background:repeating-linear-gradient(90deg, transparent, transparent 50%, #fff 50%, #fff 100%);
+    background-size:200px;
+    animation:animateWay 2s linear infinite;
+}
+@keyframes animateWay{
+    0%{
+        background-position-x:200px;
+    }
+    100%{
+        background-position-x:0px;
+    }
+}
+.walker{
+    position:absolute;
+    z-index:2;
+    transform:translateX(-60px) translateY(-100px);
+}
+.walker span{/*pie*/
+    position:absolute;
+    left:80px;
+    width:90px;
+    height:30px;
+    background:brown;
+    display:block;
+    border-radius:40px 80px 20px 20px / 30px 60px 10px 10px;
+    border-bottom:5px solid #000;
+    animation:animateWalker 2s linear infinite;
+    z-index:2;
+}
+.walker span:nth-child(2),
+.walker span:nth-child(2) .legs{
+    animation-delay:-1s;
+}
+@keyframes animateWalker{
+    0%{
+        left:90px;
+        top:0;
+    }
+    50%{
+        left:-90px;
+        top:0;
+    }
+    75%{
+        top:-60px;
+    }
+    100%{
+        left:90px;
+        top:0;
+    }
+}
+.walker span .legs{/*pantorrilla*/
+    content:'';
+    position:absolute;
+    top:-100px;
+    left:5px;
+    width:40px;
+    height:103px;
+    background:#000;
+    z-index:-1;
+    border-top-left-radius:17px;
+    border-top-right-radius:17px;
+    border-bottom-left-radius:3px;
+    border-bottom-right-radius:3px;
+    transform-origin:bottom center;
+    animation:animateWalker2 2s linear infinite;
+}
+@keyframes animateWalker2{
+    0%{
+        transform:rotate(-30deg);
+    }
+    50%{
+        transform:rotate(30deg);
+    }
+    100%{
+        transform:rotate(-30deg);
+    }
+}
+.walker span .legs::before{/*pierna*/
+    content:'';
+    position:absolute;
+    top:-80px;
+    width:40px;
+    height:95px;
+    background:#000;
+    border-bottom-left-radius:16px;
+    border-bottom-right-radius:16px;
+    transform-origin:bottom center;
+    animation:animateWalker3 2s linear infinite;
+}
+.walker span:nth-child(2) .legs::before{
+    animation-delay:1s;
+}
+@keyframes animateWalker3{
+    0%{
+        transform:rotate(0deg);
+    }
+    50%{
+        transform:rotate(-30deg);
+    }
+    100%{
+        transform:rotate(0deg);
+    }
+}
+.body{
+    position:absolute;
+    top:-360px;
+    left:-40px;
+    width:100px;
+    height:240px;
+    background:navy;
+    z-index:2;
+    transform:rotate(2deg);
+    animation:animateBody 2s linear infinite;
+    border-radius:16px 50px 20px 20px / 30px 100px 10px 10px;
+}
+.body::before{/*brazo*/
+    content:'';
+    position:absolute;
+    top:20px;
+    left:25%;
+    transform-origin:top;
+    transform:rotate(-15deg);
+    width:40px;
+    height:190px;
+    background:navy;
+    border:2px solid rgba(0,0,0,0.5);
+    border-top:none;
+    border-bottom:30px solid #fff;
+    border-bottom-left-radius:19px;
+    border-bottom-right-radius:6px;
+    animation:animateArm 2s linear infinite;
+}
+@keyframes animateArm{
+    0%,100%{
+        transform:rotate(-17deg);
+    }
+    50%{
+        transform:rotate(17deg);
+    }
+}
+.head{
+    position:absolute;
+    top:-475px;
+    left:-27px;
+    width:95px;
+    height:110px;
+    background:#fff;
+    border-radius:33px 40px 16px 55px;
+    border:1px solid #000;
+    z-index:2;
+    animation:animateHead 2s linear infinite;
+}
+.body:after{
+    content:'';
+    left:19px;
+    top:-17px;
+    position:absolute;
+    height:35px;
+    width:37px;
+    z-index:1;
+    background:#fff;
+    transform-origin:bottom;
+    transform:translateY(-50%);
+}
+@keyframes animateHead{
+    0%,100%{
+        transform:rotate(7deg) translateY(0);
+    }
+    50%{
+        transform:rotate(7deg) translateY(-6px);
+    }
+}
+@media(max-width:990px){
+    .way h3{
+        letter-spacing:3px;
+        font-weight:300;
+    }
+}

@@ -34,10 +34,21 @@ import Infraestructura from './componentes/publicaciones/Infraestructura.jsx';
 import DesarrolloDeSistemas from './componentes/publicaciones/DesarrolloDeSistemas.jsx';
 import ModelosPruebas from './componentes/publicaciones/ModelosPruebas.jsx';
 import IngenieriaRequerimientos from './componentes/publicaciones/IngenieriaRequerimientos.jsx';
+import Administracion from './componentes/publicaciones/Administracion.jsx';
 import Home from './componentes/Home';
 import Curriculum from './componentes/Curriculum.jsx';
+import CurriculumSimplif from './componentes/publicaciones/CurriculumSimplif.jsx';
 import Proximamente from './componentes/Proximamente';
 import Ciberseguridad from './componentes/publicaciones/Ciberseguridad.jsx';
+
+const express = require('express');
+const cors = require('cors');
+require('dotenv').config();
+
+const app = express();
+app.use(cors());
+app.use(express.json());
+
 
 function App(){
   return (
@@ -81,6 +92,9 @@ function App(){
         <Route path="/requerimientos" element={<IngenieriaRequerimientos />}/>
         <Route path="/infraestructuras" element={<Infraestructura />}/>
         <Route path="/ciberseguridad" element={<Ciberseguridad />} />
+        <Route path="/Administracion" element={<Administracion />} />
+
+        <Route path="/curriculum" element={<CurriculumSimplif />} />
         
         <Route path="/privacidad" element={<AvisoPrivacidad />} />
         <Route path="/cookies" element={<PoliticaCookies />} />

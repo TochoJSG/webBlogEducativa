@@ -1,0 +1,72 @@
+.contSatelite{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:url(../imagenes/espacio.png);
+    overflow:hidden;
+    user-select:none;
+}
+.earth{
+    position:reative;
+    width:400px;
+    height:400px;
+    background:url(../imagenes/earth2.png) rgba(11, 2, 111, 0.5);
+    background-size:cover;
+    border-radius:50%;
+    box-shadow:inset 0 0 50px rgba(0,0,0,0.85);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transition:3s;
+    animation:animateEarth 12s linear infinite;
+}
+.earth:hover{
+    transform:scale(5);
+    transition-delay:1s;
+}
+.earth:before{
+    content:'';
+    position:relative;
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    overflow:hidden;
+    background:url(../imagenes/nube2.png);
+    background-position: center;
+    background-size: contain;
+    /*background-repeat:no-repeat;*/
+
+    animation:animateEarth 17s linear infinite;
+    z-index:1;
+}
+.earth img{
+    position:absolute;
+    z-index:2;
+    transition:0.5s;
+    pointer-events:none;
+    width:117px;
+    height:117px;
+}
+.earth img:nth-child(2){
+    position:absolute;
+    z-index:2;
+    transition:0.5s;
+    pointer-events:none;
+    width:99px;
+    height:99px;
+    margin-top:170px;
+    margin-left:300px;
+}
+.earth:hover img{
+    transform:scale(0.2);
+    transition-delay:1s;
+}
+@keyframes animateEarth{
+    0%{
+        background-position:0 0;
+    }
+    100%{
+        background-position:719px 0;
+    }
+}

@@ -5,8 +5,8 @@
 .banner.active header #toggle:after{top:50%;left:50%;transform:translate(-50%,-50%) rotate(-45deg); }
 .banner.active header #toggle:before{top:50%;left:50%;transform:translate(-50%,-50%) rotate(45deg);}
 .parallax{background-image:url('../imagenes/rascacielos.png');background-size:cover;background-repeat:no-repeat;background-position:center;background-size:100% 100%;background-attachment:fixed;width:100%;z-index:100;}
-.content{width:80%;margin:17px 10%;padding:17px;border-radius:17px;user-select:none;}
-.content h2{color:#040105;font-size:2em;overflow:hidden;height:auto;font-weight:500;letter-spacing:3px;}
+.content{width:90%;margin:17px 10%;padding:17px;border-radius:17px;user-select:none;}
+.content h2{color:#040105;font-size:1.7em;overflow:hidden;height:auto;font-weight:600;letter-spacing:3px;}
 .content h2 span{color:#040105;font-size:2em;font-weight:900;}
 .content p{font-size:1.5em;color:#040105;font-weight:600;text-align:justify;text-align:justify;}
 .sci{position:absolute;display:flex;top:255px;flex-direction:column;z-index:100000;left:90%;justify-content:center;}

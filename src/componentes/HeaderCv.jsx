@@ -44,9 +44,9 @@ const HeaderCv = () =>{
                     <DarkVariantExample />
 
                     <div className="contBtnLuz">
-                        <a href="../static_src/Jorge-Salgado-Garcia.pdf" rel="noopener noreferrer" type="application/pdf" download>
-                            <span>Descargar CV</span>
-                        </a>
+                        <Link to="/curriculum">
+                            <span>Ver CV Resumido</span>
+                        </Link>
                     </div>
                 
                 </div>
@@ -65,6 +65,10 @@ const HeaderCv = () =>{
                         </Link></li>
                     <li data-text="Contact"><Link to="/desarrollo#contact">Contact
                         </Link></li>
+                    <li data-text="Contact">
+                        <a href="/Jorge-Salgado-Garcia.pdf" rel="noopener noreferrer" type="application/pdf" download>
+                            Descargar CV
+                        </a></li>
                 </ul>
             </div>
         </section>

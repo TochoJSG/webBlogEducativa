@@ -1,0 +1,141 @@
+.contenedorRed{
+    all:initial;
+    display: block;
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    height:100%;
+    background:#222;
+}
+.contenedorRed .light{
+    position:relative;
+    display:flex;
+    margin:0;
+    padding:0;
+    justify-content:center;
+    align-items:center;
+    width:500px;
+    height:600px;
+}
+.contenedorRed .light .box{
+    position:absolute;
+    left:0;
+    width:80px;
+    height:80px;
+    transform-origin:250px;
+    transform:rotate(calc(300deg * var(--i) ) );
+}
+.contenedorRed .light .box::before{
+    content:'______________';
+    top:3px;
+    position:absolute;
+    font-size:2em;
+    text-decoration:underline;
+    text-decoration-style:wavy;
+}
+.contenedorRed .light .box .bulb{
+    position:absolute;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#444;
+    border-radius:50%;
+    /*transform:rotate(90deg);*/
+}
+.contenedorRed .light .box .bulb img{
+    width:80px;
+    height:80px;
+}
+.contenedorRed .light .box .bulb img:nth-child(1){
+    transform:rotate(-90deg);
+    transition-delay:0.3s;
+    transition:0.3s;
+}
+
+        
+
+.contenedorRed.encendido .light .box{
+    position:absolute;
+    left:0;
+    width:80px;
+    height:80px;
+    transform-origin:250px;
+    transform:rotate(calc(300deg * var(--i) ) );
+}
+.contenedorRed.encendido .light .box .bulb{
+    box-shadow: 0 0 50px #fff,
+                0 0 100px #fff,
+                0 0 150px #fff,
+                0 0 200px #fff,
+                0 0 300px #fff,
+                0 0 350px #fff;
+}
+.contenedorRed.encendido .light .box .bulb,
+.contenedorRed.encendido .light .box .bulb::before{
+    background:#fff;
+}
+.contenedorRed.encendido .light .box .bulb::nth-child(1){
+    box-shadow:20px 20px 0 10px #fff;
+}
+.contenedorRed.encendido .light .box .bulb::nth-child(2){
+    box-shadow:-20px 20px 0 10px #fff;
+}				
+.contenedorRed.encendido .light .box .bulb::nth-child(1){
+    transform:rotate(-90deg);
+    transition-delay:0.3s;
+    transition:0.3s;
+}
+.contenedorRed.encendido .light .box .bulb img{
+    width:80px;
+    height:80px;
+    translate:rotate(360deg);
+}
+
+
+
+.contenedorRed .light .switch{
+    position:absolute;
+    width:80px;
+    height:90px;
+    border:3px solid #000;
+    background-image:linear-gradient(#eee,#ccc,#eee);
+    border-radius:10px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.contenedorRed .light .switch .btn{
+    content:'press';
+    position:absolute;
+    width:25px;
+    height:25px;
+    bottom:-17px;
+    z-index:100;
+    font-size:6px;
+    padding:0;
+    background:linear-gradient(#777,#fff,#777);
+    border-radius:6px;
+    border:2px solid #000;
+    cursor:pointer;
+}
+.contenedorRed .light .switch img{
+    width:100%;
+    height:100%;
+    z-index:2;
+}
+.contenedorRed .light .switch .btn::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:85%;
+    background:linear-gradient(#ddd,#fff);
+    border-radius:4px;
+}
+.contenedorRed .light .encendido .btn::before{
+    top:15%;
+}

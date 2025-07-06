@@ -12,14 +12,20 @@ const Coffe =()=>{
                                 Array.from({ length: 20 }, (_, index) => (
                                     <span key={index} style={{ '--i': index + 1 }}></span>
                             ))}
-                        </div>
+                        </div> 
                         <div className="circle">
                             <div className="tea"></div>
                         </div>
                     </div>
                     <div className="handle"></div>
                 </div>
-
+                
+                <div className="centerLapiz">
+                    <div className="lapiz">
+                        <p>AdmIng</p>
+                        <div className="topLapiz"></div>
+                    </div>
+                </div>
             <p className='textoPromocion'>Ser programador es diferente a Desarrollador de sistemas, un Desarrollador de Sistemas usualmente sabe programar, pero un a un programador puede complicarsele desarrollar todo un sistema </p>
             
             </div>

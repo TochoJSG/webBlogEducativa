@@ -30,8 +30,9 @@ function DropDown(props){
                 <li><Link to="/aplicaciones" className="alink">Aplicaciones Moviles</Link></li>
                 <li><Link to="/probabilidad" className="alink">Probabilidad</Link></li>
                 <li><Link to="/base-de-datos-nosql" className="alink">BD NoSQL</Link></li>
-                <li><Link to="/metodologias-de-desarrollo" className="alink">Desarrollo</Link></li>
+                <li><Link to="/desarrollo-de-sistemas" className="alink">Desarrollo</Link></li>
                 <li><Link to="/ciberseguridad" className="alink">Ciberseguridad</Link></li>
+                <li><Link to="/administracion" className="alink">Administracion</Link></li>
                 <li><Link to="/calculo" className="alink">Calculo</Link></li>
             </ul>
         </div>

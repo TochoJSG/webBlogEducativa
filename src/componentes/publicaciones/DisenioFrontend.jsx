@@ -3,7 +3,7 @@ import Posts from '../Posts.jsx';
 import Carrusel from '../Carrusel.jsx';
 import DropDown from '../DropDown.jsx';
 import Footer from '../Footer.jsx';
-import Pc from '../Pc.jsx';
+import SmartPhonePro from '../SmartPhonePro.jsx';
 import HeaderGral from '../HeaderGral.jsx';
 import data from '../../contenido/contenido.json';
 import GoogleAnalytics from '../GoogleAnalytics.jsx';
@@ -40,7 +40,7 @@ function DisenioFrontend(props){
                 conceptosT5={data.DisenioFrontend.conceptos.titulo5}
                 conceptosC5={data.DisenioFrontend.conceptos.concepto5}
             />
-            <Pc/>
+            <SmartPhonePro/>
             <DropDown/>
             <Carrusel/>
             <Posts/>

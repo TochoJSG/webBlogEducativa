@@ -11,8 +11,8 @@ function Nosotros(){
             <div className="contentBx">
                 <div className="content">
                     <p>
-                        <b>AdmIng</b> proviene de los fragmentos iniciales de ADMinistracion e INGenieria. Es una empresa miembro de <b>Grupo Tocha</b>, comercializamos y ofrecemos otros servicios.
-                        <br/>Somos un grupo de profesionales de diversas instituciones parte del Instituto Politecnico Nacional (UPIICSA, ESIME, ESE y ESCA), asociados con el objetivo desarrollar diversos tipos de soluciones empresariales a la medida, principalmente mediante soluciones Tecnologicas Integrales, pudiendo desarrollar un sistema completamente personalizado. El equipo esta encabezado por el desarrollador de sistemas <Link to="/jorge-salgado-fullstack">Jorge Salgado</Link>
+                        <b>AdmIng</b> proviene de los fragmentos iniciales de ADMinistracion e INGenieria. Es una empresa miembro de <b>Grupo Tocha</b>, además de la consultoria el grupo comercializa y ofrece otros servicios.
+                        <br/>Somos un grupo de profesionales de diversas instituciones parte del Instituto Politecnico Nacional (UPIICSA, ESIME, ESE y ESCA), asociados con el objetivo desarrollar diversos tipos de soluciones empresariales a la medida, mediante soluciones Tecnologicas Integrales, pudiendo desarrollar un sistema completamente personalizado a las necesidades y presupuesto. El equipo esta encabezado por el desarrollador de sistemas <Link to="/jorge-salgado-fullstack">Jorge Salgado</Link>, Ingenieros Industriales y en Comunicaciones y Electronica.
                         </p>
                     <div className="filiales">
                         <h4>Otras negocios relacionados a nosotros</h4>

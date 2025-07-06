@@ -19,7 +19,7 @@ function Contacto() {
         e.preventDefault();
         setStatus("Enviando...");
         try {
-            const response = await fetch("https://adming-consulting.com/sendEmail.php", {
+            const response = await fetch("https://adming-consulting.com/phpMailer.php", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

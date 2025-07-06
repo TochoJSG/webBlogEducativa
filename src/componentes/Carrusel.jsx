@@ -3,36 +3,37 @@ import '../estilos/sitio.css';
 import productos from '../contenido/amz.json'; 
 
 function Carrusel(){
-  const carruselRef = useRef(null);
-  const [movePer, setMovePer] = useState(25.34);
-  const [maxMove, setMaxMove] = useState(203);
-  const [position, setPosition] = useState(0);
+    const carruselRef = useRef(null);
+    const [movePer, setMovePer] = useState(3);
+    const [maxMove, setMaxMove] = useState(99);
+    const [position, setPosition] = useState(0);
 
-  useEffect(() => {
-    const mobileView = window.matchMedia('(max-width:768px)');
-    if(mobileView.matches){
-      setMovePer(50.36);
-      setMaxMove(504);
-    }
-  }, []);
+    useEffect(() => {
+      const mobileView = window.matchMedia('(max-width:666px)');
+      if(mobileView.matches){
+        setMovePer(3);
+        setMaxMove(17);
+      }
+    }, []);
 
-  const avanzar = () => {
-    let newPos = position + movePer;
-    if (newPos > maxMove) newPos = position;
-    setPosition(newPos);
-    carruselRef.current.style.transform = `translateX(-${newPos}%)`;
-  };
-  
-  const retroceder = () => {
-    let newPos = position - movePer;
-    if (newPos < 0) newPos = 0;
-    setPosition(newPos);
-    carruselRef.current.style.transform = `translateX(-${newPos}%)`;
-  };
+    const avanzar = () => {
+      let newPos = position + movePer;
+      if (newPos > maxMove) newPos = position;
+      setPosition(newPos);
+      carruselRef.current.style.transform = `translateX(-${newPos}%)`;
+    };
+    
+    const retroceder = () => {
+      let newPos = position - movePer;
+      if (newPos < 0) newPos = 0;
+      setPosition(newPos);
+      carruselRef.current.style.transform = `translateX(-${newPos}%)`;
+    };
+    
     return( 
         <div id="carrusel" className="main">
             <div className="texto_car">
-                <h2>Sugerencias Selectas, solo lo mejor de <span>Amazon</span></h2>
+                <h2>Sugerencias Selectas de Articulos para Negocio, lo mejor de <span>Amazon</span></h2>
             </div>
             <div className="cabecera">
                 <p>
@@ -51,7 +52,7 @@ function Carrusel(){
                         <img src={item.imProd} alt="loading..." />
                       </picture>
                       <div className="details_car">
-                        <p>{item.title}<b>${item.precio}</b></p>
+                        <p>{item.title}</p>
                       </div>
                       <div className="button_car_c">
                         <a target="_blank" rel="noopener noreferrer" href={item.url}>

@@ -18,6 +18,8 @@
     border-top-left-radius:10px;
     border-top-right-radius:10px;
     user-select:none;
+    border-top: 1px solid #000;
+    border-right: 2px solid #d8d8d8;
 }
 .centerPc .monitor:before{
     content:'';
@@ -43,6 +45,9 @@
     z-index:-1;
     transform-origin:bottom;
 }
+/*.centerPc:hover .monitor{
+    background: #000 url(../imagenes/admingProyectCorto.mp4);
+}*/
 .centerPc .monitor img{
     position:absolute;
     left:50%;
@@ -61,7 +66,6 @@
 }
 .centerPc .monitor:hover video{
     display:block;
-    background: url(../imagenes/admingProyectCorto.mp4);
 }
 .centerPc .overlay{
     position:absolute;

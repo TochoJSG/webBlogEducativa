@@ -3,7 +3,7 @@ import Posts from '../Posts.jsx';
 import Carrusel from '../Carrusel.jsx';
 import DropDown from '../DropDown.jsx';
 import Footer from '../Footer.jsx';
-import Smartphone from '../Smartphone.jsx';
+import Calculadora from '../Calculadora.jsx';
 import HeaderGral from '../HeaderGral.jsx';
 import data from '../../contenido/contenido.json';
 import GoogleAnalytics from '../GoogleAnalytics.jsx';
@@ -40,7 +40,7 @@ function Finanzas(props){
                 conceptosT5={data.Finanzas.conceptos.titulo5}
                 conceptosC5={data.Finanzas.conceptos.concepto5}
             />
-            <Smartphone title=""/>
+            <Calculadora/>
             <DropDown/>
             <Carrusel/>
             <Posts/>

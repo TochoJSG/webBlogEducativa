@@ -133,7 +133,7 @@
             "titulo1":"Algoritmo",
             "concepto1":"Es un instructivo tan detallado como sea necesario donde se detalla el desarrollo de un proceso, este instructivo tiene que ser altamente logico en la secuencia. Se debe estar consientes que la computadora es completamente logica y obediente, las instrucciones las ejecutara impecablemente y si la accion no cumple el objetivo es porque fallamos al definir los pasos o en la instrucción, no por error de la computadora.",
             "titulo2":"Diagramas UML",
-            "concepto2":"Son recursos graficos que ayudan a explicar el sistema, en el se detallan aspectos como la infraestructura, el flujo de trabajo en general, un proceso especifico o la interaccion entre procesos logicos y el hardware implicado, gracias a UML se estandarizan estos diagramas, esto para que sean entendibles por cualquiera gfamiliarizado con el estandar (imagina el juego de pictionary, si los dibujos fueran libres a lo que cada quien quiere no seria entendible por todos). El objetivo es facilitar el desarrollo explicando al equipo lo que se busca hacer y al haber posible rotacion del equipo se espera que los elementos que se itegren sean capaces de entender el sistema para darle mantenimiento.",
+            "concepto2":"Son recursos graficos que ayudan a explicar el sistema, en el se detallan aspectos como la infraestructura, el flujo de trabajo en general, un proceso especifico o la interaccion entre procesos logicos y el hardware implicado, gracias a UML se estandarizan estos diagramas, esto para que sean entendibles por cualquiera familiarizado con el estandar ( imagina el juego de pictionary, si los dibujos fueran libres a lo que cada quien quiere no seria entendible por todos ). El objetivo es facilitar el desarrollo explicando al equipo lo que se busca hacer y al haber posible rotacion del equipo se espera que los elementos que se itegren sean capaces de entender el sistema para darle mantenimiento.",
             "titulo3":"Frameworks, Lenguajes e IDEs",
             "concepto3":"Estos 3 conceptos tienen relacion en la programacion, pues el framework que se utilice depende del lenguaje que se conozca junto con la tecnologia objetivo (Web, escritorio, movil) y estos a su vez tienen relacion con el IDE, pues hay herramientas especializadas para ciertos lengajes y frameworks, tienen facilitadores para codificar y usar ciertos Frameworks. Donde un framework es un conjunto de codigo especializado listo para usarse, esto evita tener que escribir todo ahorrando tiempo de desarrollo, el lenguaje es el conjunto de palabras y sintaxis para escribir las instrucciones del programa, estas son en funcion al framework y la tecnologia, ejemplo, un framework para desarrollar con el lenguaje javascript es Node, si queremos realizar una aplicacion de escritorio usamos Node+Electron o para desarrollo en Web con el lenguaje Python usamos Django. El IDE es simplemente la herramienta o editor donde escribimos el codigo, destacando VS Code para multiples lenguajes, Netbeans para Java o DevC para C/C++.",
             "titulo4":"Software",
@@ -145,76 +145,76 @@
     
     "ProgramacionWeb":{
         "parrafo1":"Es saciar una necesidad de promoción, solución a problemática o automatizar una actividad usando programación mediante tecnologías de redes y conectividad, en concreto internet. Con estos desarrollos las organizaciones obtienen varias ventajas de competitividad, como promocionarse fuera de su entorno local y asi vender lo que sea que vendan a público lejos de su alcance local, o simplemente darse a conocer sin dar problemas a los usuarios como tener que descargar una aplicación que ocupe memoria de una organización que tal vez no conoce.",
-        "parrafo2":"Este tipo de desarrollo posibilita visualizar y ejecutar programas desde varios tipos de dispositivos como smartphones, PC, televisores, laptops o cualquier dispositivo con un navegador, siendo este crucial para la programación web pues es su “ecosistema natural”, su “hábitat”, pues los lenguajes para desarrollar los sitios web son directamente entendibles por el navegador; si en una terminal del navegador escribes código HTML, Javascript o css este código será directamente entendido por el navegador y mostrará los resultados.",
+        "parrafo2":"Este tipo de desarrollo posibilita visualizar y ejecutar programas desde varios tipos de dispositivos como smartphones, PC, televisores, laptops o cualquier dispositivo con un navegador, siendo este crucial para la programación web pues es su “ecosistema natural”, su 'hábitat', pues los lenguajes para desarrollar los sitios web son directamente entendibles por el navegador; si en una terminal del navegador escribes código HTML, Javascript o css este código será directamente entendido por el navegador y mostrará los resultados.",
         "parrafo3":"Dado que estos desarrollos se basan en el internet para funcionar es lógico concluir que para elaborar estos sistemas se requieren conocimientos de red al menos elementales pues se configuran puertos, protocolos e inclusive, si eso dictan los requerimientos y existe el presupuesto, puede implicar hacer conexiones de red completas entre dispositivos hardware de red como servidores, routers o switches para lograr que estos productos informáticos funcionen óptimamente.",
         "tituloBloqueA":"Elementos clave:",
         "tituloBloqueB":"Lenguajes de programación web:",
         "bloque1":{
-            "contenido1":"Infraestructura general y recursos de Red son un aspecto clave elemental, pues la programacion web depende precisamente del internet o la web, la infraestructura que utiliza la internet es la interconexión de millones de varias redes sujetas a diversas topologias y protocolos utilizando recursos hardware de conexion como Routers, Switches, Hubs, Cables, Antenas, Pc, Etc.",
-            "contenido2":"Frontend se refiere a las pantallas y todo lo visual que ayuda a los usuarios a manipular el sistema e interactúar con los procesos backend. Contempla aspectos como la interfaz de usuario y el diseño de experiencia de usuario optimizado, su “ejecucion” se realiza del laddo del clinete con los recursos del usuario, es decir, con el navegador.",
-            "contenido3":"Backend es el conjunto de proceoss o funcionalidades que se ejecutan con nuestros recursos como proveedores de un servicio, esto es en el servidor. Esta capa ejecuta la lógica de la aplicación y tiene ademas el importante rol de la gestión de datos sirviendo como interfaz o intermediario entra la Base de Datos y el Frontend. ",
-            "contenido4":"Los lenguajes de programación definen el frontend y los procesos, crean las estructuras (HTML) y las embellecen con lenguajes de estilado (CSS), y para las funcionalidades existen diversos lenguajes que pueden interactuar entre si (JavaScript, PHP, Python, etc.). ",
-            "contenido5":"Frameworks y bibliotecas son recursos de software ya listos para usar que facilitan, estandarizan y agilizan los desarrollos al ahorrar tiempo por ya estar listos para usarse, proporcionando estructuras predefinidas y funciones útiles."
+           "contenido1":"Infraestructura general y recursos de Red son un aspecto clave elemental, pues la programacion web depende precisamente del internet o la web, la infraestructura que utiliza la internet es la interconexión de millones de varias redes sujetas a diversas topologias y protocolos utilizando recursos hardware de conexion como Routers, Switches, Hubs, Cables, Antenas, Pc, Etc.",
+           "contenido2":"Frontend se refiere a las pantallas y todo lo visual que ayuda a los usuarios a manipular el sistema e interactúar con los procesos backend. Contempla aspectos como la interfaz de usuario y el diseño de experiencia de usuario optimizado, su EJECUCION se realiza del laddo del clinete con los recursos del usuario, es decir, con el navegador.",
+           "contenido3":"Backend es el conjunto de proceoss o funcionalidades que se ejecutan con nuestros recursos como proveedores de un servicio, esto es en el servidor. Esta capa ejecuta la lógica de la aplicación y tiene ademas el importante rol de la gestión de datos sirviendo como interfaz o intermediario entra la Base de Datos y el Frontend. ",
+           "contenido4":"Los lenguajes de programación definen el frontend y los procesos, crean las estructuras (HTML) y las embellecen con lenguajes de estilado (CSS), y para las funcionalidades existen diversos lenguajes que pueden interactuar entre si (JavaScript, PHP, Python, etc.). ",
+           "contenido5":"Frameworks y bibliotecas son recursos de software ya listos para usar que facilitan, estandarizan y agilizan los desarrollos al ahorrar tiempo por ya estar listos para usarse, proporcionando estructuras predefinidas y funciones útiles."
         },
         "bloque2":{
-            "contenido1":"HTML (HyperText Markup Language)",
-            "contenido2":"CSS (Cascading Style Sheets)",
-            "contenido3":"JavaScript es un lenguaje con origen 100% para la web, por lo que es directamente entendible para los navegadores como estandar para añadir interacciones que amenicen el uso del sistema y funcionalidades dinámicas, pero, gracias a frameworks como Node su bondedes de entendibilidad humana son aprovechadas para funcionalidades Back complejas y más. ",
-            "contenido4":"PHP, Python, Ruby, Java, etc. Son lenguajes especializados para procesos de funcionalidades Backend y suelen trabajarse con Frameworks",
-            "contenido5":"SQL para trabajar con sistemas web con bases de datos estructuradas y para estructuras NoSQL el modus operandi varia mucho pudiendo parecerse a trabajar estructuras de datos con JavaScript"
+           "contenido1":"HTML (HyperText Markup Language)",
+           "contenido2":"CSS (Cascading Style Sheets)",
+           "contenido3":"JavaScript es un lenguaje con origen 100% para la web, por lo que es directamente entendible para los navegadores como estandar para añadir interacciones que amenicen el uso del sistema y funcionalidades dinámicas, pero, gracias a frameworks como Node su bondedes de entendibilidad humana son aprovechadas para funcionalidades Back complejas y más. ",
+           "contenido4":"PHP, Python, Ruby, Java, etc. Son lenguajes especializados para procesos de funcionalidades Backend y suelen trabajarse con Frameworks",
+           "contenido5":"SQL para trabajar con sistemas web con bases de datos estructuradas y para estructuras NoSQL el modus operandi varia mucho pudiendo parecerse a trabajar estructuras de datos con JavaScript"
         },
         "imagen1":"programacionWeb-1",
         "imagen2":"programacionWeb-2",
         "conceptos":{
-            "titulo1":"Frontend",
-            "concepto1":"Parte del desarrollo web que se ejecuta en el navegador del usuario. Incluye HTML (estructura), CSS (estilo) y JavaScript (interactividad).",
-            "titulo2":"Backend",
-            "concepto2":"Lógica y procesamiento del lado del servidor. Usa lenguajes como Python, PHP o Node.js, y se comunica con bases de datos para enviar datos al frontend.",
-            "titulo3":"API (Interfaz de Programación de Aplicaciones)",
-            "concepto3":"Conjunto de reglas que permite que diferentes sistemas se comuniquen. En web, las APIs RESTful son comunes para intercambiar datos (ej: frontend ↔ backend).",
-            "titulo4":"Base de Datos",
-            "concepto4":"Almacena información de la aplicación (usuarios, contenidos, etc.). Puede ser relacional (SQL, como MySQL) o no relacional (NoSQL, como MongoDB).",
-            "titulo5":"Framework",
-            "concepto5":"Herramienta que simplifica el desarrollo web al ofrecer estructuras predefinidas. Ejemplos: React (frontend), Django (backend), Express (backend con Node.js)."
+           "titulo1":"Frontend",
+           "concepto1":"Parte del desarrollo web que se ejecuta en el navegador del usuario. Incluye HTML (estructura), CSS (estilo) y JavaScript (interactividad).",
+           "titulo2":"Backend",
+           "concepto2":"Lógica y procesamiento del lado del servidor. Usa lenguajes como Python, PHP o Node.js, y se comunica con bases de datos para enviar datos al frontend.",
+           "titulo3":"API (Interfaz de Programación de Aplicaciones)",
+           "concepto3":"Conjunto de reglas que permite que diferentes sistemas se comuniquen. En web, las APIs RESTful son comunes para intercambiar datos (ej: frontend ↔ backend).",
+           "titulo4":"Base de Datos",
+           "concepto4":"Almacena información de la aplicación (usuarios, contenidos, etc.). Puede ser relacional (SQL, como MySQL) o no relacional (NoSQL, como MongoDB).",
+           "titulo5":"Framework",
+           "concepto5":"Herramienta que simplifica el desarrollo web al ofrecer estructuras predefinidas. Ejemplos: React (frontend), Django (backend), Express (backend con Node.js)."
         }
     },
 
-    "POO":{
-        "parrafo1":"Modo de programar donde no solo consideramos un problema o un objetivo a desarrollar y se plantea una secuencia de pasos para solucionarlo secuencialmente, es decir, paso a paso, sino que se considera el panorama general del objetivo y de ese panorama general se observan aspectos implicados que son como subcategoria o subclases, todas interactuando entre si para resolver un aspecto del objetivo general, y estos intervienen por eventos, de este modo se obtiene una abstracción más realista pues el mundo no es lineal sino que está sujeto a eventos imprevistos. Es un paradigma o modo de programar más complejo pues cada método en una clase es un programa. En resumen, la poo es programar pensando en clases de objetos en general, cada clase es un conjunto de atributos y métodos o funcionalidades relacionadas al contexto de la clase, cada método es un programa secuencial, y alas clases se relacionan entre si por herencia, con ciertas restricciones posibles.",
+     "POO":{
+        "parrafo1":"Modo de programar donde no solo consideramos un problema o un objetivo a desarrollar y se plantea una secuencia de pasos para solucionarlo secuencialmente, es decir, paso a paso, sino que se considera el panorama general del objetivo y de ese panorama general se observan aspectos implicados que son como subcategoria o subclases, todas interactuando entre si para resolver un aspecto del objetivo general, y estos intervienen por eventos, de este modo se obtiene una abstracción más realista pues el mundo no es lineal sino que está sujeto a eventos imprevistos. Es un paradigma o modo de programar más complejo pues cada método en una clase es un programa. En resumen, la POO es programar pensando en clases de objetos en general, cada clase es un conjunto de atributos y métodos o funcionalidades relacionadas al contexto de la clase, cada método es un programa secuencial, y alas clases se relacionan entre si por herencia, con ciertas restricciones posibles.",
         "parrafo2":"Definiendo esto ortodoxamente, programar orientado a objetos implica, a partir de un objetivo, analizar un objeto del mundo real y resaltar los aspectos relevantes de ese objeto según los objetivos, por ejemplo, podemos abstraer una persona, pero la abstracción difiere si pensamos en una persona como un empleado de una organizacion o lo vemos de un punto de vista biológico, para el primer clase nos interesa abstraer su edad, número de cédula, nombre, número telefónico, etcétera; para el segundo caso nos interesa su raza, medidas, historial médico, etcétera. Lo anterior refiere a características o atributos, y con esos atributos se espera realice actividades o funciones (métodos en POO), como recibirNomina o contarGlobulos en otra, atributos y métodos relevantes para el objetivo.",
-        "parrafo3":"Está abstracción se logra con los conceptos de clase, herencia, polimorfismo, sobrecarga, limites de alcancey subclases. Pensemos que deseamos hacer un programa para el proceso de ventas, consideremos la clase Venta como una categoria que puede tener como atributos relevantes para nuestro objetivo un ID para diferenciar la transacción, un monto del cobro y que productos se vendieron en esa transacción, con esos datos nos interesa guardarEnBD(), calcularGanancia(), etc, ahí definimos atributos y métodos, ¿Pero de dónde obtiene los precios para ejecutar sus funciones y cumplir su propósito?, de una clase que se los herede que llamaremos Producto; a partir de lo anterior podemos observar que los productos tienen atrubutos particulares que se requiere separar pero tienen relación con la clase heredera pues necesita su herencia para sus propositos y el flujo es de la clase principal a las subclases o clases herederas. Un Producto tiene un ID que diferencia un producto de otros que puedan ser parecidos, un nombre, un precio de venta y un costo, estos atributos deben ser reportados a la clase Venta para poder cumplir el objetivo. Así que ventas hereda o utiliza los atributos o propiedades de su padre Producto y nosotros no ejecutamos una venta por voluntad de ejecutar el programa en secuencia sino que responde a un evento de una persona comprandonos algo.",
+        "parrafo3":"Está abstracción se logra con los conceptos de clase, herencia, polimorfismo, sobrecarga, limites de alcance y subclases. Pensemos que deseamos hacer un programa para el proceso de ventas, consideremos la clase Venta como una categoria que puede tener como atributos relevantes para nuestro objetivo un ID para diferenciar la transacción, un monto del cobro y que productos se vendieron en esa transacción, con esos datos nos interesa guardarEnBD(), calcularGanancia(), etc, ahí definimos atributos y métodos, ¿Pero de dónde obtiene los precios para ejecutar sus funciones y cumplir su propósito?, de una clase que se los herede que llamaremos Producto; a partir de lo anterior podemos observar que los productos tienen atrubutos particulares que se requiere separar pero tienen relación con la clase heredera pues necesita su herencia para sus propositos y el flujo es de la clase principal a las subclases o clases herederas. Un Producto tiene un ID que diferencia un producto de otros que puedan ser parecidos, un nombre, un precio de venta y un costo, estos atributos deben ser reportados a la clase Venta para poder cumplir el objetivo. Así que ventas hereda o utiliza los atributos o propiedades de su padre Producto y nosotros no ejecutamos una venta por voluntad de ejecutar el programa en secuencia sino que responde a un evento de una persona comprandonos algo.",
         "tituloBloqueA":"Elementos Clave",
         "tituloBloqueB":"Porque utilizar la POO",
         "bloque1":{
-            "contenido1":"Las Clases que son producto de clasificar eventos, situaciones u objetos reales del mundo real, como vehiculos, operaciones matematicas, seres vivos, cuentas contables, etc, mediante un analisis denominado abstraccion. La complejidad de las situaciones y objetos reales son la base de la POO (con pura programacion tradicional secuencial es dificil simular y obtener los mismos resultados) donde las caracteristicas de la abstraccion en cuestion se denominan 'Atributos' y las acciones que se realizan con esos Atributos se denomina 'Metodos', los metodos son funciones especificas.",
-            "contenido2":"La POO utiliza otros paradigmas de programacion en conjunto, como la programcion estructurada secuencialmente (una instruccion a la vez ordenada logicamente) y la programacion modular al dividir o segmentar el codigo por clases o varios archivos, pero todos relacionados.",
-            "contenido3":"Los Objetos son el producto final, luego de abstraer y definir las clases. A partir de esas clases creadas, que pueden ser pensados como un molde, se crean los objetos todos de la misma clase con mismos atributos y metodos, esto se conoce como instanciar una clase, es decir, de usar una clase en el codigo.",
-            "contenido4":"El Alcance & Restricciones se refiere a la restriccion por seguridad o funcionalidad de clases y metodos pudiendo ser clases public (publicas) para que la clase pueda ser utilizada por cualquier otra, Protected que permite ser usada por la misma clase y sus herederas y private que es la mas restrictiva permitiendo solo el uso de sus metodos por objetos de la misma clase.",
-            "contenido5":"Los Eventos en POO son acciones lanzadas por una accion del usurario directa o indirecta que motivan la creacion de un objeto."
+           "contenido1":"Las Clases que son producto de clasificar eventos, situaciones u objetos reales del mundo real, como vehiculos, operaciones matematicas, seres vivos, cuentas contables, etc, mediante un analisis denominado abstraccion. La complejidad de las situaciones y objetos reales son la base de la POO (con pura programacion tradicional secuencial es dificil simular y obtener los mismos resultados) donde las caracteristicas de la abstraccion en cuestion se denominan 'Atributos' y las acciones que se realizan con esos Atributos se denomina 'Metodos', los metodos son funciones especificas.",
+           "contenido2":"La POO utiliza otros paradigmas de programacion en conjunto, como la programcion estructurada secuencialmente (una instruccion a la vez ordenada logicamente) y la programacion modular al dividir o segmentar el codigo por clases o varios archivos, pero todos relacionados.",
+           "contenido3":"Los Objetos son el producto final, luego de abstraer y definir las clases. A partir de esas clases creadas, que pueden ser pensados como un molde, se crean los objetos todos de la misma clase con mismos atributos y metodos, esto se conoce como instanciar una clase, es decir, de usar una clase en el codigo.",
+           "contenido4":"El Alcance & Restricciones se refiere a la restriccion por seguridad o funcionalidad de clases y metodos pudiendo ser clases public (publicas) para que la clase pueda ser utilizada por cualquier otra, Protected que permite ser usada por la misma clase y sus herederas y private que es la mas restrictiva permitiendo solo el uso de sus metodos por objetos de la misma clase.",
+           "contenido5":"Los Eventos en POO son acciones lanzadas por una accion del usurario directa o indirecta que motivan la creacion de un objeto."
         },
         "bloque2":{
-            "contenido1":"En el desarrollo POO facilita y precisa los resultados, con las clases se pueden precisar objetivos usando la abstracción se simplifica la complejidad de un sistema al ocultar detalles innecesarios y enfocarse en lo esencial; y con la Encapsulación se ocultan los detalles de implementación de un objeto y permite que los métodos controlen la interacción con los atributos.",
-            "contenido2":"Por la Organización del código módulos reutilizables, que permiten usar el codigo en otros proyectos con leves cambios, lo que mejora la legibilidad y el soporte o mantenimiento posterior, no es lo mismo un parrafo de codigo a miles de lineas corridas.",
-            "contenido3":"Por la Reutilización de código, esencialmente por la herencia y la abstracción permiten reutilizar código entre diferentes clases, lo que reduce el tiempo de desarrollo y los errores. ",
-            "contenido4":"Por la Escalabilidad pues se posibilita la creación de sistemas grandes y complejos, pues los objetos pueden interactuar entre sí de manera independiente.",
-            "contenido5":"Por el Mantenimiento principalmente debido a la modularidad, hace que los sistemas orientados a objetos sean más fáciles de mantener y actualizar."
+           "contenido1":"En el desarrollo POO facilita y precisa los resultados, con las clases se pueden precisar objetivos usando la abstracción se simplifica la complejidad de un sistema al ocultar detalles innecesarios y enfocarse en lo esencial; y con la Encapsulación se ocultan los detalles de implementación de un objeto y permite que los métodos controlen la interacción con los atributos.",
+           "contenido2":"Por la Organización del código módulos reutilizables, que permiten usar el codigo en otros proyectos con leves cambios, lo que mejora la legibilidad y el soporte o mantenimiento posterior, no es lo mismo un parrafo de codigo a miles de lineas corridas.",
+           "contenido3":"Por la Reutilización de código, esencialmente por la herencia y la abstracción permiten reutilizar código entre diferentes clases, lo que reduce el tiempo de desarrollo y los errores. ",
+           "contenido4":"Por la Escalabilidad pues se posibilita la creación de sistemas grandes y complejos, pues los objetos pueden interactuar entre sí de manera independiente.",
+           "contenido5":"Por el Mantenimiento principalmente debido a la modularidad, hace que los sistemas orientados a objetos sean más fáciles de mantener y actualizar."
         },
         "imagen1":"poo-1",
         "imagen2":"poo-2",
         "conceptos":{
-            "titulo1":"Clases",
-            "concepto1":"Son una abstraccion o sintesis analizada por una necesidad especifica, donde solo consideraremos las caracteristicas y conductas relevantes para esa necesidad, en pocas palabras es una clasificacion de objetos reales, y dicho en palabras mas simples es comoo crear un molde para galletas donde todas las galletas (objetos) creados tendran la misma forma, tamaño, densidad, etc. Ejemplo, un automovil es un objeto con atributos y funcionalidades, pero ese objeto puede ser pensado para diferentes cosas, para un videojuego se espera que corra, acelere, cambie de color facilmente, para el gobierno un auto tiene otras caracteristicas y funciones como numero de matricula, dueño, valor factura, año, etc.",
-            "titulo2":"Atributos & Metodos",
-            "concepto2":"Los atributos son caracteristicas que debemos representar con los Tipos-de-Dato que tienen los lenguajes de programacion, que varian muy poco en los lenguajes comerciales de alto nivel (Java,  JS, C#); y los Metodos son las funciones, que en general son algoritmos especificos para una accion del objeto, escritos con la logica de programacion tradicional secuencial. ",
-            "titulo3":"Objetos",
-            "concepto3":"Son el producto de una clase, al proceso de crear objetos se denomina instanciación.",
-            "titulo4":"Herencia",
-            "concepto4":"Es la transmision de cualidades o atributos y capacidades o funciones de una clase padre a una clase hija, pudiendo delimitar en la clase padre si se quiere compartir todo o una parcialidades de sus propiedades.",
-            "titulo5":"Polimorfismo",
-            "concepto5":"Permite a los objetos de diferentes clases responder de manera diferente a la misma acción o mensaje."
+           "titulo1":"Clases",
+           "concepto1":"Son una abstraccion o sintesis analizada por una necesidad especifica, donde solo consideraremos las caracteristicas y conductas relevantes para esa necesidad, en pocas palabras es una clasificacion de objetos reales, y dicho en palabras mas simples es comoo crear un molde para galletas donde todas las galletas (objetos) creados tendran la misma forma, tamaño, densidad, etc. Ejemplo, un automovil es un objeto con atributos y funcionalidades, pero ese objeto puede ser pensado para diferentes cosas, para un videojuego se espera que corra, acelere, cambie de color facilmente, para el gobierno un auto tiene otras caracteristicas y funciones como numero de matricula, dueño, valor factura, año, etc.",
+           "titulo2":"Atributos & Metodos",
+           "concepto2":"Los atributos son caracteristicas que debemos representar con los Tipos-de-Dato que tienen los lenguajes de programacion, que varian muy poco en los lenguajes comerciales de alto nivel (Java,  JS, C#); y los Metodos son las funciones, que en general son algoritmos especificos para una accion del objeto, escritos con la logica de programacion tradicional secuencial. ",
+           "titulo3":"Objetos",
+           "concepto3":"Son el producto de una clase, al proceso de crear objetos se denomina instanciación.",
+           "titulo4":"Herencia",
+           "concepto4":"Es la transmision de cualidades o atributos y capacidades o funciones de una clase padre a una clase hija, pudiendo delimitar en la clase padre si se quiere compartir todo o una parcialidades de sus propiedades.",
+           "titulo5":"Polimorfismo",
+           "concepto5":"Permite a los objetos de diferentes clases responder de manera diferente a la misma acción o mensaje."
         }
     },
-
+    
     "MarketingDigital":{
         "parrafo1":"Conjunto de esfuerzos realizados por un ente, generalmente una empresa, para darse a conocer, pero la neta en verdad es vender sus productos o servicios, entendiendo por esfuerzos cualquier actividad o gasto realizado para difundir la imagen de la empresa o sus productos, ese concepto es en general para el marketing, hablar de marketing digital es limitar los esfuerzos a medios digitales, anuncios en sitios web y plataformas denominados ADS, sitios web, campañas en otros medios digitales como tv o radio o recurrir a promoción con personas con influencia en el público que nos interesa.",
         "parrafo2":"No existe una estrategia de marketing general o la receta secreta para el éxito en una campaña de marketing, pues los negocios son algo complicado, cada uno tiene diferentes necesidades y es diferente por lo que las estrategias deben ser diferentes, dependiendo el giro, el tamaño, la calidad de los productos (su segmento), cada aspecto influira, lo mas relevante es el presupuesto, este es crucial, más para pequeñas y medianas empresas, imagina gastar en publicidad y que no traiga nuevos clientes, puede llevar a la quiebra un negocio. El decidir el plan de marketing es algo que debe ser llevado por gente experta, es decir una agencia especializada que garantice resultados, lo mínimo antes de emprender una campaña es reunir a gerentes y personal estratégico para trazar el camino optimo.",
@@ -222,32 +222,32 @@
         "tituloBloqueA":"Aspectos Destacables",
         "tituloBloqueB":"Medios para Hacer Marketing Digital",
         "bloque1":{
-            "contenido1":"Segmentación precisa: Permite dirigir mensajes a públicos específicos.",
-            "contenido2":"Medición en tiempo real: Posibilita analizar resultados y ajustar estrategias rápidamente.",
-            "contenido3":"Interactividad: Fomenta la participación directa con el público.",
-            "contenido4":"Costo-efectividad: Más accesible que el marketing tradicional.",
-            "contenido5":"Globalización: Alcance sin fronteras geográficas."
+           "contenido1":"Segmentación precisa: Permite dirigir mensajes a públicos específicos.",
+           "contenido2":"Medición en tiempo real: Posibilita analizar resultados y ajustar estrategias rápidamente.",
+           "contenido3":"Interactividad: Fomenta la participación directa con el público.",
+           "contenido4":"Costo-efectividad: Más accesible que el marketing tradicional.",
+           "contenido5":"Globalización: Alcance sin fronteras geográficas."
         },
         "bloque2":{
-            "contenido1":"Redes sociales (Facebook, Instagram, LinkedIn, etc.).",
-            "contenido2":"Email marketing (Campañas por correo electrónico).",
-            "contenido3":"SEO (Optimización para motores de búsqueda como Google).",
-            "contenido4":"Publicidad en línea (Google Ads, Meta Ads, etc.).",
-            "contenido5":"Marketing de contenidos (Blogs, videos, infografías, etc.)."
+           "contenido1":"Redes sociales (Facebook, Instagram, LinkedIn, etc.).",
+           "contenido2":"Email marketing (Campañas por correo electrónico).",
+           "contenido3":"SEO (Optimización para motores de búsqueda como Google).",
+           "contenido4":"Publicidad en línea (Google Ads, Meta Ads, etc.).",
+           "contenido5":"Marketing de contenidos (Blogs, videos, infografías, etc.)."
         },
         "imagen1":"marketing-1",
         "imagen2":"marketing-2",
         "conceptos":{
-            "titulo1":"Conversión",
-            "concepto1":"Cuando un usuario realiza la acción deseada (ej. comprar, suscribirse).",
-            "titulo2":"ROI (Retorno de Inversión)",
-            "concepto2":"Beneficio económico obtenido vs. lo invertido.",
-            "titulo3":"Tráfico orgánico",
-            "concepto3":"Visitas a un sitio web sin publicidad pagada (ej. mediante SEO).",
-            "titulo4":"Engagement",
-            "concepto4":"Interacción y compromiso del público con una marca.",
-            "titulo5":"Lead",
-            "concepto5":"Usuario interesado en un producto/servicio (potencial cliente)."
+           "titulo1":"Conversión",
+           "concepto1":"Cuando un usuario realiza la acción deseada (ej. comprar, suscribirse).",
+           "titulo2":"ROI (Retorno de Inversión)",
+           "concepto2":"Beneficio económico obtenido vs. lo invertido.",
+           "titulo3":"Tráfico orgánico",
+           "concepto3":"Visitas a un sitio web sin publicidad pagada (ej. mediante SEO).",
+           "titulo4":"Engagement",
+           "concepto4":"Interacción y compromiso del público con una marca.",
+           "titulo5":"Lead",
+           "concepto5":"Usuario interesado en un producto/servicio (potencial cliente)."
         }
     },
 
@@ -366,34 +366,34 @@
         "tituloBloqueA":"Aspectos Destacables",
         "tituloBloqueB":"Prácticas para Implementar",
         "bloque1":{
-            "contenido1":"Comunicación eficiente: Permite intercambio de datos entre dispositivos de forma rápida y confiable.",
-            "contenido2":"Escalabilidad: Capacidad de crecer y adaptarse a más usuarios o dispositivos sin perder rendimiento.",
-            "contenido3":"Seguridad básica: Protección contra accesos no autorizados (ej. firewalls, cifrado).",
-            "contenido4":"Tipos de redes: LAN (local), WAN (amplia), inalámbricas (Wi-Fi) y cableadas (Ethernet).",
-            "contenido5":"Protocolos estandarizados: Reglas como TCP/IP que garantizan compatibilidad entre dispositivos."
+           "contenido1":"Comunicación eficiente: Permite intercambio de datos entre dispositivos de forma rápida y confiable.",
+           "contenido2":"Escalabilidad: Capacidad de crecer y adaptarse a más usuarios o dispositivos sin perder rendimiento.",
+           "contenido3":"Seguridad básica: Protección contra accesos no autorizados (ej. firewalls, cifrado).",
+           "contenido4":"Tipos de redes: LAN (local), WAN (amplia), inalámbricas (Wi-Fi) y cableadas (Ethernet).",
+           "contenido5":"Protocolos estandarizados: Reglas como TCP/IP que garantizan compatibilidad entre dispositivos."
         },
         "bloque2":{
-            "contenido1":"Elegir la topología adecuada: Estrella, anillo o malla según necesidades (ej. estrella para oficinas).",
-            "contenido2":"Usar hardware apropiado: Routers, switches y cables de calidad (ej. categoría 6 para Ethernet).",
-            "contenido3":"Configurar direcciones IP estáticas o DHCP: Asignar IPs fijas a servidores y dinámicas a dispositivos comunes.",
-            "contenido4":"Proteger la red: Contraseñas fuertes en Wi-Fi, firewalls y actualizaciones de firmware.",
-            "contenido5":"Monitorear el tráfico: Herramientas como Wireshark para detectar fallas o cuellos de botella."
+           "contenido1":"Elegir la topología adecuada: Estrella, anillo o malla según necesidades (ej. estrella para oficinas).",
+           "contenido2":"Usar hardware apropiado: Routers, switches y cables de calidad (ej. categoría 6 para Ethernet).",
+           "contenido3":"Configurar direcciones IP estáticas o DHCP: Asignar IPs fijas a servidores y dinámicas a dispositivos comunes.",
+           "contenido4":"Proteger la red: Contraseñas fuertes en Wi-Fi, firewalls y actualizaciones de firmware.",
+           "contenido5":"Monitorear el tráfico: Herramientas como Wireshark para detectar fallas o cuellos de botella."
         },
         "imagen1":"redes-1",
         "imagen2":"redes-2",
         "conceptos":{
-            "titulo1":"Protocolo TCP/IP",
-            "concepto1":"Estándar para enviar/recepcionar datos en internet (ej. IP = dirección, TCP = entrega ordenada).",
-            "titulo2":"Ancho de banda",
-            "concepto2":"Capacidad de transmisión de datos (ej. Mbps o Gbps).",
-            "titulo3":"Latencia",
-            "concepto3":"Tiempo que tarda un dato en llegar desde el origen al destino (ej. bajo = mejor).",
-            "titulo4":"DNS (Sistema de Nombres de Dominio)",
-            "concepto4":"Traduce nombres de dominio (ej. google.com) a direcciones IP.",
-            "titulo5":"Firewall",
-            "concepto5":"Barrera de seguridad que filtra tráfico malicioso entrante/saliente."
+           "titulo1":"Protocolo TCP/IP",
+           "concepto1":"Estándar para enviar/recepcionar datos en internet (ej. IP = dirección, TCP = entrega ordenada).",
+           "titulo2":"Ancho de banda",
+           "concepto2":"Capacidad de transmisión de datos (ej. Mbps o Gbps).",
+           "titulo3":"Latencia",
+           "concepto3":"Tiempo que tarda un dato en llegar desde el origen al destino (ej. bajo = mejor).",
+           "titulo4":"DNS (Sistema de Nombres de Dominio)",
+           "concepto4":"Traduce nombres de dominio (ej. google.com) a direcciones IP.",
+           "titulo5":"Firewall",
+           "concepto5":"Barrera de seguridad que filtra tráfico malicioso entrante/saliente."
         }
-    },
+     },
 
     "Infraestructura":{
         "parrafo1":"Un sistema informático es una combinación de hardware y software, pues el segundo (software) son instrucciones lógicas que le dicen que hacer a un dispositivo hardware, que justo es la infraestructura tecnológica que almacena los datos, archivos y programas y así mismo los ejecuta implicando desde luego aspectos como la memoria y capacidades de procesamiento. Podemos resumirlas a SaaS, PaaS, IaaS y OnPremise.",
@@ -726,7 +726,7 @@
         "tituloBloqueA":"Técnicas de Conteo",
         "tituloBloqueB":"Aspectos Relevantes para Comprender la Probabilidad",
         "bloque1":{
-            "contenido1":"Regla de la Multiplicación: Si un evento A puede ocurrir de *m* formas y un evento B de *n* formas, entonces ambos eventos pueden ocurrir de m × n formas.",
+            "contenido1":"Regla de la Multiplicación: Si un evento A puede ocurrir de *m* formas y un evento B de *n* formas, entonces ambos eventos pueden ocurrir de m * n formas.",
             "contenido2":"Regla de la Suma: Si un evento A puede ocurrir de *m* formas y otro evento B de *n* formas (mutuamente excluyentes), entonces A o B pueden ocurrir de m + n formas.",
             "contenido3":"Permutaciones: Arreglos ordenados de *r* elementos tomados de un conjunto de *n* elementos. Fórmula: P(n, r) = n! / (n - r)!.",
             "contenido4":"Combinaciones: Selecciones no ordenadas de *r* elementos de un conjunto de *n*. Fórmula: C(n, r) = n! / [r!(n - r)!].",
@@ -743,7 +743,7 @@
         "imagen2":"algebra-2",
         "conceptos":{
             "titulo1":"Variable Aleatoria",
-            "concepto1":"Función que asigna valores numéricos a los resultados de un experimento aleatorio (ejemplo: 'número de caras en 3 lanzamientos de moneda').",
+            "concepto1":"Función que asigna valores numéricos a los resultados de un experimento aleatorio (ejemplo: número de caras en 3 lanzamientos de moneda).",
             "titulo2":"Distribución de Probabilidad",
             "concepto2":"Describe cómo se distribuyen las probabilidades entre los valores de una variable aleatoria (ejemplo: distribución binomial o normal).",
             "titulo3":"Valor Esperado (Esperanza Matemática)",
@@ -751,7 +751,7 @@
             "titulo4":"Ley de los Grandes Números",
             "concepto4":"A medida que un experimento se repite muchas veces, la frecuencia relativa de un evento converge a su probabilidad teórica.",
             "titulo5":"Teorema de Bayes",
-            "concepto5":"Permite actualizar la probabilidad de un evento basándose en información nueva: P(A ∣ B) = P(B)P(B ∣ A)⋅P(A) /P(B) /"
+            "concepto5":"Permite actualizar la probabilidad de un evento basándose en información nueva: P(A ∣ B) = P(B)P(B ∣ A)⋅P(A) /P(B) "
         }
     },
 

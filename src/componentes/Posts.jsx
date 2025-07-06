@@ -42,7 +42,7 @@ function Posts(){
     <section className="post" id="post">
         <div className="title">
             <h2>Contenidos</h2>
-            <p><span>Revisa nuestro contenido relacionado a diversos temas utiles para Negocios y el desarrollo de soluciones informaticas</span> Un post por cada uno.
+            <p><span>Estos son algunos temas de ADMinistración e INGenieria con los que te podemos ayudar gracias a nuestro equipo multidisciplinario </span> Un post por cada uno y Más
                 </p>
         </div>
         <div id="primeraParte" className="contentBx">
@@ -164,6 +164,15 @@ function Posts(){
                             <Link to="/redes#publicacion" className="btn">Ver Contenido</Link>
                         </div>
                     </div>
+                    <div className="postBox">
+                        <div className="imgBx">
+                            <img title="investigacion de operaciones" src={imagenes.InvestigacionDeOperaciones} alt="cargando imagen..."/>
+                        </div>
+                        <div className="txtBx">
+                            <h3>Investigacion para las Operaciones</h3>
+                            <Link to="/investigacion-operaciones#publicacion" className="btn">Ver Contenido</Link>
+                        </div>
+                    </div>
                 </div>
                 <div className="postColumn">
                     <div className="postBox extraHeight">
@@ -177,15 +186,13 @@ function Posts(){
                     </div>
                     <div className="postBox">
                         <div className="imgBx">
-                            <img title="investigacion de operaciones" src={imagenes.InvestigacionDeOperaciones} alt="cargando imagen..."/>
+                            <img title="ciberseguridad" src={imagenes.Seguridad} className="cover" alt="cargando imagen..."/>
                         </div>
                         <div className="txtBx">
-                            <h3>Investigacion para las Operaciones</h3>
-                            <Link to="/investigacion-operaciones#publicacion" className="btn">Ver Contenido</Link>
+                            <h3>Ciberseguridad</h3>
+                            <Link to="/ciberseguridad#publicacion" className="btn">Ver Contenido</Link>
                         </div>
                     </div>
-                </div>
-                <div className="postColumn">
                     <div className="postBox">
                         <div className="imgBx">
                             <img title="informatica" src={imagenes.Informatica} alt="cargando imagen..."/>
@@ -195,15 +202,8 @@ function Posts(){
                             <Link to="/informatica#publicacion" className="btn">Ver Contenido</Link>
                         </div>
                     </div>
-                    <div className="postBox extraHeight">
-                        <div className="imgBx">
-                            <img title="ciberseguridad" src={imagenes.Seguridad} className="cover" alt="cargando imagen..."/>
-                        </div>
-                        <div className="txtBx">
-                            <h3>Ciberseguridad</h3>
-                            <Link to="/ciberseguridad#publicacion" className="btn">Ver Contenido</Link>
-                        </div>
-                    </div>
+
+
                 </div>
 
                 <div className="postColumn">
@@ -214,6 +214,15 @@ function Posts(){
                         <div className="txtBx">
                             <h3>Requerimientos</h3>
                             <Link to="/requerimientos#publicacion" className="btn">Ver Contenido</Link>
+                        </div>
+                    </div>
+                    <div className="postBox extraHeight">
+                        <div className="imgBx">
+                            <img title="investigacion de operaciones" src={imagenes.RSimulacion} alt="cargando imagen..."/>
+                        </div>
+                        <div className="txtBx">
+                            <h3>Investigacion para las Operaciones</h3>
+                            <Link to="/investigacion-de-operaciones#publicacion" className="btn">Ver Contenido</Link>
                         </div>
                     </div>
                     <div className="postBox">
@@ -237,7 +246,15 @@ function Posts(){
                             <Link to="/aplicaciones#publicacion" className="btn">Ver Contenido</Link>
                         </div>
                     </div>
-
+                    <div className="postBox extraHeight">
+                        <div className="imgBx">
+                            <img title="Calculo" src={imagenes.Calculo} alt="cargando imagen..."/>
+                        </div>
+                        <div className="txtBx">
+                            <h3>Calculo</h3>
+                            <Link to="/calculo#publicacion" className="btn">Ver Contenido</Link>
+                        </div>
+                    </div>
                     <div className="postBox">
                         <div className="imgBx">
                             <img title="bases de datos nosql" src={imagenes.NoSQL} alt="cargando imagen..."/>
@@ -250,35 +267,22 @@ function Posts(){
                 </div>
 
                 <div className="postColumn">
-                    <div className="postBox">
-                        <div className="imgBx">
-                            <img title="Calculo" src={imagenes.Calculo} alt="cargando imagen..."/>
-                        </div>
-                        <div className="txtBx">
-                            <h3>Calculo</h3>
-                            <Link to="/calculo#publicacion" className="btn">Ver Contenido</Link>
-                        </div>
-                    </div>
-                    
                     <div className="postBox extraHeight">
-                        <div className="imgBx">
-                            <img title="investigacion de operaciones" src={imagenes.RSimulacion} alt="cargando imagen..."/>
-                        </div>
-                        <div className="txtBx">
-                            <h3>Investigacion para las Operaciones</h3>
-                            <Link to="/investigacion-de-operaciones#publicacion" className="btn">Ver Contenido</Link>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="postColumn">
-                    <div className="postBox">
                         <div className="imgBx">
                             <img title="Calculo" src={imagenes.Probabilidad} alt="cargando imagen..."/>
                         </div>
                         <div className="txtBx">
-                            <h3>Porbabilidad</h3>
+                            <h3>Probabilidad</h3>
                             <Link to="/probabilidad#publicacion" className="btn">Ver Contenido</Link>
+                        </div>
+                    </div>
+                    <div className="postBox extraHeight">
+                        <div className="imgBx">
+                            <img title="administracion" src={imagenes.Administracion} alt="cargando imagen..."/>
+                        </div>
+                        <div className="txtBx">
+                            <h3>Administración</h3>
+                            <Link to="/administracion#publicacion" className="btn">Ver Contenido</Link>
                         </div>
                     </div>
                     

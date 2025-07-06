@@ -1,0 +1,334 @@
+.contGeneralCv{
+    display:block;
+    background: #fff;
+    width:100vw;
+    height:100%;
+}
+.containerCVS{
+    position:relative;
+    width:90%;
+    /*max-width:1000px;
+    min-height:1000px;*/
+    margin:33px 5%;
+    display:grid;
+    user-select:none;
+    grid-template-columns:1fr 2fr;
+    box-shadow:0 60px 66px rgba(0, 0, 0, 0.616);
+}
+.containerCVS .leftSide{
+    position:relative;
+    background-color:rgba(1, 1, 29, 0.664);
+    padding:40px;
+    color:#fff;
+    font-family: 'Consolas';
+}
+.containerCVS .leftSide .profilText{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding-bottom:19px;
+    border-bottom:1px solid rgba(255,255,255,0.2);
+}
+.containerCVS .leftSide .profilText h2{
+    color:#fff;
+    font-family: 'Consolas';
+    font-size:1.5em;
+    margin-top:19px;
+    text-transform:uppercase;
+    text-align:center;
+    font-weight:600;
+    line-height:1.4em;
+}
+.containerCVS .leftSide .profilText .imgBx{
+    position:relative;
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    overflow:hidden;
+}
+.containerCVS .leftSide .profilText .imgBx img{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.containerCVS .leftSide .profilText .imgBx img:nth-child(2){
+    opacity:0;
+}
+.containerCVS .leftSide .profilText .imgBx img:nth-child(1):hover{
+    opacity:0;
+}
+.containerCVS .leftSide .profilText .imgBx img:nth-child(2):hover{
+    opacity:1;
+}
+.containerCVS .leftSide .profilText h2 span{
+    color:#fff;
+    font-size:0.8em;
+    font-weight:300;
+}
+.containerCVS .leftSide .contactInfo{
+    padding-top:40px;
+}
+.containerCVS .leftSide .contactInfo .title,
+.containerCVS .leftSide .contactInfo ul li span.icon{
+    /*color:#03a9f4; */
+    text-transform:uppercase;
+    font-family: 'Consolas';
+    display:inline-block;
+    font-size:1.3em;
+    color:#fff;
+    font-weight:600;
+    letter-spacing:1px;
+    margin-bottom:19px;
+}
+.containerCVS .leftSide .contactInfo .title{
+    color:#fff;
+    letter-spacing:3px;
+}
+.containerCVS .leftSide .contactInfo ul{
+    left: 17px;
+    position:relative;
+}
+.containerCVS .leftSide .contactInfo ul li,
+.containerCVS .leftSide .contactInfo ul li span,
+.containerCVS .leftSide .contactInfo ul li span.icon,
+.containerCVS .leftSide .contactInfo ul li span.icon FontAwesomeIcon{
+    position:relative;
+    list-style:none;
+    margin:9px 0;
+    cursor:pointer;
+    color:#fff;
+}
+.containerCVS .leftSide .contactInfo ul li h5,
+.containerCVS .leftSide .education ul li h5{
+    color:#fff;
+    font-size:1.3em;
+    font-weight:600;
+}
+.containerCVS .leftSide .contactInfo ul li h4,
+.containerCVS .leftSide .education ul li h4{
+    color:#fff;
+    font-size:1.1em;
+    font-weight:300;
+}
+/*.containerCVS .leftSide .contactInfo ul li .icon{
+    display:inline-block;
+    width:29px;
+    font-size:19px;
+    color:#03a9f4;
+}*/
+/*.contactInfo ul li span{
+    color:#fff;
+    font-weight:300;text-align: left;
+}*/
+.containerCVS .leftSide .education ul li h4{
+    color:#fff;
+}
+.containerCVS .leftSide .contactInfo.education li{
+    margin-bottom:15px;
+}
+.containerCVS .leftSide .contactInfo.education ul li h5{
+    color:#03a9f4;
+    font-weight:500;
+}
+.containerCVS .leftSide .contactInfo.education ul li h4:nth-child(2),
+.containerCVS .leftSide .education ul li h4:nth-child(2),
+.containerCVS .leftSide .contactInfo ul li h4:nth-child(2){
+    color:#fff;
+    font-weight:500;
+}
+.containerCVS .leftSide .contactInfo.education ul li h4,
+.containerCVS .leftSide .contactInfo ul li h4,
+.containerCVS .leftSide .education ul li h4{
+    color:#fff;
+    font-weight:300;
+}
+.containerCVS .leftSide .contactInfo.languages .title,
+.containerCVS .leftSide .contactInfo .title,
+.containerCVS .leftSide .languages .title{
+    color:#fff;
+    font-size: 1.3em;
+    font-weight: 300;
+}
+.containerCVS .leftSide .contactInfo.languages ul,
+.containerCVS .leftSide .contactInfo ul,
+.containerCVS .leftSide .languages ul{
+    left: 9px;
+    list-style: none;
+    position:relative;
+}
+.containerCVS .leftSide .contactInfo.languages ul li .text,
+.containerCVS .leftSide .contactInfo ul li .text,
+.containerCVS .leftSide .languages ul li .text{
+    font-size: 1.1em;
+    font-weight:300;
+    color:#fff;
+}
+.containerCVS .leftSide .contactInfo.languages ul li,
+.containerCVS .leftSide .contactInfo ul li,
+.containerCVS .leftSide .languages ul li{
+    
+    color:#fff;
+}
+.containerCVS .leftSide .contactInfo.languages .percent,
+.containerCVS .leftSide .contactInfo .percent,
+.containerCVS .leftSide .languages .percent{
+    position:relative;
+    width:100%;
+    height:9px;
+    background:#041a24;
+    display:block;
+    margin-top:5px;
+}
+.containerCVS .leftSide .contactInfo.languages .percent div,
+.containerCVS .leftSide .contactInfo .percent div,
+.containerCVS .leftSide .languages .percent div{
+    position:absolute;
+    z-index:100;
+    top:0;
+    left:0;
+    height:100%;
+    background:#0e8004;
+    box-shadow: 0 0 15px #0e8004,
+                0 0 30px #0e8004,
+                0 0 60px #0e8004;
+}
+
+
+
+
+
+.containerCVS .rightSide{
+    position:relative;
+    background:#cff1ed;
+    padding:40px;
+}
+.containerCVS .rightSide p{
+    color:#000;
+    text-align: justify;
+    font-size:.9em;
+    font-weight:300;
+}
+.containerCVS .rightSide .about{
+    margin-bottom:50px;
+    
+}
+.containerCVS .rightSide .about:last-child{
+    margin-bottom:0;
+}
+.containerCVS .rightSide .about .title2{
+    color:003147;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    margin-bottom:9px;
+}
+.containerCVS .rightSide .about p,
+.containerCVS .rightSide .about .box .text p{
+    color:#000;
+}
+.containerCVS .rightSide .about .box{
+    display:flex;
+    flex-direction:row;
+    margin:19px 0;
+}
+
+.containerCVS .rightSide .about .box{
+    display:flex;
+    flex-direction:row;
+    margin:19px 0;
+}
+.containerCVS .rightSide .about .box .year_company{
+    min-width:150px;
+}
+.containerCVS .rightSide .about .box .year_company h4{
+    font-size:1em;
+    font-weight: 700;
+}
+.containerCVS .rightSide .about .box .year_company h5{
+    font-size:.8em;
+    font-weight: 600;
+    text-transform:uppercase;
+    color:#848c90;
+    font-weight:600;
+}
+.containerCVS .rightSide .about .box .text h4{
+    text-transform:uppercase;
+    color:#2a7da2;
+    font-size:1em;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+.containerCVS .rightSide .skills .box{
+    position:relative;
+    width:100%;
+    display:grid;
+    grid-template-columns:250px 1fr;
+    justify-content:center;
+    align-items:center;
+}
+.containerCVS .rightSide .skills .box h4{
+    text-transform:uppercase;
+    color:#1a3c74;
+    font-size:1em;
+    font-weight:500;
+}
+.containerCVS .rightSide .skills .box div.percent{
+    position:relative;
+    width:100%;
+    height:10px;
+    background:#f00;
+}
+.containerCVS .rightSide .skills .box div.percent div{
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    background:#f0f;
+    box-shadow: 0 0 15px #f0f;
+}
+
+.containerCVS .rightSide .interest{
+    margin-top:66px;
+}
+.containerCVS .rightSide .rightSide .interest ul{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+}
+.containerCVS .rightSide .rightSide .interest ul li{
+    list-style:none;
+    color:#000;
+    font-weight:500;
+    margin:9px 0;
+}
+.containerCVS .rightSide .interest ul li .fa{
+    color:#03a9f4;
+    font-size:19px;
+    width:19px;
+}
+@media(max-width:900px){
+    .containerCVS{
+        margin:10px;
+        grid-template-columns:repeat(1,1fr);
+    }
+    .rightSide .interest ul{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+@media(max-width:600px){
+    .about .box{
+        flex-direction:column;
+    }
+    .about .box .year_company{
+        /*min-width:150px;*/
+        margin-bottom:5px;
+    }
+    .rightSide .interest ul{
+        grid-template-columns:repeat(1,1fr);
+    }
+    .skills .box{
+        grid-template-columns:repeat(1,1fr);
+    }
+}

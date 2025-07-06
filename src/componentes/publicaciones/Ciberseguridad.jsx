@@ -4,7 +4,7 @@ import Carrusel from '../Carrusel.jsx';
 import DropDown from '../DropDown.jsx';
 import Footer from '../Footer.jsx';
 import HeaderGral from '../HeaderGral.jsx';
-import Space from '../Space.jsx';
+import PrintScan from '../PrintScan.jsx';
 import data from '../../contenido/contenido.json';
 import GoogleAnalytics from '../GoogleAnalytics.jsx';
 
@@ -40,7 +40,7 @@ function Ciberseguridad(props){
                 conceptosT5={data.Seguridad.conceptos.titulo5}
                 conceptosC5={data.Seguridad.conceptos.concepto5}
             />
-            <Space />
+            <PrintScan />
             <DropDown />
             <Carrusel />
             <Posts />

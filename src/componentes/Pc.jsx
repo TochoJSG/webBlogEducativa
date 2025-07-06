@@ -1,6 +1,6 @@
 import React from "react";
 import '../estilos/pc.css';
-import video from '../imagenes/short.mp4'
+//import video from '../imagenes/short.mp4'
 
 const Logo = require('../imagenes/icono.png');
 //const video = require('../static_src/short.mp4');
@@ -17,7 +17,7 @@ function Pc(){
         <div className="centerPc">
             <div className="monitor">
             <video
-                src={video}
+                src="/short.mp4"
                 muted
                 loop
                 onMouseEnter={handleMouseEnter}

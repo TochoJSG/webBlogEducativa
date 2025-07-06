@@ -24,5 +24,7 @@ header a .logo {
 }
 @media(max-width:990px){
     .headerGral{overflow-y: hidden;}
-    .navigation li a:hover{transform:scale(1.1);z-index:10000;letter-spacing:3px;}
+    .navigation li{margin:0 6px;padding:6px;}
+    .navigation li a{overflow:hidden;font-size:.9em;letter-spacing:3px;font-weight:600;text-transform:uppercase;margin:6px 0;}
+    .navigation li a:hover{transform:scale(1);letter-spacing:1px;}
 }

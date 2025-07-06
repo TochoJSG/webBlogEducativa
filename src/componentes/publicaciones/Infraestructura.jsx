@@ -3,7 +3,7 @@ import Posts from '../Posts.jsx';
 import Carrusel from '../Carrusel.jsx';
 import DropDown from '../DropDown.jsx';
 import Footer from '../Footer.jsx';
-import Pc from '../Pc.jsx';
+import InfraestructuraRed from '../InfraestructuraRed.jsx';
 import HeaderGral from '../HeaderGral.jsx';
 import data from '../../contenido/contenido.json';
 import GoogleAnalytics from '../GoogleAnalytics.jsx';
@@ -40,7 +40,7 @@ function Infraestructura(props){
                 conceptosT5={data.Infraestructura.conceptos.titulo5}
                 conceptosC5={data.Infraestructura.conceptos.concepto5}
             />
-            <Pc/>
+            <InfraestructuraRed/>
             <DropDown/>
             <Carrusel/>
             <Posts/>

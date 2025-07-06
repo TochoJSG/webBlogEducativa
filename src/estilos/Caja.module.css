@@ -589,6 +589,45 @@ transform-origin: right;
 .item:hover img{
 transform: scale(1.5);
 }
+/*@media(max-width:333px){
+    #box{
+        width: 250px;
+        height: 250px;			
+    }
+    #box::before{
+        width: 250px;
+        height: 250px;
+        background: #111 rgba(0,0,0,0.1);
+        transform: rotateX(25deg) translateZ(-220px);
+        filter: blur(15px);
+    }
+    #box .top{
+        width: 250px;
+        height: 250px;
+        transform: rotateX(90deg) translate3d(0,0,150px);
+    }
+    #box .top::before{
+        /*left: 0;* /
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 60px;
+        background: #111 url('../imagenes/tape.jpg');
+        background-size: 85px;
+    }
+    .tape{
+        position: absolute;
+        top: 0px;
+        left: 50%; 
+        transform: translateX(-50%) rotate(45deg);
+        width: 66px;
+        height: 60px;
+        background: #111 url('../imagenes/tape.jpg');
+        background-size: 85px;
+        background-position-x: 45px;
+    }
+    
+}*/
 /*
 .action__{
 position: absolute;

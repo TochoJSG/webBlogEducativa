@@ -4,9 +4,9 @@ import Carrusel from '../Carrusel.jsx';
 import DropDown from '../DropDown.jsx';
 import Footer from '../Footer.jsx';
 import HeaderGral from '../HeaderGral.jsx';
-import Space from '../Space.jsx';
 import data from '../../contenido/contenido.json';
 import GoogleAnalytics from '../GoogleAnalytics.jsx';
+import CuboTecnologico from '../CuboTecnologico.jsx';
 
 function Backend(props){
     return(
@@ -40,7 +40,7 @@ function Backend(props){
                 conceptosT5={data.Backend.conceptos.titulo5}
                 conceptosC5={data.Backend.conceptos.concepto5}
             />
-            <Space/>
+            <CuboTecnologico/>
             <DropDown/>
             <Carrusel/>
             <Posts/>

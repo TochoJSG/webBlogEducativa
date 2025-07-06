@@ -1,0 +1,21 @@
+.boxCardTxt{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) skewY(-10deg);width:450px;height:450px;background:#fff;box-shadow:-10px 5px 30px rgba(0,0,0,.5);box-sizing:border-box;transition:.6s;
+}
+.boxCardTxt:before{content:'';position:absolute;top:0;width:25px;left:-25px;height:100%;background:#cecece;transform-origin:right bottom;transform:skewY(45deg);
+}
+.boxCardTxt:after{content:'';position:absolute;top:-25px;width:100%;left:0;height:25px;background:#eaeaea;transform-origin:bottom left;transform:skewX(45deg);
+}
+.boxCardTxt h3{position:relative;background:#169fff;color:#fff;text-align:center;letter-spacing:6px;font-weight:600;font-size:1.9em;margin:40px 0 0;padding:5px 0;text-transform:uppercase;text-shadow:-2px 2px 10px rgba(0,0,0,.5);
+}
+.boxCardTxt h3:before{content:'';position:absolute;top:0;left:-25px;width:25px;height:100%;background:#085a99;transform-origin:top right;transform:skewY(45deg);
+}
+.boxCardTxt p{padding:17px 19px 0;color:#262626;text-align:center;font-size:.9em;font-weight:200;letter-spacing:1px;}
+@media(max-width:666px){
+.boxCardTxt{width:350px;height:425px;}
+.boxCardTxt h3{letter-spacing:3px;font-weight:500;font-size:1.7em;margin:40px 0 0;padding:5px 0;}
+.boxCardTxt p{padding:16px 17px 0;color:#000;font-size:.8em;font-weight:100;}
+}
+@media(max-width:440px){
+.boxCardTxt{width:275px;height:490px;}
+.boxCardTxt h3{letter-spacing:3px;font-weight:300;font-size:1.7em;margin:40px 0 0;padding:5px 0;}
+.boxCardTxt p{padding:16px 17px 0;color:#000;font-size:.7em;font-weight:100;}
+}

@@ -4,6 +4,7 @@ import Carrusel from '../Carrusel.jsx';
 import DropDown from '../DropDown.jsx';
 import Footer from '../Footer.jsx';
 import Smartphone from '../Smartphone.jsx';
+import Calculadora from '../Calculadora.jsx';
 import HeaderGral from '../HeaderGral.jsx';
 import data from '../../contenido/contenido.json';
 import GoogleAnalytics from '../GoogleAnalytics.jsx';
@@ -40,7 +41,8 @@ function Contabilidad(props){
                 conceptosT5={data.Contabilidad.conceptos.titulo5}
                 conceptosC5={data.Contabilidad.conceptos.concepto5}
             />
-            <Smartphone title=""/>
+            <Calculadora/>
+            <Smartphone />
             <DropDown/>
             <Carrusel/>
             <Posts/>
