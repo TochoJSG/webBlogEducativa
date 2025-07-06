@@ -41,13 +41,13 @@ import CurriculumSimplif from './componentes/publicaciones/CurriculumSimplif.jsx
 import Proximamente from './componentes/Proximamente';
 import Ciberseguridad from './componentes/publicaciones/Ciberseguridad.jsx';
 
-const express = require('express');
+/*const express = require('express');
 const cors = require('cors');
 require('dotenv').config();
 
 const app = express();
 app.use(cors());
-app.use(express.json());
+app.use(express.json());*/
 
 
 function App(){

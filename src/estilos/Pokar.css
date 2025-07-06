@@ -5,6 +5,7 @@
     transform:translate(-50%,-50%);
     width:300px;
     height:450px;
+    margin:66px 0 33px;
 }
 .pokerBox .card{
     position:absolute;
@@ -81,5 +82,10 @@
         transform:translate(-70%,-30%);
         width:200px;
         height:350px;
+    }
+}
+@media(max-width:999px){
+    .pokerBox{
+        margin:119px 0 33px;
     }
 }

@@ -2,7 +2,7 @@ import '../estilos/Taza.css';
 
 const Coffe =()=>{
     return(
-        <section className='displayCup'>
+        <section className="displayCup">
             <div className="containerCup">
                 <div className="plate"></div>
                 <div className="cup">
